@@ -12,5 +12,6 @@ declare module 'vue' {
     RobotAnimate: typeof import('./components/animations/RobotAnimate.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    SpeechBubble: typeof import('./components/animations/SpeechBubble.vue')['default']
   }
 }
