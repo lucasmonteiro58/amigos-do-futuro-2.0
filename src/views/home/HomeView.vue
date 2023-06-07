@@ -1,6 +1,4 @@
-<script setup>
-import BaseButton from '@/components/inputs/BaseButton.vue'
-</script>
+<script setup></script>
 
 <template>
   <div class="bg-home flex items-center justify-center flex-col">

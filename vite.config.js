@@ -5,6 +5,8 @@ import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import Spritesmith from 'vite-plugin-spritesmith'
 import clearFiles from './src/plugins/clearFiles'
+import AutoImport from 'unplugin-auto-import/vite'
+import Components from 'unplugin-vue-components/vite'
 
 clearFiles(['./src/assets/images/sprites/sprite.png', './src/assets/style/sprite.scss'])
 
@@ -32,6 +34,30 @@ export default defineConfig({
       spritesmithOptions: {
         padding: 5
       }
+    }),
+    AutoImport({
+      imports: ['vue', 'vue-router', 'vue/macros', '@vueuse/head', '@vueuse/core'],
+      dts: 'src/auto-imports.d.ts',
+      dirs: ['./composables', './store', './components/**', './componets/**'],
+      vueTemplate: true,
+      eslintrc: {
+        enabled: true,
+        filepath: './.eslintrc-auto-import.json',
+        globalsPropValue: true
+      }
+    }),
+    Components({
+      dirs: ['src/components'],
+      extensions: ['vue'],
+      dts: 'src/components.d.ts',
+      include: [/\.vue$/, /\.vue\?vue/],
+      resolvers: [
+        (name) => {
+          if (name.startsWith('Icon')) {
+            return { importName: name, path: '@purge-icons/generated' }
+          }
+        }
+      ]
     })
   ],
   resolve: {

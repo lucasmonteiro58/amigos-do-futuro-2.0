@@ -1,5 +1,4 @@
 <script setup>
-import { ref, onMounted, nextTick, onBeforeMount } from 'vue'
 const props = defineProps({
   spritesheet: {
     required: true,
