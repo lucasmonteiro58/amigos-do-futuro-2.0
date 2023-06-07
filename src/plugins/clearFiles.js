@@ -4,5 +4,5 @@ export default function (array) {
   array.forEach((item) => {
     fs.unlink(item, () => {})
   })
-  console.log('Reseted files')
+  console.log('-- reseted spritesheet files')
 }
