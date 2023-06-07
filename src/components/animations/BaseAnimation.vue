@@ -144,6 +144,11 @@ function play(from, to) {
   upper.value = Number.isNaN(Number(to)) ? upper.value : to
   loop()
 }
+
+defineExpose({
+  play,
+  stop
+})
 </script>
 
 <template>

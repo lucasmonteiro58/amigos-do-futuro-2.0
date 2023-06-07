@@ -1,0 +1,876 @@
+{
+	"frames": [
+		{
+			"filename": "Fala_Loop_00005.png",
+			"frame": {
+				"x": 1,
+				"y": 1,
+				"w": 760,
+				"h": 1000
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 760,
+				"h": 1000
+			},
+			"sourceSize": {
+				"w": 760,
+				"h": 1000
+			}
+		},
+		{
+			"filename": "Fala_Loop_00006.png",
+			"frame": {
+				"x": 763,
+				"y": 1,
+				"w": 760,
+				"h": 1000
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 760,
+				"h": 1000
+			},
+			"sourceSize": {
+				"w": 760,
+				"h": 1000
+			}
+		},
+		{
+			"filename": "Fala_Loop_00007.png",
+			"frame": {
+				"x": 1525,
+				"y": 1,
+				"w": 760,
+				"h": 1000
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 760,
+				"h": 1000
+			},
+			"sourceSize": {
+				"w": 760,
+				"h": 1000
+			}
+		},
+		{
+			"filename": "Fala_Loop_00008.png",
+			"frame": {
+				"x": 2287,
+				"y": 1,
+				"w": 760,
+				"h": 1000
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 760,
+				"h": 1000
+			},
+			"sourceSize": {
+				"w": 760,
+				"h": 1000
+			}
+		},
+		{
+			"filename": "Fala_Loop_00009.png",
+			"frame": {
+				"x": 3049,
+				"y": 1,
+				"w": 760,
+				"h": 1000
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 760,
+				"h": 1000
+			},
+			"sourceSize": {
+				"w": 760,
+				"h": 1000
+			}
+		},
+		{
+			"filename": "Fala_Loop_00010.png",
+			"frame": {
+				"x": 3811,
+				"y": 1,
+				"w": 760,
+				"h": 1000
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 760,
+				"h": 1000
+			},
+			"sourceSize": {
+				"w": 760,
+				"h": 1000
+			}
+		},
+		{
+			"filename": "Fala_Loop_00011.png",
+			"frame": {
+				"x": 4573,
+				"y": 1,
+				"w": 760,
+				"h": 1000
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 760,
+				"h": 1000
+			},
+			"sourceSize": {
+				"w": 760,
+				"h": 1000
+			}
+		},
+		{
+			"filename": "Fala_Loop_00012.png",
+			"frame": {
+				"x": 5335,
+				"y": 1,
+				"w": 760,
+				"h": 1000
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 760,
+				"h": 1000
+			},
+			"sourceSize": {
+				"w": 760,
+				"h": 1000
+			}
+		},
+		{
+			"filename": "Fala_Loop_00013.png",
+			"frame": {
+				"x": 6097,
+				"y": 1,
+				"w": 760,
+				"h": 1000
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 760,
+				"h": 1000
+			},
+			"sourceSize": {
+				"w": 760,
+				"h": 1000
+			}
+		},
+		{
+			"filename": "Fala_Loop_00014.png",
+			"frame": {
+				"x": 6859,
+				"y": 1,
+				"w": 760,
+				"h": 1000
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 760,
+				"h": 1000
+			},
+			"sourceSize": {
+				"w": 760,
+				"h": 1000
+			}
+		},
+		{
+			"filename": "Fala_Loop_00015.png",
+			"frame": {
+				"x": 7621,
+				"y": 1,
+				"w": 760,
+				"h": 1000
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 760,
+				"h": 1000
+			},
+			"sourceSize": {
+				"w": 760,
+				"h": 1000
+			}
+		},
+		{
+			"filename": "Fala_Loop_00016.png",
+			"frame": {
+				"x": 8383,
+				"y": 1,
+				"w": 760,
+				"h": 1000
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 760,
+				"h": 1000
+			},
+			"sourceSize": {
+				"w": 760,
+				"h": 1000
+			}
+		},
+		{
+			"filename": "Fala_Loop_00017.png",
+			"frame": {
+				"x": 9145,
+				"y": 1,
+				"w": 760,
+				"h": 1000
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 760,
+				"h": 1000
+			},
+			"sourceSize": {
+				"w": 760,
+				"h": 1000
+			}
+		},
+		{
+			"filename": "Fala_Loop_00018.png",
+			"frame": {
+				"x": 9907,
+				"y": 1,
+				"w": 760,
+				"h": 1000
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 760,
+				"h": 1000
+			},
+			"sourceSize": {
+				"w": 760,
+				"h": 1000
+			}
+		},
+		{
+			"filename": "Fala_Loop_00019.png",
+			"frame": {
+				"x": 10669,
+				"y": 1,
+				"w": 760,
+				"h": 1000
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 760,
+				"h": 1000
+			},
+			"sourceSize": {
+				"w": 760,
+				"h": 1000
+			}
+		},
+		{
+			"filename": "Fala_Loop_00020.png",
+			"frame": {
+				"x": 11431,
+				"y": 1,
+				"w": 760,
+				"h": 1000
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 760,
+				"h": 1000
+			},
+			"sourceSize": {
+				"w": 760,
+				"h": 1000
+			}
+		},
+		{
+			"filename": "Fala_Loop_00021.png",
+			"frame": {
+				"x": 12193,
+				"y": 1,
+				"w": 760,
+				"h": 1000
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 760,
+				"h": 1000
+			},
+			"sourceSize": {
+				"w": 760,
+				"h": 1000
+			}
+		},
+		{
+			"filename": "Fala_Loop_00022.png",
+			"frame": {
+				"x": 12955,
+				"y": 1,
+				"w": 760,
+				"h": 1000
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 760,
+				"h": 1000
+			},
+			"sourceSize": {
+				"w": 760,
+				"h": 1000
+			}
+		},
+		{
+			"filename": "Fala_Loop_00023.png",
+			"frame": {
+				"x": 13717,
+				"y": 1,
+				"w": 760,
+				"h": 1000
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 760,
+				"h": 1000
+			},
+			"sourceSize": {
+				"w": 760,
+				"h": 1000
+			}
+		},
+		{
+			"filename": "Fala_Loop_00024.png",
+			"frame": {
+				"x": 14479,
+				"y": 1,
+				"w": 760,
+				"h": 1000
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 760,
+				"h": 1000
+			},
+			"sourceSize": {
+				"w": 760,
+				"h": 1000
+			}
+		},
+		{
+			"filename": "Fala_Loop_00025.png",
+			"frame": {
+				"x": 15241,
+				"y": 1,
+				"w": 760,
+				"h": 1000
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 760,
+				"h": 1000
+			},
+			"sourceSize": {
+				"w": 760,
+				"h": 1000
+			}
+		},
+		{
+			"filename": "Fala_Loop_00026.png",
+			"frame": {
+				"x": 16003,
+				"y": 1,
+				"w": 760,
+				"h": 1000
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 760,
+				"h": 1000
+			},
+			"sourceSize": {
+				"w": 760,
+				"h": 1000
+			}
+		},
+		{
+			"filename": "Fala_Loop_00027.png",
+			"frame": {
+				"x": 16765,
+				"y": 1,
+				"w": 760,
+				"h": 1000
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 760,
+				"h": 1000
+			},
+			"sourceSize": {
+				"w": 760,
+				"h": 1000
+			}
+		},
+		{
+			"filename": "Fala_Loop_00028.png",
+			"frame": {
+				"x": 17527,
+				"y": 1,
+				"w": 760,
+				"h": 1000
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 760,
+				"h": 1000
+			},
+			"sourceSize": {
+				"w": 760,
+				"h": 1000
+			}
+		},
+		{
+			"filename": "Fala_Loop_00029.png",
+			"frame": {
+				"x": 18289,
+				"y": 1,
+				"w": 760,
+				"h": 1000
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 760,
+				"h": 1000
+			},
+			"sourceSize": {
+				"w": 760,
+				"h": 1000
+			}
+		},
+		{
+			"filename": "Fala_Loop_00030.png",
+			"frame": {
+				"x": 19051,
+				"y": 1,
+				"w": 760,
+				"h": 1000
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 760,
+				"h": 1000
+			},
+			"sourceSize": {
+				"w": 760,
+				"h": 1000
+			}
+		},
+		{
+			"filename": "Fala_Loop_00031.png",
+			"frame": {
+				"x": 19813,
+				"y": 1,
+				"w": 760,
+				"h": 1000
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 760,
+				"h": 1000
+			},
+			"sourceSize": {
+				"w": 760,
+				"h": 1000
+			}
+		},
+		{
+			"filename": "Fala_Loop_00032.png",
+			"frame": {
+				"x": 20575,
+				"y": 1,
+				"w": 760,
+				"h": 1000
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 760,
+				"h": 1000
+			},
+			"sourceSize": {
+				"w": 760,
+				"h": 1000
+			}
+		},
+		{
+			"filename": "Fala_Loop_00033.png",
+			"frame": {
+				"x": 21337,
+				"y": 1,
+				"w": 760,
+				"h": 1000
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 760,
+				"h": 1000
+			},
+			"sourceSize": {
+				"w": 760,
+				"h": 1000
+			}
+		},
+		{
+			"filename": "Fala_Loop_00034.png",
+			"frame": {
+				"x": 22099,
+				"y": 1,
+				"w": 760,
+				"h": 1000
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 760,
+				"h": 1000
+			},
+			"sourceSize": {
+				"w": 760,
+				"h": 1000
+			}
+		},
+		{
+			"filename": "Fala_Loop_00035.png",
+			"frame": {
+				"x": 22861,
+				"y": 1,
+				"w": 760,
+				"h": 1000
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 760,
+				"h": 1000
+			},
+			"sourceSize": {
+				"w": 760,
+				"h": 1000
+			}
+		},
+		{
+			"filename": "Fala_Loop_00036.png",
+			"frame": {
+				"x": 23623,
+				"y": 1,
+				"w": 760,
+				"h": 1000
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 760,
+				"h": 1000
+			},
+			"sourceSize": {
+				"w": 760,
+				"h": 1000
+			}
+		},
+		{
+			"filename": "Fala_Loop_00037.png",
+			"frame": {
+				"x": 24385,
+				"y": 1,
+				"w": 760,
+				"h": 1000
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 760,
+				"h": 1000
+			},
+			"sourceSize": {
+				"w": 760,
+				"h": 1000
+			}
+		},
+		{
+			"filename": "Fala_Loop_00038.png",
+			"frame": {
+				"x": 25147,
+				"y": 1,
+				"w": 760,
+				"h": 1000
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 760,
+				"h": 1000
+			},
+			"sourceSize": {
+				"w": 760,
+				"h": 1000
+			}
+		},
+		{
+			"filename": "Fala_Loop_00039.png",
+			"frame": {
+				"x": 25909,
+				"y": 1,
+				"w": 760,
+				"h": 1000
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 760,
+				"h": 1000
+			},
+			"sourceSize": {
+				"w": 760,
+				"h": 1000
+			}
+		},
+		{
+			"filename": "Fala_Loop_00040.png",
+			"frame": {
+				"x": 26671,
+				"y": 1,
+				"w": 760,
+				"h": 1000
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 760,
+				"h": 1000
+			},
+			"sourceSize": {
+				"w": 760,
+				"h": 1000
+			}
+		},
+		{
+			"filename": "Fala_Loop_00041.png",
+			"frame": {
+				"x": 27433,
+				"y": 1,
+				"w": 760,
+				"h": 1000
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 760,
+				"h": 1000
+			},
+			"sourceSize": {
+				"w": 760,
+				"h": 1000
+			}
+		},
+		{
+			"filename": "Fala_Loop_00042.png",
+			"frame": {
+				"x": 28195,
+				"y": 1,
+				"w": 760,
+				"h": 1000
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 760,
+				"h": 1000
+			},
+			"sourceSize": {
+				"w": 760,
+				"h": 1000
+			}
+		},
+		{
+			"filename": "Fala_Loop_00043.png",
+			"frame": {
+				"x": 28957,
+				"y": 1,
+				"w": 760,
+				"h": 1000
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 760,
+				"h": 1000
+			},
+			"sourceSize": {
+				"w": 760,
+				"h": 1000
+			}
+		},
+		{
+			"filename": "Fala_Loop_00044.png",
+			"frame": {
+				"x": 29719,
+				"y": 1,
+				"w": 760,
+				"h": 1000
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 760,
+				"h": 1000
+			},
+			"sourceSize": {
+				"w": 760,
+				"h": 1000
+			}
+		},
+		{
+			"filename": "Fala_Loop_00045.png",
+			"frame": {
+				"x": 30481,
+				"y": 1,
+				"w": 760,
+				"h": 1000
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 760,
+				"h": 1000
+			},
+			"sourceSize": {
+				"w": 760,
+				"h": 1000
+			}
+		}
+	],
+	"meta": {
+		"app": "http://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"image": "spritesheet.png",
+		"format": "RGBA8888",
+		"size": {
+			"w": 31242,
+			"h": 1002
+		},
+		"scale": "1"
+	}
+}

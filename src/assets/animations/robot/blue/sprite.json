@@ -1,0 +1,897 @@
+{
+	"frames": [
+		{
+			"filename": "Circulo_Loop_Azul_00005.png",
+			"frame": {
+				"x": 1,
+				"y": 1,
+				"w": 780,
+				"h": 940
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 780,
+				"h": 940
+			},
+			"sourceSize": {
+				"w": 780,
+				"h": 940
+			}
+		},
+		{
+			"filename": "Circulo_Loop_Azul_00006.png",
+			"frame": {
+				"x": 783,
+				"y": 1,
+				"w": 780,
+				"h": 940
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 780,
+				"h": 940
+			},
+			"sourceSize": {
+				"w": 780,
+				"h": 940
+			}
+		},
+		{
+			"filename": "Circulo_Loop_Azul_00007.png",
+			"frame": {
+				"x": 1565,
+				"y": 1,
+				"w": 780,
+				"h": 940
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 780,
+				"h": 940
+			},
+			"sourceSize": {
+				"w": 780,
+				"h": 940
+			}
+		},
+		{
+			"filename": "Circulo_Loop_Azul_00008.png",
+			"frame": {
+				"x": 2347,
+				"y": 1,
+				"w": 780,
+				"h": 940
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 780,
+				"h": 940
+			},
+			"sourceSize": {
+				"w": 780,
+				"h": 940
+			}
+		},
+		{
+			"filename": "Circulo_Loop_Azul_00009.png",
+			"frame": {
+				"x": 3129,
+				"y": 1,
+				"w": 780,
+				"h": 940
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 780,
+				"h": 940
+			},
+			"sourceSize": {
+				"w": 780,
+				"h": 940
+			}
+		},
+		{
+			"filename": "Circulo_Loop_Azul_00010.png",
+			"frame": {
+				"x": 3911,
+				"y": 1,
+				"w": 780,
+				"h": 940
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 780,
+				"h": 940
+			},
+			"sourceSize": {
+				"w": 780,
+				"h": 940
+			}
+		},
+		{
+			"filename": "Circulo_Loop_Azul_00011.png",
+			"frame": {
+				"x": 4693,
+				"y": 1,
+				"w": 780,
+				"h": 940
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 780,
+				"h": 940
+			},
+			"sourceSize": {
+				"w": 780,
+				"h": 940
+			}
+		},
+		{
+			"filename": "Circulo_Loop_Azul_00012.png",
+			"frame": {
+				"x": 5475,
+				"y": 1,
+				"w": 780,
+				"h": 940
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 780,
+				"h": 940
+			},
+			"sourceSize": {
+				"w": 780,
+				"h": 940
+			}
+		},
+		{
+			"filename": "Circulo_Loop_Azul_00013.png",
+			"frame": {
+				"x": 6257,
+				"y": 1,
+				"w": 780,
+				"h": 940
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 780,
+				"h": 940
+			},
+			"sourceSize": {
+				"w": 780,
+				"h": 940
+			}
+		},
+		{
+			"filename": "Circulo_Loop_Azul_00014.png",
+			"frame": {
+				"x": 7039,
+				"y": 1,
+				"w": 780,
+				"h": 940
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 780,
+				"h": 940
+			},
+			"sourceSize": {
+				"w": 780,
+				"h": 940
+			}
+		},
+		{
+			"filename": "Circulo_Loop_Azul_00015.png",
+			"frame": {
+				"x": 7821,
+				"y": 1,
+				"w": 780,
+				"h": 940
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 780,
+				"h": 940
+			},
+			"sourceSize": {
+				"w": 780,
+				"h": 940
+			}
+		},
+		{
+			"filename": "Circulo_Loop_Azul_00016.png",
+			"frame": {
+				"x": 8603,
+				"y": 1,
+				"w": 780,
+				"h": 940
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 780,
+				"h": 940
+			},
+			"sourceSize": {
+				"w": 780,
+				"h": 940
+			}
+		},
+		{
+			"filename": "Circulo_Loop_Azul_00017.png",
+			"frame": {
+				"x": 9385,
+				"y": 1,
+				"w": 780,
+				"h": 940
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 780,
+				"h": 940
+			},
+			"sourceSize": {
+				"w": 780,
+				"h": 940
+			}
+		},
+		{
+			"filename": "Circulo_Loop_Azul_00018.png",
+			"frame": {
+				"x": 10167,
+				"y": 1,
+				"w": 780,
+				"h": 940
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 780,
+				"h": 940
+			},
+			"sourceSize": {
+				"w": 780,
+				"h": 940
+			}
+		},
+		{
+			"filename": "Circulo_Loop_Azul_00019.png",
+			"frame": {
+				"x": 10949,
+				"y": 1,
+				"w": 780,
+				"h": 940
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 780,
+				"h": 940
+			},
+			"sourceSize": {
+				"w": 780,
+				"h": 940
+			}
+		},
+		{
+			"filename": "Circulo_Loop_Azul_00020.png",
+			"frame": {
+				"x": 11731,
+				"y": 1,
+				"w": 780,
+				"h": 940
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 780,
+				"h": 940
+			},
+			"sourceSize": {
+				"w": 780,
+				"h": 940
+			}
+		},
+		{
+			"filename": "Circulo_Loop_Azul_00021.png",
+			"frame": {
+				"x": 12513,
+				"y": 1,
+				"w": 780,
+				"h": 940
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 780,
+				"h": 940
+			},
+			"sourceSize": {
+				"w": 780,
+				"h": 940
+			}
+		},
+		{
+			"filename": "Circulo_Loop_Azul_00022.png",
+			"frame": {
+				"x": 13295,
+				"y": 1,
+				"w": 780,
+				"h": 940
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 780,
+				"h": 940
+			},
+			"sourceSize": {
+				"w": 780,
+				"h": 940
+			}
+		},
+		{
+			"filename": "Circulo_Loop_Azul_00023.png",
+			"frame": {
+				"x": 14077,
+				"y": 1,
+				"w": 780,
+				"h": 940
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 780,
+				"h": 940
+			},
+			"sourceSize": {
+				"w": 780,
+				"h": 940
+			}
+		},
+		{
+			"filename": "Circulo_Loop_Azul_00024.png",
+			"frame": {
+				"x": 14859,
+				"y": 1,
+				"w": 780,
+				"h": 940
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 780,
+				"h": 940
+			},
+			"sourceSize": {
+				"w": 780,
+				"h": 940
+			}
+		},
+		{
+			"filename": "Circulo_Loop_Azul_00025.png",
+			"frame": {
+				"x": 15641,
+				"y": 1,
+				"w": 780,
+				"h": 940
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 780,
+				"h": 940
+			},
+			"sourceSize": {
+				"w": 780,
+				"h": 940
+			}
+		},
+		{
+			"filename": "Circulo_Loop_Azul_00026.png",
+			"frame": {
+				"x": 16423,
+				"y": 1,
+				"w": 780,
+				"h": 940
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 780,
+				"h": 940
+			},
+			"sourceSize": {
+				"w": 780,
+				"h": 940
+			}
+		},
+		{
+			"filename": "Circulo_Loop_Azul_00027.png",
+			"frame": {
+				"x": 17205,
+				"y": 1,
+				"w": 780,
+				"h": 940
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 780,
+				"h": 940
+			},
+			"sourceSize": {
+				"w": 780,
+				"h": 940
+			}
+		},
+		{
+			"filename": "Circulo_Loop_Azul_00028.png",
+			"frame": {
+				"x": 17987,
+				"y": 1,
+				"w": 780,
+				"h": 940
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 780,
+				"h": 940
+			},
+			"sourceSize": {
+				"w": 780,
+				"h": 940
+			}
+		},
+		{
+			"filename": "Circulo_Loop_Azul_00029.png",
+			"frame": {
+				"x": 18769,
+				"y": 1,
+				"w": 780,
+				"h": 940
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 780,
+				"h": 940
+			},
+			"sourceSize": {
+				"w": 780,
+				"h": 940
+			}
+		},
+		{
+			"filename": "Circulo_Loop_Azul_00030.png",
+			"frame": {
+				"x": 19551,
+				"y": 1,
+				"w": 780,
+				"h": 940
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 780,
+				"h": 940
+			},
+			"sourceSize": {
+				"w": 780,
+				"h": 940
+			}
+		},
+		{
+			"filename": "Circulo_Loop_Azul_00031.png",
+			"frame": {
+				"x": 20333,
+				"y": 1,
+				"w": 780,
+				"h": 940
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 780,
+				"h": 940
+			},
+			"sourceSize": {
+				"w": 780,
+				"h": 940
+			}
+		},
+		{
+			"filename": "Circulo_Loop_Azul_00032.png",
+			"frame": {
+				"x": 21115,
+				"y": 1,
+				"w": 780,
+				"h": 940
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 780,
+				"h": 940
+			},
+			"sourceSize": {
+				"w": 780,
+				"h": 940
+			}
+		},
+		{
+			"filename": "Circulo_Loop_Azul_00033.png",
+			"frame": {
+				"x": 21897,
+				"y": 1,
+				"w": 780,
+				"h": 940
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 780,
+				"h": 940
+			},
+			"sourceSize": {
+				"w": 780,
+				"h": 940
+			}
+		},
+		{
+			"filename": "Circulo_Loop_Azul_00034.png",
+			"frame": {
+				"x": 22679,
+				"y": 1,
+				"w": 780,
+				"h": 940
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 780,
+				"h": 940
+			},
+			"sourceSize": {
+				"w": 780,
+				"h": 940
+			}
+		},
+		{
+			"filename": "Circulo_Loop_Azul_00035.png",
+			"frame": {
+				"x": 23461,
+				"y": 1,
+				"w": 780,
+				"h": 940
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 780,
+				"h": 940
+			},
+			"sourceSize": {
+				"w": 780,
+				"h": 940
+			}
+		},
+		{
+			"filename": "Circulo_Loop_Azul_00036.png",
+			"frame": {
+				"x": 24243,
+				"y": 1,
+				"w": 780,
+				"h": 940
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 780,
+				"h": 940
+			},
+			"sourceSize": {
+				"w": 780,
+				"h": 940
+			}
+		},
+		{
+			"filename": "Circulo_Loop_Azul_00037.png",
+			"frame": {
+				"x": 25025,
+				"y": 1,
+				"w": 780,
+				"h": 940
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 780,
+				"h": 940
+			},
+			"sourceSize": {
+				"w": 780,
+				"h": 940
+			}
+		},
+		{
+			"filename": "Circulo_Loop_Azul_00038.png",
+			"frame": {
+				"x": 25807,
+				"y": 1,
+				"w": 780,
+				"h": 940
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 780,
+				"h": 940
+			},
+			"sourceSize": {
+				"w": 780,
+				"h": 940
+			}
+		},
+		{
+			"filename": "Circulo_Loop_Azul_00039.png",
+			"frame": {
+				"x": 26589,
+				"y": 1,
+				"w": 780,
+				"h": 940
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 780,
+				"h": 940
+			},
+			"sourceSize": {
+				"w": 780,
+				"h": 940
+			}
+		},
+		{
+			"filename": "Circulo_Loop_Azul_00040.png",
+			"frame": {
+				"x": 27371,
+				"y": 1,
+				"w": 780,
+				"h": 940
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 780,
+				"h": 940
+			},
+			"sourceSize": {
+				"w": 780,
+				"h": 940
+			}
+		},
+		{
+			"filename": "Circulo_Loop_Azul_00041.png",
+			"frame": {
+				"x": 28153,
+				"y": 1,
+				"w": 780,
+				"h": 940
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 780,
+				"h": 940
+			},
+			"sourceSize": {
+				"w": 780,
+				"h": 940
+			}
+		},
+		{
+			"filename": "Circulo_Loop_Azul_00042.png",
+			"frame": {
+				"x": 28935,
+				"y": 1,
+				"w": 780,
+				"h": 940
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 780,
+				"h": 940
+			},
+			"sourceSize": {
+				"w": 780,
+				"h": 940
+			}
+		},
+		{
+			"filename": "Circulo_Loop_Azul_00043.png",
+			"frame": {
+				"x": 29717,
+				"y": 1,
+				"w": 780,
+				"h": 940
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 780,
+				"h": 940
+			},
+			"sourceSize": {
+				"w": 780,
+				"h": 940
+			}
+		},
+		{
+			"filename": "Circulo_Loop_Azul_00044.png",
+			"frame": {
+				"x": 30499,
+				"y": 1,
+				"w": 780,
+				"h": 940
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 780,
+				"h": 940
+			},
+			"sourceSize": {
+				"w": 780,
+				"h": 940
+			}
+		},
+		{
+			"filename": "Circulo_Loop_Azul_00045.png",
+			"frame": {
+				"x": 31281,
+				"y": 1,
+				"w": 780,
+				"h": 940
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 780,
+				"h": 940
+			},
+			"sourceSize": {
+				"w": 780,
+				"h": 940
+			}
+		},
+		{
+			"filename": "Circulo_Loop_Azul_00046.png",
+			"frame": {
+				"x": 32063,
+				"y": 1,
+				"w": 780,
+				"h": 940
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 780,
+				"h": 940
+			},
+			"sourceSize": {
+				"w": 780,
+				"h": 940
+			}
+		}
+	],
+	"meta": {
+		"app": "http://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"image": "spritesheet.png",
+		"format": "RGBA8888",
+		"size": {
+			"w": 32844,
+			"h": 942
+		},
+		"scale": "1"
+	}
+}

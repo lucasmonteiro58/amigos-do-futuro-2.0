@@ -38,7 +38,7 @@ export default defineConfig({
     AutoImport({
       imports: ['vue', 'vue-router', 'vue/macros', '@vueuse/head', '@vueuse/core'],
       dts: 'src/auto-imports.d.ts',
-      dirs: ['./composables', './store', './components/**', './componets/**'],
+      dirs: ['src/components', 'src/composables', 'src/utils', 'src/store/**'],
       vueTemplate: true,
       eslintrc: {
         enabled: true,
@@ -50,14 +50,7 @@ export default defineConfig({
       dirs: ['src/components'],
       extensions: ['vue'],
       dts: 'src/components.d.ts',
-      include: [/\.vue$/, /\.vue\?vue/],
-      resolvers: [
-        (name) => {
-          if (name.startsWith('Icon')) {
-            return { importName: name, path: '@purge-icons/generated' }
-          }
-        }
-      ]
+      include: [/\.vue$/, /\.vue\?vue/]
     })
   ],
   resolve: {
