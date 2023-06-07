@@ -1,0 +1,44 @@
+@font-face {
+  font-family: Viga;
+  src: url(../fonts/Viga-Regular.otf);
+}
+
+@font-face {
+  font-family: PoetsenOne;
+  src: url(../fonts/PoetsenOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: Bungee;
+  src: url(../fonts/Bungee-Regular.otf);
+}
+
+@font-face {
+  font-family: Exo;
+  src: url(../fonts/Exo2-Regular.otf);
+}
+@font-face {
+  font-family: Exo-bold;
+  src: url(../fonts/Exo2-Bold.otf);
+}
+@font-face {
+  font-family: Exo-medium;
+  src: url(../fonts/Exo2-Medium.otf);
+}
+@font-face {
+  font-family: Norwester;
+  src: url(../fonts/Norwester.otf);
+}
+@font-face {
+  font-family: Front;
+  src: url(../fonts/Front.otf);
+}
+
+@-ms-viewport {
+  width: 1920px;
+  height: 1080px;
+}
+@viewport {
+  width: 1920px;
+  height: 1080px;
+}
