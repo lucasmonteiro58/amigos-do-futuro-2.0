@@ -6,6 +6,7 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
+import preload from 'vite-plugin-preload'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -28,7 +29,8 @@ export default defineConfig({
       extensions: ['vue'],
       dts: 'src/components.d.ts',
       include: [/\.vue$/, /\.vue\?vue/]
-    })
+    }),
+    preload()
   ],
   resolve: {
     alias: {

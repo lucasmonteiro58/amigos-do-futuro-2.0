@@ -17,6 +17,8 @@ const timeout = ref(null)
 const robotSpeak = ref(null)
 const robotNoSpeak = ref(null)
 
+const firstNoSpeak = ref(true)
+
 function play() {
   clearTimeout(timeout.value)
   speak.value = true
@@ -25,25 +27,26 @@ function play() {
   robotSpeak.value.play(2, 18)
 }
 
-function overSpeak() {
+function stopSpeak() {
   robotSpeak.value.play(2, 18)
   timeout.value = setTimeout(() => {
-    startNoSpeak()
+    firstNoSpeak.value ? initNoSpeak() : playNoSpeak()
+    firstNoSpeak.value = false
   }, props.time)
 }
 
-function startNoSpeak() {
+function initNoSpeak() {
   clearTimeout(timeout.value)
   speak.value = false
   noSpeak.value = true
   if (robotSpeak.value) robotSpeak.value.stop()
-  if (robotNoSpeak.value) robotNoSpeak.value.play(19, 38)
+  if (robotNoSpeak.value) robotNoSpeak.value.play(18, 20)
 }
 
-function overNoSpeak() {
+function playNoSpeak() {
   clearTimeout(timeout.value)
-  robotNoSpeak.value.stop()
-  robotNoSpeak.value.play(21, 38)
+  if (robotNoSpeak.value) robotNoSpeak.value.stop()
+  if (robotSpeak.value) robotNoSpeak.value.play(21, 38)
 }
 
 onMounted(() => {
@@ -60,7 +63,7 @@ onMounted(() => {
       :json="animation.json"
       :fps="10"
       :autoplay="false"
-      @animationOver="overSpeak"
+      @animationOver="stopSpeak"
     ></BaseAnimation>
     <BaseAnimation
       ref="robotNoSpeak"
@@ -69,7 +72,7 @@ onMounted(() => {
       :json="animation.json"
       :fps="10"
       :autoplay="false"
-      @animationOver="overNoSpeak"
+      @animationOver="playNoSpeak"
     ></BaseAnimation>
   </div>
 </template>
