@@ -6,7 +6,8 @@ export default {
         primary: {
           blue: {
             DEFAULT: '#376296',
-            light: '#247ba0'
+            light: '#247ba0',
+            dark: '#305882'
           },
           green: {
             DEFAULT: '#3c9c74',

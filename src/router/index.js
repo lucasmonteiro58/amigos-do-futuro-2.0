@@ -9,13 +9,13 @@ const router = createRouter({
       component: () => import('../views/home/HomeView.vue')
     },
     {
-      path: '/form',
-      name: 'form',
+      path: '/formulario',
+      name: 'formulario',
       component: () => import('../views/form/FormView.vue')
     },
     {
-      path: '/map',
-      name: 'map',
+      path: '/mapa',
+      name: 'mapa',
       component: () => import('../views/map/MapView.vue')
     }
   ]
