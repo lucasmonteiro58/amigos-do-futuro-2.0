@@ -11,10 +11,5 @@
     <div class="text-xl mt-8">
       Aqui é a quantidade de Amigos do Futuro que já passaram por aqui.
     </div>
-    <SpeechBubble
-      title="Olá, eu sou o Robozin!"
-      description="Eu sou um robô que veio do futuro para te ajudar a aprender sobre o mundo da programação."
-      :time="1000"
-    ></SpeechBubble>
   </div>
 </template>
