@@ -6,7 +6,7 @@ import { RouterView } from 'vue-router'
   <div
     class="w-[1920px] mx-auto fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
   >
-    <RouterView class="!h-[1080px] !w-[1920px]" />
+    <RouterView class="!h-[1080px] !w-[1920px] app-limit-drag" />
   </div>
 </template>
 

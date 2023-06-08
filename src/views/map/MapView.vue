@@ -2,6 +2,9 @@
 
 <template>
   <main class="spritesheet bg-mapa-ceara">
+    <DragElement>
+      <div class="spritesheet pc_cariri"></div>
+    </DragElement>
     <SpeechBubble
       title="Descobrindo o Ceará"
       description="Encaixe as regiões no mapa. <br/>Precisamos de todas juntas para a nossa aventura!"
