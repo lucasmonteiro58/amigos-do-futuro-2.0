@@ -47,7 +47,7 @@ function onClick() {
     :disabled="disabled"
     @click="onClick"
   >
-    <div v-if="bg" :class="bg" class="flex items-center justify-center">
+    <div v-if="bg" :class="bg" class="spritesheet flex items-center justify-center">
       <span v-if="label" class="font-bungee" :class="[labelColor, labelSize]">{{ label }}</span>
     </div>
   </button>

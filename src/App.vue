@@ -5,8 +5,3 @@ import LayoutApp from './layouts/LayoutApp.vue'
 <template>
   <LayoutApp />
 </template>
-
-<style lang="scss">
-@import './assets/style/sprite.scss';
-@include sprites($spritesheet-sprites);
-</style>
