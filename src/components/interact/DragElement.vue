@@ -3,7 +3,7 @@ import interact from 'interactjs'
 
 const props = defineProps({
   dataTransfer: {
-    type: Object,
+    type: [Object, String],
     required: false,
     default: () => {}
   },
@@ -118,8 +118,14 @@ onMounted(() => {
 </script>
 
 <template>
-  <div ref="refDrag" class="drag-wrap flex items-center justify-center absolute z-10">
-    <div :class="className" :data-transfer="dataTransfer" class="slot drag-el" draggable="false">
+  <div class="drag-wrap flex items-center justify-center absolute">
+    <div
+      :class="className"
+      :data-transfer="dataTransfer"
+      class="slot drag-el"
+      draggable="false"
+      ref="refDrag"
+    >
       <slot />
     </div>
   </div>
