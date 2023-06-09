@@ -7,6 +7,10 @@ const props = defineProps({
   time: {
     type: Number,
     required: true
+  },
+  width: {
+    type: String,
+    default: '100%'
   }
 })
 
@@ -63,6 +67,7 @@ onMounted(() => {
       :json="animation.json"
       :fps="10"
       :autoplay="false"
+      :width="width"
       @animationOver="stopSpeak"
     ></BaseAnimation>
     <BaseAnimation
@@ -72,6 +77,7 @@ onMounted(() => {
       :json="animation.json"
       :fps="10"
       :autoplay="false"
+      :width="width"
       @animationOver="playNoSpeak"
     ></BaseAnimation>
   </div>

@@ -4,11 +4,17 @@ import { robotOrange } from '@/consts'
 
 <template>
   <div class="flex">
-    <div class="w-2/5 bg-white flex flex-col item-center justify-center">
-      <RobotAnimate :animation="robotOrange" :time="3000" class="scale-[0.85] mb-5"> </RobotAnimate>
-      <div class="flex justify-center gap-x-10">
-        <BaseButton name="btn-toggle-arrow-p" disabled width="100px"></BaseButton>
-        <BaseButton name="btn-toggle-arrow" width="100px"></BaseButton>
+    <div class="pl-5 w-2/5 bg-white flex flex-col item-center mt-2">
+      <RobotAnimate
+        :animation="robotOrange"
+        :time="3000"
+        class="mb-6 flex justify-center"
+        width="650px"
+      >
+      </RobotAnimate>
+      <div class="flex justify-center gap-x-10 mr-9">
+        <BaseButton name="btn-toggle-arrow-p" disabled width="110px"></BaseButton>
+        <BaseButton name="btn-toggle-arrow" width="110px"></BaseButton>
       </div>
     </div>
     <div class="w-3/5 bg-primary-blue-dark"></div>

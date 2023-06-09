@@ -1,4 +1,6 @@
 <script setup>
+import { useElementSize } from '@vueuse/core'
+
 const props = defineProps({
   spritesheet: {
     required: true,
@@ -28,6 +30,10 @@ const props = defineProps({
   isLoop: {
     type: Boolean,
     default: true
+  },
+  width: {
+    type: String,
+    default: '100%'
   }
 })
 
@@ -43,12 +49,12 @@ const yoyodirection = ref(0)
 const sprite = ref(null)
 const ctx = ref(null)
 const height = ref(0)
-const width = ref(0)
+const widthCanvas = ref(0)
 const now = ref(0)
 const then = ref(0)
 const lower = ref(0)
 const upper = ref(undefined)
-const vueSpriteCanvas = ref(null)
+const refContent = ref(null)
 
 onMounted(() => {
   props.json.frames.forEach((frame) => {
@@ -61,7 +67,7 @@ onMounted(() => {
     })
   })
   frames.value.sort((a, b) => a.filename < b.filename)
-  width.value = frames.value[0].w
+  widthCanvas.value = frames.value[0].w
   height.value = frames.value[0].h
   length.value = frames.value.length - 1
   upper.value = frames.value.length
@@ -78,12 +84,12 @@ onBeforeMount(() => {
 })
 
 function init() {
-  ctx.value = vueSpriteCanvas.value.getContext('2d')
+  ctx.value = refContent.value.getContext('2d')
   props.autoplay && play()
 }
 
 function render() {
-  ctx.value && ctx.value.clearRect(0, 0, width.value, height.value)
+  ctx.value && ctx.value.clearRect(0, 0, widthCanvas.value, height.value)
   if (props.yoyo && currentIndex.value % length.value === 0 && currentIndex.value) {
     yoyodirection.value = Number(!yoyodirection.value)
   }
@@ -95,11 +101,11 @@ function render() {
       sprite.value,
       x,
       y,
-      width.value,
+      widthCanvas.value,
       height.value,
       0,
       0,
-      width.value,
+      widthCanvas.value,
       height.value
     )
 }
@@ -145,6 +151,35 @@ function play(from, to) {
   loop()
 }
 
+// config width
+
+const refContainer = ref(null)
+
+const { width: containerWidth } = useElementSize(refContainer)
+const { width: contentWidth, height: contentHeight } = useElementSize(refContent)
+
+const getContentHeight = computed(() => {
+  return contentHeight.value * scale.value
+})
+
+const scale = computed(() => {
+  return containerWidth.value / contentWidth.value
+})
+
+const styleContainer = computed(() => {
+  return {
+    width: `${contentWidth.value}px`,
+    maxWidth: `${props.width}`,
+    height: `${getContentHeight.value}px`
+  }
+})
+
+const styleContent = computed(() => {
+  return {
+    transform: `scale(${scale.value})`
+  }
+})
+
 defineExpose({
   play,
   stop
@@ -152,7 +187,14 @@ defineExpose({
 </script>
 
 <template>
-  <div class="vue-sprite">
-    <canvas :id="id" ref="vueSpriteCanvas" :width="width" :height="height"></canvas>
+  <div class="vue-sprite" ref="refContainer" :style="styleContainer">
+    <canvas
+      :id="id"
+      ref="refContent"
+      class="origin-top-left"
+      :width="widthCanvas"
+      :style="styleContent"
+      :height="height"
+    ></canvas>
   </div>
 </template>
