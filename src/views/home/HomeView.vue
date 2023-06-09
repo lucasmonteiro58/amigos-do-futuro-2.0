@@ -4,7 +4,7 @@
 
 <template>
   <div class="spritesheet bg-home flex items-center justify-center flex-col">
-    <div class="spritesheet logo-complete"></div>
+    <BaseImg img="logo-complete"></BaseImg>
     <div class="font-norwester mt-[60px] mb-[20px] text-center font-bold text-[85px]">00000</div>
     <BaseButton name="btn-start"></BaseButton>
     <!-- <RobotAnimate :animation="robotFull" :time="3000"> </RobotAnimate> -->

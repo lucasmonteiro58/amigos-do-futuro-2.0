@@ -23,6 +23,10 @@ const props = defineProps({
   disabled: {
     type: Boolean,
     default: false
+  },
+  width: {
+    type: String,
+    default: '100%'
   }
 })
 
@@ -48,8 +52,10 @@ function onClick() {
     :name="name"
     @click="onClick"
   >
-    <div v-if="name" :class="name" class="spritesheet flex items-center justify-center">
-      <span v-if="label" class="font-bungee" :class="[labelColor, labelSize]">{{ label }}</span>
-    </div>
+    <BaseImg v-if="name" :img="name" :width="width">
+      <div class="flex items-center justify-center h-full py-8 px-12">
+        <span v-if="label" class="font-bungee" :class="[labelColor, labelSize]">{{ label }}</span>
+      </div>
+    </BaseImg>
   </button>
 </template>

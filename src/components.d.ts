@@ -9,6 +9,7 @@ declare module 'vue' {
   export interface GlobalComponents {
     BaseAnimation: typeof import('./components/animations/BaseAnimation.vue')['default']
     BaseButton: typeof import('./components/inputs/BaseButton.vue')['default']
+    BaseImg: typeof import('./components/media/BaseImg.vue')['default']
     DragElement: typeof import('./components/interact/DragElement.vue')['default']
     DropElement: typeof import('./components/interact/DropElement.vue')['default']
     DropElment: typeof import('./components/interact/DropElment.vue')['default']
