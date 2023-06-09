@@ -1,5 +1,18 @@
 <script setup>
 import { robotOrange } from '@/consts'
+import FormSections from './components/FormSections.vue'
+
+const index = ref(0)
+
+function nextQuestion() {
+  if (index.value < 3) {
+    index.value++
+  } else return
+}
+
+function prevQuestion() {
+  index.value--
+}
 </script>
 
 <template>
@@ -13,10 +26,17 @@ import { robotOrange } from '@/consts'
       >
       </RobotAnimate>
       <div class="flex justify-center gap-x-10 mr-9">
-        <BaseButton name="btn-toggle-arrow-p" disabled width="110px"></BaseButton>
-        <BaseButton name="btn-toggle-arrow" width="110px"></BaseButton>
+        <BaseButton
+          name="btn-toggle-arrow-p"
+          :disabled="index === 0"
+          width="110px"
+          @click="prevQuestion"
+        ></BaseButton>
+        <BaseButton name="btn-toggle-arrow" width="110px" @click="nextQuestion"></BaseButton>
       </div>
     </div>
-    <div class="w-3/5 bg-primary-blue-dark"></div>
+    <div class="w-3/5 bg-primary-blue-dark">
+      <FormSections :index="index" v-motion-slide-left :key="index"></FormSections>
+    </div>
   </div>
 </template>

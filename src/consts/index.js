@@ -1,2 +1,3 @@
 export * from './_animations'
-export * from './_mapGame'
+export * from './_mapView'
+export * from './_formView'

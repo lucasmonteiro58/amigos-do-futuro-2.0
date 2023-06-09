@@ -14,7 +14,7 @@ const props = defineProps({
   },
   labelSize: {
     type: String,
-    default: 'text-[60px]'
+    default: 'text-[65px]'
   },
   type: {
     type: String,

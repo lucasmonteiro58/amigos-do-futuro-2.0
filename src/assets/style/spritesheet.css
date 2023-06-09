@@ -147,7 +147,7 @@
 
 .spritesheet.box-regions-left {
   background-image: url('../images/spritesheet.png');
-  background-position: -7293px -5182px;
+  background-position: -2882px -5574px;
   width: 392px;
   height: 160px;
 }
@@ -159,100 +159,114 @@
   height: 376px;
 }
 
+.spritesheet.input-box {
+  background-image: url('../images/spritesheet.png');
+  background-position: -1872px -5430px;
+  width: 971px;
+  height: 139px;
+}
+
+.spritesheet.robot-balloon {
+  background-image: url('../images/spritesheet.png');
+  background-position: -5778px -5182px;
+  width: 1095px;
+  height: 226px;
+}
+
 .spritesheet.robot-mini-blue {
   background-image: url('../images/spritesheet.png');
-  background-position: -0px -6263px;
+  background-position: -0px -6582px;
   width: 204px;
   height: 253px;
 }
 
 .spritesheet.btn-action-blue {
   background-image: url('../images/spritesheet.png');
-  background-position: -5778px -5182px;
+  background-position: -6878px -5182px;
   width: 500px;
   height: 181px;
 }
 
 .spritesheet.btn-action-orange {
   background-image: url('../images/spritesheet.png');
-  background-position: -6283px -5182px;
+  background-position: -1872px -5574px;
   width: 500px;
   height: 181px;
 }
 
 .spritesheet.btn-action-white {
   background-image: url('../images/spritesheet.png');
-  background-position: -6788px -5182px;
+  background-position: -2377px -5574px;
   width: 500px;
   height: 181px;
 }
 
 .spritesheet.btn-btinfo_mouseover {
   background-image: url('../images/spritesheet.png');
-  background-position: -414px -6263px;
+  background-position: -1746px -5828px;
   width: 200px;
   height: 200px;
 }
 
 .spritesheet.btn-btmusic_mouseover {
   background-image: url('../images/spritesheet.png');
-  background-position: -619px -6263px;
+  background-position: -1951px -5828px;
   width: 200px;
   height: 200px;
 }
 
 .spritesheet.btn-btmusicoff_ativo {
   background-image: url('../images/spritesheet.png');
-  background-position: -824px -6263px;
+  background-position: -2156px -5828px;
   width: 200px;
   height: 200px;
 }
 
 .spritesheet.btn-btrepetirinativo_ {
   background-image: url('../images/spritesheet.png');
-  background-position: -1029px -6263px;
+  background-position: -2361px -5828px;
   width: 200px;
   height: 200px;
 }
 
 .spritesheet.btn-op-no {
   background-image: url('../images/spritesheet.png');
-  background-position: -3219px -5430px;
+  background-position: -3527px -5430px;
   width: 217px;
   height: 123px;
 }
 
 .spritesheet.btn-op-yes {
   background-image: url('../images/spritesheet.png');
-  background-position: -2997px -5430px;
+  background-position: -3305px -5430px;
   width: 217px;
   height: 124px;
 }
 
 .spritesheet.btn-start {
   background-image: url('../images/spritesheet.png');
-  background-position: -2540px -5430px;
+  background-position: -2848px -5430px;
   width: 452px;
   height: 129px;
 }
 
 .spritesheet.btn-toggle-arrow-p {
   background-image: url('../images/spritesheet.png');
-  background-position: -1234px -6263px;
+  background-position: -2566px -5828px;
   width: 200px;
   height: 200px;
 }
 
 .spritesheet.btn-toggle-arrow {
   background-image: url('../images/spritesheet.png');
-  background-position: -1439px -6263px;
+  background-position: -2771px -5828px;
   width: 200px;
   height: 200px;
 }
 
 .spritesheet.btn-toggle-close {
   background-image: url('../images/spritesheet.png');
-  background-position: -1644px -6263px;
+  background-position: -2976px -5828px;
   width: 200px;
   height: 200px;
 }
@@ -266,70 +280,70 @@
 
 .spritesheet.btn-toggle-home {
   background-image: url('../images/spritesheet.png');
-  background-position: -1849px -6263px;
+  background-position: -3181px -5828px;
   width: 200px;
   height: 200px;
 }
 
 .spritesheet.btn-toggle-info {
   background-image: url('../images/spritesheet.png');
-  background-position: -2054px -6263px;
+  background-position: -3386px -5828px;
   width: 200px;
   height: 200px;
 }
 
 .spritesheet.btn-toggle-mute {
   background-image: url('../images/spritesheet.png');
-  background-position: -2259px -6263px;
+  background-position: -3591px -5828px;
   width: 200px;
   height: 200px;
 }
 
 .spritesheet.btn-toggle-next {
   background-image: url('../images/spritesheet.png');
-  background-position: -2464px -6263px;
+  background-position: -3796px -5828px;
   width: 200px;
   height: 200px;
 }
 
 .spritesheet.btn-toggle-ok {
   background-image: url('../images/spritesheet.png');
-  background-position: -2669px -6263px;
+  background-position: -4001px -5828px;
   width: 200px;
   height: 200px;
 }
 
 .spritesheet.btn-toggle-pause {
   background-image: url('../images/spritesheet.png');
-  background-position: -2874px -6263px;
+  background-position: -4206px -5828px;
   width: 200px;
   height: 200px;
 }
 
 .spritesheet.btn-toggle-play {
   background-image: url('../images/spritesheet.png');
-  background-position: -3079px -6263px;
+  background-position: -4411px -5828px;
   width: 200px;
   height: 200px;
 }
 
 .spritesheet.btn-toggle-print {
   background-image: url('../images/spritesheet.png');
-  background-position: -209px -6263px;
+  background-position: -1541px -5828px;
   width: 200px;
   height: 201px;
 }
 
 .spritesheet.btn-toggle-repeat {
   background-image: url('../images/spritesheet.png');
-  background-position: -3284px -6263px;
+  background-position: -4616px -5828px;
   width: 200px;
   height: 200px;
 }
 
 .spritesheet.btn-toggle-sound {
   background-image: url('../images/spritesheet.png');
-  background-position: -3489px -6263px;
+  background-position: -4821px -5828px;
   width: 200px;
   height: 200px;
 }
@@ -343,63 +357,63 @@
 
 .spritesheet.pc_cariri {
   background-image: url('../images/spritesheet.png');
-  background-position: -2206px -5430px;
+  background-position: -1207px -5828px;
   width: 329px;
   height: 208px;
 }
 
 .spritesheet.pc_cariri2 {
   background-image: url('../images/spritesheet.png');
-  background-position: -1872px -5430px;
+  background-position: -873px -5828px;
   width: 329px;
   height: 209px;
 }
 
 .spritesheet.pc_centro_sul {
   background-image: url('../images/spritesheet.png');
-  background-position: -2319px -5828px;
+  background-position: -5026px -5828px;
   width: 237px;
   height: 167px;
 }
 
 .spritesheet.pc_grande_fortaleza {
   background-image: url('../images/spritesheet.png');
-  background-position: -4102px -6263px;
+  background-position: -1281px -6042px;
   width: 180px;
   height: 178px;
 }
 
 .spritesheet.pc_litoral_leste {
   background-image: url('../images/spritesheet.png');
-  background-position: -3694px -6263px;
+  background-position: -873px -6042px;
   width: 200px;
   height: 184px;
 }
 
 .spritesheet.pc_litoral_leste2 {
   background-image: url('../images/spritesheet.png');
-  background-position: -3899px -6263px;
+  background-position: -1078px -6042px;
   width: 198px;
   height: 182px;
 }
 
 .spritesheet.pc_litoral_norte {
   background-image: url('../images/spritesheet.png');
-  background-position: -2039px -5828px;
+  background-position: -7383px -5182px;
   width: 275px;
   height: 174px;
 }
 
 .spritesheet.pc_litoral_oeste {
   background-image: url('../images/spritesheet.png');
-  background-position: -0px -6521px;
+  background-position: -1166px -6263px;
   width: 175px;
   height: 207px;
 }
 
 .spritesheet.pc_litoral_oeste2 {
   background-image: url('../images/spritesheet.png');
-  background-position: -180px -6521px;
+  background-position: -1346px -6263px;
   width: 172px;
   height: 205px;
 }
@@ -413,35 +427,35 @@
 
 .spritesheet.pc_macico_de_baturite2 {
   background-image: url('../images/spritesheet.png');
-  background-position: -3441px -5430px;
+  background-position: -3749px -5430px;
   width: 126px;
   height: 107px;
 }
 
 .spritesheet.pc_serra_da_ibiapaba {
   background-image: url('../images/spritesheet.png');
-  background-position: -0px -6946px;
+  background-position: -0px -6840px;
   width: 145px;
   height: 209px;
 }
 
 .spritesheet.pc_serra_da_ibiapaba2 {
   background-image: url('../images/spritesheet.png');
-  background-position: -0px -6733px;
+  background-position: -209px -6582px;
   width: 146px;
   height: 208px;
 }
 
 .spritesheet.pc_sertao_central {
   background-image: url('../images/spritesheet.png');
-  background-position: -1529px -5828px;
+  background-position: -656px -6263px;
   width: 251px;
   height: 247px;
 }
 
 .spritesheet.pc_sertao_central2 {
   background-image: url('../images/spritesheet.png');
-  background-position: -1785px -5828px;
+  background-position: -912px -6263px;
   width: 249px;
   height: 242px;
 }
@@ -455,21 +469,21 @@
 
 .spritesheet.pc_sertao_de_sobral {
   background-image: url('../images/spritesheet.png');
-  background-position: -357px -6521px;
+  background-position: -1523px -6263px;
   width: 179px;
   height: 197px;
 }
 
 .spritesheet.pc_sertao_dos_crateus {
   background-image: url('../images/spritesheet.png');
-  background-position: -873px -5828px;
+  background-position: -0px -6263px;
   width: 216px;
   height: 314px;
 }
 
 .spritesheet.pc_sertao_dos_crateus2 {
   background-image: url('../images/spritesheet.png');
-  background-position: -1094px -5828px;
+  background-position: -221px -6263px;
   width: 216px;
   height: 311px;
 }
@@ -483,7 +497,7 @@
 
 .spritesheet.pc_vale_do_jaguaribe {
   background-image: url('../images/spritesheet.png');
-  background-position: -1315px -5828px;
+  background-position: -442px -6263px;
   width: 209px;
   height: 303px;
 }
