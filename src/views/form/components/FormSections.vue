@@ -11,6 +11,10 @@ const props = defineProps({
 const type = computed(() => {
   return formQuestions[props.index].type
 })
+
+const placeholder = computed(() => {
+  return formQuestions[props.index].placeholder
+})
 </script>
 
 <template>
@@ -26,8 +30,11 @@ const type = computed(() => {
       <BaseButton name="btn-action-orange" label="Menina" width="260px"></BaseButton>
       <BaseButton name="btn-action-orange" label="Menino" width="260px"></BaseButton>
     </div>
-    <div class="mt-10" v-if="type === 'input'">
-      <div class="spritesheet input-box"></div>
+    <div class="mt-10" v-if="type === 'text'">
+      <BaseInputText :placeholder="placeholder" :type="type"></BaseInputText>
+    </div>
+    <div class="mt-10" v-if="type === 'number'">
+      <BaseInputText :placeholder="placeholder" :type="type"></BaseInputText>
     </div>
     <div class="mt-10" v-if="type === 'select'">
       <div class="spritesheet input-box"></div>

@@ -3,24 +3,28 @@ export const formQuestions = [
     id: 1,
     title: 'Me diga você é menino ou menina?',
     type: 'btn',
+    placeholder: 'Selecione uma opção',
     options: ['menino', 'menina']
   },
   {
     id: 2,
     title: 'E como posso te chamar?',
-    type: 'input',
+    type: 'text',
+    placeholder: 'Escreva seu nome',
     options: []
   },
   {
     id: 3,
     title: 'Oi #user, quantos anos você tem?',
-    type: 'input',
+    type: 'number',
+    placeholder: 'Escreva sua idade',
     options: []
   },
   {
     id: 4,
     title: 'Legal! E qual o nome da sua cidade?',
     type: 'select',
+    placeholder: 'Escolha o nome da sua cidade',
     options: []
   }
 ]

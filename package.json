@@ -12,6 +12,7 @@
     "sprite": "node scripts/spritesheet-generator.js"
   },
   "dependencies": {
+    "@vueform/multiselect": "^2.6.2",
     "@vueuse/core": "^10.1.2",
     "@vueuse/motion": "^2.0.0",
     "interactjs": "^1.10.17",

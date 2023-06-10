@@ -32,7 +32,12 @@ function prevQuestion() {
           width="110px"
           @click="prevQuestion"
         ></BaseButton>
-        <BaseButton name="btn-toggle-arrow" width="110px" @click="nextQuestion"></BaseButton>
+        <BaseButton
+          name="btn-toggle-arrow"
+          width="110px"
+          @click="nextQuestion"
+          :disabled="index === 3"
+        ></BaseButton>
       </div>
     </div>
     <div class="w-3/5 bg-primary-blue-dark">
