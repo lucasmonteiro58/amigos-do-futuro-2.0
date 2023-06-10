@@ -168,7 +168,6 @@ const scale = computed(() => {
 
 const styleContainer = computed(() => {
   return {
-    width: `${contentWidth.value}px`,
     maxWidth: `${props.width}`,
     height: `${getContentHeight.value}px`
   }

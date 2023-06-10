@@ -20,7 +20,7 @@ function prevQuestion() {
     <div class="pl-5 w-2/5 bg-white flex flex-col item-center mt-2">
       <RobotAnimate
         :animation="robotOrange"
-        :time="3000"
+        :time="1000"
         class="mb-6 flex justify-center"
         width="650px"
       >
