@@ -51,6 +51,28 @@ const data = useVModel(props, 'modelValue', emit)
 .multiselect-dropdown {
   margin: -45px 45px;
 }
+.multiselect-single-label {
+  justify-content: center;
+  width: 100%;
+}
+.multiselect-single-label-text {
+  position: relative;
+  left: 80px;
+}
+
+.multiselect input {
+  text-align: center;
+}
+
+.multiselect-placeholder {
+  width: 100%;
+  padding-right: 50px;
+  justify-content: center;
+}
+
+.multiselect.is-open .multiselect-single-label-text {
+  opacity: 0.2;
+}
 
 .multiselect-no-results {
   font-size: 30px;

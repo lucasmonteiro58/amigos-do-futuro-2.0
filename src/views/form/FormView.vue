@@ -41,7 +41,13 @@ function prevQuestion() {
       </div>
     </div>
     <div class="w-3/5 bg-primary-blue-dark">
-      <FormSections :index="index" v-motion-slide-left :key="index"></FormSections>
+      <FormSections
+        :index="index"
+        v-motion-slide-left
+        :key="index"
+        @gender="nextQuestion"
+        @next="nextQuestion"
+      ></FormSections>
     </div>
   </div>
 </template>

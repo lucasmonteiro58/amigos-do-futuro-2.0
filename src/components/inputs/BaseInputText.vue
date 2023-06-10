@@ -3,7 +3,7 @@ import { useVModel } from '@vueuse/core'
 
 const props = defineProps({
   modelValue: {
-    type: String,
+    type: [String, Number],
     default: ''
   },
   width: {
