@@ -19,5 +19,6 @@ declare module 'vue' {
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     SpeechBubble: typeof import('./components/animations/SpeechBubble.vue')['default']
+    TopBarControl: typeof import('./components/layout/TopBarControl.vue')['default']
   }
 }

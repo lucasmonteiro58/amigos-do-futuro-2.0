@@ -34,7 +34,7 @@ const emit = defineEmits(['click'])
 
 const disabledClass = computed(() => {
   return props.disabled
-    ? 'opacity-50 cursor-not-allowed hover:scale-100 hover:saturate-[100%] hover:contrast-[100%] active:!saturate-[100%] active:!contrast-[100%] active:!grayscale-0'
+    ? 'opacity-50 cursor-not-allowed hover:!scale-100 hover:saturate-[100%] hover:contrast-[100%] active:!saturate-[100%] active:!contrast-[100%] active:!grayscale-0'
     : ''
 })
 
@@ -46,7 +46,7 @@ function onClick() {
 
 <template>
   <button
-    class="hover:saturate-[90%] hover:contrast-[130%] active:saturate-[50%] active:contrast-[220%] active:grayscale-[40%]"
+    class="hover:saturate-[90%] hover:contrast-[130%] hover:scale-105 active:saturate-[50%] active:contrast-[220%] active:grayscale-[40%]"
     :class="disabledClass"
     :disabled="disabled"
     :name="name"

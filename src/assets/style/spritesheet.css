@@ -180,6 +180,13 @@
   height: 253px;
 }
 
+.spritesheet.bt-info_ativo {
+  background-image: url('../images/spritesheet.png');
+  background-position: -1746px -5828px;
+  width: 200px;
+  height: 200px;
+}
+
 .spritesheet.btn-action-blue {
   background-image: url('../images/spritesheet.png');
   background-position: -6878px -5182px;
@@ -201,28 +208,21 @@
   height: 181px;
 }
 
-.spritesheet.btn-btinfo_mouseover {
-  background-image: url('../images/spritesheet.png');
-  background-position: -1746px -5828px;
-  width: 200px;
-  height: 200px;
-}
-
-.spritesheet.btn-btmusic_mouseover {
+.spritesheet.btn-btmusicoff_ativo {
   background-image: url('../images/spritesheet.png');
   background-position: -1951px -5828px;
   width: 200px;
   height: 200px;
 }
 
-.spritesheet.btn-btmusicoff_ativo {
+.spritesheet.btn-btrepetirinativo_ {
   background-image: url('../images/spritesheet.png');
   background-position: -2156px -5828px;
   width: 200px;
   height: 200px;
 }
 
-.spritesheet.btn-btrepetirinativo_ {
+.spritesheet.btn-music_ativo {
   background-image: url('../images/spritesheet.png');
   background-position: -2361px -5828px;
   width: 200px;
