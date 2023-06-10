@@ -12,12 +12,20 @@ const emit = defineEmits(['gender', 'next'])
 
 const userStore = useUserStore()
 
+const currentQuestion = computed(() => {
+  return formQuestions[props.index]
+})
+
 const type = computed(() => {
-  return formQuestions[props.index].type
+  return currentQuestion.value.type
 })
 
 const placeholder = computed(() => {
-  return formQuestions[props.index].placeholder
+  return currentQuestion.value.placeholder
+})
+
+const replacedTitle = computed(() => {
+  return currentQuestion.value.title.replace('#user', userStore.name)
 })
 
 function clickGender(value) {
@@ -35,7 +43,7 @@ function nextQuestion() {
     <BaseImg img="robot-balloon" width="1050px">
       <div class="pl-[120px] py-12 pr-10 font-semibold">
         <div class="text-primary-blue-dark font-bungee text-[2.6rem] text-center">
-          {{ formQuestions[index].title }}
+          {{ replacedTitle }}
         </div>
       </div>
     </BaseImg>

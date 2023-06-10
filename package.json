@@ -16,6 +16,7 @@
     "@vueform/multiselect": "^2.6.2",
     "@vueuse/core": "^10.1.2",
     "@vueuse/motion": "^2.0.0",
+    "@vueuse/sound": "^2.0.1",
     "interactjs": "^1.10.17",
     "pinia": "^2.0.36",
     "vite-plugin-preload": "^0.2.0",

@@ -4,28 +4,36 @@ export const formQuestions = [
     title: 'Me diga você é menino ou menina?',
     type: 'btn',
     placeholder: 'Selecione uma opção',
-    options: ['menino', 'menina']
+    options: ['menino', 'menina'],
+    audio: 'form_pergunta0',
+    duration: 6300
   },
   {
     id: 2,
     title: 'E como posso te chamar?',
     type: 'text',
     placeholder: 'Escreva seu nome',
-    options: []
+    options: [],
+    audio: 'form_pergunta1',
+    duration: 2800
   },
   {
     id: 3,
     title: 'Oi #user, quantos anos você tem?',
     type: 'number',
     placeholder: 'Escreva sua idade',
-    options: []
+    options: [],
+    audio: 'form_pergunta2',
+    duration: 3300
   },
   {
     id: 4,
     title: 'Legal! E qual o nome da sua cidade?',
     type: 'select',
     placeholder: 'Escolha o nome da sua cidade',
-    options: []
+    options: [],
+    audio: 'form_pergunta3',
+    duration: 2800
   }
 ]
 

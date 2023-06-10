@@ -291,6 +291,7 @@
     "watchTriggerable": true,
     "watchWithFilter": true,
     "whenever": true,
-    "useUserStore": true
+    "useUserStore": true,
+    "useAudio": true
   }
 }

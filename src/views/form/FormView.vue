@@ -1,26 +1,35 @@
 <script setup>
-import { robotOrange } from '@/consts'
+import { robotOrange, formQuestions } from '@/consts'
 import FormSections from './components/FormSections.vue'
 
 const index = ref(0)
 
+const currentQuestion = computed(() => {
+  return formQuestions[index.value]
+})
+
 function nextQuestion() {
   if (index.value < 3) {
     index.value++
-  } else return
+    playAudio(currentQuestion.value.audio)
+  }
 }
 
 function prevQuestion() {
   index.value--
+  playAudio(currentQuestion.value.audio)
 }
+
+const { playAudio } = useAudio()
 </script>
 
 <template>
   <div class="flex">
     <div class="pl-5 w-2/5 bg-white flex flex-col item-center mt-2">
       <RobotAnimate
+        :key="index"
         :animation="robotOrange"
-        :time="1000"
+        :time="currentQuestion.duration"
         class="mb-6 flex justify-center"
         width="650px"
       >
