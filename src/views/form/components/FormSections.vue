@@ -1,5 +1,5 @@
 <script setup>
-import { formQuestions } from '@/consts'
+import { formQuestions, citys } from '@/consts'
 
 const props = defineProps({
   index: {
@@ -37,12 +37,12 @@ const placeholder = computed(() => {
       <BaseInputText :placeholder="placeholder" :type="type"></BaseInputText>
     </div>
     <div class="mt-10" v-if="type === 'select'">
-      <div class="spritesheet input-box"></div>
+      <BaseInputSelect :options="citys" :placeholder="placeholder"></BaseInputSelect>
     </div>
     <div class="flex justify-center mt-10" v-if="index === 1 || index === 2">
       <BaseButton name="btn-action-orange" label="Próximo" width="260px"></BaseButton>
     </div>
-    <div class="flex justify-center mt-10" v-if="index === 3">
+    <div class="flex justify-center mt-14" v-if="index === 3">
       <BaseButton name="btn-action-orange" label="Enviar" width="260px"></BaseButton>
     </div>
   </div>
