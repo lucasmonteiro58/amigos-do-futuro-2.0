@@ -1,0 +1,680 @@
+{
+  "src": [
+    "src/assets/audios/audio.webm",
+    "src/assets/audios/audio.mp3"
+  ],
+  "sprite": {
+    "amigos_eco": [
+      0,
+      3909.410430839002
+    ],
+    "amigos_eco1": [
+      5000,
+      4516.598639455783
+    ],
+    "amigos_edu": [
+      11000,
+      4033.1972789115653
+    ],
+    "amigos_edu1": [
+      17000,
+      4760.748299319729
+    ],
+    "amigos_gov": [
+      23000,
+      3950.6575963718833
+    ],
+    "amigos_gov1": [
+      28000,
+      4760.748299319729
+    ],
+    "amigos_ino": [
+      34000,
+      4084.7619047619046
+    ],
+    "amigos_ino1": [
+      40000,
+      4913.333333333334
+    ],
+    "amigos_laz": [
+      46000,
+      4022.879818594106
+    ],
+    "amigos_laz1": [
+      52000,
+      5004.875283446708
+    ],
+    "amigos_mei": [
+      59000,
+      4961.541950113378
+    ],
+    "amigos_mei1": [
+      65000,
+      5218.50340136055
+    ],
+    "amigos_sau": [
+      72000,
+      4682.993197278904
+    ],
+    "amigos_sau1": [
+      78000,
+      4547.120181405901
+    ],
+    "certificate_parabens1": [
+      84000,
+      8361.814058956923
+    ],
+    "eco_a_vovx_chegou_com_moedas": [
+      94000,
+      3327.392290249435
+    ],
+    "eco_brinquedo": [
+      99000,
+      3389.0022675737014
+    ],
+    "eco_deixou_a_luz_ligada": [
+      104000,
+      2320.952380952377
+    ],
+    "eco_desafio_economia_comprou_dois_brinquedos_gastou_mais_moedas": [
+      108000,
+      3943.582766439903
+    ],
+    "eco_gastou_dinheiro_com_chocolate": [
+      113000,
+      3943.582766439903
+    ],
+    "eco_help0": [
+      118000,
+      9571.383219954654
+    ],
+    "eco_help1": [
+      129000,
+      6552.086167800439
+    ],
+    "eco_help1_1": [
+      137000,
+      4393.605442176863
+    ],
+    "eco_monstrinhos_alimeniro": [
+      143000,
+      6072.993197278919
+    ],
+    "eco_monstrinhos_amiguan": [
+      151000,
+      5566.190476190485
+    ],
+    "eco_monstrinhos_aventurim": [
+      158000,
+      5360.793650793653
+    ],
+    "eco_monstrinhos_calconildo": [
+      165000,
+      5523.673469387745
+    ],
+    "eco_monstrinhos_ciencito": [
+      172000,
+      6042.471655328796
+    ],
+    "eco_monstrinhos_dancitar": [
+      180000,
+      5258.095238095251
+    ],
+    "eco_monstrinhos_energiar": [
+      187000,
+      4455.555555555548
+    ],
+    "eco_monstrinhos_esportanto": [
+      193000,
+      4765.14739229026
+    ],
+    "eco_monstrinhos_higiento": [
+      199000,
+      5798.344671201818
+    ],
+    "eco_monstrinhos_linguare": [
+      206000,
+      4272.471655328786
+    ],
+    "eco_monstrinhos_livrex": [
+      212000,
+      6439.206349206359
+    ],
+    "eco_monstrinhos_lixan": [
+      220000,
+      7202.131519274389
+    ],
+    "eco_monstrinhos_mapamax": [
+      229000,
+      5554.217687074839
+    ],
+    "eco_monstrinhos_remeldino": [
+      236000,
+      6469.9319727891125
+    ],
+    "eco_monstrinhos_viajente": [
+      244000,
+      4929.478458049885
+    ],
+    "eco_ops_quebrou_um_vaso": [
+      250000,
+      4991.0884353741385
+    ],
+    "eco_parabens1": [
+      256000,
+      4190.045351473941
+    ],
+    "eco_parabens2": [
+      262000,
+      5237.573696145148
+    ],
+    "eco_passeie_com_o_cachorro_da_vizinha": [
+      269000,
+      3943.582766439931
+    ],
+    "eco_vender_biscoitos_pode_te_dar": [
+      274000,
+      4231.1337868480905
+    ],
+    "edu_help0": [
+      280000,
+      8518.820861678023
+    ],
+    "edu_help1": [
+      290000,
+      1972.2448979591718
+    ],
+    "edu_help1_1": [
+      293000,
+      5290.38548752834
+    ],
+    "edu_help2": [
+      300000,
+      6635.578231292528
+    ],
+    "edu_parabens1": [
+      308000,
+      3048.412698412676
+    ],
+    "edu_parabens2": [
+      313000,
+      6007.823129251676
+    ],
+    "edu_parabens3": [
+      321000,
+      3945.192743764153
+    ],
+    "gov_help0": [
+      326000,
+      8439.342403628132
+    ],
+    "gov_help1": [
+      336000,
+      7135.691609977301
+    ],
+    "gov_help2": [
+      345000,
+      8370.725623582757
+    ],
+    "gov_help3": [
+      355000,
+      5626.213151927459
+    ],
+    "gov_lei1": [
+      362000,
+      8070.430839002256
+    ],
+    "gov_lei2": [
+      372000,
+      11119.501133786855
+    ],
+    "gov_lei3": [
+      385000,
+      11451.201814058948
+    ],
+    "gov_parabens1": [
+      398000,
+      4034.875283446695
+    ],
+    "gov_parabens2": [
+      404000,
+      3765.850340136069
+    ],
+    "gov_parabens3": [
+      409000,
+      5111.020408163256
+    ],
+    "gov_parabens4": [
+      416000,
+      6276.848072562359
+    ],
+    "ino_cor": [
+      424000,
+      2241.292517006798
+    ],
+    "ino_help0": [
+      428000,
+      6037.891156462592
+    ],
+    "ino_help1": [
+      436000,
+      5866.371882086185
+    ],
+    "ino_help2": [
+      443000,
+      5859.36507936509
+    ],
+    "ino_led": [
+      450000,
+      2779.365079365107
+    ],
+    "ino_motor": [
+      454000,
+      2330.97505668934
+    ],
+    "ino_parabens1": [
+      458000,
+      5021.360544217714
+    ],
+    "ino_parabens1m": [
+      465000,
+      5889.886621315213
+    ],
+    "ino_parabens2": [
+      472000,
+      5111.020408163256
+    ],
+    "ino_parabens3": [
+      479000,
+      5126.961451247154
+    ],
+    "ino_processador": [
+      486000,
+      2420.657596371882
+    ],
+    "ino_roda": [
+      490000,
+      2330.97505668934
+    ],
+    "laz_help0": [
+      494000,
+      5557.619047619028
+    ],
+    "laz_help1": [
+      501000,
+      4913.333333333356
+    ],
+    "laz_help2": [
+      507000,
+      8100.430839002229
+    ],
+    "laz_parabens1": [
+      517000,
+      4124.557823129294
+    ],
+    "laz_parabens2": [
+      523000,
+      3021.224489795941
+    ],
+    "laz_parabens3": [
+      528000,
+      5021.360544217714
+    ],
+    "mei_alert1": [
+      535000,
+      3496.802721088443
+    ],
+    "mei_fala_de_conclusao_3_1_sustentabilidade": [
+      540000,
+      2444.1950113379107
+    ],
+    "mei_fala_de_conclusao_3_2_sustentabilidade": [
+      544000,
+      5196.485260770942
+    ],
+    "mei_fala_de_conclusao_3_sustentabilidade": [
+      551000,
+      4744.625850340185
+    ],
+    "mei_help0": [
+      557000,
+      6531.541950113365
+    ],
+    "mei_help1": [
+      565000,
+      7229.886621315245
+    ],
+    "mei_help2": [
+      574000,
+      8852.517006802715
+    ],
+    "mei_parabens1": [
+      584000,
+      5956.439909297046
+    ],
+    "mei_parabens2": [
+      591000,
+      5607.278911564663
+    ],
+    "mei_parabens3": [
+      598000,
+      6018.07256235827
+    ],
+    "sau_help0": [
+      606000,
+      11926.643990929733
+    ],
+    "sau_help1": [
+      619000,
+      7263.333333333321
+    ],
+    "sau_parabens1": [
+      628000,
+      4034.875283446695
+    ],
+    "sau_parabens2": [
+      634000,
+      6097.505668934218
+    ],
+    "feedback_botao_01": [
+      642000,
+      48.18594104312979
+    ],
+    "feedback_botao_02": [
+      644000,
+      398.548752834472
+    ],
+    "feedback_economia_moeda_entrando": [
+      646000,
+      1299.9999999999545
+    ],
+    "feedback_economia_moeda_saindo": [
+      649000,
+      451.02040816323097
+    ],
+    "feedback_economia_mos": [
+      651000,
+      399.99999999997726
+    ],
+    "feedback_fala1": [
+      653000,
+      3227.77777777776
+    ],
+    "feedback_fala2": [
+      658000,
+      1434.1950113379198
+    ],
+    "feedback_governo_apito": [
+      661000,
+      1226.5759637188012
+    ],
+    "feedback_governo_megafone_01": [
+      664000,
+      11864.013605442211
+    ],
+    "feedback_inovacao_agua_pingando": [
+      677000,
+      2001.972789115598
+    ],
+    "feedback_inovacao_carrinho_andando_01": [
+      681000,
+      22826.485260770936
+    ],
+    "feedback_inovacao_carrinho_andando_02": [
+      705000,
+      74062.65306122453
+    ],
+    "feedback_inovacao_troca_de_peca": [
+      781000,
+      575.9183673469579
+    ],
+    "feedback_lazer_colar_figurinha": [
+      783000,
+      533.0839002267567
+    ],
+    "feedback_lazer_virar_pagina": [
+      785000,
+      895.4195011338015
+    ],
+    "feedback_mapa_drag": [
+      787000,
+      399.99999999997726
+    ],
+    "feedback_mapa_sucesso": [
+      789000,
+      1740.9977324263082
+    ],
+    "feedback_mouse_over_itens": [
+      792000,
+      107.48299319732268
+    ],
+    "feedback_sustentabilidade_aguapia": [
+      794000,
+      1619.5918367346849
+    ],
+    "feedback_sustentabilidade_canos": [
+      797000,
+      878.0045351473973
+    ],
+    "feedback_sustentabilidade_colheita": [
+      799000,
+      471.723356009079
+    ],
+    "feedback_sustentabilidade_fruta_na_cesta": [
+      801000,
+      429.5691609977439
+    ],
+    "feedback_sustentabilidade_lixeira": [
+      803000,
+      5666.666666666629
+    ],
+    "feedback_sustentabilidade_sementes_01": [
+      810000,
+      12368.253968253954
+    ],
+    "feedback_sustentabilidade_sementes_02": [
+      824000,
+      14840.589569161011
+    ],
+    "feedback_sustentabilidade_sucesso_01": [
+      840000,
+      3437.50566893425
+    ],
+    "feedback_sustentabilidade_sucesso_02": [
+      845000,
+      4437.48299319725
+    ],
+    "xfeedback_sustentabilidade_gua_03": [
+      851000,
+      18594.60317460321
+    ],
+    "form_pergunta0": [
+      871000,
+      7965.510204081625
+    ],
+    "form_pergunta1": [
+      880000,
+      4525.873015873003
+    ],
+    "form_pergunta2": [
+      886000,
+      6132.5396825396865
+    ],
+    "form_pergunta3": [
+      894000,
+      4706.893424036252
+    ],
+    "form_perguntaundefined": [
+      900000,
+      6814.920634920668
+    ],
+    "mapa_bomtrabalho": [
+      908000,
+      8178.707482993218
+    ],
+    "mapa_bomtrabalhomenino": [
+      918000,
+      7202.154195011303
+    ],
+    "mapa_help": [
+      927000,
+      8599.138321995497
+    ],
+    "mapa_parabens": [
+      937000,
+      8259.705215419444
+    ],
+    "quiz_eco": [
+      947000,
+      5725.215419501183
+    ],
+    "quiz_edu": [
+      954000,
+      9685.351473922878
+    ],
+    "quiz_gov": [
+      965000,
+      7558.185941043121
+    ],
+    "quiz_ino": [
+      974000,
+      7693.968253968251
+    ],
+    "quiz_laz": [
+      983000,
+      5702.585034013623
+    ],
+    "quiz_mei": [
+      990000,
+      4593.741496598682
+    ],
+    "quiz_pergunta1": [
+      996000,
+      5288.639455782345
+    ],
+    "quiz_pergunta2": [
+      1003000,
+      5469.750566893481
+    ],
+    "quiz_pergunta3": [
+      1010000,
+      7622.040816326489
+    ],
+    "quiz_pergunta4": [
+      1019000,
+      4034.875283446695
+    ],
+    "quiz_pergunta5": [
+      1025000,
+      2958.730158730077
+    ],
+    "quiz_pergunta6": [
+      1029000,
+      4572.947845804947
+    ],
+    "quiz_pergunta7": [
+      1035000,
+      4303.922902494378
+    ],
+    "quiz_sau": [
+      1041000,
+      8010.77097505663
+    ],
+    "regiao_cariri": [
+      1051000,
+      7693.968253968251
+    ],
+    "regiao_centro_sul": [
+      1060000,
+      7671.337868480805
+    ],
+    "regiao_grande_fortaleza": [
+      1069000,
+      7015.079365079373
+    ],
+    "regiao_litoral_leste": [
+      1078000,
+      8418.095238095248
+    ],
+    "regiao_litoral_norte": [
+      1088000,
+      7037.732426303819
+    ],
+    "regiao_litoral_oeste": [
+      1097000,
+      6042.471655328882
+    ],
+    "regiao_macico_de_baturite": [
+      1105000,
+      7445.0340136054365
+    ],
+    "regiao_serra_da_ibiapaba": [
+      1114000,
+      7626.077097505686
+    ],
+    "regiao_sertao_central": [
+      1123000,
+      8191.814058956879
+    ],
+    "regiao_sertao_de_caninde": [
+      1133000,
+      7648.707482993132
+    ],
+    "regiao_sertao_de_sobral": [
+      1142000,
+      7241.383219954741
+    ],
+    "regiao_sertao_dos_crateus": [
+      1151000,
+      8304.965986394564
+    ],
+    "regiao_sertao_dos_inhamuns": [
+      1161000,
+      7128.231292517057
+    ],
+    "regiao_vale_do_jaguaribe": [
+      1170000,
+      7716.575963718924
+    ],
+    "significado_horta_comunitxria_lugar_onde_todo_mundo": [
+      1179000,
+      6276.848072562416
+    ],
+    "significado_investir_dae_o_seu_dinheiro": [
+      1187000,
+      5828.458049886649
+    ],
+    "significado_reciclagem_transformar_o_lixo_em_um": [
+      1194000,
+      4662.630385487546
+    ],
+    "starts_desafios_eco": [
+      1200000,
+      5360.793650793539
+    ],
+    "starts_desafios_edu": [
+      1207000,
+      4867.8684807255195
+    ],
+    "starts_desafios_gov": [
+      1213000,
+      4167.301587301608
+    ],
+    "starts_desafios_ino": [
+      1219000,
+      5278.6394557822405
+    ],
+    "starts_desafios_laz": [
+      1226000,
+      5709.977324263036
+    ],
+    "starts_desafios_mei": [
+      1233000,
+      5319.72789115639
+    ],
+    "starts_desafios_sau": [
+      1240000,
+      4826.78004535137
+    ]
+  }
+}
