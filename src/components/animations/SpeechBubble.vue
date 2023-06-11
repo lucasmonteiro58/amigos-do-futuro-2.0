@@ -52,6 +52,8 @@ function open() {
     v-else
     v-motion-slide-right
     @click="open"
-    class="spritesheet robot-mini-blue absolute bottom-5 left-5 scale-[0.7] hover:scale-[0.72]"
-  ></button>
+    class="absolute cursor-pointer bottom-5 left-5 hover:!scale-105"
+  >
+    <BaseImg img="robot-mini-blue" width="450px"> </BaseImg>
+  </button>
 </template>

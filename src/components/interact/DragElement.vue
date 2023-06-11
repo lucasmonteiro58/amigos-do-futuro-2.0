@@ -110,6 +110,9 @@ onMounted(() => {
     restrict: {
       restriction: 'body'
     },
+    cursorChecker() {
+      return null
+    },
     onmove: (event) => onMove(event),
     onstart: (event) => onStart(event),
     onend: (event) => onEnd(event)
@@ -118,7 +121,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="drag-wrap flex items-center justify-center absolute">
+  <div class="drag-wrap flex items-center justify-center absolute cursor-grab">
     <div
       :class="className"
       :data-transfer="dataTransfer"
@@ -134,5 +137,9 @@ onMounted(() => {
 <style scoped>
 [draggable='false'] > * {
   pointer-events: none;
+}
+
+.drag-el.start-drag {
+  @apply !cursor-grabbing;
 }
 </style>

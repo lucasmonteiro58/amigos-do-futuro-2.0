@@ -11,22 +11,26 @@ const currentQuestion = computed(() => {
 function nextQuestion() {
   if (index.value < 3) {
     index.value++
-    playAudio(currentQuestion.value.audio)
+    linesStore.playAudio(currentQuestion.value.audio)
   }
 }
 
 function prevQuestion() {
   index.value--
-  playAudio(currentQuestion.value.audio)
+  linesStore.playAudio(currentQuestion.value.audio)
 }
+const linesStore = useLinesStore()
 
-const { playAudio } = useAudio()
+onMounted(() => {
+  linesStore.playAudio(currentQuestion.value.audio)
+})
 </script>
 
 <template>
   <div class="flex">
     <div class="pl-5 w-2/5 bg-white flex flex-col item-center mt-2">
       <RobotAnimate
+        v-motion-slide-left
         :key="index"
         :animation="robotOrange"
         :time="currentQuestion.duration"
@@ -34,6 +38,7 @@ const { playAudio } = useAudio()
         width="650px"
       >
       </RobotAnimate>
+
       <div class="flex justify-center gap-x-10 mr-9">
         <BaseButton
           name="btn-toggle-arrow-p"

@@ -292,7 +292,7 @@
     "watchWithFilter": true,
     "whenever": true,
     "useUserStore": true,
-    "useAudio": true,
-    "useSoundStore": true
+    "useSoundStore": true,
+    "useLinesStore": true
   }
 }

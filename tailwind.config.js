@@ -30,6 +30,18 @@ export default {
         viga: ['"Viga"', 'sans-serif'],
         poetsenone: ['"PoetsenOne"', 'sans-serif'],
         bungee: ['"Bungee"', 'sans-serif']
+      },
+      cursor: {
+        default: 'url(@/assets/images/pointers/pointerverde.png), default',
+        auto: 'url(@/assets/images/pointers/pointerverde.png), auto',
+        pointer: 'url(@/assets/images/pointers/pointerclick.png), pointer',
+        wait: 'url(@/assets/images/pointers/pointerazul.png), wait',
+        text: 'url(@/assets/images/pointers/pointertext.png), text',
+        move: 'url(@/assets/images/pointers/pointerdrag.png), move',
+        grab: 'url(@/assets/images/pointers/pointerdrag.png), grab',
+        grabbing: 'url(@/assets/images/pointers/pointermove.png), grabbing',
+        block: 'url(@/assets/images/pointers/pointerblock.png), block',
+        'not-allowed': 'url(@/assets/images/pointers/pointerblock.png), not-allowed'
       }
     }
   },

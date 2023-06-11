@@ -2,7 +2,7 @@ import { defineStore } from 'pinia'
 
 export const useSoundStore = defineStore('sound', () => {
   const audio = ref(true)
-  const music = ref(true)
+  const music = ref(false)
 
   function toggleAudio() {
     audio.value = !audio.value

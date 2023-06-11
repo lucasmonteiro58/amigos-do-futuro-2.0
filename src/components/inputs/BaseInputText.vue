@@ -30,7 +30,7 @@ const data = useVModel(props, 'modelValue', emit)
       v-model="data"
       :type="type"
       :placeholder="placeholder"
-      class="w-full h-full bg-transparent outline-0 text-[50px] px-16 py-6 text-center"
+      class="w-full h-full bg-transparent outline-0 text-[50px] px-16 py-6 text-center cursor-text"
     />
   </BaseImg>
 </template>

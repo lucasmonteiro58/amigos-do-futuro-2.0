@@ -62,6 +62,7 @@ const data = useVModel(props, 'modelValue', emit)
 
 .multiselect input {
   text-align: center;
+  @apply cursor-text;
 }
 
 .multiselect-placeholder {
