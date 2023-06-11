@@ -3,6 +3,8 @@ import { robotOrange, formQuestions } from '@/consts'
 import FormSections from './components/FormSections.vue'
 
 const index = ref(0)
+const linesStore = useLinesStore()
+const userStore = useUserStore()
 
 const currentQuestion = computed(() => {
   return formQuestions[index.value]
@@ -10,6 +12,10 @@ const currentQuestion = computed(() => {
 
 function nextQuestion() {
   if (index.value < 3) {
+    if (shouldShowModal()) {
+      showModal.value = true
+      return
+    }
     index.value++
     linesStore.playAudio(currentQuestion.value.audio)
   }
@@ -19,7 +25,26 @@ function prevQuestion() {
   index.value--
   linesStore.playAudio(currentQuestion.value.audio)
 }
-const linesStore = useLinesStore()
+
+const showModal = ref(false)
+function closeModal() {
+  showModal.value = false
+}
+
+function shouldShowModal() {
+  switch (index.value) {
+    case 0:
+      return !userStore.gender
+    case 1:
+      return !userStore.name
+    case 2:
+      return !userStore.age
+    case 3:
+      return !userStore.city
+    default:
+      return false
+  }
+}
 
 onMounted(() => {
   linesStore.playAudio(currentQuestion.value.audio)
@@ -63,5 +88,11 @@ onMounted(() => {
         @next="nextQuestion"
       ></FormSections>
     </div>
+    <ModalAtention v-model="showModal" @close="closeModal">
+      <div>
+        <div class="text-[3rem] mb-5">Epa!</div>
+        <div>Responda a pergunta primeiro!</div>
+      </div>
+    </ModalAtention>
   </div>
 </template>

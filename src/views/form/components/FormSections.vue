@@ -36,6 +36,18 @@ function clickGender(value) {
 function nextQuestion() {
   emit('next')
 }
+
+const girlSelected = computed(() => {
+  return userStore.gender === 'girl' ? 'brightness-125' : ''
+})
+
+const boySelected = computed(() => {
+  return userStore.gender === 'boy' ? 'brightness-125' : ''
+})
+
+const nullSelected = computed(() => {
+  return userStore.gender === 'null' ? 'bg-[#ffffff40]' : ''
+})
 </script>
 
 <template>
@@ -50,12 +62,14 @@ function nextQuestion() {
     <div v-if="type === 'btn'" class="flex justify-center mt-12 gap-x-6">
       <BaseButton
         @click="clickGender('girl')"
+        :class="girlSelected"
         name="btn-action-orange"
         label="Menina"
         width="260px"
       ></BaseButton>
       <BaseButton
         @click="clickGender('boy')"
+        :class="boySelected"
         name="btn-action-orange"
         label="Menino"
         width="260px"
@@ -64,6 +78,7 @@ function nextQuestion() {
     <div v-if="type === 'btn'" class="flex justify-center mt-10 gap-x-6">
       <button
         @click="clickGender('null')"
+        :class="nullSelected"
         class="cursor-pointer text-white font-bungee text-[30px] border-[8px] border-white px-10 py-5 rounded-full hover:scale-105"
       >
         Prefiro não responder
