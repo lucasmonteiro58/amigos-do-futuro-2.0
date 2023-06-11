@@ -14,7 +14,6 @@ declare module 'vue' {
     BaseInputText: typeof import('./components/inputs/BaseInputText.vue')['default']
     DragElement: typeof import('./components/interact/DragElement.vue')['default']
     DropElement: typeof import('./components/interact/DropElement.vue')['default']
-    DropElment: typeof import('./components/interact/DropElment.vue')['default']
     RobotAnimate: typeof import('./components/animations/RobotAnimate.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
