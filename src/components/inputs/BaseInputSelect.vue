@@ -44,9 +44,10 @@ const data = useVModel(props, 'modelValue', emit)
 
 <style>
 .multiselect-clear {
-  padding: 0px;
+  padding: 10px;
   transform: scale(1.8);
   right: 30px;
+  @apply cursor-pointer;
 }
 .multiselect-dropdown {
   margin: -45px 45px;

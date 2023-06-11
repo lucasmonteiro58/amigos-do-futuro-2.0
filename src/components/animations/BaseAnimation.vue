@@ -71,6 +71,7 @@ onMounted(() => {
   height.value = frames.value[0].h
   length.value = frames.value.length - 1
   upper.value = frames.value.length
+  props.autoplay && play()
 })
 
 onBeforeMount(() => {
@@ -85,7 +86,6 @@ onBeforeMount(() => {
 
 function init() {
   ctx.value = refContent.value.getContext('2d')
-  props.autoplay && play()
 }
 
 function render() {
@@ -186,7 +186,7 @@ defineExpose({
 </script>
 
 <template>
-  <div class="vue-sprite" ref="refContainer" :style="styleContainer">
+  <div class="vue-sprite relative" ref="refContainer" :style="styleContainer">
     <canvas
       :id="id"
       ref="refContent"
@@ -195,5 +195,8 @@ defineExpose({
       :style="styleContent"
       :height="height"
     ></canvas>
+    <div class="absolute top-0 w-full" :style="styleContainer">
+      <slot></slot>
+    </div>
   </div>
 </template>
