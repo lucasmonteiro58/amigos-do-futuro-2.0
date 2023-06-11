@@ -16,6 +16,10 @@ const musicButton = computed(() => {
   return soundStore.music ? 'btn-music_ativo' : 'btn-btmusicoff_ativo'
 })
 
+const hideBtnMusic = computed(() => {
+  return routerName.value === 'cutscene'
+})
+
 function routerBack() {
   linesStore.linesAudios.stop()
   router.back()
@@ -30,7 +34,12 @@ function routerBack() {
       width="80px"
       @click="routerBack"
     ></BaseButton>
-    <BaseButton :name="musicButton" width="80px" @click="soundStore.toggleMusic"></BaseButton>
+    <BaseButton
+      v-if="!hideBtnMusic"
+      :name="musicButton"
+      width="80px"
+      @click="soundStore.toggleMusic"
+    ></BaseButton>
     <BaseButton :name="soundButton" width="80px" @click="soundStore.toggleAudio"></BaseButton>
   </div>
 </template>

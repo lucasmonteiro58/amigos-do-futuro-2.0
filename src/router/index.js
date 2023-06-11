@@ -9,6 +9,11 @@ const router = createRouter({
       component: () => import('../views/home/HomeView.vue')
     },
     {
+      path: '/intro',
+      name: 'cutscene',
+      component: () => import('../views/cutscene/CutsceneView.vue')
+    },
+    {
       path: '/formulario',
       name: 'form',
       component: () => import('../views/form/FormView.vue')
@@ -17,7 +22,8 @@ const router = createRouter({
       path: '/mapa',
       name: 'map',
       component: () => import('../views/map/MapView.vue')
-    }
+    },
+    {}
   ]
 })
 

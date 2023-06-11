@@ -7,7 +7,8 @@ export default {
           blue: {
             DEFAULT: '#376296',
             light: '#247ba0',
-            dark: '#305882'
+            dark: '#305882',
+            text: '#4573B8'
           },
           green: {
             DEFAULT: '#3c9c74',

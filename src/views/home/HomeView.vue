@@ -5,7 +5,7 @@ import counterJson from '@/assets/animations/counter/sprite.json'
 const router = useRouter()
 
 function startGame() {
-  router.push({ name: 'form' })
+  router.push({ name: 'cutscene' })
 }
 
 const counterNumber = ref(324)

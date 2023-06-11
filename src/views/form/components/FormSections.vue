@@ -61,6 +61,14 @@ function nextQuestion() {
         width="260px"
       ></BaseButton>
     </div>
+    <div v-if="type === 'btn'" class="flex justify-center mt-10 gap-x-6">
+      <button
+        @click="clickGender('null')"
+        class="cursor-pointer text-white font-bungee text-[30px] border-[8px] border-white px-10 py-5 rounded-full hover:scale-105"
+      >
+        Prefiro não responder
+      </button>
+    </div>
     <div class="mt-10" v-if="type === 'text'">
       <BaseInputText
         v-model="userStore.name"

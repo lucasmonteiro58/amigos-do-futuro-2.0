@@ -46,7 +46,7 @@ function onClick() {
 
 <template>
   <button
-    class="cursor-pointer hover:saturate-[90%] hover:contrast-[130%] hover:scale-105 active:saturate-[50%] active:contrast-[220%] active:grayscale-[40%]"
+    class="cursor-pointer hover:saturate-[115%] hover:contrast-[108%] hover:scale-105 active:saturate-[60%] active:contrast-[108%] active:grayscale-[45%]"
     :class="disabledClass"
     :disabled="disabled"
     :name="name"
