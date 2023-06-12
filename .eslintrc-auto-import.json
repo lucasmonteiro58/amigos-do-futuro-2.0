@@ -294,6 +294,7 @@
     "useUserStore": true,
     "useSoundStore": true,
     "useLinesStore": true,
-    "useBgMusicStore": true
+    "useBgMusicStore": true,
+    "usePreload": true
   }
 }

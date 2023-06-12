@@ -3,5 +3,5 @@ import LayoutApp from './layouts/LayoutApp.vue'
 </script>
 
 <template>
-  <LayoutApp />
+  <LayoutApp class="bg-[#efefef]" />
 </template>
