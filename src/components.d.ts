@@ -7,6 +7,7 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    BalloonRobot: typeof import('./components/layout/BalloonRobot.vue')['default']
     BaseAnimation: typeof import('./components/animations/BaseAnimation.vue')['default']
     BaseButton: typeof import('./components/inputs/BaseButton.vue')['default']
     BaseImg: typeof import('./components/media/BaseImg.vue')['default']

@@ -12,7 +12,8 @@ export default {
           },
           green: {
             DEFAULT: '#3c9c74',
-            light: '#70c1b3'
+            light: '#70c1b3',
+            text: '#43AD82'
           },
           yellow: '#ffe066',
           orange: '#f25f5c',

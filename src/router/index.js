@@ -23,7 +23,11 @@ const router = createRouter({
       name: 'map',
       component: () => import('../views/map/MapView.vue')
     },
-    {}
+    {
+      path: '/regiao',
+      name: 'region',
+      component: () => import('../views/region/RegionView.vue')
+    }
   ]
 })
 
