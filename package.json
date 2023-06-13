@@ -20,6 +20,7 @@
     "@vueuse/sound": "^2.0.1",
     "interactjs": "^1.10.17",
     "pinia": "^2.0.36",
+    "pinia-plugin-persistedstate": "^3.1.0",
     "vite-plugin-preload": "^0.2.0",
     "vue": "^3.3.2",
     "vue-router": "^4.2.0",

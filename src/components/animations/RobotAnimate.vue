@@ -14,28 +14,22 @@ const props = defineProps({
   }
 })
 
-const speak = ref(false)
+const speak = ref(true)
 const noSpeak = ref(false)
 const timeout = ref(null)
 
 const robotSpeak = ref(null)
 const robotNoSpeak = ref(null)
 
-const firstNoSpeak = ref(true)
-
 function play() {
-  clearTimeout(timeout.value)
   speak.value = true
-  noSpeak.value = false
-  robotNoSpeak.value.stop()
   robotSpeak.value.play(2, 18)
+  startTimeSpeaking()
 }
 
-function stopSpeak() {
-  robotSpeak.value.play(2, 18)
+function startTimeSpeaking() {
   timeout.value = setTimeout(() => {
-    firstNoSpeak.value ? initNoSpeak() : playNoSpeak()
-    firstNoSpeak.value = false
+    initNoSpeak()
   }, props.time)
 }
 
@@ -48,13 +42,29 @@ function initNoSpeak() {
 }
 
 function playNoSpeak() {
-  clearTimeout(timeout.value)
   if (robotNoSpeak.value) robotNoSpeak.value.stop()
   if (robotSpeak.value) robotNoSpeak.value.play(21, 38)
 }
 
+function resetAnimation() {
+  clearTimeout(timeout.value)
+  speak.value = false
+  noSpeak.value = false
+  if (robotSpeak.value) robotSpeak.value.stop()
+  if (robotNoSpeak.value) robotNoSpeak.value.stop()
+}
+
+function playAgain() {
+  resetAnimation()
+  play()
+}
+
 onMounted(() => {
   play()
+})
+
+defineExpose({
+  playAgain
 })
 </script>
 
@@ -68,7 +78,6 @@ onMounted(() => {
       :fps="10"
       :autoplay="false"
       :width="width"
-      @animationOver="stopSpeak"
     ></BaseAnimation>
     <BaseAnimation
       ref="robotNoSpeak"

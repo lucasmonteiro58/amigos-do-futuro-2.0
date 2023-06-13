@@ -71,6 +71,7 @@ export default function usePreload() {
       assetsLoaded.value = true
       loadingProgress.value = 100
     } catch (error) {
+      assetsLoaded.value = true
       console.error('Erro ao pré-carregar os ativos:', error)
     }
   }
