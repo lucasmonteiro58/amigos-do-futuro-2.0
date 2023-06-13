@@ -1,6 +1,7 @@
 import './assets/style/main.css'
 import './assets/style/spritesheet.css'
 import './plugins/fixedviewport'
+import 'unfonts.css'
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'

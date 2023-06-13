@@ -39,7 +39,10 @@ function open() {
       ></RobotAnimate>
       <div class="w-[524px] h-[209px] relative left-[325px] top-[140px]">
         <div class="pt-4 font-bungee text-primary-blue text-4xl" v-html="title"></div>
-        <div class="pt-4 font-exo-bold text-gray-500 text-2xl leading-6" v-html="description"></div>
+        <div
+          class="pt-4 font-exo2 font-bold text-gray-500 text-2xl leading-6"
+          v-html="description"
+        ></div>
         <BaseButton
           @click="close"
           name="btn-toggle-close"

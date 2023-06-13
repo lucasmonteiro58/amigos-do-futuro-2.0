@@ -14,7 +14,7 @@ defineProps({
 <template>
   <div>
     <BaseImg img="balloon-comment" class="relative">
-      <div v-html="text" class="pl-16 pr-28 text-5xl font-exo-bold pt-10"></div>
+      <div v-html="text" class="pl-16 pr-28 text-5xl font-exo2 font-bold pt-10"></div>
       <BaseButton
         name="btn-toggle-repeat"
         width="80px"

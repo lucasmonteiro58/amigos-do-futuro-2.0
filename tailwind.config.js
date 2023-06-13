@@ -26,9 +26,7 @@ export default {
       fontFamily: {
         norwester: ['"Norwester"', 'sans-serif'],
         front: ['"Front"', 'sans-serif'],
-        exo: ['"Exo"', 'sans-serif'],
-        'exo-bold': ['"Exo-bold"', 'sans-serif'],
-        'exo-medium': ['"Exo-medium"', 'sans-serif'],
+        exo2: ['"Exo 2"', 'sans-serif'],
         viga: ['"Viga"', 'sans-serif'],
         poetsenone: ['"PoetsenOne"', 'sans-serif'],
         bungee: ['"Bungee"', 'sans-serif']
