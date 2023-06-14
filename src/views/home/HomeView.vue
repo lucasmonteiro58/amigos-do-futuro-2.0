@@ -1,7 +1,6 @@
 <script setup>
 import AutoCounter from 'vue3-autocounter'
-import counterImg from '@/assets/animations/counter/sprite.png'
-import counterJson from '@/assets/animations/counter/sprite.json'
+import { counterAnimation } from '@/consts'
 const router = useRouter()
 
 function startGame() {
@@ -24,8 +23,8 @@ const prefix = computed(() => {
     <BaseImg img="logo-complete"></BaseImg>
     <BaseButton name="btn-start" @click="startGame" class="mt-10"></BaseButton>
     <BaseAnimation
-      :spritesheet="counterImg"
-      :json="counterJson"
+      :spritesheet="counterAnimation.sprite"
+      :json="counterAnimation.json"
       autoplay
       :is-loop="false"
       class="mt-[60px] mb-[20px]"

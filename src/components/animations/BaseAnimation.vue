@@ -4,7 +4,7 @@ import { useElementSize } from '@vueuse/core'
 const props = defineProps({
   spritesheet: {
     required: true,
-    type: String,
+    type: [String, HTMLImageElement],
     default: ''
   },
   json: {
@@ -40,9 +40,7 @@ const props = defineProps({
 const emits = defineEmits(['animationStart', 'animationOver'])
 
 const frames = ref([])
-// const visible = ref(true);
 const length = ref(0)
-// const frameIndex = ref(0);
 const currentIndex = ref(0)
 const animationFrameID = ref(null)
 const yoyodirection = ref(0)
@@ -76,11 +74,8 @@ onMounted(() => {
 
 onBeforeMount(() => {
   nextTick(() => {
-    sprite.value = new Image()
-    sprite.value.src = props.spritesheet
-    sprite.value.onload = ({ target }) => {
-      init(target)
-    }
+    sprite.value = props.spritesheet
+    init()
   })
 })
 
@@ -150,8 +145,6 @@ function play(from, to) {
   upper.value = Number.isNaN(Number(to)) ? upper.value : to
   loop()
 }
-
-// config width
 
 const refContainer = ref(null)
 

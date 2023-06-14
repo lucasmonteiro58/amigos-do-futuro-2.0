@@ -2,13 +2,22 @@ import imageSrc from '@/assets/images/spritesheet.png'
 import audioSrc from '@/assets/audios/audio.mp3'
 
 import animationCount from '@/assets/animations/counter/sprite.png'
+import animationRobotBlue from '@/assets/animations/robot/blue/sprite.png'
+import animationRobotOrange from '@/assets/animations/robot/orange/sprite.png'
+import animationRobotFull from '@/assets/animations/robot/full/sprite.png'
 
 export default function usePreload() {
   const assetsLoaded = ref(false)
   const loadingProgress = ref(0)
 
   const assets = {
-    images: [imageSrc, animationCount],
+    images: [
+      imageSrc,
+      animationCount,
+      animationRobotBlue,
+      animationRobotOrange,
+      animationRobotFull
+    ],
     audios: [audioSrc]
   }
 
