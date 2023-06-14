@@ -1,0 +1,100 @@
+{"frames": [
+
+{
+	"filename": "bebedouro_00000.png",
+	"frame": {"x":1,"y":1,"w":154,"h":376},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":376},
+	"sourceSize": {"w":154,"h":376}
+},
+{
+	"filename": "bebedouro_00001.png",
+	"frame": {"x":157,"y":1,"w":154,"h":376},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":376},
+	"sourceSize": {"w":154,"h":376}
+},
+{
+	"filename": "bebedouro_00002.png",
+	"frame": {"x":313,"y":1,"w":154,"h":376},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":376},
+	"sourceSize": {"w":154,"h":376}
+},
+{
+	"filename": "bebedouro_00003.png",
+	"frame": {"x":469,"y":1,"w":154,"h":376},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":376},
+	"sourceSize": {"w":154,"h":376}
+},
+{
+	"filename": "bebedouro_00004.png",
+	"frame": {"x":625,"y":1,"w":154,"h":376},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":376},
+	"sourceSize": {"w":154,"h":376}
+},
+{
+	"filename": "bebedouro_00005.png",
+	"frame": {"x":781,"y":1,"w":154,"h":376},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":376},
+	"sourceSize": {"w":154,"h":376}
+},
+{
+	"filename": "bebedouro_00006.png",
+	"frame": {"x":937,"y":1,"w":154,"h":376},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":376},
+	"sourceSize": {"w":154,"h":376}
+},
+{
+	"filename": "bebedouro_00007.png",
+	"frame": {"x":1093,"y":1,"w":154,"h":376},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":376},
+	"sourceSize": {"w":154,"h":376}
+},
+{
+	"filename": "bebedouro_00008.png",
+	"frame": {"x":1249,"y":1,"w":154,"h":376},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":376},
+	"sourceSize": {"w":154,"h":376}
+},
+{
+	"filename": "bebedouro_00009.png",
+	"frame": {"x":1405,"y":1,"w":154,"h":376},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":376},
+	"sourceSize": {"w":154,"h":376}
+},
+{
+	"filename": "bebedouro_00010.png",
+	"frame": {"x":1561,"y":1,"w":154,"h":376},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":376},
+	"sourceSize": {"w":154,"h":376}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "sprite.png",
+	"format": "RGBA8888",
+	"size": {"w":1716,"h":378},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:ce2540fac647ff5f3dc5076bc0d2b541:8d4ba20544a5b7dfdf8ed7bc69e1afa9:68d88b3cf7eafc9b5accfffdfb2fda91$"
+}
+}

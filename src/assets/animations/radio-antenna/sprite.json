@@ -1,0 +1,76 @@
+{"frames": [
+
+{
+	"filename": "antenaradio_00000.png",
+	"frame": {"x":1,"y":1,"w":523,"h":811},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":523,"h":811},
+	"sourceSize": {"w":523,"h":811}
+},
+{
+	"filename": "antenaradio_00001.png",
+	"frame": {"x":526,"y":1,"w":523,"h":811},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":523,"h":811},
+	"sourceSize": {"w":523,"h":811}
+},
+{
+	"filename": "antenaradio_00002.png",
+	"frame": {"x":1051,"y":1,"w":523,"h":811},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":523,"h":811},
+	"sourceSize": {"w":523,"h":811}
+},
+{
+	"filename": "antenaradio_00003.png",
+	"frame": {"x":1576,"y":1,"w":523,"h":811},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":523,"h":811},
+	"sourceSize": {"w":523,"h":811}
+},
+{
+	"filename": "antenaradio_00004.png",
+	"frame": {"x":2101,"y":1,"w":523,"h":811},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":523,"h":811},
+	"sourceSize": {"w":523,"h":811}
+},
+{
+	"filename": "antenaradio_00005.png",
+	"frame": {"x":2626,"y":1,"w":523,"h":811},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":523,"h":811},
+	"sourceSize": {"w":523,"h":811}
+},
+{
+	"filename": "antenaradio_00006.png",
+	"frame": {"x":3151,"y":1,"w":523,"h":811},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":523,"h":811},
+	"sourceSize": {"w":523,"h":811}
+},
+{
+	"filename": "antenaradio_00007.png",
+	"frame": {"x":1,"y":1,"w":523,"h":811},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":523,"h":811},
+	"sourceSize": {"w":523,"h":811}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "sprite.png",
+	"format": "RGBA8888",
+	"size": {"w":3675,"h":813},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:a443475b218ebb098b9395e3dd3b63aa:a7805212ad5a3778202c2b03fa522f22:68d88b3cf7eafc9b5accfffdfb2fda91$"
+}
+}

@@ -1,0 +1,460 @@
+{"frames": [
+
+{
+	"filename": "Balanco_00000.png",
+	"frame": {"x":1,"y":1,"w":400,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":500},
+	"sourceSize": {"w":400,"h":500}
+},
+{
+	"filename": "Balanco_00001.png",
+	"frame": {"x":403,"y":1,"w":400,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":500},
+	"sourceSize": {"w":400,"h":500}
+},
+{
+	"filename": "Balanco_00002.png",
+	"frame": {"x":805,"y":1,"w":400,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":500},
+	"sourceSize": {"w":400,"h":500}
+},
+{
+	"filename": "Balanco_00003.png",
+	"frame": {"x":1207,"y":1,"w":400,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":500},
+	"sourceSize": {"w":400,"h":500}
+},
+{
+	"filename": "Balanco_00004.png",
+	"frame": {"x":1609,"y":1,"w":400,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":500},
+	"sourceSize": {"w":400,"h":500}
+},
+{
+	"filename": "Balanco_00005.png",
+	"frame": {"x":2011,"y":1,"w":400,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":500},
+	"sourceSize": {"w":400,"h":500}
+},
+{
+	"filename": "Balanco_00006.png",
+	"frame": {"x":2413,"y":1,"w":400,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":500},
+	"sourceSize": {"w":400,"h":500}
+},
+{
+	"filename": "Balanco_00007.png",
+	"frame": {"x":2815,"y":1,"w":400,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":500},
+	"sourceSize": {"w":400,"h":500}
+},
+{
+	"filename": "Balanco_00008.png",
+	"frame": {"x":1,"y":503,"w":400,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":500},
+	"sourceSize": {"w":400,"h":500}
+},
+{
+	"filename": "Balanco_00009.png",
+	"frame": {"x":403,"y":503,"w":400,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":500},
+	"sourceSize": {"w":400,"h":500}
+},
+{
+	"filename": "Balanco_00010.png",
+	"frame": {"x":805,"y":503,"w":400,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":500},
+	"sourceSize": {"w":400,"h":500}
+},
+{
+	"filename": "Balanco_00011.png",
+	"frame": {"x":1207,"y":503,"w":400,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":500},
+	"sourceSize": {"w":400,"h":500}
+},
+{
+	"filename": "Balanco_00012.png",
+	"frame": {"x":1609,"y":503,"w":400,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":500},
+	"sourceSize": {"w":400,"h":500}
+},
+{
+	"filename": "Balanco_00013.png",
+	"frame": {"x":2011,"y":503,"w":400,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":500},
+	"sourceSize": {"w":400,"h":500}
+},
+{
+	"filename": "Balanco_00014.png",
+	"frame": {"x":2413,"y":503,"w":400,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":500},
+	"sourceSize": {"w":400,"h":500}
+},
+{
+	"filename": "Balanco_00015.png",
+	"frame": {"x":2815,"y":503,"w":400,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":500},
+	"sourceSize": {"w":400,"h":500}
+},
+{
+	"filename": "Balanco_00016.png",
+	"frame": {"x":1,"y":1005,"w":400,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":500},
+	"sourceSize": {"w":400,"h":500}
+},
+{
+	"filename": "Balanco_00017.png",
+	"frame": {"x":403,"y":1005,"w":400,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":500},
+	"sourceSize": {"w":400,"h":500}
+},
+{
+	"filename": "Balanco_00018.png",
+	"frame": {"x":805,"y":1005,"w":400,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":500},
+	"sourceSize": {"w":400,"h":500}
+},
+{
+	"filename": "Balanco_00019.png",
+	"frame": {"x":1207,"y":1005,"w":400,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":500},
+	"sourceSize": {"w":400,"h":500}
+},
+{
+	"filename": "Balanco_00020.png",
+	"frame": {"x":1609,"y":1005,"w":400,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":500},
+	"sourceSize": {"w":400,"h":500}
+},
+{
+	"filename": "Balanco_00021.png",
+	"frame": {"x":2011,"y":1005,"w":400,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":500},
+	"sourceSize": {"w":400,"h":500}
+},
+{
+	"filename": "Balanco_00022.png",
+	"frame": {"x":2413,"y":1005,"w":400,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":500},
+	"sourceSize": {"w":400,"h":500}
+},
+{
+	"filename": "Balanco_00023.png",
+	"frame": {"x":2815,"y":1005,"w":400,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":500},
+	"sourceSize": {"w":400,"h":500}
+},
+{
+	"filename": "Balanco_00024.png",
+	"frame": {"x":1,"y":1507,"w":400,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":500},
+	"sourceSize": {"w":400,"h":500}
+},
+{
+	"filename": "Balanco_00025.png",
+	"frame": {"x":403,"y":1507,"w":400,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":500},
+	"sourceSize": {"w":400,"h":500}
+},
+{
+	"filename": "Balanco_00026.png",
+	"frame": {"x":805,"y":1507,"w":400,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":500},
+	"sourceSize": {"w":400,"h":500}
+},
+{
+	"filename": "Balanco_00027.png",
+	"frame": {"x":1207,"y":1507,"w":400,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":500},
+	"sourceSize": {"w":400,"h":500}
+},
+{
+	"filename": "Balanco_00028.png",
+	"frame": {"x":1609,"y":1507,"w":400,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":500},
+	"sourceSize": {"w":400,"h":500}
+},
+{
+	"filename": "Balanco_00029.png",
+	"frame": {"x":2011,"y":1507,"w":400,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":500},
+	"sourceSize": {"w":400,"h":500}
+},
+{
+	"filename": "Balanco_00030.png",
+	"frame": {"x":2413,"y":1507,"w":400,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":500},
+	"sourceSize": {"w":400,"h":500}
+},
+{
+	"filename": "Balanco_00031.png",
+	"frame": {"x":2815,"y":1507,"w":400,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":500},
+	"sourceSize": {"w":400,"h":500}
+},
+{
+	"filename": "Balanco_00032.png",
+	"frame": {"x":1,"y":2009,"w":400,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":500},
+	"sourceSize": {"w":400,"h":500}
+},
+{
+	"filename": "Balanco_00033.png",
+	"frame": {"x":403,"y":2009,"w":400,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":500},
+	"sourceSize": {"w":400,"h":500}
+},
+{
+	"filename": "Balanco_00034.png",
+	"frame": {"x":805,"y":2009,"w":400,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":500},
+	"sourceSize": {"w":400,"h":500}
+},
+{
+	"filename": "Balanco_00035.png",
+	"frame": {"x":1207,"y":2009,"w":400,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":500},
+	"sourceSize": {"w":400,"h":500}
+},
+{
+	"filename": "Balanco_00036.png",
+	"frame": {"x":1609,"y":2009,"w":400,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":500},
+	"sourceSize": {"w":400,"h":500}
+},
+{
+	"filename": "Balanco_00037.png",
+	"frame": {"x":2011,"y":2009,"w":400,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":500},
+	"sourceSize": {"w":400,"h":500}
+},
+{
+	"filename": "Balanco_00038.png",
+	"frame": {"x":2413,"y":2009,"w":400,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":500},
+	"sourceSize": {"w":400,"h":500}
+},
+{
+	"filename": "Balanco_00039.png",
+	"frame": {"x":2815,"y":2009,"w":400,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":500},
+	"sourceSize": {"w":400,"h":500}
+},
+{
+	"filename": "Balanco_00040.png",
+	"frame": {"x":1,"y":2511,"w":400,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":500},
+	"sourceSize": {"w":400,"h":500}
+},
+{
+	"filename": "Balanco_00041.png",
+	"frame": {"x":403,"y":2511,"w":400,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":500},
+	"sourceSize": {"w":400,"h":500}
+},
+{
+	"filename": "Balanco_00042.png",
+	"frame": {"x":805,"y":2511,"w":400,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":500},
+	"sourceSize": {"w":400,"h":500}
+},
+{
+	"filename": "Balanco_00043.png",
+	"frame": {"x":1207,"y":2511,"w":400,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":500},
+	"sourceSize": {"w":400,"h":500}
+},
+{
+	"filename": "Balanco_00044.png",
+	"frame": {"x":1609,"y":2511,"w":400,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":500},
+	"sourceSize": {"w":400,"h":500}
+},
+{
+	"filename": "Balanco_00045.png",
+	"frame": {"x":2011,"y":2511,"w":400,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":500},
+	"sourceSize": {"w":400,"h":500}
+},
+{
+	"filename": "Balanco_00046.png",
+	"frame": {"x":2413,"y":2511,"w":400,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":500},
+	"sourceSize": {"w":400,"h":500}
+},
+{
+	"filename": "Balanco_00047.png",
+	"frame": {"x":2815,"y":2511,"w":400,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":500},
+	"sourceSize": {"w":400,"h":500}
+},
+{
+	"filename": "Balanco_00048.png",
+	"frame": {"x":1,"y":3013,"w":400,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":500},
+	"sourceSize": {"w":400,"h":500}
+},
+{
+	"filename": "Balanco_00049.png",
+	"frame": {"x":403,"y":3013,"w":400,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":500},
+	"sourceSize": {"w":400,"h":500}
+},
+{
+	"filename": "Balanco_00050.png",
+	"frame": {"x":805,"y":3013,"w":400,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":500},
+	"sourceSize": {"w":400,"h":500}
+},
+{
+	"filename": "Balanco_00051.png",
+	"frame": {"x":1207,"y":3013,"w":400,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":500},
+	"sourceSize": {"w":400,"h":500}
+},
+{
+	"filename": "Balanco_00052.png",
+	"frame": {"x":1609,"y":3013,"w":400,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":500},
+	"sourceSize": {"w":400,"h":500}
+},
+{
+	"filename": "Balanco_00053.png",
+	"frame": {"x":2011,"y":3013,"w":400,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":500},
+	"sourceSize": {"w":400,"h":500}
+},
+{
+	"filename": "Balanco_00054.png",
+	"frame": {"x":2413,"y":3013,"w":400,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":500},
+	"sourceSize": {"w":400,"h":500}
+},
+{
+	"filename": "Balanco_00055.png",
+	"frame": {"x":2815,"y":3013,"w":400,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":500},
+	"sourceSize": {"w":400,"h":500}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "sprite.png",
+	"format": "RGBA8888",
+	"size": {"w":3216,"h":3514},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:fd70d4102ea8120d9af8f8927f8f357f:b130346e6f19b28ad6b5190ab757d5d8:68d88b3cf7eafc9b5accfffdfb2fda91$"
+}
+}

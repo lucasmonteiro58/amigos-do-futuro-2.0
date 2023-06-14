@@ -1,0 +1,140 @@
+{"frames": [
+
+{
+	"filename": "Escorrega_00000.png",
+	"frame": {"x":1,"y":1,"w":400,"h":600},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":600},
+	"sourceSize": {"w":400,"h":600}
+},
+{
+	"filename": "Escorrega_00001.png",
+	"frame": {"x":403,"y":1,"w":400,"h":600},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":600},
+	"sourceSize": {"w":400,"h":600}
+},
+{
+	"filename": "Escorrega_00002.png",
+	"frame": {"x":805,"y":1,"w":400,"h":600},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":600},
+	"sourceSize": {"w":400,"h":600}
+},
+{
+	"filename": "Escorrega_00003.png",
+	"frame": {"x":1207,"y":1,"w":400,"h":600},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":600},
+	"sourceSize": {"w":400,"h":600}
+},
+{
+	"filename": "Escorrega_00004.png",
+	"frame": {"x":1609,"y":1,"w":400,"h":600},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":600},
+	"sourceSize": {"w":400,"h":600}
+},
+{
+	"filename": "Escorrega_00005.png",
+	"frame": {"x":1,"y":603,"w":400,"h":600},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":600},
+	"sourceSize": {"w":400,"h":600}
+},
+{
+	"filename": "Escorrega_00006.png",
+	"frame": {"x":403,"y":603,"w":400,"h":600},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":600},
+	"sourceSize": {"w":400,"h":600}
+},
+{
+	"filename": "Escorrega_00007.png",
+	"frame": {"x":805,"y":603,"w":400,"h":600},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":600},
+	"sourceSize": {"w":400,"h":600}
+},
+{
+	"filename": "Escorrega_00008.png",
+	"frame": {"x":1207,"y":603,"w":400,"h":600},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":600},
+	"sourceSize": {"w":400,"h":600}
+},
+{
+	"filename": "Escorrega_00009.png",
+	"frame": {"x":1609,"y":603,"w":400,"h":600},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":600},
+	"sourceSize": {"w":400,"h":600}
+},
+{
+	"filename": "Escorrega_00010.png",
+	"frame": {"x":1,"y":1205,"w":400,"h":600},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":600},
+	"sourceSize": {"w":400,"h":600}
+},
+{
+	"filename": "Escorrega_00011.png",
+	"frame": {"x":403,"y":1205,"w":400,"h":600},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":600},
+	"sourceSize": {"w":400,"h":600}
+},
+{
+	"filename": "Escorrega_00012.png",
+	"frame": {"x":805,"y":1205,"w":400,"h":600},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":600},
+	"sourceSize": {"w":400,"h":600}
+},
+{
+	"filename": "Escorrega_00013.png",
+	"frame": {"x":805,"y":1205,"w":400,"h":600},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":600},
+	"sourceSize": {"w":400,"h":600}
+},
+{
+	"filename": "Escorrega_00014.png",
+	"frame": {"x":805,"y":1205,"w":400,"h":600},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":600},
+	"sourceSize": {"w":400,"h":600}
+},
+{
+	"filename": "Escorrega_00015.png",
+	"frame": {"x":805,"y":1205,"w":400,"h":600},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":600},
+	"sourceSize": {"w":400,"h":600}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "sprite.png",
+	"format": "RGBA8888",
+	"size": {"w":2010,"h":1806},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:a164cccb03c1296d35c788e5a90781ff:435834a0ced5616d9c2770987eb33651:68d88b3cf7eafc9b5accfffdfb2fda91$"
+}
+}

@@ -1,0 +1,212 @@
+{"frames": [
+
+{
+	"filename": "canos_00001.png",
+	"frame": {"x":1,"y":1,"w":843,"h":441},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":843,"h":441},
+	"sourceSize": {"w":843,"h":441}
+},
+{
+	"filename": "canos_00002.png",
+	"frame": {"x":846,"y":1,"w":843,"h":441},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":843,"h":441},
+	"sourceSize": {"w":843,"h":441}
+},
+{
+	"filename": "canos_00003.png",
+	"frame": {"x":1691,"y":1,"w":843,"h":441},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":843,"h":441},
+	"sourceSize": {"w":843,"h":441}
+},
+{
+	"filename": "canos_00004.png",
+	"frame": {"x":2536,"y":1,"w":843,"h":441},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":843,"h":441},
+	"sourceSize": {"w":843,"h":441}
+},
+{
+	"filename": "canos_00005.png",
+	"frame": {"x":1,"y":444,"w":843,"h":441},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":843,"h":441},
+	"sourceSize": {"w":843,"h":441}
+},
+{
+	"filename": "canos_00006.png",
+	"frame": {"x":846,"y":444,"w":843,"h":441},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":843,"h":441},
+	"sourceSize": {"w":843,"h":441}
+},
+{
+	"filename": "canos_00007.png",
+	"frame": {"x":1691,"y":444,"w":843,"h":441},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":843,"h":441},
+	"sourceSize": {"w":843,"h":441}
+},
+{
+	"filename": "canos_00008.png",
+	"frame": {"x":2536,"y":444,"w":843,"h":441},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":843,"h":441},
+	"sourceSize": {"w":843,"h":441}
+},
+{
+	"filename": "canos_00009.png",
+	"frame": {"x":1,"y":887,"w":843,"h":441},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":843,"h":441},
+	"sourceSize": {"w":843,"h":441}
+},
+{
+	"filename": "canos_00010.png",
+	"frame": {"x":846,"y":887,"w":843,"h":441},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":843,"h":441},
+	"sourceSize": {"w":843,"h":441}
+},
+{
+	"filename": "canos_00011.png",
+	"frame": {"x":1691,"y":887,"w":843,"h":441},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":843,"h":441},
+	"sourceSize": {"w":843,"h":441}
+},
+{
+	"filename": "canos_00012.png",
+	"frame": {"x":2536,"y":887,"w":843,"h":441},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":843,"h":441},
+	"sourceSize": {"w":843,"h":441}
+},
+{
+	"filename": "canos_00013.png",
+	"frame": {"x":1,"y":1330,"w":843,"h":441},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":843,"h":441},
+	"sourceSize": {"w":843,"h":441}
+},
+{
+	"filename": "canos_00014.png",
+	"frame": {"x":846,"y":1330,"w":843,"h":441},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":843,"h":441},
+	"sourceSize": {"w":843,"h":441}
+},
+{
+	"filename": "canos_00015.png",
+	"frame": {"x":1691,"y":1330,"w":843,"h":441},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":843,"h":441},
+	"sourceSize": {"w":843,"h":441}
+},
+{
+	"filename": "canos_00016.png",
+	"frame": {"x":2536,"y":1330,"w":843,"h":441},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":843,"h":441},
+	"sourceSize": {"w":843,"h":441}
+},
+{
+	"filename": "canos_00017.png",
+	"frame": {"x":1,"y":1773,"w":843,"h":441},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":843,"h":441},
+	"sourceSize": {"w":843,"h":441}
+},
+{
+	"filename": "canos_00018.png",
+	"frame": {"x":846,"y":1773,"w":843,"h":441},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":843,"h":441},
+	"sourceSize": {"w":843,"h":441}
+},
+{
+	"filename": "canos_00019.png",
+	"frame": {"x":1691,"y":1773,"w":843,"h":441},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":843,"h":441},
+	"sourceSize": {"w":843,"h":441}
+},
+{
+	"filename": "canos_00020.png",
+	"frame": {"x":2536,"y":1773,"w":843,"h":441},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":843,"h":441},
+	"sourceSize": {"w":843,"h":441}
+},
+{
+	"filename": "canos_00021.png",
+	"frame": {"x":1,"y":2216,"w":843,"h":441},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":843,"h":441},
+	"sourceSize": {"w":843,"h":441}
+},
+{
+	"filename": "canos_00022.png",
+	"frame": {"x":846,"y":2216,"w":843,"h":441},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":843,"h":441},
+	"sourceSize": {"w":843,"h":441}
+},
+{
+	"filename": "canos_00023.png",
+	"frame": {"x":1691,"y":2216,"w":843,"h":441},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":843,"h":441},
+	"sourceSize": {"w":843,"h":441}
+},
+{
+	"filename": "canos_00024.png",
+	"frame": {"x":2536,"y":2216,"w":843,"h":441},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":843,"h":441},
+	"sourceSize": {"w":843,"h":441}
+},
+{
+	"filename": "canos_00025.png",
+	"frame": {"x":1,"y":2659,"w":843,"h":441},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":843,"h":441},
+	"sourceSize": {"w":843,"h":441}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "sprite.png",
+	"format": "RGBA8888",
+	"size": {"w":3380,"h":3101},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:a787e63258bfac091cd0a78594de6f90:5eaf09cbe9115cac1b2fde6fc406aba4:68d88b3cf7eafc9b5accfffdfb2fda91$"
+}
+}

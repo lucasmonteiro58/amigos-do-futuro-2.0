@@ -1,0 +1,396 @@
+{"frames": [
+
+{
+	"filename": "Gangorra_00000.png",
+	"frame": {"x":1,"y":1,"w":500,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":400},
+	"sourceSize": {"w":500,"h":400}
+},
+{
+	"filename": "Gangorra_00001.png",
+	"frame": {"x":503,"y":1,"w":500,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":400},
+	"sourceSize": {"w":500,"h":400}
+},
+{
+	"filename": "Gangorra_00002.png",
+	"frame": {"x":1005,"y":1,"w":500,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":400},
+	"sourceSize": {"w":500,"h":400}
+},
+{
+	"filename": "Gangorra_00003.png",
+	"frame": {"x":1507,"y":1,"w":500,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":400},
+	"sourceSize": {"w":500,"h":400}
+},
+{
+	"filename": "Gangorra_00004.png",
+	"frame": {"x":2009,"y":1,"w":500,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":400},
+	"sourceSize": {"w":500,"h":400}
+},
+{
+	"filename": "Gangorra_00005.png",
+	"frame": {"x":2511,"y":1,"w":500,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":400},
+	"sourceSize": {"w":500,"h":400}
+},
+{
+	"filename": "Gangorra_00006.png",
+	"frame": {"x":3013,"y":1,"w":500,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":400},
+	"sourceSize": {"w":500,"h":400}
+},
+{
+	"filename": "Gangorra_00007.png",
+	"frame": {"x":1,"y":403,"w":500,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":400},
+	"sourceSize": {"w":500,"h":400}
+},
+{
+	"filename": "Gangorra_00008.png",
+	"frame": {"x":503,"y":403,"w":500,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":400},
+	"sourceSize": {"w":500,"h":400}
+},
+{
+	"filename": "Gangorra_00009.png",
+	"frame": {"x":1005,"y":403,"w":500,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":400},
+	"sourceSize": {"w":500,"h":400}
+},
+{
+	"filename": "Gangorra_00010.png",
+	"frame": {"x":1507,"y":403,"w":500,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":400},
+	"sourceSize": {"w":500,"h":400}
+},
+{
+	"filename": "Gangorra_00011.png",
+	"frame": {"x":2009,"y":403,"w":500,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":400},
+	"sourceSize": {"w":500,"h":400}
+},
+{
+	"filename": "Gangorra_00012.png",
+	"frame": {"x":2511,"y":403,"w":500,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":400},
+	"sourceSize": {"w":500,"h":400}
+},
+{
+	"filename": "Gangorra_00013.png",
+	"frame": {"x":3013,"y":403,"w":500,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":400},
+	"sourceSize": {"w":500,"h":400}
+},
+{
+	"filename": "Gangorra_00014.png",
+	"frame": {"x":1,"y":805,"w":500,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":400},
+	"sourceSize": {"w":500,"h":400}
+},
+{
+	"filename": "Gangorra_00015.png",
+	"frame": {"x":503,"y":805,"w":500,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":400},
+	"sourceSize": {"w":500,"h":400}
+},
+{
+	"filename": "Gangorra_00016.png",
+	"frame": {"x":1005,"y":805,"w":500,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":400},
+	"sourceSize": {"w":500,"h":400}
+},
+{
+	"filename": "Gangorra_00017.png",
+	"frame": {"x":1507,"y":805,"w":500,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":400},
+	"sourceSize": {"w":500,"h":400}
+},
+{
+	"filename": "Gangorra_00018.png",
+	"frame": {"x":2009,"y":805,"w":500,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":400},
+	"sourceSize": {"w":500,"h":400}
+},
+{
+	"filename": "Gangorra_00019.png",
+	"frame": {"x":2511,"y":805,"w":500,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":400},
+	"sourceSize": {"w":500,"h":400}
+},
+{
+	"filename": "Gangorra_00020.png",
+	"frame": {"x":3013,"y":805,"w":500,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":400},
+	"sourceSize": {"w":500,"h":400}
+},
+{
+	"filename": "Gangorra_00021.png",
+	"frame": {"x":1,"y":1207,"w":500,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":400},
+	"sourceSize": {"w":500,"h":400}
+},
+{
+	"filename": "Gangorra_00022.png",
+	"frame": {"x":503,"y":1207,"w":500,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":400},
+	"sourceSize": {"w":500,"h":400}
+},
+{
+	"filename": "Gangorra_00023.png",
+	"frame": {"x":1005,"y":1207,"w":500,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":400},
+	"sourceSize": {"w":500,"h":400}
+},
+{
+	"filename": "Gangorra_00024.png",
+	"frame": {"x":1507,"y":1207,"w":500,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":400},
+	"sourceSize": {"w":500,"h":400}
+},
+{
+	"filename": "Gangorra_00025.png",
+	"frame": {"x":2009,"y":1207,"w":500,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":400},
+	"sourceSize": {"w":500,"h":400}
+},
+{
+	"filename": "Gangorra_00026.png",
+	"frame": {"x":2511,"y":1207,"w":500,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":400},
+	"sourceSize": {"w":500,"h":400}
+},
+{
+	"filename": "Gangorra_00027.png",
+	"frame": {"x":3013,"y":1207,"w":500,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":400},
+	"sourceSize": {"w":500,"h":400}
+},
+{
+	"filename": "Gangorra_00028.png",
+	"frame": {"x":1,"y":1609,"w":500,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":400},
+	"sourceSize": {"w":500,"h":400}
+},
+{
+	"filename": "Gangorra_00029.png",
+	"frame": {"x":503,"y":1609,"w":500,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":400},
+	"sourceSize": {"w":500,"h":400}
+},
+{
+	"filename": "Gangorra_00030.png",
+	"frame": {"x":1005,"y":1609,"w":500,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":400},
+	"sourceSize": {"w":500,"h":400}
+},
+{
+	"filename": "Gangorra_00031.png",
+	"frame": {"x":1507,"y":1609,"w":500,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":400},
+	"sourceSize": {"w":500,"h":400}
+},
+{
+	"filename": "Gangorra_00032.png",
+	"frame": {"x":2009,"y":1609,"w":500,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":400},
+	"sourceSize": {"w":500,"h":400}
+},
+{
+	"filename": "Gangorra_00033.png",
+	"frame": {"x":2511,"y":1609,"w":500,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":400},
+	"sourceSize": {"w":500,"h":400}
+},
+{
+	"filename": "Gangorra_00034.png",
+	"frame": {"x":3013,"y":1609,"w":500,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":400},
+	"sourceSize": {"w":500,"h":400}
+},
+{
+	"filename": "Gangorra_00035.png",
+	"frame": {"x":1,"y":2011,"w":500,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":400},
+	"sourceSize": {"w":500,"h":400}
+},
+{
+	"filename": "Gangorra_00036.png",
+	"frame": {"x":503,"y":2011,"w":500,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":400},
+	"sourceSize": {"w":500,"h":400}
+},
+{
+	"filename": "Gangorra_00037.png",
+	"frame": {"x":1005,"y":2011,"w":500,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":400},
+	"sourceSize": {"w":500,"h":400}
+},
+{
+	"filename": "Gangorra_00038.png",
+	"frame": {"x":1507,"y":2011,"w":500,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":400},
+	"sourceSize": {"w":500,"h":400}
+},
+{
+	"filename": "Gangorra_00039.png",
+	"frame": {"x":2009,"y":2011,"w":500,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":400},
+	"sourceSize": {"w":500,"h":400}
+},
+{
+	"filename": "Gangorra_00040.png",
+	"frame": {"x":2511,"y":2011,"w":500,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":400},
+	"sourceSize": {"w":500,"h":400}
+},
+{
+	"filename": "Gangorra_00041.png",
+	"frame": {"x":3013,"y":2011,"w":500,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":400},
+	"sourceSize": {"w":500,"h":400}
+},
+{
+	"filename": "Gangorra_00042.png",
+	"frame": {"x":1,"y":2413,"w":500,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":400},
+	"sourceSize": {"w":500,"h":400}
+},
+{
+	"filename": "Gangorra_00043.png",
+	"frame": {"x":503,"y":2413,"w":500,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":400},
+	"sourceSize": {"w":500,"h":400}
+},
+{
+	"filename": "Gangorra_00044.png",
+	"frame": {"x":1005,"y":2413,"w":500,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":400},
+	"sourceSize": {"w":500,"h":400}
+},
+{
+	"filename": "Gangorra_00045.png",
+	"frame": {"x":1507,"y":2413,"w":500,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":400},
+	"sourceSize": {"w":500,"h":400}
+},
+{
+	"filename": "Gangorra_00046.png",
+	"frame": {"x":2009,"y":2413,"w":500,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":400},
+	"sourceSize": {"w":500,"h":400}
+},
+{
+	"filename": "Gangorra_00047.png",
+	"frame": {"x":2511,"y":2413,"w":500,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":400},
+	"sourceSize": {"w":500,"h":400}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "sprite.png",
+	"format": "RGBA8888",
+	"size": {"w":3514,"h":2814},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:b5986318cf44a8923e0ca467a5926d73:b64056161d4ad50761d1026400425653:68d88b3cf7eafc9b5accfffdfb2fda91$"
+}
+}

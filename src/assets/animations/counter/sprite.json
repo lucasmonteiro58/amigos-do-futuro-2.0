@@ -1,476 +1,100 @@
+{"frames": [
+
 {
-	"frames": [
-		{
-			"filename": "contador_00000.png",
-			"frame": {
-				"x": 1,
-				"y": 1,
-				"w": 427,
-				"h": 146
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 427,
-				"h": 146
-			},
-			"sourceSize": {
-				"w": 427,
-				"h": 146
-			}
-		},
-		{
-			"filename": "contador_00001.png",
-			"frame": {
-				"x": 430,
-				"y": 1,
-				"w": 427,
-				"h": 146
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 427,
-				"h": 146
-			},
-			"sourceSize": {
-				"w": 427,
-				"h": 146
-			}
-		},
-		{
-			"filename": "contador_00002.png",
-			"frame": {
-				"x": 859,
-				"y": 1,
-				"w": 427,
-				"h": 146
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 427,
-				"h": 146
-			},
-			"sourceSize": {
-				"w": 427,
-				"h": 146
-			}
-		},
-		{
-			"filename": "contador_00003.png",
-			"frame": {
-				"x": 1288,
-				"y": 1,
-				"w": 427,
-				"h": 146
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 427,
-				"h": 146
-			},
-			"sourceSize": {
-				"w": 427,
-				"h": 146
-			}
-		},
-		{
-			"filename": "contador_00004.png",
-			"frame": {
-				"x": 1717,
-				"y": 1,
-				"w": 427,
-				"h": 146
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 427,
-				"h": 146
-			},
-			"sourceSize": {
-				"w": 427,
-				"h": 146
-			}
-		},
-		{
-			"filename": "contador_00005.png",
-			"frame": {
-				"x": 2146,
-				"y": 1,
-				"w": 427,
-				"h": 146
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 427,
-				"h": 146
-			},
-			"sourceSize": {
-				"w": 427,
-				"h": 146
-			}
-		},
-		{
-			"filename": "contador_00006.png",
-			"frame": {
-				"x": 2575,
-				"y": 1,
-				"w": 427,
-				"h": 146
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 427,
-				"h": 146
-			},
-			"sourceSize": {
-				"w": 427,
-				"h": 146
-			}
-		},
-		{
-			"filename": "contador_00007.png",
-			"frame": {
-				"x": 3004,
-				"y": 1,
-				"w": 427,
-				"h": 146
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 427,
-				"h": 146
-			},
-			"sourceSize": {
-				"w": 427,
-				"h": 146
-			}
-		},
-		{
-			"filename": "contador_00008.png",
-			"frame": {
-				"x": 3433,
-				"y": 1,
-				"w": 427,
-				"h": 146
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 427,
-				"h": 146
-			},
-			"sourceSize": {
-				"w": 427,
-				"h": 146
-			}
-		},
-		{
-			"filename": "contador_00009.png",
-			"frame": {
-				"x": 3862,
-				"y": 1,
-				"w": 427,
-				"h": 146
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 427,
-				"h": 146
-			},
-			"sourceSize": {
-				"w": 427,
-				"h": 146
-			}
-		},
-		{
-			"filename": "contador_00010.png",
-			"frame": {
-				"x": 4291,
-				"y": 1,
-				"w": 427,
-				"h": 146
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 427,
-				"h": 146
-			},
-			"sourceSize": {
-				"w": 427,
-				"h": 146
-			}
-		}, {
-			"filename": "contador_00000.png",
-			"frame": {
-				"x": 1,
-				"y": 1,
-				"w": 427,
-				"h": 146
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 427,
-				"h": 146
-			},
-			"sourceSize": {
-				"w": 427,
-				"h": 146
-			}
-		},
-		{
-			"filename": "contador_00001.png",
-			"frame": {
-				"x": 430,
-				"y": 1,
-				"w": 427,
-				"h": 146
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 427,
-				"h": 146
-			},
-			"sourceSize": {
-				"w": 427,
-				"h": 146
-			}
-		},
-		{
-			"filename": "contador_00002.png",
-			"frame": {
-				"x": 859,
-				"y": 1,
-				"w": 427,
-				"h": 146
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 427,
-				"h": 146
-			},
-			"sourceSize": {
-				"w": 427,
-				"h": 146
-			}
-		},
-		{
-			"filename": "contador_00003.png",
-			"frame": {
-				"x": 1288,
-				"y": 1,
-				"w": 427,
-				"h": 146
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 427,
-				"h": 146
-			},
-			"sourceSize": {
-				"w": 427,
-				"h": 146
-			}
-		},
-		{
-			"filename": "contador_00004.png",
-			"frame": {
-				"x": 1717,
-				"y": 1,
-				"w": 427,
-				"h": 146
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 427,
-				"h": 146
-			},
-			"sourceSize": {
-				"w": 427,
-				"h": 146
-			}
-		},
-		{
-			"filename": "contador_00005.png",
-			"frame": {
-				"x": 2146,
-				"y": 1,
-				"w": 427,
-				"h": 146
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 427,
-				"h": 146
-			},
-			"sourceSize": {
-				"w": 427,
-				"h": 146
-			}
-		},
-		{
-			"filename": "contador_00006.png",
-			"frame": {
-				"x": 2575,
-				"y": 1,
-				"w": 427,
-				"h": 146
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 427,
-				"h": 146
-			},
-			"sourceSize": {
-				"w": 427,
-				"h": 146
-			}
-		},
-		{
-			"filename": "contador_00007.png",
-			"frame": {
-				"x": 3004,
-				"y": 1,
-				"w": 427,
-				"h": 146
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 427,
-				"h": 146
-			},
-			"sourceSize": {
-				"w": 427,
-				"h": 146
-			}
-		},
-		{
-			"filename": "contador_00008.png",
-			"frame": {
-				"x": 3433,
-				"y": 1,
-				"w": 427,
-				"h": 146
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 427,
-				"h": 146
-			},
-			"sourceSize": {
-				"w": 427,
-				"h": 146
-			}
-		},
-		{
-			"filename": "contador_00009.png",
-			"frame": {
-				"x": 3862,
-				"y": 1,
-				"w": 427,
-				"h": 146
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 427,
-				"h": 146
-			},
-			"sourceSize": {
-				"w": 427,
-				"h": 146
-			}
-		},
-		{
-			"filename": "contador_00010.png",
-			"frame": {
-				"x": 4291,
-				"y": 1,
-				"w": 427,
-				"h": 146
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 427,
-				"h": 146
-			},
-			"sourceSize": {
-				"w": 427,
-				"h": 146
-			}
-		}
-	],
-	"meta": {
-		"app": "http://www.codeandweb.com/texturepacker",
-		"version": "1.0",
-		"image": "spritesheet.png",
-		"format": "RGBA8888",
-		"size": {
-			"w": 4719,
-			"h": 148
-		},
-		"scale": "1"
-	}
+	"filename": "contador_00000.png",
+	"frame": {"x":1,"y":1,"w":427,"h":146},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":427,"h":146},
+	"sourceSize": {"w":427,"h":146}
+},
+{
+	"filename": "contador_00001.png",
+	"frame": {"x":430,"y":1,"w":427,"h":146},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":427,"h":146},
+	"sourceSize": {"w":427,"h":146}
+},
+{
+	"filename": "contador_00002.png",
+	"frame": {"x":1,"y":149,"w":427,"h":146},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":427,"h":146},
+	"sourceSize": {"w":427,"h":146}
+},
+{
+	"filename": "contador_00003.png",
+	"frame": {"x":430,"y":149,"w":427,"h":146},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":427,"h":146},
+	"sourceSize": {"w":427,"h":146}
+},
+{
+	"filename": "contador_00004.png",
+	"frame": {"x":1,"y":297,"w":427,"h":146},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":427,"h":146},
+	"sourceSize": {"w":427,"h":146}
+},
+{
+	"filename": "contador_00005.png",
+	"frame": {"x":430,"y":297,"w":427,"h":146},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":427,"h":146},
+	"sourceSize": {"w":427,"h":146}
+},
+{
+	"filename": "contador_00006.png",
+	"frame": {"x":1,"y":445,"w":427,"h":146},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":427,"h":146},
+	"sourceSize": {"w":427,"h":146}
+},
+{
+	"filename": "contador_00007.png",
+	"frame": {"x":430,"y":445,"w":427,"h":146},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":427,"h":146},
+	"sourceSize": {"w":427,"h":146}
+},
+{
+	"filename": "contador_00008.png",
+	"frame": {"x":1,"y":593,"w":427,"h":146},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":427,"h":146},
+	"sourceSize": {"w":427,"h":146}
+},
+{
+	"filename": "contador_00009.png",
+	"frame": {"x":430,"y":593,"w":427,"h":146},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":427,"h":146},
+	"sourceSize": {"w":427,"h":146}
+},
+{
+	"filename": "contador_00010.png",
+	"frame": {"x":1,"y":741,"w":427,"h":146},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":427,"h":146},
+	"sourceSize": {"w":427,"h":146}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "sprite.png",
+	"format": "RGBA8888",
+	"size": {"w":858,"h":888},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:6785fd838e4013a03be73f4026981677:36b30711e8681f873c3405428e1a5fd6:68d88b3cf7eafc9b5accfffdfb2fda91$"
+}
 }
