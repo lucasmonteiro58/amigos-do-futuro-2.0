@@ -41,6 +41,10 @@ function playAgain() {
   refRobot.value.playAgain()
   linesStore.playAudio(props.audio)
 }
+
+onMounted(() => {
+  playAudio()
+})
 </script>
 
 <template>
