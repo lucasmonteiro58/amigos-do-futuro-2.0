@@ -116,7 +116,7 @@ function verifyDropped(name) {
       v-motion-pop
       class="w-full h-full absolute flex justify-center items-center"
     >
-      <BoxComment :line="commentLine" width="750px" :audio="commentAudio"></BoxComment>
+      <BoxComment :line="commentLine" width="750px" :audio="commentAudio" :time="8000"></BoxComment>
     </div>
   </main>
 </template>
