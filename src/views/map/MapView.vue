@@ -1,23 +1,40 @@
 <script setup>
 import { dragRegions, dropRegions, mapRegions } from '@/consts'
+import { promiseTimeout } from '@vueuse/core'
 import Popper from 'vue3-popper'
 
 const droppeds = ref([])
 const showHelp = ref(true)
 const showPopper = ref(true)
+const showBoxComment = ref(false)
+const userStore = useUserStore()
+
+const commentLine = computed(() => {
+  return `Bom trabalho! Agora, precisamos saber que tipo de Amig${
+    userStore.gender === 'girl' ? 'a' : 'o'
+  } do Futuro você é. Responda as perguntas!`
+})
+
+const commentAudio = computed(() => {
+  return userStore.gender === 'girl' ? 'mapa_bomtrabalho' : 'mapa_bomtrabalhomenino'
+})
 
 function onDrop(el) {
   const { dataTransfer } = el
   droppeds.value.push(dataTransfer)
-
   if (droppeds.value.length === dropRegions.length) {
-    console.log('all dropped')
+    onCompleted()
   }
 }
 
 function startDrag() {
   showHelp.value = false
   showPopper.value = false
+}
+
+async function onCompleted() {
+  await promiseTimeout(2000)
+  showBoxComment.value = true
 }
 
 function endDrag() {
@@ -94,5 +111,12 @@ function verifyDropped(name) {
       audio="mapa_help"
       :time="7800"
     ></SpeechBubble>
+    <div
+      v-if="showBoxComment"
+      v-motion-pop
+      class="w-full h-full absolute flex justify-center items-center"
+    >
+      <BoxComment :line="commentLine" width="750px" :audio="commentAudio"></BoxComment>
+    </div>
   </main>
 </template>

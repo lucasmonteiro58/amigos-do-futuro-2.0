@@ -79,6 +79,6 @@ function playAgain() {
     @click="open"
     class="absolute cursor-pointer bottom-5 left-5 hover:!scale-105"
   >
-    <BaseImg img="robot-mini-blue" width="450px"> </BaseImg>
+    <BaseImg img="robot-mini-blue" width="150px"> </BaseImg>
   </button>
 </template>
