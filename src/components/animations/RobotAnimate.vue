@@ -1,5 +1,9 @@
 <script setup>
 const props = defineProps({
+  id: {
+    type: [String, Number],
+    default: 'robot-speak'
+  },
   animation: {
     type: Object,
     required: true
@@ -17,6 +21,7 @@ const props = defineProps({
 const speak = ref(true)
 const noSpeak = ref(false)
 const timeout = ref(null)
+const id = computed(() => props.id)
 
 const robotSpeak = ref(null)
 const robotNoSpeak = ref(null)
@@ -24,13 +29,13 @@ const robotNoSpeak = ref(null)
 function play() {
   speak.value = true
   robotSpeak.value.play(2, 18)
-  startTimeSpeaking()
+  startTimeSpeaking(props.time)
 }
 
-function startTimeSpeaking() {
+function startTimeSpeaking(time) {
   timeout.value = setTimeout(() => {
     initNoSpeak()
-  }, props.time)
+  }, time)
 }
 
 function initNoSpeak() {
@@ -48,6 +53,7 @@ function playNoSpeak() {
 
 function resetAnimation() {
   clearTimeout(timeout.value)
+  timeout.value = null
   speak.value = false
   noSpeak.value = false
   if (robotSpeak.value) robotSpeak.value.stop()
@@ -65,6 +71,10 @@ onMounted(() => {
 
 defineExpose({
   playAgain
+})
+
+watch(id, () => {
+  playAgain()
 })
 </script>
 

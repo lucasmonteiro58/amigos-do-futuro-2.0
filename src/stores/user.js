@@ -9,6 +9,10 @@ export const useUserStore = defineStore(
     const age = ref('')
     const city = ref('')
 
+    const allCompleted = computed(() => {
+      return name.value && gender.value && age.value && city.value
+    })
+
     const region = computed(() => {
       if (!city.value) return {}
       else return regionsInfo.find((region) => region.cities.includes(city.value))
@@ -18,7 +22,7 @@ export const useUserStore = defineStore(
       gender.value = value
     }
 
-    return { name, gender, age, city, setGender, region }
+    return { name, gender, age, city, setGender, region, allCompleted }
   },
   { persist: true }
 )

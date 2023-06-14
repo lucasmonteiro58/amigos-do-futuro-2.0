@@ -5,10 +5,20 @@ import FormSections from './components/FormSections.vue'
 const index = ref(0)
 const linesStore = useLinesStore()
 const userStore = useUserStore()
+const robotRef = ref(null)
+const router = useRouter()
 
 const currentQuestion = computed(() => {
   return formQuestions[index.value]
 })
+
+function goToRegion() {
+  if (userStore.allCompleted) {
+    router.push({ name: 'region' })
+  } else {
+    showModal.value = true
+  }
+}
 
 function nextQuestion() {
   if (index.value < 3) {
@@ -55,8 +65,9 @@ onMounted(() => {
   <div class="flex">
     <div class="pl-5 w-2/5 bg-white flex flex-col item-center mt-2">
       <RobotAnimate
+        :id="currentQuestion.id"
+        ref="robotRef"
         v-motion-slide-left
-        :key="index"
         :animation="robotOrange"
         :time="currentQuestion.duration"
         class="mb-6 flex justify-center"
@@ -86,6 +97,7 @@ onMounted(() => {
         :key="index"
         @gender="nextQuestion"
         @next="nextQuestion"
+        @finish="goToRegion"
       ></FormSections>
     </div>
     <ModalAtention v-model="showModal" @close="closeModal">

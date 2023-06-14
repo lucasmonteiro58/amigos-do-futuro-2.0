@@ -6,6 +6,7 @@ const region = computed(() => userStore.region)
 const linesStore = useLinesStore()
 const updateKey = ref(0)
 const robotRef = ref(null)
+const router = useRouter()
 
 const robotLine = computed(() => {
   return `Você sabia que o Ceará é dividido em 14 regiões e a sua cidade fica n${region.value?.vowal} <span class='text-primary-green-text'>${region.value?.name}</span>?`
@@ -27,6 +28,10 @@ function playAgain() {
   updateKey.value++
   robotRef.value.playAgain()
   linesStore.playAudio(regionAudio.value)
+}
+
+function goToMap() {
+  router.push({ name: 'map' })
 }
 
 onMounted(() => {
@@ -63,7 +68,7 @@ onMounted(() => {
         <BaseImg :img="regionImg" class="scale-[1.5]"></BaseImg>
       </div>
       <div class="absolute right-[-40px] top-[400px]">
-        <BaseButton name="btn-toggle-next " width="170px"></BaseButton>
+        <BaseButton name="btn-toggle-next " width="170px" @click="goToMap"></BaseButton>
       </div>
     </BaseImg>
   </div>

@@ -6,7 +6,7 @@ export const formQuestions = [
     placeholder: 'Selecione uma opção',
     options: ['menino', 'menina'],
     audio: 'form_pergunta0',
-    duration: 6300
+    duration: 7300
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ export const formQuestions = [
     placeholder: 'Escreva seu nome',
     options: [],
     audio: 'form_pergunta1',
-    duration: 2800
+    duration: 3800
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ export const formQuestions = [
     placeholder: 'Escreva sua idade',
     options: [],
     audio: 'form_pergunta2',
-    duration: 3300
+    duration: 4600
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ export const formQuestions = [
     placeholder: 'Escolha o nome da sua cidade',
     options: [],
     audio: 'form_pergunta3',
-    duration: 2800
+    duration: 3900
   }
 ]
 

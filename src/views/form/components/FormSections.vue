@@ -8,7 +8,7 @@ const props = defineProps({
   }
 })
 
-const emit = defineEmits(['gender', 'next'])
+const emit = defineEmits(['gender', 'next', 'finish'])
 
 const userStore = useUserStore()
 
@@ -35,6 +35,10 @@ function clickGender(value) {
 
 function nextQuestion() {
   emit('next')
+}
+
+function finish() {
+  emit('finish')
 }
 
 const girlSelected = computed(() => {
@@ -113,7 +117,7 @@ const nullSelected = computed(() => {
         @click="nextQuestion"
       ></BaseButton>
     </div>
-    <div class="flex justify-center mt-14" v-if="index === 3">
+    <div class="flex justify-center mt-14" v-if="index === 3" @click="finish">
       <BaseButton name="btn-action-orange" label="Enviar" width="260px"></BaseButton>
     </div>
   </div>
