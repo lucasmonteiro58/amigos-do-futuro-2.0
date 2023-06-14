@@ -384,69 +384,69 @@
       644000,
       398.548752834472
     ],
-    "feedback_economia_moeda_entrando": [
-      646000,
-      1299.9999999999545
-    ],
-    "feedback_economia_moeda_saindo": [
-      649000,
-      451.02040816323097
-    ],
-    "feedback_economia_mos": [
-      651000,
-      399.99999999997726
-    ],
     "feedback_fala1": [
-      653000,
+      646000,
       3227.77777777776
     ],
     "feedback_fala2": [
-      658000,
+      651000,
       1434.1950113379198
     ],
-    "feedback_governo_apito": [
+    "feedback_mouse_over_itens": [
+      654000,
+      107.48299319732268
+    ],
+    "feedback_economia_moeda_entrando": [
+      656000,
+      1299.9999999999545
+    ],
+    "feedback_economia_moeda_saindo": [
+      659000,
+      451.02040816323097
+    ],
+    "feedback_economia_mos": [
       661000,
+      399.99999999997726
+    ],
+    "feedback_governo_apito": [
+      663000,
       1226.5759637188012
     ],
     "feedback_governo_megafone_01": [
-      664000,
+      666000,
       11864.013605442211
     ],
     "feedback_inovacao_agua_pingando": [
-      677000,
+      679000,
       2001.972789115598
     ],
     "feedback_inovacao_carrinho_andando_01": [
-      681000,
+      683000,
       22826.485260770936
     ],
     "feedback_inovacao_carrinho_andando_02": [
-      705000,
+      707000,
       74062.65306122453
     ],
     "feedback_inovacao_troca_de_peca": [
-      781000,
+      783000,
       575.9183673469579
     ],
     "feedback_lazer_colar_figurinha": [
-      783000,
+      785000,
       533.0839002267567
     ],
     "feedback_lazer_virar_pagina": [
-      785000,
+      787000,
       895.4195011338015
     ],
     "feedback_mapa_drag": [
-      787000,
+      789000,
       399.99999999997726
     ],
     "feedback_mapa_sucesso": [
-      789000,
+      791000,
       1740.9977324263082
-    ],
-    "feedback_mouse_over_itens": [
-      792000,
-      107.48299319732268
     ],
     "feedback_sustentabilidade_aguapia": [
       794000,
