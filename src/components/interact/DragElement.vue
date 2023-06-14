@@ -29,7 +29,7 @@ const props = defineProps({
   }
 })
 
-const emit = defineEmits(['start-drag'])
+const emit = defineEmits(['start-drag', 'end-drag'])
 
 // const dragging = ref(false)
 const initialSnapTarget = reactive({
@@ -89,6 +89,7 @@ function onEnd(event) {
   // onendEvent(dataTransfer)
   const target = event.target
   target.classList.remove('start-drag')
+  emit('end-drag')
 }
 
 function sigmoid(x) {
