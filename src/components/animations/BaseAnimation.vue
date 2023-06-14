@@ -61,7 +61,9 @@ onMounted(() => {
       x: frame.frame.x,
       y: frame.frame.y,
       w: frame.frame.w,
-      h: frame.frame.h
+      h: frame.frame.h,
+      rotated: frame.rotated,
+      trimmed: frame.trimmed
     })
   })
   frames.value.sort((a, b) => a.filename < b.filename)
@@ -89,20 +91,8 @@ function render() {
     yoyodirection.value = Number(!yoyodirection.value)
   }
   const index = Math.abs((currentIndex.value % length.value) - length.value * yoyodirection.value)
-  const x = frames.value[index].x
-  const y = frames.value[index].y
-  ctx.value &&
-    ctx.value.drawImage(
-      sprite.value,
-      x,
-      y,
-      widthCanvas.value,
-      height.value,
-      0,
-      0,
-      widthCanvas.value,
-      height.value
-    )
+  const { x, y, w, h } = frames.value[index]
+  ctx.value && ctx.value.drawImage(sprite.value, x, y, w, h, 0, 0, w, h)
 }
 
 function loop() {
