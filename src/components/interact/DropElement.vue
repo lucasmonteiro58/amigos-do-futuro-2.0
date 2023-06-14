@@ -37,13 +37,12 @@ const draggableElements = ref([])
 const refDrop = ref(null)
 
 function onDragEnter(event) {
-  console.log('onDragEnter')
   const item = event.relatedTarget
-  const elemento = event.relatedTarget.getAttribute('data-transfer')
+  const dataTransfer = event.relatedTarget.getAttribute('data-transfer')
 
-  if (elemento === props.expected) {
+  if (dataTransfer === props.expected) {
     item.classList.add('can-drop')
-    emit('dropped', event)
+    emit('dropped', { event, dataTransfer })
   }
 }
 
@@ -93,7 +92,6 @@ function resetOptionsStateWrong() {
   element.dropped.length = 0
   const selector = `#ID-${element.nome}`
   const draggable = document.querySelector(selector).firstElementChild
-  console.log(draggable)
   draggable.setAttribute('data-x', 0)
   draggable.setAttribute('data-y', 0)
   draggable.style.filter = 'drop-shadow(0px 0px 6px #ff0000)'

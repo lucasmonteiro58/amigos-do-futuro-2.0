@@ -13,6 +13,7 @@ declare module 'vue' {
     BaseImg: typeof import('./components/media/BaseImg.vue')['default']
     BaseInputSelect: typeof import('./components/inputs/BaseInputSelect.vue')['default']
     BaseInputText: typeof import('./components/inputs/BaseInputText.vue')['default']
+    CursorDrag: typeof import('./components/animations/CursorDrag.vue')['default']
     DragElement: typeof import('./components/interact/DragElement.vue')['default']
     DropElement: typeof import('./components/interact/DropElement.vue')['default']
     LoadingScreen: typeof import('./components/layout/LoadingScreen.vue')['default']

@@ -29,6 +29,8 @@ const props = defineProps({
   }
 })
 
+const emit = defineEmits(['start-drag'])
+
 // const dragging = ref(false)
 const initialSnapTarget = reactive({
   targets: [{ x: 0, y: 0, range: Infinity }],
@@ -77,6 +79,7 @@ function onStart(event) {
   //onstartEvent(dataTransfer)
   const target = event.target
   target.classList.add('start-drag')
+  emit('start-drag')
 }
 
 function onEnd(event) {

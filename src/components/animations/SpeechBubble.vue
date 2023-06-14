@@ -1,6 +1,6 @@
 <script setup>
 import { robotBlue } from '@/consts'
-defineProps({
+const props = defineProps({
   title: {
     type: String,
     default: ''
@@ -12,18 +12,34 @@ defineProps({
   time: {
     type: Number,
     default: 5000
+  },
+  audio: {
+    type: String,
+    default: ''
   }
 })
 
+const linesStore = useLinesStore()
 const isShowing = ref(true)
-
 const refRobot = ref(null)
 
 function close() {
   isShowing.value = false
+  linesStore.linesAudios.stop()
 }
+
 function open() {
   isShowing.value = true
+  playAudio()
+}
+
+function playAudio() {
+  if (props.audio) linesStore.playAudio(props.audio)
+}
+
+function playAgain() {
+  refRobot.value.playAgain()
+  linesStore.playAudio(props.audio)
 }
 </script>
 
@@ -47,6 +63,12 @@ function open() {
           @click="close"
           name="btn-toggle-close"
           class="absolute w-[110px] top-[-70px] left-[515px]"
+        ></BaseButton>
+        <BaseButton
+          @click="playAgain"
+          name="btn-toggle-repeat"
+          width="72px"
+          class="absolute top-[150px] left-[495px]"
         ></BaseButton>
       </div>
     </div>
