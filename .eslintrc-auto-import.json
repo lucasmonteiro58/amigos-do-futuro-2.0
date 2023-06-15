@@ -296,6 +296,7 @@
     "useLinesStore": true,
     "useBgMusicStore": true,
     "usePreload": true,
-    "transformFont": true
+    "transformFont": true,
+    "useEffectsStore": true
   }
 }

@@ -8,6 +8,7 @@ const showHelp = ref(true)
 const showPopper = ref(true)
 const showBoxComment = ref(false)
 const userStore = useUserStore()
+const effectsStore = useEffectsStore()
 
 const commentLine = computed(() => {
   return `Bom trabalho! Agora, precisamos saber que tipo de Amig${
@@ -22,6 +23,7 @@ const commentAudio = computed(() => {
 function onDrop(el) {
   const { dataTransfer } = el
   droppeds.value.push(dataTransfer)
+  effectsStore.playAudio('feedback_mapa_drag')
   if (droppeds.value.length === dropRegions.length) {
     onCompleted()
   }
@@ -74,7 +76,7 @@ function verifyDropped(name) {
       @end-drag="endDrag"
     >
       <Popper hover arrow :placement="el.placement" locked offsetDistance="5">
-        <div class="spritesheet" :class="el.image"></div>
+        <div class="spritesheet" :class="el.image" @mouseover="effectsStore.plaHoverButton"></div>
         <template #content v-if="showPopper">
           <div class="px-4 py-4">
             <div class="text-3xl font-bold">{{ el.title }}</div>

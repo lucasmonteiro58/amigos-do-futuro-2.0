@@ -1,504 +1,3213 @@
+.spritesheet.eco-badge {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9801px -1121px;
+  width: 503px;
+  height: 555px;
+}
+
+.spritesheet.edu-badge {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9801px -559px;
+  width: 503px;
+  height: 557px;
+}
+
+.spritesheet.gov-badge {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9801px -1681px;
+  width: 503px;
+  height: 554px;
+}
+
+.spritesheet.ino-badge {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9801px -2240px;
+  width: 503px;
+  height: 554px;
+}
+
+.spritesheet.laz-badge {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9801px -2799px;
+  width: 503px;
+  height: 554px;
+}
+
+.spritesheet.mei-badge {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9801px -3915px;
+  width: 503px;
+  height: 551px;
+}
+
+.spritesheet.sau-badge {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9801px -3358px;
+  width: 503px;
+  height: 552px;
+}
+
+.spritesheet.star-empty {
+  background-image: url('../images/spritesheet.png');
+  background-position: -3852px -1528px;
+  width: 151px;
+  height: 147px;
+}
+
+.spritesheet.star-full {
+  background-image: url('../images/spritesheet.png');
+  background-position: -3852px -1680px;
+  width: 151px;
+  height: 147px;
+}
+
+.spritesheet.star-half {
+  background-image: url('../images/spritesheet.png');
+  background-position: -3852px -1832px;
+  width: 151px;
+  height: 147px;
+}
+
+.spritesheet.bg_album_ultpagina {
+  background-image: url('../images/spritesheet.png');
+  background-position: -2098px -0px;
+  width: 1921px;
+  height: 1081px;
+}
+
+.spritesheet.bg_fundo_economia1 {
+  background-image: url('../images/spritesheet.png');
+  background-position: -0px -1102px;
+  width: 1921px;
+  height: 1081px;
+}
+
+.spritesheet.bg_pagina1e2 {
+  background-image: url('../images/spritesheet.png');
+  background-position: -1926px -1102px;
+  width: 1921px;
+  height: 1081px;
+}
+
+.spritesheet.bg_pagina3e4 {
+  background-image: url('../images/spritesheet.png');
+  background-position: -0px -2188px;
+  width: 1921px;
+  height: 1081px;
+}
+
+.spritesheet.bg_parquinho_saude {
+  background-image: url('../images/spritesheet.png');
+  background-position: -1926px -2188px;
+  width: 1921px;
+  height: 1081px;
+}
+
 .spritesheet.bg-bebedouro {
   background-image: url('../images/spritesheet.png');
-  background-position: -5778px -1086px;
+  background-position: -5777px -5446px;
   width: 1920px;
   height: 1080px;
 }
 
 .spritesheet.bg-cenario-sala {
   background-image: url('../images/spritesheet.png');
-  background-position: -0px -0px;
+  background-position: -4024px -0px;
   width: 1921px;
   height: 1081px;
 }
 
+.spritesheet.bg-certificate {
+  background-image: url('../images/spritesheet.png');
+  background-position: -0px -6532px;
+  width: 1920px;
+  height: 1080px;
+}
+
 .spritesheet.bg-chao-sujo {
   background-image: url('../images/spritesheet.png');
-  background-position: -5778px -2171px;
+  background-position: -1925px -6532px;
+  width: 1920px;
+  height: 1080px;
+}
+
+.spritesheet.bg-congrats {
+  background-image: url('../images/spritesheet.png');
+  background-position: -3850px -6532px;
   width: 1920px;
   height: 1080px;
 }
 
 .spritesheet.bg-cozinha {
   background-image: url('../images/spritesheet.png');
-  background-position: -1926px -0px;
+  background-position: -4024px -1086px;
   width: 1921px;
   height: 1081px;
 }
 
 .spritesheet.bg-home {
   background-image: url('../images/spritesheet.png');
-  background-position: -5778px -0px;
+  background-position: -3852px -5446px;
   width: 1920px;
   height: 1081px;
 }
 
 .spritesheet.bg-horta {
   background-image: url('../images/spritesheet.png');
-  background-position: -0px -1086px;
+  background-position: -4024px -2172px;
   width: 1921px;
   height: 1081px;
 }
 
 .spritesheet.bg-mapa-ceara {
   background-image: url('../images/spritesheet.png');
-  background-position: -1926px -1086px;
+  background-position: -0px -3274px;
   width: 1921px;
   height: 1081px;
 }
 
 .spritesheet.bg-sete-erros {
   background-image: url('../images/spritesheet.png');
-  background-position: -0px -2172px;
+  background-position: -1926px -3274px;
   width: 1921px;
   height: 1081px;
 }
 
 .spritesheet.cenario_inovacao2 {
   background-image: url('../images/spritesheet.png');
-  background-position: -1926px -2172px;
+  background-position: -3852px -3274px;
   width: 1921px;
   height: 1081px;
 }
 
 .spritesheet.cenario_mapaspeca {
   background-image: url('../images/spritesheet.png');
-  background-position: -3852px -0px;
+  background-position: -0px -4360px;
   width: 1921px;
   height: 1081px;
 }
 
 .spritesheet.cenario1_governo {
   background-image: url('../images/spritesheet.png');
-  background-position: -3852px -1086px;
+  background-position: -1926px -4360px;
   width: 1921px;
   height: 1081px;
 }
 
 .spritesheet.cenarioalimentacao {
   background-image: url('../images/spritesheet.png');
-  background-position: -5778px -3256px;
+  background-position: -5775px -6532px;
   width: 1920px;
   height: 1080px;
 }
 
 .spritesheet.cenariocarrinho_inovacao {
   background-image: url('../images/spritesheet.png');
-  background-position: -3852px -2172px;
+  background-position: -3852px -4360px;
   width: 1921px;
   height: 1081px;
 }
 
 .spritesheet.cenarioescola_dentro {
   background-image: url('../images/spritesheet.png');
-  background-position: -0px -3258px;
+  background-position: -5950px -0px;
   width: 1921px;
   height: 1081px;
 }
 
 .spritesheet.cenarioescola_fora {
   background-image: url('../images/spritesheet.png');
-  background-position: -1926px -3258px;
+  background-position: -5950px -1086px;
   width: 1921px;
   height: 1081px;
 }
 
 .spritesheet.cenariogoverno_ong {
   background-image: url('../images/spritesheet.png');
-  background-position: -3852px -3258px;
+  background-position: -5950px -2172px;
   width: 1921px;
   height: 1081px;
 }
 
 .spritesheet.cenariogoverno_radio {
   background-image: url('../images/spritesheet.png');
-  background-position: -0px -4344px;
+  background-position: -5950px -3258px;
   width: 1921px;
   height: 1081px;
 }
 
 .spritesheet.cenariogoverno_radio3 {
   background-image: url('../images/spritesheet.png');
-  background-position: -1926px -4344px;
+  background-position: -5950px -4344px;
   width: 1921px;
   height: 1081px;
 }
 
 .spritesheet.cenarioprefeitura_governo {
   background-image: url('../images/spritesheet.png');
-  background-position: -3852px -4344px;
+  background-position: -0px -5446px;
   width: 1921px;
   height: 1081px;
 }
 
 .spritesheet.balloon-comment {
   background-image: url('../images/spritesheet.png');
-  background-position: -0px -5430px;
+  background-position: -2260px -7991px;
   width: 958px;
   height: 393px;
 }
 
+.spritesheet.box-all-badges-certificate {
+  background-image: url('../images/spritesheet.png');
+  background-position: -8964px -6041px;
+  width: 753px;
+  height: 512px;
+}
+
+.spritesheet.box-comment-certificate {
+  background-image: url('../images/spritesheet.png');
+  background-position: -1055px -8398px;
+  width: 930px;
+  height: 247px;
+}
+
 .spritesheet.box-comment {
   background-image: url('../images/spritesheet.png');
-  background-position: -5778px -4341px;
+  background-position: -7876px -1085px;
   width: 1713px;
+  height: 836px;
+}
+
+.spritesheet.box-other-badges {
+  background-image: url('../images/spritesheet.png');
+  background-position: -7876px -4610px;
+  width: 1293px;
   height: 836px;
 }
 
 .spritesheet.box-regions-left {
   background-image: url('../images/spritesheet.png');
-  background-position: -2882px -5574px;
+  background-position: -6286px -8778px;
   width: 392px;
   height: 160px;
 }
 
+.spritesheet.box-robot-comment-down {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9801px -5023px;
+  width: 531px;
+  height: 419px;
+}
+
 .spritesheet.box-robot-help {
   background-image: url('../images/spritesheet.png');
-  background-position: -963px -5430px;
+  background-position: -3223px -7991px;
   width: 904px;
   height: 376px;
 }
 
+.spritesheet.cxainserir_txt_linhas {
+  background-image: url('../images/spritesheet.png');
+  background-position: -3577px -7617px;
+  width: 971px;
+  height: 337px;
+}
+
 .spritesheet.input-box {
   background-image: url('../images/spritesheet.png');
-  background-position: -1872px -5430px;
+  background-position: -7979px -7617px;
   width: 971px;
   height: 139px;
 }
 
 .spritesheet.robot-balloon {
   background-image: url('../images/spritesheet.png');
-  background-position: -5778px -5182px;
+  background-position: -5168px -7991px;
   width: 1095px;
   height: 226px;
 }
 
 .spritesheet.robot-mini-blue {
   background-image: url('../images/spritesheet.png');
-  background-position: -0px -6582px;
+  background-position: -10659px -5216px;
   width: 204px;
   height: 253px;
 }
 
+.spritesheet.textarea-box {
+  background-image: url('../images/spritesheet.png');
+  background-position: -4553px -7617px;
+  width: 971px;
+  height: 337px;
+}
+
 .spritesheet.bt-info_ativo {
   background-image: url('../images/spritesheet.png');
-  background-position: -1746px -5828px;
+  background-position: -10659px -9227px;
   width: 200px;
   height: 200px;
 }
 
 .spritesheet.btn-action-blue {
   background-image: url('../images/spritesheet.png');
-  background-position: -6878px -5182px;
+  background-position: -9204px -4399px;
   width: 500px;
   height: 181px;
 }
 
 .spritesheet.btn-action-orange {
   background-image: url('../images/spritesheet.png');
-  background-position: -1872px -5574px;
+  background-position: -2415px -8398px;
   width: 500px;
   height: 181px;
 }
 
 .spritesheet.btn-action-white {
   background-image: url('../images/spritesheet.png');
-  background-position: -2377px -5574px;
+  background-position: -2920px -8398px;
   width: 500px;
   height: 181px;
 }
 
 .spritesheet.btn-btmusicoff_ativo {
   background-image: url('../images/spritesheet.png');
-  background-position: -1951px -5828px;
+  background-position: -10659px -9432px;
   width: 200px;
   height: 200px;
 }
 
 .spritesheet.btn-btrepetirinativo_ {
   background-image: url('../images/spritesheet.png');
-  background-position: -2156px -5828px;
+  background-position: -10659px -9637px;
   width: 200px;
   height: 200px;
 }
 
 .spritesheet.btn-music_ativo {
   background-image: url('../images/spritesheet.png');
-  background-position: -2361px -5828px;
+  background-position: -10659px -9842px;
   width: 200px;
   height: 200px;
 }
 
 .spritesheet.btn-op-no {
   background-image: url('../images/spritesheet.png');
-  background-position: -3527px -5430px;
+  background-position: -4354px -8243px;
   width: 217px;
   height: 123px;
 }
 
 .spritesheet.btn-op-yes {
   background-image: url('../images/spritesheet.png');
-  background-position: -3305px -5430px;
+  background-position: -4132px -8243px;
   width: 217px;
   height: 124px;
 }
 
 .spritesheet.btn-start {
   background-image: url('../images/spritesheet.png');
-  background-position: -2848px -5430px;
+  background-position: -8955px -7617px;
   width: 452px;
   height: 129px;
 }
 
 .spritesheet.btn-toggle-arrow-p {
   background-image: url('../images/spritesheet.png');
-  background-position: -2566px -5828px;
+  background-position: -10659px -10047px;
   width: 200px;
   height: 200px;
 }
 
 .spritesheet.btn-toggle-arrow {
   background-image: url('../images/spritesheet.png');
-  background-position: -2771px -5828px;
+  background-position: -10659px -10252px;
   width: 200px;
   height: 200px;
 }
 
 .spritesheet.btn-toggle-close {
   background-image: url('../images/spritesheet.png');
-  background-position: -2976px -5828px;
+  background-position: -10438px -1343px;
   width: 200px;
   height: 200px;
 }
 
 .spritesheet.btn-toggle-download {
   background-image: url('../images/spritesheet.png');
-  background-position: -7496px -4826px;
+  background-position: -10659px -8815px;
   width: 200px;
   height: 201px;
 }
 
 .spritesheet.btn-toggle-home {
   background-image: url('../images/spritesheet.png');
-  background-position: -3181px -5828px;
+  background-position: -10438px -1548px;
   width: 200px;
   height: 200px;
 }
 
 .spritesheet.btn-toggle-info {
   background-image: url('../images/spritesheet.png');
-  background-position: -3386px -5828px;
+  background-position: -10438px -1753px;
   width: 200px;
   height: 200px;
 }
 
 .spritesheet.btn-toggle-mute {
   background-image: url('../images/spritesheet.png');
-  background-position: -3591px -5828px;
+  background-position: -10438px -1958px;
   width: 200px;
   height: 200px;
 }
 
 .spritesheet.btn-toggle-next {
   background-image: url('../images/spritesheet.png');
-  background-position: -3796px -5828px;
+  background-position: -10438px -2163px;
   width: 200px;
   height: 200px;
 }
 
 .spritesheet.btn-toggle-ok {
   background-image: url('../images/spritesheet.png');
-  background-position: -4001px -5828px;
+  background-position: -10438px -2368px;
   width: 200px;
   height: 200px;
 }
 
 .spritesheet.btn-toggle-pause {
   background-image: url('../images/spritesheet.png');
-  background-position: -4206px -5828px;
+  background-position: -10438px -2573px;
   width: 200px;
   height: 200px;
 }
 
 .spritesheet.btn-toggle-play {
   background-image: url('../images/spritesheet.png');
-  background-position: -4411px -5828px;
+  background-position: -10438px -2778px;
   width: 200px;
   height: 200px;
 }
 
 .spritesheet.btn-toggle-print {
   background-image: url('../images/spritesheet.png');
-  background-position: -1541px -5828px;
+  background-position: -10659px -9021px;
   width: 200px;
   height: 201px;
 }
 
 .spritesheet.btn-toggle-repeat {
   background-image: url('../images/spritesheet.png');
-  background-position: -4616px -5828px;
+  background-position: -10438px -2983px;
   width: 200px;
   height: 200px;
 }
 
 .spritesheet.btn-toggle-sound {
   background-image: url('../images/spritesheet.png');
-  background-position: -4821px -5828px;
+  background-position: -10438px -3188px;
   width: 200px;
   height: 200px;
 }
 
+.spritesheet.monstrinhos_aventurim_lazer {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9801px -5447px;
+  width: 412px;
+  height: 477px;
+}
+
+.spritesheet.monstrinhos_bg_monstrinhos_economia {
+  background-image: url('../images/spritesheet.png');
+  background-position: -1926px -5446px;
+  width: 1921px;
+  height: 1081px;
+}
+
+.spritesheet.monstrinhos_bolinha1_educ_ciencito {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10558px -7475px;
+  width: 73px;
+  height: 73px;
+}
+
+.spritesheet.monstrinhos_bolinha1_lazer_aventurim {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10558px -7553px;
+  width: 73px;
+  height: 73px;
+}
+
+.spritesheet.monstrinhos_bolinha1_saude_remeldino {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10337px -5023px;
+  width: 73px;
+  height: 73px;
+}
+
+.spritesheet.monstrinhos_bolinha2_educ_mapamax {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10337px -5101px;
+  width: 73px;
+  height: 73px;
+}
+
+.spritesheet.monstrinhos_bolinha2_lazer_esportanto {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10337px -5179px;
+  width: 73px;
+  height: 73px;
+}
+
+.spritesheet.monstrinhos_bolinha2_saude_higiento {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10337px -5257px;
+  width: 73px;
+  height: 73px;
+}
+
+.spritesheet.monstrinhos_bolinha3_educ_livrex {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10337px -5335px;
+  width: 73px;
+  height: 73px;
+}
+
+.spritesheet.monstrinhos_bolinha3_lazer_dancitar {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10349px -6171px;
+  width: 73px;
+  height: 73px;
+}
+
+.spritesheet.monstrinhos_bolinha3_saude_alimeniro {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10349px -6249px;
+  width: 73px;
+  height: 73px;
+}
+
+.spritesheet.monstrinhos_bt_ addmoeda_educ {
+  background-image: url('../images/spritesheet.png');
+  background-position: -4714px -8398px;
+  width: 221px;
+  height: 133px;
+}
+
+.spritesheet.monstrinhos_bt_addmoeda_lazer {
+  background-image: url('../images/spritesheet.png');
+  background-position: -8951px -7991px;
+  width: 224px;
+  height: 133px;
+}
+
+.spritesheet.monstrinhos_bt_addmoeda_saude {
+  background-image: url('../images/spritesheet.png');
+  background-position: -8722px -7991px;
+  width: 224px;
+  height: 134px;
+}
+
+.spritesheet.monstrinhos_ciencito_educ {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9801px -5929px;
+  width: 412px;
+  height: 477px;
+}
+
+.spritesheet.monstrinhos_dancitar_lazer {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9801px -6411px;
+  width: 412px;
+  height: 477px;
+}
+
+.spritesheet.monstrinhos_esportanto_lazer {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9801px -6893px;
+  width: 412px;
+  height: 477px;
+}
+
+.spritesheet.monstrinhos_higiento_saude {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9801px -7375px;
+  width: 412px;
+  height: 477px;
+}
+
+.spritesheet.monstrinhos_livrex_educ {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9801px -7857px;
+  width: 412px;
+  height: 477px;
+}
+
+.spritesheet.monstrinhos_mapamax_educ {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9801px -8339px;
+  width: 412px;
+  height: 477px;
+}
+
+.spritesheet.monstrinhos_remeldino_saude {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9801px -8821px;
+  width: 412px;
+  height: 477px;
+}
+
+.spritesheet.planta_cabeca_robo {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10558px -5833px;
+  width: 95px;
+  height: 96px;
+}
+
+.spritesheet.planta_item1_eco_bom {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10793px -4655px;
+  width: 101px;
+  height: 101px;
+}
+
+.spritesheet.planta_item1_eco_ruim {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10309px -1571px;
+  width: 101px;
+  height: 101px;
+}
+
+.spritesheet.planta_item2_eco_bom {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9690px -6687px;
+  width: 101px;
+  height: 101px;
+}
+
+.spritesheet.planta_item2_eco_ruim {
+  background-image: url('../images/spritesheet.png');
+  background-position: -4221px -9599px;
+  width: 101px;
+  height: 101px;
+}
+
+.spritesheet.planta_item3_eco_bom {
+  background-image: url('../images/spritesheet.png');
+  background-position: -4327px -9599px;
+  width: 101px;
+  height: 101px;
+}
+
+.spritesheet.planta_item3_eco_ruim {
+  background-image: url('../images/spritesheet.png');
+  background-position: -4433px -9599px;
+  width: 101px;
+  height: 101px;
+}
+
+.spritesheet.planta_item4_eco_bom {
+  background-image: url('../images/spritesheet.png');
+  background-position: -4539px -9599px;
+  width: 101px;
+  height: 101px;
+}
+
+.spritesheet.planta_moeda_eco {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10588px -6626px;
+  width: 58px;
+  height: 54px;
+}
+
+.spritesheet.planta_plantacasa_eco {
+  background-image: url('../images/spritesheet.png');
+  background-position: -7876px -3673px;
+  width: 1323px;
+  height: 932px;
+}
+
+.spritesheet.planta_rectmoeda_maior {
+  background-image: url('../images/spritesheet.png');
+  background-position: -8740px -7515px;
+  width: 901px;
+  height: 71px;
+}
+
+.spritesheet.planta_rectmoeda_menor {
+  background-image: url('../images/spritesheet.png');
+  background-position: -6627px -7832px;
+  width: 182px;
+  height: 70px;
+}
+
+.spritesheet.barradeitens {
+  background-image: url('../images/spritesheet.png');
+  background-position: -5529px -7617px;
+  width: 1370px;
+  height: 210px;
+}
+
+.spritesheet.bt_add {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10844px -8574px;
+  width: 53px;
+  height: 53px;
+}
+
+.spritesheet.bt_check {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10844px -8632px;
+  width: 53px;
+  height: 53px;
+}
+
+.spritesheet.bt_subtract {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10844px -8690px;
+  width: 53px;
+  height: 53px;
+}
+
+.spritesheet.caixafeedback {
+  background-image: url('../images/spritesheet.png');
+  background-position: -7876px -1926px;
+  width: 1552px;
+  height: 868px;
+}
+
+.spritesheet.escolad_biblioteca_save {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10218px -6411px;
+  width: 151px;
+  height: 151px;
+}
+
+.spritesheet.escolad_biblioteca {
+  background-image: url('../images/spritesheet.png');
+  background-position: -3372px -9599px;
+  width: 304px;
+  height: 217px;
+}
+
+.spritesheet.escolad_bt_cantina_add {
+  background-image: url('../images/spritesheet.png');
+  background-position: -5778px -4626px;
+  width: 159px;
+  height: 118px;
+}
+
+.spritesheet.escolad_bt_cantina_check {
+  background-image: url('../images/spritesheet.png');
+  background-position: -5778px -4749px;
+  width: 159px;
+  height: 118px;
+}
+
+.spritesheet.escolad_bt_cantina_menos {
+  background-image: url('../images/spritesheet.png');
+  background-position: -5778px -4502px;
+  width: 158px;
+  height: 119px;
+}
+
+.spritesheet.escolad_bt_cantina {
+  background-image: url('../images/spritesheet.png');
+  background-position: -5778px -4872px;
+  width: 159px;
+  height: 118px;
+}
+
+.spritesheet.escolad_bt_danca_add {
+  background-image: url('../images/spritesheet.png');
+  background-position: -3852px -2323px;
+  width: 162px;
+  height: 129px;
+}
+
+.spritesheet.escolad_bt_danca_check {
+  background-image: url('../images/spritesheet.png');
+  background-position: -3852px -2188px;
+  width: 162px;
+  height: 130px;
+}
+
+.spritesheet.escolad_bt_danca_menos {
+  background-image: url('../images/spritesheet.png');
+  background-position: -3852px -2457px;
+  width: 162px;
+  height: 129px;
+}
+
+.spritesheet.escolad_bt_danca {
+  background-image: url('../images/spritesheet.png');
+  background-position: -3852px -2591px;
+  width: 162px;
+  height: 129px;
+}
+
+.spritesheet.escolad_bt_informatica_add {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10438px -8402px;
+  width: 200px;
+  height: 126px;
+}
+
+.spritesheet.escolad_bt_informatica_check {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10438px -8533px;
+  width: 200px;
+  height: 126px;
+}
+
+.spritesheet.escolad_bt_informatica_menos {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10438px -8972px;
+  width: 199px;
+  height: 125px;
+}
+
+.spritesheet.escolad_bt_informatica {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10438px -8664px;
+  width: 200px;
+  height: 126px;
+}
+
+.spritesheet.escolad_bt_livros_1 {
+  background-image: url('../images/spritesheet.png');
+  background-position: -7702px -5572px;
+  width: 148px;
+  height: 116px;
+}
+
+.spritesheet.escolad_bt_livros_add {
+  background-image: url('../images/spritesheet.png');
+  background-position: -7702px -5693px;
+  width: 148px;
+  height: 116px;
+}
+
+.spritesheet.escolad_bt_livros_check_1 {
+  background-image: url('../images/spritesheet.png');
+  background-position: -5778px -5261px;
+  width: 148px;
+  height: 117px;
+}
+
+.spritesheet.escolad_bt_livros_menos_1 {
+  background-image: url('../images/spritesheet.png');
+  background-position: -7702px -5814px;
+  width: 148px;
+  height: 116px;
+}
+
+.spritesheet.escolad_bt_musica_add {
+  background-image: url('../images/spritesheet.png');
+  background-position: -5778px -3852px;
+  width: 140px;
+  height: 137px;
+}
+
+.spritesheet.escolad_bt_musica_check {
+  background-image: url('../images/spritesheet.png');
+  background-position: -5778px -3994px;
+  width: 140px;
+  height: 137px;
+}
+
+.spritesheet.escolad_bt_musica_menos {
+  background-image: url('../images/spritesheet.png');
+  background-position: -5778px -4136px;
+  width: 140px;
+  height: 137px;
+}
+
+.spritesheet.escolad_bt_musica {
+  background-image: url('../images/spritesheet.png');
+  background-position: -5778px -4360px;
+  width: 140px;
+  height: 137px;
+}
+
+.spritesheet.escolad_bt_quimica_add {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10793px -4501px;
+  width: 98px;
+  height: 149px;
+}
+
+.spritesheet.escolad_bt_quimica_check {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10309px -3915px;
+  width: 98px;
+  height: 149px;
+}
+
+.spritesheet.escolad_bt_quimica_menos {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10309px -4069px;
+  width: 98px;
+  height: 149px;
+}
+
+.spritesheet.escolad_bt_quimica {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10309px -4223px;
+  width: 98px;
+  height: 149px;
+}
+
+.spritesheet.escolad_bt_teatro_add {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10301px -9303px;
+  width: 130px;
+  height: 130px;
+}
+
+.spritesheet.escolad_bt_teatro_check {
+  background-image: url('../images/spritesheet.png');
+  background-position: -7702px -6169px;
+  width: 130px;
+  height: 130px;
+}
+
+.spritesheet.escolad_bt_teatro_menos {
+  background-image: url('../images/spritesheet.png');
+  background-position: -7700px -6532px;
+  width: 129px;
+  height: 130px;
+}
+
+.spritesheet.escolad_bt_teatro {
+  background-image: url('../images/spritesheet.png');
+  background-position: -7702px -6304px;
+  width: 130px;
+  height: 130px;
+}
+
+.spritesheet.escolad_cantina_save {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10218px -6567px;
+  width: 151px;
+  height: 151px;
+}
+
+.spritesheet.escolad_cantina {
+  background-image: url('../images/spritesheet.png');
+  background-position: -3681px -9599px;
+  width: 303px;
+  height: 217px;
+}
+
+.spritesheet.escolad_danca_save {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10218px -6723px;
+  width: 151px;
+  height: 151px;
+}
+
+.spritesheet.escolad_escoladentro {
+  background-image: url('../images/spritesheet.png');
+  background-position: -7876px -6041px;
+  width: 1083px;
+  height: 801px;
+}
+
+.spritesheet.escolad_icon_biblioteca {
+  background-image: url('../images/spritesheet.png');
+  background-position: -7702px -6439px;
+  width: 144px;
+  height: 86px;
+}
+
+.spritesheet.escolad_icon_cantina {
+  background-image: url('../images/spritesheet.png');
+  background-position: -8086px -8778px;
+  width: 149px;
+  height: 91px;
+}
+
+.spritesheet.escolad_icon_ciencias {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10558px -6848px;
+  width: 83px;
+  height: 150px;
+}
+
+.spritesheet.escolad_icon_danca {
+  background-image: url('../images/spritesheet.png');
+  background-position: -7702px -5935px;
+  width: 157px;
+  height: 109px;
+}
+
+.spritesheet.escolad_icon_informatica {
+  background-image: url('../images/spritesheet.png');
+  background-position: -1055px -8650px;
+  width: 185px;
+  height: 105px;
+}
+
+.spritesheet.escolad_icon_musica {
+  background-image: url('../images/spritesheet.png');
+  background-position: -7700px -6896px;
+  width: 126px;
+  height: 128px;
+}
+
+.spritesheet.escolad_icon_teatro {
+  background-image: url('../images/spritesheet.png');
+  background-position: -1766px -9213px;
+  width: 120px;
+  height: 114px;
+}
+
+.spritesheet.escolad_info_save {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10218px -6893px;
+  width: 151px;
+  height: 151px;
+}
+
+.spritesheet.escolad_labciencias {
+  background-image: url('../images/spritesheet.png');
+  background-position: -3064px -9599px;
+  width: 303px;
+  height: 218px;
+}
+
+.spritesheet.escolad_labinformatica {
+  background-image: url('../images/spritesheet.png');
+  background-position: -2755px -9599px;
+  width: 304px;
+  height: 219px;
+}
+
+.spritesheet.escolad_musica_save {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10218px -7049px;
+  width: 151px;
+  height: 151px;
+}
+
+.spritesheet.escolad_quimica_save {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10218px -7205px;
+  width: 151px;
+  height: 151px;
+}
+
+.spritesheet.escolad_saladanca {
+  background-image: url('../images/spritesheet.png');
+  background-position: -2445px -9599px;
+  width: 305px;
+  height: 219px;
+}
+
+.spritesheet.escolad_salamusica {
+  background-image: url('../images/spritesheet.png');
+  background-position: -2134px -9599px;
+  width: 306px;
+  height: 220px;
+}
+
+.spritesheet.escolad_salateatro {
+  background-image: url('../images/spritesheet.png');
+  background-position: -1580px -10078px;
+  width: 302px;
+  height: 220px;
+}
+
+.spritesheet.escolad_teatro_save {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10218px -7375px;
+  width: 151px;
+  height: 151px;
+}
+
+.spritesheet.escolaf_acessib_save {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10218px -7531px;
+  width: 151px;
+  height: 151px;
+}
+
+.spritesheet.escolaf_arvore_save {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10218px -7687px;
+  width: 151px;
+  height: 151px;
+}
+
+.spritesheet.escolaf_arvores1 {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10438px -0px;
+  width: 216px;
+  height: 395px;
+}
+
+.spritesheet.escolaf_arvores2 {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10218px -6171px;
+  width: 126px;
+  height: 181px;
+}
+
+.spritesheet.escolaf_bt_acessib_add {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10309px -1121px;
+  width: 123px;
+  height: 145px;
+}
+
+.spritesheet.escolaf_bt_acessib_check {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10309px -714px;
+  width: 123px;
+  height: 146px;
+}
+
+.spritesheet.escolaf_bt_acessib_menos {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10309px -1271px;
+  width: 123px;
+  height: 145px;
+}
+
+.spritesheet.escolaf_bt_acessib_normal {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10309px -1421px;
+  width: 123px;
+  height: 145px;
+}
+
+.spritesheet.escolaf_bt_arbori_add {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10309px -1681px;
+  width: 121px;
+  height: 147px;
+}
+
+.spritesheet.escolaf_bt_arbori_check {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10309px -559px;
+  width: 121px;
+  height: 150px;
+}
+
+.spritesheet.escolaf_bt_arbori_menos {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10309px -865px;
+  width: 121px;
+  height: 148px;
+}
+
+.spritesheet.escolaf_bt_arbori_normal {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10309px -1833px;
+  width: 121px;
+  height: 147px;
+}
+
+.spritesheet.escolaf_bt_bus_add {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9601px -4744px;
+  width: 175px;
+  height: 128px;
+}
+
+.spritesheet.escolaf_bt_bus_check {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9601px -4610px;
+  width: 174px;
+  height: 129px;
+}
+
+.spritesheet.escolaf_bt_bus_menos {
+  background-image: url('../images/spritesheet.png');
+  background-position: -7149px -8778px;
+  width: 175px;
+  height: 128px;
+}
+
+.spritesheet.escolaf_bt_bus_normal {
+  background-image: url('../images/spritesheet.png');
+  background-position: -7329px -8778px;
+  width: 175px;
+  height: 128px;
+}
+
+.spritesheet.escolaf_bt_horta_add {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10438px -9554px;
+  width: 175px;
+  height: 138px;
+}
+
+.spritesheet.escolaf_bt_horta_check {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10438px -9102px;
+  width: 175px;
+  height: 140px;
+}
+
+.spritesheet.escolaf_bt_horta_menos {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10438px -9410px;
+  width: 175px;
+  height: 139px;
+}
+
+.spritesheet.escolaf_bt_horta_normal {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10438px -9697px;
+  width: 175px;
+  height: 138px;
+}
+
+.spritesheet.escolaf_bt_lixo_add {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10309px -3358px;
+  width: 116px;
+  height: 137px;
+}
+
+.spritesheet.escolaf_bt_lixo_check {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10309px -2946px;
+  width: 117px;
+  height: 139px;
+}
+
+.spritesheet.escolaf_bt_lixo_menos {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10309px -3090px;
+  width: 117px;
+  height: 137px;
+}
+
+.spritesheet.escolaf_bt_lixo_png {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10309px -3500px;
+  width: 116px;
+  height: 137px;
+}
+
+.spritesheet.escolaf_bt_parque_add {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10309px -2395px;
+  width: 115px;
+  height: 149px;
+}
+
+.spritesheet.escolaf_bt_parque_check {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10309px -1985px;
+  width: 115px;
+  height: 150px;
+}
+
+.spritesheet.escolaf_bt_parque_menos {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10309px -2240px;
+  width: 115px;
+  height: 150px;
+}
+
+.spritesheet.escolaf_bt_parque_normal {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10309px -2549px;
+  width: 115px;
+  height: 149px;
+}
+
+.spritesheet.escolaf_bt_pintar_add {
+  background-image: url('../images/spritesheet.png');
+  background-position: -3852px -1102px;
+  width: 163px;
+  height: 137px;
+}
+
+.spritesheet.escolaf_bt_pintar_check {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9599px -3840px;
+  width: 163px;
+  height: 138px;
+}
+
+.spritesheet.escolaf_bt_pintar_menos {
+  background-image: url('../images/spritesheet.png');
+  background-position: -3852px -1244px;
+  width: 163px;
+  height: 137px;
+}
+
+.spritesheet.escolaf_bt_pintar_normal {
+  background-image: url('../images/spritesheet.png');
+  background-position: -3852px -1386px;
+  width: 163px;
+  height: 137px;
+}
+
+.spritesheet.escolaf_escolafora_antes {
+  background-image: url('../images/spritesheet.png');
+  background-position: -8834px -6847px;
+  width: 953px;
+  height: 662px;
+}
+
+.spritesheet.escolaf_escolafora_pintada {
+  background-image: url('../images/spritesheet.png');
+  background-position: -7876px -6847px;
+  width: 953px;
+  height: 663px;
+}
+
+.spritesheet.escolaf_horta_save {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10218px -7857px;
+  width: 151px;
+  height: 151px;
+}
+
+.spritesheet.escolaf_horta {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9433px -2651px;
+  width: 306px;
+  height: 137px;
+}
+
+.spritesheet.escolaf_icon_acessib {
+  background-image: url('../images/spritesheet.png');
+  background-position: -3989px -9599px;
+  width: 107px;
+  height: 122px;
+}
+
+.spritesheet.escolaf_icon_arborizar {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10309px -2799px;
+  width: 116px;
+  height: 142px;
+}
+
+.spritesheet.escolaf_icon_horta {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10218px -5765px;
+  width: 174px;
+  height: 135px;
+}
+
+.spritesheet.escolaf_icon_lixeirasselet {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9690px -6558px;
+  width: 105px;
+  height: 124px;
+}
+
+.spritesheet.escolaf_icon_onibus {
+  background-image: url('../images/spritesheet.png');
+  background-position: -7700px -6667px;
+  width: 169px;
+  height: 96px;
+}
+
+.spritesheet.escolaf_icon_parquinho {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10793px -4351px;
+  width: 106px;
+  height: 145px;
+}
+
+.spritesheet.escolaf_icon_pintar {
+  background-image: url('../images/spritesheet.png');
+  background-position: -7702px -6049px;
+  width: 148px;
+  height: 115px;
+}
+
+.spritesheet.escolaf_lixeirasseletivas {
+  background-image: url('../images/spritesheet.png');
+  background-position: -5703px -8243px;
+  width: 268px;
+  height: 79px;
+}
+
+.spritesheet.escolaf_lixo_save {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10218px -8013px;
+  width: 151px;
+  height: 151px;
+}
+
+.spritesheet.escolaf_onibus_save {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10218px -8169px;
+  width: 151px;
+  height: 151px;
+}
+
+.spritesheet.escolaf_onibusescolar {
+  background-image: url('../images/spritesheet.png');
+  background-position: -3914px -8398px;
+  width: 279px;
+  height: 158px;
+}
+
+.spritesheet.escolaf_parque_save {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10218px -8339px;
+  width: 151px;
+  height: 151px;
+}
+
+.spritesheet.escolaf_parquinho {
+  background-image: url('../images/spritesheet.png');
+  background-position: -1990px -8398px;
+  width: 420px;
+  height: 221px;
+}
+
+.spritesheet.escolaf_rampaacessibilidade {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9599px -3983px;
+  width: 158px;
+  height: 82px;
+}
+
+.spritesheet.escolaf_tinta_save {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10218px -8495px;
+  width: 151px;
+  height: 151px;
+}
+
+.spritesheet.sala_cadeira_save {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10218px -8651px;
+  width: 151px;
+  height: 151px;
+}
+
+.spritesheet.sala_carteirassala {
+  background-image: url('../images/spritesheet.png');
+  background-position: -1055px -7991px;
+  width: 1200px;
+  height: 402px;
+}
+
+.spritesheet.sala_globo_save {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10218px -8821px;
+  width: 151px;
+  height: 151px;
+}
+
+.spritesheet.sala_globosala {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10309px -3642px;
+  width: 115px;
+  height: 137px;
+}
+
+.spritesheet.sala_icon_carteira {
+  background-image: url('../images/spritesheet.png');
+  background-position: -5778px -5128px;
+  width: 137px;
+  height: 128px;
+}
+
+.spritesheet.sala_icon_globo {
+  background-image: url('../images/spritesheet.png');
+  background-position: -1258px -9389px;
+  width: 107px;
+  height: 127px;
+}
+
+.spritesheet.sala_icon_lapis {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10558px -5675px;
+  width: 86px;
+  height: 153px;
+}
+
+.spritesheet.sala_icon_livros {
+  background-image: url('../images/spritesheet.png');
+  background-position: -7700px -7147px;
+  width: 163px;
+  height: 96px;
+}
+
+.spritesheet.sala_icon_lixeira {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10309px -3784px;
+  width: 122px;
+  height: 117px;
+}
+
+.spritesheet.sala_icon_luz {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10558px -6344px;
+  width: 93px;
+  height: 136px;
+}
+
+.spritesheet.sala_icon_quadro {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10218px -5929px;
+  width: 202px;
+  height: 116px;
+}
+
+.spritesheet.sala_lapis_save {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10218px -8977px;
+  width: 151px;
+  height: 151px;
+}
+
+.spritesheet.sala_lapissala {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10309px -2703px;
+  width: 124px;
+  height: 76px;
+}
+
+.spritesheet.sala_livros_save {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10218px -9133px;
+  width: 151px;
+  height: 151px;
+}
+
+.spritesheet.sala_livrossala {
+  background-image: url('../images/spritesheet.png');
+  background-position: -5644px -8398px;
+  width: 143px;
+  height: 84px;
+}
+
+.spritesheet.sala_lixeira_save {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9594px -1085px;
+  width: 151px;
+  height: 151px;
+}
+
+.spritesheet.sala_lixeirasala {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10309px -3232px;
+  width: 123px;
+  height: 117px;
+}
+
+.spritesheet.sala_luz_save {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9594px -1241px;
+  width: 151px;
+  height: 151px;
+}
+
+.spritesheet.sala_luzsala {
+  background-image: url('../images/spritesheet.png');
+  background-position: -0px -0px;
+  width: 2093px;
+  height: 1097px;
+}
+
+.spritesheet.sala_quadro_save {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9594px -1397px;
+  width: 151px;
+  height: 151px;
+}
+
+.spritesheet.sala_quadrosala {
+  background-image: url('../images/spritesheet.png');
+  background-position: -2196px -8778px;
+  width: 658px;
+  height: 416px;
+}
+
+.spritesheet.campinho_bandeira_amarela {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10438px -5970px;
+  width: 180px;
+  height: 186px;
+}
+
+.spritesheet.campinho_bandeira_vermelha {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10438px -4950px;
+  width: 183px;
+  height: 186px;
+}
+
+.spritesheet.campinho_campinho {
+  background-image: url('../images/spritesheet.png');
+  background-position: -7876px -5451px;
+  width: 1614px;
+  height: 585px;
+}
+
+.spritesheet.campinho_crianca1_amarela {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10438px -5675px;
+  width: 115px;
+  height: 290px;
+}
+
+.spritesheet.campinho_crianca1_vermelha {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10438px -7395px;
+  width: 115px;
+  height: 267px;
+}
+
+.spritesheet.campinho_crianca2_amarela {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10438px -7122px;
+  width: 115px;
+  height: 268px;
+}
+
+.spritesheet.campinho_crianca2_vermelha {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10438px -6344px;
+  width: 115px;
+  height: 277px;
+}
+
+.spritesheet.campinho_crianca3_amarela {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10438px -6848px;
+  width: 115px;
+  height: 269px;
+}
+
+.spritesheet.campinho_crianca3_vermelha {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10659px -7567px;
+  width: 163px;
+  height: 278px;
+}
+
+.spritesheet.ong_alface {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10558px -7277px;
+  width: 85px;
+  height: 87px;
+}
+
+.spritesheet.ong_banana {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9601px -4877px;
+  width: 113px;
+  height: 59px;
+}
+
+.spritesheet.ong_cenoura {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10309px -2140px;
+  width: 105px;
+  height: 94px;
+}
+
+.spritesheet.ong_cesta_governo {
+  background-image: url('../images/spritesheet.png');
+  background-position: -4940px -8398px;
+  width: 219px;
+  height: 113px;
+}
+
+.spritesheet.ong_item_alface {
+  background-image: url('../images/spritesheet.png');
+  background-position: -5778px -3419px;
+  width: 140px;
+  height: 139px;
+}
+
+.spritesheet.ong_item_banana {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9657px -4244px;
+  width: 139px;
+  height: 140px;
+}
+
+.spritesheet.ong_item_cenoura {
+  background-image: url('../images/spritesheet.png');
+  background-position: -3852px -3018px;
+  width: 140px;
+  height: 140px;
+}
+
+.spritesheet.ong_item_tomate {
+  background-image: url('../images/spritesheet.png');
+  background-position: -5778px -3563px;
+  width: 140px;
+  height: 139px;
+}
+
+.spritesheet.ong_tomate {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9696px -5027px;
+  width: 99px;
+  height: 63px;
+}
+
+.spritesheet.radio_cesta_governo {
+  background-image: url('../images/spritesheet.png');
+  background-position: -5164px -8398px;
+  width: 219px;
+  height: 113px;
+}
+
+.spritesheet.radio_item_jornal {
+  background-image: url('../images/spritesheet.png');
+  background-position: -5778px -3274px;
+  width: 140px;
+  height: 140px;
+}
+
+.spritesheet.radio_item_rolojornal {
+  background-image: url('../images/spritesheet.png');
+  background-position: -5778px -3707px;
+  width: 139px;
+  height: 140px;
+}
+
+.spritesheet.radio_jornal {
+  background-image: url('../images/spritesheet.png');
+  background-position: -2164px -9213px;
+  width: 104px;
+  height: 93px;
+}
+
+.spritesheet.radio_rolojornal {
+  background-image: url('../images/spritesheet.png');
+  background-position: -5976px -8243px;
+  width: 112px;
+  height: 69px;
+}
+
+.spritesheet.bebedouro_balde {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10438px -8094px;
+  width: 183px;
+  height: 154px;
+}
+
+.spritesheet.bebedouro_bebedouro {
+  background-image: url('../images/spritesheet.png');
+  background-position: -0px -8778px;
+  width: 679px;
+  height: 816px;
+}
+
+.spritesheet.bebedouro_bebedourocenario {
+  background-image: url('../images/spritesheet.png');
+  background-position: -7876px -0px;
+  width: 1920px;
+  height: 1080px;
+}
+
+.spritesheet.bebedouro_garrafao {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10659px -521px;
+  width: 210px;
+  height: 283px;
+}
+
+.spritesheet.bebedouro_regador {
+  background-image: url('../images/spritesheet.png');
+  background-position: -684px -9389px;
+  width: 289px;
+  height: 194px;
+}
+
+.spritesheet.bebedouro_torneira {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10851px -8138px;
+  width: 36px;
+  height: 57px;
+}
+
+.spritesheet.bebedouro_vasinho {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10223px -4635px;
+  width: 137px;
+  height: 175px;
+}
+
+.spritesheet.bebedouro_vasoplanta {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10309px -1018px;
+  width: 118px;
+  height: 85px;
+}
+
+.spritesheet.bico1 {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10438px -3393px;
+  width: 209px;
+  height: 181px;
+}
+
+.spritesheet.bico2 {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9594px -1553px;
+  width: 202px;
+  height: 112px;
+}
+
+.spritesheet.bico3 {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9548px -5361px;
+  width: 209px;
+  height: 85px;
+}
+
+.spritesheet.bicogarrafa {
+  background-image: url('../images/spritesheet.png');
+  background-position: -4490px -8398px;
+  width: 219px;
+  height: 143px;
+}
+
+.spritesheet.carrinho_carro {
+  background-image: url('../images/spritesheet.png');
+  background-position: -0px -9599px;
+  width: 717px;
+  height: 474px;
+}
+
+.spritesheet.carrinho_cxadescricao_down {
+  background-image: url('../images/spritesheet.png');
+  background-position: -6904px -7617px;
+  width: 1070px;
+  height: 157px;
+}
+
+.spritesheet.carrinho_cxafeedback {
+  background-image: url('../images/spritesheet.png');
+  background-position: -7876px -2799px;
+  width: 1430px;
+  height: 869px;
+}
+
+.spritesheet.carrinho_cxapecas_up {
+  background-image: url('../images/spritesheet.png');
+  background-position: -6268px -7991px;
+  width: 1069px;
+  height: 225px;
+}
+
+.spritesheet.carrinho_led_foracarro {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10558px -7122px;
+  width: 80px;
+  height: 150px;
+}
+
+.spritesheet.carrinho_leds_carro {
+  background-image: url('../images/spritesheet.png');
+  background-position: -1305px -10078px;
+  width: 270px;
+  height: 279px;
+}
+
+.spritesheet.carrinho_motor_carro {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10438px -4762px;
+  width: 187px;
+  height: 183px;
+}
+
+.spritesheet.carrinho_motor_foracarro {
+  background-image: url('../images/spritesheet.png');
+  background-position: -7509px -8778px;
+  width: 175px;
+  height: 124px;
+}
+
+.spritesheet.carrinho_pista_placeholder {
+  background-image: url('../images/spritesheet.png');
+  background-position: -0px -7991px;
+  width: 1050px;
+  height: 782px;
+}
+
+.spritesheet.carrinho_placa_carro {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10438px -8253px;
+  width: 190px;
+  height: 144px;
+}
+
+.spritesheet.carrinho_placa_foracarro {
+  background-image: url('../images/spritesheet.png');
+  background-position: -7702px -5446px;
+  width: 168px;
+  height: 121px;
+}
+
+.spritesheet.carrinho_roda_carro {
+  background-image: url('../images/spritesheet.png');
+  background-position: -1507px -9599px;
+  width: 285px;
+  height: 311px;
+}
+
+.spritesheet.carrinho_rodas_foracarro {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10438px -9247px;
+  width: 155px;
+  height: 158px;
+}
+
+.spritesheet.carrinho_sensorprox_carro {
+  background-image: url('../images/spritesheet.png');
+  background-position: -4198px -8778px;
+  width: 340px;
+  height: 312px;
+}
+
+.spritesheet.carrinho_sensorprox_foracarro {
+  background-image: url('../images/spritesheet.png');
+  background-position: -6814px -7832px;
+  width: 171px;
+  height: 66px;
+}
+
+.spritesheet.foguete_meio1 {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9433px -1926px;
+  width: 354px;
+  height: 381px;
+}
+
+.spritesheet.foguete_meio2 {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9433px -2312px;
+  width: 335px;
+  height: 334px;
+}
+
+.spritesheet.foguete_meio3 {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9204px -4073px;
+  width: 448px;
+  height: 321px;
+}
+
+.spritesheet.foguete_meiogarrafa {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10438px -8795px;
+  width: 145px;
+  height: 172px;
+}
+
+.spritesheet.foguete_place {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10438px -6626px;
+  width: 145px;
+  height: 217px;
+}
+
+.spritesheet.foguete_rabo1 {
+  background-image: url('../images/spritesheet.png');
+  background-position: -5205px -8778px;
+  width: 408px;
+  height: 216px;
+}
+
+.spritesheet.foguete_rabo2 {
+  background-image: url('../images/spritesheet.png');
+  background-position: -7342px -7991px;
+  width: 448px;
+  height: 216px;
+}
+
+.spritesheet.foguete_rabo3 {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9801px -9303px;
+  width: 495px;
+  height: 219px;
+}
+
+.spritesheet.foguete_rabogarrafa {
+  background-image: url('../images/spritesheet.png');
+  background-position: -5778px -4995px;
+  width: 145px;
+  height: 128px;
+}
+
+.spritesheet.album1_card1 {
+  background-image: url('../images/spritesheet.png');
+  background-position: -0px -10637px;
+  width: 242px;
+  height: 251px;
+}
+
+.spritesheet.album1_card2 {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10659px -261px;
+  width: 241px;
+  height: 255px;
+}
+
+.spritesheet.album1_figurascostas {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10659px -0px;
+  width: 241px;
+  height: 256px;
+}
+
+.spritesheet.album1_pg1_couro_fita {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10659px -2425px;
+  width: 215px;
+  height: 261px;
+}
+
+.spritesheet.album1_pg1_couro {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10659px -7103px;
+  width: 215px;
+  height: 227px;
+}
+
+.spritesheet.album1_pg1_cuscuz_fita {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10659px -809px;
+  width: 215px;
+  height: 268px;
+}
+
+.spritesheet.album1_pg1_cuscuz {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10659px -6637px;
+  width: 215px;
+  height: 228px;
+}
+
+.spritesheet.album1_pg1_panelada_fita {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10659px -1891px;
+  width: 215px;
+  height: 262px;
+}
+
+.spritesheet.album1_pg1_panelada {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10659px -6870px;
+  width: 215px;
+  height: 228px;
+}
+
+.spritesheet.album1_pg1_tecel {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10659px -7335px;
+  width: 215px;
+  height: 227px;
+}
+
+.spritesheet.album1_pg1_tecelagem_fita {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10659px -2691px;
+  width: 215px;
+  height: 259px;
+}
+
+.spritesheet.album1_pg2_caninde_fita {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10659px -2158px;
+  width: 215px;
+  height: 262px;
+}
+
+.spritesheet.album1_pg2_caninde {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10659px -5474px;
+  width: 216px;
+  height: 228px;
+}
+
+.spritesheet.album1_pg2_indios_fita {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10659px -1625px;
+  width: 216px;
+  height: 261px;
+}
+
+.spritesheet.album1_pg2_indios {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10659px -6173px;
+  width: 216px;
+  height: 227px;
+}
+
+.spritesheet.album1_pg2_saojoao_fita {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10659px -2955px;
+  width: 215px;
+  height: 258px;
+}
+
+.spritesheet.album1_pg2_saojoao {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10659px -6405px;
+  width: 216px;
+  height: 227px;
+}
+
+.spritesheet.album1_pg2_saojoao2_fita {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10659px -1082px;
+  width: 215px;
+  height: 268px;
+}
+
+.spritesheet.album1_pg2_saojoao2 {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10659px -5707px;
+  width: 216px;
+  height: 228px;
+}
+
+.spritesheet.album1_placeholderfigOK {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10659px -1355px;
+  width: 216px;
+  height: 265px;
+}
+
+.spritesheet.album1_placeholderfigura {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10659px -5940px;
+  width: 216px;
+  height: 228px;
+}
+
+.spritesheet.album2_check {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10868px -5320px;
+  width: 31px;
+  height: 53px;
+}
+
+.spritesheet.erros_contador_erros {
+  background-image: url('../images/spritesheet.png');
+  background-position: -3425px -8398px;
+  width: 484px;
+  height: 159px;
+}
+
+.spritesheet.erros_marcadorerro {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10851px -8069px;
+  width: 44px;
+  height: 64px;
+}
+
 .spritesheet.logo-complete {
   background-image: url('../images/spritesheet.png');
-  background-position: -0px -5828px;
+  background-position: -1323px -8778px;
   width: 868px;
   height: 430px;
 }
 
+.spritesheet.logoceara {
+  background-image: url('../images/spritesheet.png');
+  background-position: -5388px -8398px;
+  width: 251px;
+  height: 86px;
+}
+
+.spritesheet.sustent_alface {
+  background-image: url('../images/spritesheet.png');
+  background-position: -7689px -8778px;
+  width: 117px;
+  height: 120px;
+}
+
+.spritesheet.sustent_alface1 {
+  background-image: url('../images/spritesheet.png');
+  background-position: -5778px -4278px;
+  width: 114px;
+  height: 72px;
+}
+
+.spritesheet.sustent_alface2 {
+  background-image: url('../images/spritesheet.png');
+  background-position: -7700px -6768px;
+  width: 132px;
+  height: 123px;
+}
+
+.spritesheet.sustent_bacia {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9174px -5361px;
+  width: 369px;
+  height: 85px;
+}
+
+.spritesheet.sustent_bacia1 {
+  background-image: url('../images/spritesheet.png');
+  background-position: -5939px -7832px;
+  width: 369px;
+  height: 85px;
+}
+
+.spritesheet.sustent_buraco {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10046px -9527px;
+  width: 145px;
+  height: 53px;
+}
+
+.spritesheet.sustent_caixa {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10438px -5306px;
+  width: 206px;
+  height: 164px;
+}
+
+.spritesheet.sustent_cenoura {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10438px -5141px;
+  width: 212px;
+  height: 160px;
+}
+
+.spritesheet.sustent_cenoura1 {
+  background-image: url('../images/spritesheet.png');
+  background-position: -2022px -9213px;
+  width: 137px;
+  height: 94px;
+}
+
+.spritesheet.sustent_cenoura2 {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10438px -5475px;
+  width: 173px;
+  height: 195px;
+}
+
+.spritesheet.sustent_cestacheia_cozinha {
+  background-image: url('../images/spritesheet.png');
+  background-position: -1797px -9599px;
+  width: 332px;
+  height: 254px;
+}
+
+.spritesheet.sustent_cestacheia_horta {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9174px -4610px;
+  width: 422px;
+  height: 326px;
+}
+
+.spritesheet.sustent_cestavazia {
+  background-image: url('../images/spritesheet.png');
+  background-position: -4543px -8778px;
+  width: 326px;
+  height: 281px;
+}
+
+.spritesheet.sustent_cestavazia1 {
+  background-image: url('../images/spritesheet.png');
+  background-position: -4874px -8778px;
+  width: 326px;
+  height: 281px;
+}
+
+.spritesheet.sustent_cestavazia3 {
+  background-image: url('../images/spritesheet.png');
+  background-position: -1323px -9213px;
+  width: 326px;
+  height: 168px;
+}
+
+.spritesheet.sustent_chiclete {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10318px -6357px;
+  width: 70px;
+  height: 39px;
+}
+
+.spritesheet.sustent_garrafa {
+  background-image: url('../images/spritesheet.png');
+  background-position: -1654px -9213px;
+  width: 107px;
+  height: 134px;
+}
+
+.spritesheet.sustent_jornal1 {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10218px -6357px;
+  width: 95px;
+  height: 48px;
+}
+
+.spritesheet.sustent_jornal2 {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10223px -4971px;
+  width: 106px;
+  height: 27px;
+}
+
+.spritesheet.sustent_jornal3 {
+  background-image: url('../images/spritesheet.png');
+  background-position: -3852px -2876px;
+  width: 148px;
+  height: 137px;
+}
+
+.spritesheet.sustent_lata {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10558px -7003px;
+  width: 85px;
+  height: 97px;
+}
+
+.spritesheet.sustent_lixeirametal_aberta {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9174px -4941px;
+  width: 256px;
+  height: 415px;
+}
+
+.spritesheet.sustent_lixeirametal_fechada {
+  background-image: url('../images/spritesheet.png');
+  background-position: -0px -10078px;
+  width: 256px;
+  height: 302px;
+}
+
+.spritesheet.sustent_lixeiraorganico_aberta {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9435px -4941px;
+  width: 256px;
+  height: 415px;
+}
+
+.spritesheet.sustent_lixeiraorganico_fechada {
+  background-image: url('../images/spritesheet.png');
+  background-position: -261px -10078px;
+  width: 256px;
+  height: 302px;
+}
+
+.spritesheet.sustent_lixeirapapel_aberta {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9495px -5451px;
+  width: 256px;
+  height: 415px;
+}
+
+.spritesheet.sustent_lixeirapapel_fechada {
+  background-image: url('../images/spritesheet.png');
+  background-position: -522px -10078px;
+  width: 256px;
+  height: 302px;
+}
+
+.spritesheet.sustent_lixeiraplastico_aberta {
+  background-image: url('../images/spritesheet.png');
+  background-position: -722px -9599px;
+  width: 256px;
+  height: 415px;
+}
+
+.spritesheet.sustent_lixeiraplastico_fechada {
+  background-image: url('../images/spritesheet.png');
+  background-position: -783px -10078px;
+  width: 256px;
+  height: 302px;
+}
+
+.spritesheet.sustent_lixeiravidro_aberta {
+  background-image: url('../images/spritesheet.png');
+  background-position: -983px -9599px;
+  width: 256px;
+  height: 415px;
+}
+
+.spritesheet.sustent_lixeiravidro_fechada {
+  background-image: url('../images/spritesheet.png');
+  background-position: -1044px -10078px;
+  width: 256px;
+  height: 302px;
+}
+
+.spritesheet.sustent_maca {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10832px -8412px;
+  width: 60px;
+  height: 90px;
+}
+
+.spritesheet.sustent_pc1 {
+  background-image: url('../images/spritesheet.png');
+  background-position: -6683px -8778px;
+  width: 228px;
+  height: 159px;
+}
+
+.spritesheet.sustent_pc10 {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10218px -5447px;
+  width: 158px;
+  height: 150px;
+}
+
+.spritesheet.sustent_pc2 {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10218px -5602px;
+  width: 150px;
+  height: 158px;
+}
+
+.spritesheet.sustent_pc3 {
+  background-image: url('../images/spritesheet.png');
+  background-position: -7700px -7459px;
+  width: 158px;
+  height: 91px;
+}
+
+.spritesheet.sustent_pc4 {
+  background-image: url('../images/spritesheet.png');
+  background-position: -1245px -8650px;
+  width: 158px;
+  height: 91px;
+}
+
+.spritesheet.sustent_pc5 {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10223px -4471px;
+  width: 151px;
+  height: 159px;
+}
+
+.spritesheet.sustent_pc6 {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10223px -4815px;
+  width: 158px;
+  height: 151px;
+}
+
+.spritesheet.sustent_pc7 {
+  background-image: url('../images/spritesheet.png');
+  background-position: -1408px -8650px;
+  width: 158px;
+  height: 90px;
+}
+
+.spritesheet.sustent_pc8 {
+  background-image: url('../images/spritesheet.png');
+  background-position: -6916px -8778px;
+  width: 228px;
+  height: 159px;
+}
+
+.spritesheet.sustent_pc9 {
+  background-image: url('../images/spritesheet.png');
+  background-position: -7700px -7363px;
+  width: 159px;
+  height: 91px;
+}
+
+.spritesheet.sustent_pia {
+  background-image: url('../images/spritesheet.png');
+  background-position: -7795px -7991px;
+  width: 657px;
+  height: 144px;
+}
+
+.spritesheet.sustent_pointer_luva {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10196px -9527px;
+  width: 75px;
+  height: 49px;
+}
+
+.spritesheet.sustent_pointer_regador {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9709px -4399px;
+  width: 75px;
+  height: 70px;
+}
+
+.spritesheet.sustent_pointer_semente {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9709px -4474px;
+  width: 75px;
+  height: 69px;
+}
+
+.spritesheet.sustent_pote {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10832px -8313px;
+  width: 64px;
+  height: 94px;
+}
+
+.spritesheet.sustent_refrigerante {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10558px -6485px;
+  width: 82px;
+  height: 106px;
+}
+
+.spritesheet.sustent_sacola1 {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9657px -4073px;
+  width: 133px;
+  height: 166px;
+}
+
+.spritesheet.sustent_sacola2 {
+  background-image: url('../images/spritesheet.png');
+  background-position: -3852px -3163px;
+  width: 166px;
+  height: 97px;
+}
+
+.spritesheet.sustent_taca {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10827px -7567px;
+  width: 68px;
+  height: 123px;
+}
+
+.spritesheet.sustent_tomate {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9696px -5095px;
+  width: 70px;
+  height: 66px;
+}
+
+.spritesheet.sustent_tomate1 {
+  background-image: url('../images/spritesheet.png');
+  background-position: -3852px -2725px;
+  width: 142px;
+  height: 146px;
+}
+
+.spritesheet.sustent_tomate2 {
+  background-image: url('../images/spritesheet.png');
+  background-position: -1244px -9599px;
+  width: 258px;
+  height: 385px;
+}
+
+.spritesheet.sustent_tomates {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10301px -9438px;
+  width: 129px;
+  height: 82px;
+}
+
+.spritesheet.sustent_torneira {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10659px -8313px;
+  width: 168px;
+  height: 256px;
+}
+
 .spritesheet.pc_cariri {
   background-image: url('../images/spritesheet.png');
-  background-position: -1207px -5828px;
+  background-position: -5952px -8778px;
   width: 329px;
   height: 208px;
 }
 
 .spritesheet.pc_cariri2 {
   background-image: url('../images/spritesheet.png');
-  background-position: -873px -5828px;
+  background-position: -5618px -8778px;
   width: 329px;
   height: 209px;
 }
 
 .spritesheet.pc_centro_sul {
   background-image: url('../images/spritesheet.png');
-  background-position: -5026px -5828px;
+  background-position: -10659px -10457px;
   width: 237px;
   height: 167px;
 }
 
 .spritesheet.pc_grande_fortaleza {
   background-image: url('../images/spritesheet.png');
-  background-position: -1281px -6042px;
+  background-position: -10438px -6161px;
   width: 180px;
   height: 178px;
 }
 
 .spritesheet.pc_litoral_leste {
   background-image: url('../images/spritesheet.png');
-  background-position: -873px -6042px;
+  background-position: -10438px -3579px;
   width: 200px;
   height: 184px;
 }
 
 .spritesheet.pc_litoral_leste2 {
   background-image: url('../images/spritesheet.png');
-  background-position: -1078px -6042px;
+  background-position: -10438px -3980px;
   width: 198px;
   height: 182px;
 }
 
 .spritesheet.pc_litoral_norte {
   background-image: url('../images/spritesheet.png');
-  background-position: -7383px -5182px;
+  background-position: -978px -9389px;
   width: 275px;
   height: 174px;
 }
 
 .spritesheet.pc_litoral_oeste {
   background-image: url('../images/spritesheet.png');
-  background-position: -1166px -6263px;
+  background-position: -10438px -3768px;
   width: 175px;
   height: 207px;
 }
 
 .spritesheet.pc_litoral_oeste2 {
   background-image: url('../images/spritesheet.png');
-  background-position: -1346px -6263px;
+  background-position: -10438px -4167px;
   width: 172px;
   height: 205px;
 }
 
 .spritesheet.pc_macico_de_baturite {
   background-image: url('../images/spritesheet.png');
-  background-position: -7496px -5032px;
+  background-position: -7811px -8778px;
   width: 128px;
   height: 109px;
 }
 
 .spritesheet.pc_macico_de_baturite2 {
   background-image: url('../images/spritesheet.png');
-  background-position: -3749px -5430px;
+  background-position: -1891px -9213px;
   width: 126px;
   height: 107px;
 }
 
 .spritesheet.pc_serra_da_ibiapaba {
   background-image: url('../images/spritesheet.png');
-  background-position: -0px -6840px;
+  background-position: -10438px -7880px;
   width: 145px;
   height: 209px;
 }
 
 .spritesheet.pc_serra_da_ibiapaba2 {
   background-image: url('../images/spritesheet.png');
-  background-position: -209px -6582px;
+  background-position: -10438px -7667px;
   width: 146px;
   height: 208px;
 }
 
 .spritesheet.pc_sertao_central {
   background-image: url('../images/spritesheet.png');
-  background-position: -656px -6263px;
+  background-position: -0px -10385px;
   width: 251px;
   height: 247px;
 }
 
 .spritesheet.pc_sertao_central2 {
   background-image: url('../images/spritesheet.png');
-  background-position: -912px -6263px;
+  background-position: -256px -10385px;
   width: 249px;
   height: 242px;
 }
 
 .spritesheet.pc_sertao_de_caninde {
   background-image: url('../images/spritesheet.png');
-  background-position: -7496px -4341px;
+  background-position: -10659px -8069px;
   width: 187px;
   height: 239px;
 }
 
 .spritesheet.pc_sertao_de_sobral {
   background-image: url('../images/spritesheet.png');
-  background-position: -1523px -6263px;
+  background-position: -10438px -4377px;
   width: 179px;
   height: 197px;
 }
 
 .spritesheet.pc_sertao_dos_crateus {
   background-image: url('../images/spritesheet.png');
-  background-position: -0px -6263px;
+  background-position: -10438px -400px;
   width: 216px;
   height: 314px;
 }
 
 .spritesheet.pc_sertao_dos_crateus2 {
   background-image: url('../images/spritesheet.png');
-  background-position: -221px -6263px;
+  background-position: -10438px -719px;
   width: 216px;
   height: 311px;
 }
 
 .spritesheet.pc_sertao_dos_inhamuns {
   background-image: url('../images/spritesheet.png');
-  background-position: -7496px -4585px;
+  background-position: -10659px -8574px;
   width: 180px;
   height: 236px;
 }
 
 .spritesheet.pc_vale_do_jaguaribe {
   background-image: url('../images/spritesheet.png');
-  background-position: -442px -6263px;
+  background-position: -10438px -1035px;
   width: 209px;
   height: 303px;
+}
+
+.spritesheet.quiz_box-all-badges {
+  background-image: url('../images/spritesheet.png');
+  background-position: -2859px -8778px;
+  width: 634px;
+  height: 379px;
+}
+
+.spritesheet.quiz_box-single-badge-full {
+  background-image: url('../images/spritesheet.png');
+  background-position: -684px -8778px;
+  width: 634px;
+  height: 606px;
+}
+
+.spritesheet.quiz_box-single-badge {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9801px -0px;
+  width: 632px;
+  height: 554px;
+}
+
+.spritesheet.quiz_eco-badge-2x {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10659px -3899px;
+  width: 240px;
+  height: 221px;
+}
+
+.spritesheet.quiz_eco-badge {
+  background-image: url('../images/spritesheet.png');
+  background-position: -1370px -9389px;
+  width: 121px;
+  height: 111px;
+}
+
+.spritesheet.quiz_edu-badge-2x {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10659px -3218px;
+  width: 240px;
+  height: 222px;
+}
+
+.spritesheet.quiz_edu-badge {
+  background-image: url('../images/spritesheet.png');
+  background-position: -1622px -9389px;
+  width: 120px;
+  height: 111px;
+}
+
+.spritesheet.quiz_gov-badge-2x {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10659px -3445px;
+  width: 239px;
+  height: 222px;
+}
+
+.spritesheet.quiz_gov-badge {
+  background-image: url('../images/spritesheet.png');
+  background-position: -1747px -9389px;
+  width: 120px;
+  height: 111px;
+}
+
+.spritesheet.quiz_ino-badge-2x {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10659px -3672px;
+  width: 239px;
+  height: 222px;
+}
+
+.spritesheet.quiz_ino-badge {
+  background-image: url('../images/spritesheet.png');
+  background-position: -1872px -9389px;
+  width: 120px;
+  height: 111px;
+}
+
+.spritesheet.quiz_laz-badge-2x {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10659px -4125px;
+  width: 240px;
+  height: 221px;
+}
+
+.spritesheet.quiz_laz-badge {
+  background-image: url('../images/spritesheet.png');
+  background-position: -1496px -9389px;
+  width: 121px;
+  height: 111px;
+}
+
+.spritesheet.quiz_mei-badge-2x {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10659px -4764px;
+  width: 239px;
+  height: 221px;
+}
+
+.spritesheet.quiz_mei-badge {
+  background-image: url('../images/spritesheet.png');
+  background-position: -1997px -9389px;
+  width: 120px;
+  height: 111px;
+}
+
+.spritesheet.quiz_robot-balloon {
+  background-image: url('../images/spritesheet.png');
+  background-position: -4132px -7991px;
+  width: 1031px;
+  height: 247px;
+}
+
+.spritesheet.quiz_sau-badge-2x {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10659px -4990px;
+  width: 239px;
+  height: 221px;
+}
+
+.spritesheet.quiz_sau-badge {
+  background-image: url('../images/spritesheet.png');
+  background-position: -2122px -9389px;
+  width: 120px;
+  height: 111px;
+}
+
+.spritesheet.quiz_up-arrow {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10832px -8507px;
+  width: 64px;
+  height: 53px;
+}
+
+.spritesheet.parquinho_balanco {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9311px -2799px;
+  width: 411px;
+  height: 403px;
+}
+
+.spritesheet.parquinho_balanco1 {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9311px -3207px;
+  width: 411px;
+  height: 403px;
+}
+
+.spritesheet.parquinho_barrasaude {
+  background-image: url('../images/spritesheet.png');
+  background-position: -7876px -7515px;
+  width: 859px;
+  height: 89px;
+}
+
+.spritesheet.parquinho_campinho {
+  background-image: url('../images/spritesheet.png');
+  background-position: -8964px -6558px;
+  width: 721px;
+  height: 262px;
+}
+
+.spritesheet.parquinho_cxa_muitaenergia {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9180px -7991px;
+  width: 282px;
+  height: 105px;
+}
+
+.spritesheet.parquinho_cxa_poucaenergia {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9467px -7991px;
+  width: 282px;
+  height: 105px;
+}
+
+.spritesheet.parquinho_cxastatus_barrasaude {
+  background-image: url('../images/spritesheet.png');
+  background-position: -4842px -8243px;
+  width: 282px;
+  height: 89px;
+}
+
+.spritesheet.parquinho_escorrega {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9801px -4471px;
+  width: 417px;
+  height: 547px;
+}
+
+.spritesheet.parquinho_gangorra {
+  background-image: url('../images/spritesheet.png');
+  background-position: -5529px -7832px;
+  width: 405px;
+  height: 122px;
+}
+
+.spritesheet.parquinho_marcadorbarra_saude {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10868px -5216px;
+  width: 31px;
+  height: 99px;
+}
+
+.spritesheet.parquinho_Prancheta 3 {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9204px -3673px;
+  width: 390px;
+  height: 395px;
+}
+
+.spritesheet.parquinho_Prancheta 4 {
+  background-image: url('../images/spritesheet.png');
+  background-position: -7700px -7029px;
+  width: 139px;
+  height: 113px;
+}
+
+.spritesheet.parquinho_table1t {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9594px -1670px;
+  width: 139px;
+  height: 162px;
+}
+
+.spritesheet.parquinho_tablet {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9599px -3673px;
+  width: 139px;
+  height: 162px;
+}
+
+.spritesheet.prato_alface {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10659px -7850px;
+  width: 210px;
+  height: 214px;
+}
+
+.spritesheet.prato_alfaceprato {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10438px -4579px;
+  width: 194px;
+  height: 178px;
+}
+
+.spritesheet.prato_arroz {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9412px -7617px;
+  width: 281px;
+  height: 115px;
+}
+
+.spritesheet.prato_arrozprato {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10438px -9840px;
+  width: 185px;
+  height: 130px;
+}
+
+.spritesheet.prato_banana {
+  background-image: url('../images/spritesheet.png');
+  background-position: -4198px -8398px;
+  width: 287px;
+  height: 149px;
+}
+
+.spritesheet.prato_bananaprato {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9646px -7515px;
+  width: 128px;
+  height: 61px;
+}
+
+.spritesheet.prato_barra {
+  background-image: url('../images/spritesheet.png');
+  background-position: -0px -7617px;
+  width: 3572px;
+  height: 369px;
+}
+
+.spritesheet.prato_batatadoce {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10438px -9975px;
+  width: 213px;
+  height: 97px;
+}
+
+.spritesheet.prato_batatadoceprato {
+  background-image: url('../images/spritesheet.png');
+  background-position: -5792px -8398px;
+  width: 141px;
+  height: 81px;
+}
+
+.spritesheet.prato_biloto {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10659px -4351px;
+  width: 129px;
+  height: 408px;
+}
+
+.spritesheet.prato_bombom {
+  background-image: url('../images/spritesheet.png');
+  background-position: -7700px -7248px;
+  width: 139px;
+  height: 110px;
+}
+
+.spritesheet.prato_bombomprato {
+  background-image: url('../images/spritesheet.png');
+  background-position: -6990px -7832px;
+  width: 101px;
+  height: 64px;
+}
+
+.spritesheet.prato_carne {
+  background-image: url('../images/spritesheet.png');
+  background-position: -4576px -8243px;
+  width: 261px;
+  height: 99px;
+}
+
+.spritesheet.prato_carneprato {
+  background-image: url('../images/spritesheet.png');
+  background-position: -8457px -7991px;
+  width: 260px;
+  height: 136px;
+}
+
+.spritesheet.prato_cenoura {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9495px -5871px;
+  width: 276px;
+  height: 162px;
+}
+
+.spritesheet.prato_cenouraprato {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10309px -4377px;
+  width: 102px;
+  height: 85px;
+}
+
+.spritesheet.prato_feijao {
+  background-image: url('../images/spritesheet.png');
+  background-position: -6313px -7832px;
+  width: 309px;
+  height: 78px;
+}
+
+.spritesheet.prato_feijaoprato {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9801px -9527px;
+  width: 240px;
+  height: 60px;
+}
+
+.spritesheet.prato_jujubaprato {
+  background-image: url('../images/spritesheet.png');
+  background-position: -1571px -8650px;
+  width: 153px;
+  height: 88px;
+}
+
+.spritesheet.prato_jujubas {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10218px -6050px;
+  width: 200px;
+  height: 116px;
+}
+
+.spritesheet.prato_laranja {
+  background-image: url('../images/spritesheet.png');
+  background-position: -4101px -9599px;
+  width: 115px;
+  height: 112px;
+}
+
+.spritesheet.prato_laranjaprato {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10558px -7395px;
+  width: 83px;
+  height: 75px;
+}
+
+.spritesheet.prato_naosaudavel {
+  background-image: url('../images/spritesheet.png');
+  background-position: -5129px -8243px;
+  width: 282px;
+  height: 89px;
+}
+
+.spritesheet.prato_ovoprato {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9594px -1837px;
+  width: 198px;
+  height: 84px;
+}
+
+.spritesheet.prato_ovos {
+  background-image: url('../images/spritesheet.png');
+  background-position: -2247px -9389px;
+  width: 125px;
+  height: 99px;
+}
+
+.spritesheet.prato_pirulito {
+  background-image: url('../images/spritesheet.png');
+  background-position: -7944px -8778px;
+  width: 137px;
+  height: 100px;
+}
+
+.spritesheet.prato_pirulitoprato {
+  background-image: url('../images/spritesheet.png');
+  background-position: -10827px -7695px;
+  width: 61px;
+  height: 115px;
+}
+
+.spritesheet.prato_prato {
+  background-image: url('../images/spritesheet.png');
+  background-position: -3498px -8778px;
+  width: 695px;
+  height: 318px;
+}
+
+.spritesheet.prato_queijo {
+  background-image: url('../images/spritesheet.png');
+  background-position: -3852px -1984px;
+  width: 161px;
+  height: 133px;
+}
+
+.spritesheet.prato_queijoprato {
+  background-image: url('../images/spritesheet.png');
+  background-position: -9696px -4941px;
+  width: 100px;
+  height: 81px;
+}
+
+.spritesheet.prato_saudavel {
+  background-image: url('../images/spritesheet.png');
+  background-position: -5416px -8243px;
+  width: 282px;
+  height: 81px;
 }
 

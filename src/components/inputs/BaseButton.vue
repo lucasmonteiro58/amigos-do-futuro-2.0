@@ -31,6 +31,7 @@ const props = defineProps({
 })
 
 const emit = defineEmits(['click'])
+const effectsStore = useEffectsStore()
 
 const disabledClass = computed(() => {
   return props.disabled
@@ -40,7 +41,16 @@ const disabledClass = computed(() => {
 
 function onClick() {
   if (props.disabled) return
+  playAudioClick()
   emit('click')
+}
+
+function playAudioHover() {
+  effectsStore.plaHoverButton()
+}
+
+function playAudioClick() {
+  effectsStore.playClickButton()
 }
 </script>
 
@@ -51,6 +61,7 @@ function onClick() {
     :disabled="disabled"
     :name="name"
     @click="onClick"
+    @mouseover="playAudioHover"
   >
     <BaseImg v-if="name" :img="name" :width="width">
       <div class="flex items-center justify-center h-full py-8 px-12">

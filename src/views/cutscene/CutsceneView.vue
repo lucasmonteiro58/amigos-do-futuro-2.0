@@ -28,6 +28,11 @@ function onStop() {
   goToForm()
 }
 
+function clickOnVideo() {
+  if (isPlaying.value) pauseVideo()
+  else startVideo()
+}
+
 function goToForm() {
   router.push({ name: 'form' })
 }
@@ -48,7 +53,12 @@ onBeforeUnmount(() => {
 
 <template>
   <div class="relative w-full h-full flex justify-center items-center">
-    <video ref="videoRef" class="w-full h-full object-cover" :src="cutsceneVideo"></video>
+    <video
+      ref="videoRef"
+      class="w-full h-full object-cover"
+      :src="cutsceneVideo"
+      @click="clickOnVideo"
+    ></video>
     <BaseButton
       v-motion-pop
       v-if="!isPlaying"
