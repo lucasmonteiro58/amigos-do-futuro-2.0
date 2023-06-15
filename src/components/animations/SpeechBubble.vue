@@ -50,7 +50,7 @@ onMounted(() => {
 <template>
   <div v-if="isShowing" class="fixed w-full h-full z-30">
     <div class="absolute w-full h-full bg-black opacity-50"></div>
-    <div class="spritesheet box-robot-help absolute bottom-[50px] left-[30px]">
+    <div class="spritesheet box-robot-help absolute bottom-[50px] left-[30px]" v-motion-slide-left>
       <RobotAnimate
         ref="refRobot"
         :animation="robotBlue"
