@@ -146,4 +146,10 @@ onMounted(() => {
 .drag-el.start-drag {
   @apply !cursor-grabbing;
 }
+
+.drag-el,
+.drag-el * {
+  -ms-touch-action: none;
+  touch-action: none;
+}
 </style>
