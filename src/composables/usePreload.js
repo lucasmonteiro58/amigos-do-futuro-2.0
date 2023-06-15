@@ -1,4 +1,10 @@
-import imageSrc from '@/assets/images/spritesheet.png'
+import image0 from '@/assets/images/spritesheet/sprite-0.png'
+import image1 from '@/assets/images/spritesheet/sprite-1.png'
+import image2 from '@/assets/images/spritesheet/sprite-2.png'
+import image3 from '@/assets/images/spritesheet/sprite-3.png'
+import image4 from '@/assets/images/spritesheet/sprite-4.png'
+import image5 from '@/assets/images/spritesheet/sprite-5.png'
+import image6 from '@/assets/images/spritesheet/sprite-6.png'
 import audioSrc from '@/assets/audios/audio.mp3'
 
 import animationCount from '@/assets/animations/counter/sprite.png'
@@ -12,7 +18,13 @@ export default function usePreload() {
 
   const assets = {
     images: [
-      imageSrc,
+      image0,
+      image1,
+      image2,
+      image3,
+      image4,
+      image5,
+      image6,
       animationCount,
       animationRobotBlue,
       animationRobotOrange,

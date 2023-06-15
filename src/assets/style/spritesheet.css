@@ -2966,14 +2966,14 @@
   height: 99px;
 }
 
-.spritesheet.parquinho_Prancheta 3 {
+.spritesheet.parquinho_prancheta-3 {
   background-image: url('../images/spritesheet.png');
   background-position: -9204px -3673px;
   width: 390px;
   height: 395px;
 }
 
-.spritesheet.parquinho_Prancheta 4 {
+.spritesheet.parquinho_prancheta-4 {
   background-image: url('../images/spritesheet.png');
   background-position: -7700px -7029px;
   width: 139px;
@@ -3210,4 +3210,3 @@
   width: 282px;
   height: 81px;
 }
-
