@@ -1,0 +1,196 @@
+.spritesheet.album1_card1 {
+  background-image: url('../images/spritesheet8.png');
+  background-position: -492px -2336px;
+  width: 242px;
+  height: 251px;
+}
+
+.spritesheet.album1_card2 {
+  background-image: url('../images/spritesheet8.png');
+  background-position: -246px -2336px;
+  width: 241px;
+  height: 255px;
+}
+
+.spritesheet.album1_figurascostas {
+  background-image: url('../images/spritesheet8.png');
+  background-position: -0px -2336px;
+  width: 241px;
+  height: 256px;
+}
+
+.spritesheet.album1_pg1_couro_fita {
+  background-image: url('../images/spritesheet8.png');
+  background-position: -882px -2597px;
+  width: 215px;
+  height: 261px;
+}
+
+.spritesheet.album1_pg1_couro {
+  background-image: url('../images/spritesheet8.png');
+  background-position: -1844px -2336px;
+  width: 215px;
+  height: 227px;
+}
+
+.spritesheet.album1_pg1_cuscuz_fita {
+  background-image: url('../images/spritesheet8.png');
+  background-position: -0px -2597px;
+  width: 215px;
+  height: 268px;
+}
+
+.spritesheet.album1_pg1_cuscuz {
+  background-image: url('../images/spritesheet8.png');
+  background-position: -1542px -2597px;
+  width: 215px;
+  height: 228px;
+}
+
+.spritesheet.album1_pg1_panelada_fita {
+  background-image: url('../images/spritesheet8.png');
+  background-position: -0px -2870px;
+  width: 215px;
+  height: 262px;
+}
+
+.spritesheet.album1_pg1_panelada {
+  background-image: url('../images/spritesheet8.png');
+  background-position: -1762px -2597px;
+  width: 215px;
+  height: 228px;
+}
+
+.spritesheet.album1_pg1_tecel {
+  background-image: url('../images/spritesheet8.png');
+  background-position: -2064px -2336px;
+  width: 215px;
+  height: 227px;
+}
+
+.spritesheet.album1_pg1_tecelagem_fita {
+  background-image: url('../images/spritesheet8.png');
+  background-position: -1102px -2597px;
+  width: 215px;
+  height: 259px;
+}
+
+.spritesheet.album1_pg2_caninde_fita {
+  background-image: url('../images/spritesheet8.png');
+  background-position: -220px -2870px;
+  width: 215px;
+  height: 262px;
+}
+
+.spritesheet.album1_pg2_caninde {
+  background-image: url('../images/spritesheet8.png');
+  background-position: -739px -2336px;
+  width: 216px;
+  height: 228px;
+}
+
+.spritesheet.album1_pg2_indios_fita {
+  background-image: url('../images/spritesheet8.png');
+  background-position: -661px -2597px;
+  width: 216px;
+  height: 261px;
+}
+
+.spritesheet.album1_pg2_indios {
+  background-image: url('../images/spritesheet8.png');
+  background-position: -1402px -2336px;
+  width: 216px;
+  height: 227px;
+}
+
+.spritesheet.album1_pg2_saojoao_fita {
+  background-image: url('../images/spritesheet8.png');
+  background-position: -1322px -2597px;
+  width: 215px;
+  height: 258px;
+}
+
+.spritesheet.album1_pg2_saojoao {
+  background-image: url('../images/spritesheet8.png');
+  background-position: -1623px -2336px;
+  width: 216px;
+  height: 227px;
+}
+
+.spritesheet.album1_pg2_saojoao2_fita {
+  background-image: url('../images/spritesheet8.png');
+  background-position: -220px -2597px;
+  width: 215px;
+  height: 268px;
+}
+
+.spritesheet.album1_pg2_saojoao2 {
+  background-image: url('../images/spritesheet8.png');
+  background-position: -960px -2336px;
+  width: 216px;
+  height: 228px;
+}
+
+.spritesheet.album1_placeholderfigOK {
+  background-image: url('../images/spritesheet8.png');
+  background-position: -440px -2597px;
+  width: 216px;
+  height: 265px;
+}
+
+.spritesheet.album1_placeholderfigura {
+  background-image: url('../images/spritesheet8.png');
+  background-position: -1181px -2336px;
+  width: 216px;
+  height: 228px;
+}
+
+.spritesheet.album2_check {
+  background-image: url('../images/spritesheet8.png');
+  background-position: -538px -2172px;
+  width: 31px;
+  height: 53px;
+}
+
+.spritesheet.bg_album_ultpagina {
+  background-image: url('../images/spritesheet8.png');
+  background-position: -0px -0px;
+  width: 1921px;
+  height: 1081px;
+}
+
+.spritesheet.bg_pagina1e2 {
+  background-image: url('../images/spritesheet8.png');
+  background-position: -1926px -0px;
+  width: 1921px;
+  height: 1081px;
+}
+
+.spritesheet.bg_pagina3e4 {
+  background-image: url('../images/spritesheet8.png');
+  background-position: -0px -1086px;
+  width: 1921px;
+  height: 1081px;
+}
+
+.spritesheet.bg-sete-erros {
+  background-image: url('../images/spritesheet8.png');
+  background-position: -1926px -1086px;
+  width: 1921px;
+  height: 1081px;
+}
+
+.spritesheet.erros_contador_erros {
+  background-image: url('../images/spritesheet8.png');
+  background-position: -0px -2172px;
+  width: 484px;
+  height: 159px;
+}
+
+.spritesheet.erros_marcadorerro {
+  background-image: url('../images/spritesheet8.png');
+  background-position: -489px -2172px;
+  width: 44px;
+  height: 64px;
+}
+

@@ -1,5 +1,4 @@
 import './assets/style/main.css'
-import './assets/style/spritesheet.css'
 import './plugins/fixedviewport'
 import 'unfonts.css'
 

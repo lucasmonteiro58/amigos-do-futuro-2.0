@@ -1,0 +1,413 @@
+.spritesheet.bg-chao-sujo {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -0px -1086px;
+  width: 1920px;
+  height: 1080px;
+}
+
+.spritesheet.bg-cozinha {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -0px -0px;
+  width: 1921px;
+  height: 1081px;
+}
+
+.spritesheet.bg-horta {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -1926px -0px;
+  width: 1921px;
+  height: 1081px;
+}
+
+.spritesheet.sustent_alface {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -1801px -2171px;
+  width: 117px;
+  height: 120px;
+}
+
+.spritesheet.sustent_alface1 {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -2727px -2002px;
+  width: 114px;
+  height: 72px;
+}
+
+.spritesheet.sustent_alface2 {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -3118px -1837px;
+  width: 132px;
+  height: 123px;
+}
+
+.spritesheet.sustent_bacia {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -3014px -1086px;
+  width: 369px;
+  height: 85px;
+}
+
+.spritesheet.sustent_bacia1 {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -3388px -1086px;
+  width: 369px;
+  height: 85px;
+}
+
+.spritesheet.sustent_buraco {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -3014px -1176px;
+  width: 145px;
+  height: 53px;
+}
+
+.spritesheet.sustent_caixa {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -1478px -2171px;
+  width: 206px;
+  height: 164px;
+}
+
+.spritesheet.sustent_cenoura {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -2593px -1837px;
+  width: 212px;
+  height: 160px;
+}
+
+.spritesheet.sustent_cenoura1 {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -1923px -2171px;
+  width: 137px;
+  height: 94px;
+}
+
+.spritesheet.sustent_cenoura2 {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -0px -2478px;
+  width: 173px;
+  height: 195px;
+}
+
+.spritesheet.sustent_cestacheia_cozinha {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -2256px -1837px;
+  width: 332px;
+  height: 254px;
+}
+
+.spritesheet.sustent_cestacheia_horta {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -1925px -1086px;
+  width: 422px;
+  height: 326px;
+}
+
+.spritesheet.sustent_cestavazia {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -3493px -1417px;
+  width: 326px;
+  height: 281px;
+}
+
+.spritesheet.sustent_cestavazia1 {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -1925px -1837px;
+  width: 326px;
+  height: 281px;
+}
+
+.spritesheet.sustent_cestavazia3 {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -2352px -1235px;
+  width: 326px;
+  height: 168px;
+}
+
+.spritesheet.sustent_chiclete {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -3081px -2002px;
+  width: 70px;
+  height: 39px;
+}
+
+.spritesheet.sustent_garrafa {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -1689px -2171px;
+  width: 107px;
+  height: 134px;
+}
+
+.spritesheet.sustent_jornal1 {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -3164px -1176px;
+  width: 95px;
+  height: 48px;
+}
+
+.spritesheet.sustent_jornal2 {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -3264px -1176px;
+  width: 106px;
+  height: 27px;
+}
+
+.spritesheet.sustent_jornal3 {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -2965px -1837px;
+  width: 148px;
+  height: 137px;
+}
+
+.spritesheet.sustent_lata {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -403px -2478px;
+  width: 85px;
+  height: 97px;
+}
+
+.spritesheet.sustent_lixeirametal_aberta {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -1925px -1417px;
+  width: 256px;
+  height: 415px;
+}
+
+.spritesheet.sustent_lixeirametal_fechada {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -0px -2171px;
+  width: 256px;
+  height: 302px;
+}
+
+.spritesheet.sustent_lixeiraorganico_aberta {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -2186px -1417px;
+  width: 256px;
+  height: 415px;
+}
+
+.spritesheet.sustent_lixeiraorganico_fechada {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -261px -2171px;
+  width: 256px;
+  height: 302px;
+}
+
+.spritesheet.sustent_lixeirapapel_aberta {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -2447px -1417px;
+  width: 256px;
+  height: 415px;
+}
+
+.spritesheet.sustent_lixeirapapel_fechada {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -522px -2171px;
+  width: 256px;
+  height: 302px;
+}
+
+.spritesheet.sustent_lixeiraplastico_aberta {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -2708px -1417px;
+  width: 256px;
+  height: 415px;
+}
+
+.spritesheet.sustent_lixeiraplastico_fechada {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -783px -2171px;
+  width: 256px;
+  height: 302px;
+}
+
+.spritesheet.sustent_lixeiravidro_aberta {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -2969px -1417px;
+  width: 256px;
+  height: 415px;
+}
+
+.spritesheet.sustent_lixeiravidro_fechada {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -1044px -2171px;
+  width: 256px;
+  height: 302px;
+}
+
+.spritesheet.sustent_maca {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -3744px -1837px;
+  width: 60px;
+  height: 90px;
+}
+
+.spritesheet.sustent_pc1 {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -2683px -1235px;
+  width: 228px;
+  height: 159px;
+}
+
+.spritesheet.sustent_pc10 {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -3468px -1235px;
+  width: 158px;
+  height: 150px;
+}
+
+.spritesheet.sustent_pc2 {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -2810px -1837px;
+  width: 150px;
+  height: 158px;
+}
+
+.spritesheet.sustent_pc3 {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -3255px -1837px;
+  width: 158px;
+  height: 91px;
+}
+
+.spritesheet.sustent_pc4 {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -3418px -1837px;
+  width: 158px;
+  height: 91px;
+}
+
+.spritesheet.sustent_pc5 {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -3149px -1235px;
+  width: 151px;
+  height: 159px;
+}
+
+.spritesheet.sustent_pc6 {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -3305px -1235px;
+  width: 158px;
+  height: 151px;
+}
+
+.spritesheet.sustent_pc7 {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -3581px -1837px;
+  width: 158px;
+  height: 90px;
+}
+
+.spritesheet.sustent_pc8 {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -2916px -1235px;
+  width: 228px;
+  height: 159px;
+}
+
+.spritesheet.sustent_pc9 {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -3664px -1703px;
+  width: 159px;
+  height: 91px;
+}
+
+.spritesheet.sustent_pia {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -2352px -1086px;
+  width: 657px;
+  height: 144px;
+}
+
+.spritesheet.sustent_pointer_luva {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -3001px -2002px;
+  width: 75px;
+  height: 49px;
+}
+
+.spritesheet.sustent_pointer_regador {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -3762px -1086px;
+  width: 75px;
+  height: 70px;
+}
+
+.spritesheet.sustent_pointer_semente {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -2846px -2002px;
+  width: 75px;
+  height: 69px;
+}
+
+.spritesheet.sustent_pote {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -2065px -2171px;
+  width: 64px;
+  height: 94px;
+}
+
+.spritesheet.sustent_refrigerante {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -316px -2478px;
+  width: 82px;
+  height: 106px;
+}
+
+.spritesheet.sustent_sacola1 {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -178px -2478px;
+  width: 133px;
+  height: 166px;
+}
+
+.spritesheet.sustent_sacola2 {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -3493px -1703px;
+  width: 166px;
+  height: 97px;
+}
+
+.spritesheet.sustent_taca {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -3778px -1235px;
+  width: 68px;
+  height: 123px;
+}
+
+.spritesheet.sustent_tomate {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -2926px -2002px;
+  width: 70px;
+  height: 66px;
+}
+
+.spritesheet.sustent_tomate1 {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -3631px -1235px;
+  width: 142px;
+  height: 146px;
+}
+
+.spritesheet.sustent_tomate2 {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -3230px -1417px;
+  width: 258px;
+  height: 385px;
+}
+
+.spritesheet.sustent_tomates {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -2593px -2002px;
+  width: 129px;
+  height: 82px;
+}
+
+.spritesheet.sustent_torneira {
+  background-image: url('../images/spritesheet9.png');
+  background-position: -1305px -2171px;
+  width: 168px;
+  height: 256px;
+}
+

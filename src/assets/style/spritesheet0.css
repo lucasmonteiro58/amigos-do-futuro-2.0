@@ -1,0 +1,35 @@
+.spritesheet.bg-certificate {
+  background-image: url('../images/spritesheet0.png');
+  background-position: -1925px -1086px;
+  width: 1920px;
+  height: 1080px;
+}
+
+.spritesheet.bg-congrats {
+  background-image: url('../images/spritesheet0.png');
+  background-position: -0px -2172px;
+  width: 1920px;
+  height: 1080px;
+}
+
+.spritesheet.bg-home {
+  background-image: url('../images/spritesheet0.png');
+  background-position: -0px -1086px;
+  width: 1920px;
+  height: 1081px;
+}
+
+.spritesheet.bg-mapa-ceara {
+  background-image: url('../images/spritesheet0.png');
+  background-position: -0px -0px;
+  width: 1921px;
+  height: 1081px;
+}
+
+.spritesheet.cenario_mapaspeca {
+  background-image: url('../images/spritesheet0.png');
+  background-position: -1926px -0px;
+  width: 1921px;
+  height: 1081px;
+}
+
