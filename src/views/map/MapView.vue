@@ -115,8 +115,7 @@ function verifyDropped(name) {
     ></SpeechBubble>
     <div
       v-if="showBoxComment"
-      v-motion-pop
-      class="w-full h-full absolute flex justify-center items-center"
+      class="w-full h-full absolute flex justify-center items-center animation__bounceIn"
     >
       <BoxComment :line="commentLine" width="750px" :audio="commentAudio" :time="8000"></BoxComment>
     </div>

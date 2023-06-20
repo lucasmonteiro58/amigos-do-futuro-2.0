@@ -67,10 +67,9 @@ onMounted(() => {
       <RobotAnimate
         :id="currentQuestion.id"
         ref="robotRef"
-        v-motion-slide-left
         :animation="robotOrange"
         :time="currentQuestion.duration"
-        class="mb-6 flex justify-center"
+        class="mb-6 flex justify-center animation__zoomIn"
         width="650px"
       >
       </RobotAnimate>
@@ -93,11 +92,11 @@ onMounted(() => {
     <div class="w-3/5 bg-primary-blue-dark">
       <FormSections
         :index="index"
-        v-motion-slide-left
         :key="index"
         @gender="nextQuestion"
         @next="nextQuestion"
         @finish="goToRegion"
+        class="animation__slideLeft"
       ></FormSections>
     </div>
     <ModalAtention v-model="showModal" @close="closeModal">

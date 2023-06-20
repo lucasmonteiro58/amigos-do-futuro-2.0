@@ -27,8 +27,7 @@ const data = useVModel(props, 'modelValue', emit)
     class="fixed w-[1920px] h-[1080px] bg-[#0000007f] flex items-center justify-center z-40 top-0 left-0 backdrop-blur"
   >
     <div
-      v-motion-pop
-      class="w-[600px] bg-white rounded-2xl flex flex-col items-center relative px-10 py-10"
+      class="w-[600px] bg-white rounded-2xl flex flex-col items-center relative px-10 py-10 animation__bounceIn"
     >
       <div class="text-gray-700 font-bungee text-[1.8rem] text-center leading-7">
         <slot />

@@ -60,27 +60,24 @@ onBeforeUnmount(() => {
       @click="clickOnVideo"
     ></video>
     <BaseButton
-      v-motion-pop
       v-if="!isPlaying"
       name="btn-toggle-play"
-      class="absolute"
+      class="absolute animation__bounceIn"
       @click="startVideo"
     ></BaseButton>
     <BaseButton
       v-if="isPlaying"
-      v-motion-pop
       name="btn-toggle-pause"
       width="130px"
-      class="absolute left-6 bottom-4"
+      class="absolute left-6 bottom-4 animation__bounceIn"
       @click="pauseVideo"
     ></BaseButton>
     <BaseButton
-      v-motion-pop
       name="btn-action-white"
       label="Pular"
       label-color="text-primary-blue-text"
       width="210px"
-      class="absolute right-6 bottom-6"
+      class="absolute right-6 bottom-6 animation__bounceIn"
       @click="goToForm"
     ></BaseButton>
   </div>

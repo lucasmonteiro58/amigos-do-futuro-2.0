@@ -50,7 +50,9 @@ onMounted(() => {
 <template>
   <div v-if="isShowing" class="fixed w-full h-full z-30">
     <div class="absolute w-full h-full bg-black opacity-50"></div>
-    <div class="spritesheet box-robot-help absolute bottom-[50px] left-[30px]" v-motion-slide-left>
+    <div
+      class="spritesheet box-robot-help absolute bottom-[50px] left-[30px] animation__speechBubbleIn"
+    >
       <RobotAnimate
         ref="refRobot"
         :animation="robotBlue"
@@ -79,9 +81,8 @@ onMounted(() => {
   </div>
   <button
     v-else
-    v-motion-slide-right
     @click="open"
-    class="absolute cursor-pointer bottom-5 left-5 hover:!scale-105"
+    class="absolute cursor-pointer bottom-5 left-5 hover:!scale-105 animation__speechBubbleOut"
   >
     <BaseImg img="robot-mini-blue" width="150px"> </BaseImg>
   </button>
