@@ -1,327 +1,327 @@
 .spritesheet.bg_parquinho_saude {
-  background-image: url('../images/spritesheet10.png');
+  background-image: url('../../images/generated-sprites/spritesheet10.png');
   background-position: -0px -0px;
   width: 1921px;
   height: 1081px;
 }
 
 .spritesheet.cenarioalimentacao {
-  background-image: url('../images/spritesheet10.png');
+  background-image: url('../../images/generated-sprites/spritesheet10.png');
   background-position: -1926px -0px;
   width: 1920px;
   height: 1080px;
 }
 
 .spritesheet.parquinho_balanco {
-  background-image: url('../images/spritesheet10.png');
+  background-image: url('../../images/generated-sprites/spritesheet10.png');
   background-position: -0px -2012px;
   width: 411px;
   height: 403px;
 }
 
 .spritesheet.parquinho_balanco1 {
-  background-image: url('../images/spritesheet10.png');
+  background-image: url('../../images/generated-sprites/spritesheet10.png');
   background-position: -416px -2012px;
   width: 411px;
   height: 403px;
 }
 
 .spritesheet.parquinho_barrasaude {
-  background-image: url('../images/spritesheet10.png');
+  background-image: url('../../images/generated-sprites/spritesheet10.png');
   background-position: -1848px -1460px;
   width: 859px;
   height: 89px;
 }
 
 .spritesheet.parquinho_campinho {
-  background-image: url('../images/spritesheet10.png');
+  background-image: url('../../images/generated-sprites/spritesheet10.png');
   background-position: -1122px -1460px;
   width: 721px;
   height: 262px;
 }
 
 .spritesheet.parquinho_cxa_muitaenergia {
-  background-image: url('../images/spritesheet10.png');
+  background-image: url('../../images/generated-sprites/spritesheet10.png');
   background-position: -2544px -1554px;
   width: 282px;
   height: 105px;
 }
 
 .spritesheet.parquinho_cxa_poucaenergia {
-  background-image: url('../images/spritesheet10.png');
+  background-image: url('../../images/generated-sprites/spritesheet10.png');
   background-position: -2831px -1554px;
   width: 282px;
   height: 105px;
 }
 
 .spritesheet.parquinho_cxastatus_barrasaude {
-  background-image: url('../images/spritesheet10.png');
+  background-image: url('../../images/generated-sprites/spritesheet10.png');
   background-position: -2712px -1460px;
   width: 282px;
   height: 89px;
 }
 
 .spritesheet.parquinho_escorrega {
-  background-image: url('../images/spritesheet10.png');
+  background-image: url('../../images/generated-sprites/spritesheet10.png');
   background-position: -0px -1460px;
   width: 417px;
   height: 547px;
 }
 
 .spritesheet.parquinho_gangorra {
-  background-image: url('../images/spritesheet10.png');
+  background-image: url('../../images/generated-sprites/spritesheet10.png');
   background-position: -1848px -1554px;
   width: 405px;
   height: 122px;
 }
 
 .spritesheet.parquinho_marcadorbarra_saude {
-  background-image: url('../images/spritesheet10.png');
+  background-image: url('../../images/generated-sprites/spritesheet10.png');
   background-position: -3792px -1086px;
   width: 31px;
   height: 99px;
 }
 
 .spritesheet.parquinho_prancheta-3 {
-  background-image: url('../images/spritesheet10.png');
+  background-image: url('../../images/generated-sprites/spritesheet10.png');
   background-position: -832px -2012px;
   width: 390px;
   height: 395px;
 }
 
 .spritesheet.parquinho_prancheta-4 {
-  background-image: url('../images/spritesheet10.png');
+  background-image: url('../../images/generated-sprites/spritesheet10.png');
   background-position: -1880px -2012px;
   width: 139px;
   height: 113px;
 }
 
 .spritesheet.parquinho_table1t {
-  background-image: url('../images/spritesheet10.png');
+  background-image: url('../../images/generated-sprites/spritesheet10.png');
   background-position: -1426px -2012px;
   width: 139px;
   height: 162px;
 }
 
 .spritesheet.parquinho_tablet {
-  background-image: url('../images/spritesheet10.png');
+  background-image: url('../../images/generated-sprites/spritesheet10.png');
   background-position: -1570px -2012px;
   width: 139px;
   height: 162px;
 }
 
 .spritesheet.prato_alface {
-  background-image: url('../images/spritesheet10.png');
+  background-image: url('../../images/generated-sprites/spritesheet10.png');
   background-position: -3577px -1086px;
   width: 210px;
   height: 214px;
 }
 
 .spritesheet.prato_alfaceprato {
-  background-image: url('../images/spritesheet10.png');
+  background-image: url('../../images/generated-sprites/spritesheet10.png');
   background-position: -1227px -2012px;
   width: 194px;
   height: 178px;
 }
 
 .spritesheet.prato_arroz {
-  background-image: url('../images/spritesheet10.png');
+  background-image: url('../../images/generated-sprites/spritesheet10.png');
   background-position: -2258px -1554px;
   width: 281px;
   height: 115px;
 }
 
 .spritesheet.prato_arrozprato {
-  background-image: url('../images/spritesheet10.png');
+  background-image: url('../../images/generated-sprites/spritesheet10.png');
   background-position: -995px -1783px;
   width: 185px;
   height: 130px;
 }
 
 .spritesheet.prato_banana {
-  background-image: url('../images/spritesheet10.png');
+  background-image: url('../../images/generated-sprites/spritesheet10.png');
   background-position: -703px -1783px;
   width: 287px;
   height: 149px;
 }
 
 .spritesheet.prato_bananaprato {
-  background-image: url('../images/spritesheet10.png');
+  background-image: url('../../images/generated-sprites/spritesheet10.png');
   background-position: -1916px -1783px;
   width: 128px;
   height: 61px;
 }
 
 .spritesheet.prato_barra {
-  background-image: url('../images/spritesheet10.png');
+  background-image: url('../../images/generated-sprites/spritesheet10.png');
   background-position: -0px -1086px;
   width: 3572px;
   height: 369px;
 }
 
 .spritesheet.prato_batatadoce {
-  background-image: url('../images/spritesheet10.png');
+  background-image: url('../../images/generated-sprites/spritesheet10.png');
   background-position: -1390px -1783px;
   width: 213px;
   height: 97px;
 }
 
 .spritesheet.prato_batatadoceprato {
-  background-image: url('../images/spritesheet10.png');
+  background-image: url('../../images/generated-sprites/spritesheet10.png');
   background-position: -3671px -1554px;
   width: 141px;
   height: 81px;
 }
 
 .spritesheet.prato_biloto {
-  background-image: url('../images/spritesheet10.png');
+  background-image: url('../../images/generated-sprites/spritesheet10.png');
   background-position: -0px -2420px;
   width: 129px;
   height: 408px;
 }
 
 .spritesheet.prato_bombom {
-  background-image: url('../images/spritesheet10.png');
+  background-image: url('../../images/generated-sprites/spritesheet10.png');
   background-position: -2024px -2012px;
   width: 139px;
   height: 110px;
 }
 
 .spritesheet.prato_bombomprato {
-  background-image: url('../images/spritesheet10.png');
+  background-image: url('../../images/generated-sprites/spritesheet10.png');
   background-position: -2575px -2012px;
   width: 101px;
   height: 64px;
 }
 
 .spritesheet.prato_carne {
-  background-image: url('../images/spritesheet10.png');
+  background-image: url('../../images/generated-sprites/spritesheet10.png');
   background-position: -3118px -1554px;
   width: 261px;
   height: 99px;
 }
 
 .spritesheet.prato_carneprato {
-  background-image: url('../images/spritesheet10.png');
+  background-image: url('../../images/generated-sprites/spritesheet10.png');
   background-position: -3577px -1305px;
   width: 260px;
   height: 136px;
 }
 
 .spritesheet.prato_cenoura {
-  background-image: url('../images/spritesheet10.png');
+  background-image: url('../../images/generated-sprites/spritesheet10.png');
   background-position: -422px -1783px;
   width: 276px;
   height: 162px;
 }
 
 .spritesheet.prato_cenouraprato {
-  background-image: url('../images/spritesheet10.png');
+  background-image: url('../../images/generated-sprites/spritesheet10.png');
   background-position: -2468px -2012px;
   width: 102px;
   height: 85px;
 }
 
 .spritesheet.prato_feijao {
-  background-image: url('../images/spritesheet10.png');
+  background-image: url('../../images/generated-sprites/spritesheet10.png');
   background-position: -3286px -1460px;
   width: 309px;
   height: 78px;
 }
 
 .spritesheet.prato_feijaoprato {
-  background-image: url('../images/spritesheet10.png');
+  background-image: url('../../images/generated-sprites/spritesheet10.png');
   background-position: -3600px -1460px;
   width: 240px;
   height: 60px;
 }
 
 .spritesheet.prato_jujubaprato {
-  background-image: url('../images/spritesheet10.png');
+  background-image: url('../../images/generated-sprites/spritesheet10.png');
   background-position: -2310px -2012px;
   width: 153px;
   height: 88px;
 }
 
 .spritesheet.prato_jujubas {
-  background-image: url('../images/spritesheet10.png');
+  background-image: url('../../images/generated-sprites/spritesheet10.png');
   background-position: -1185px -1783px;
   width: 200px;
   height: 116px;
 }
 
 .spritesheet.prato_laranja {
-  background-image: url('../images/spritesheet10.png');
+  background-image: url('../../images/generated-sprites/spritesheet10.png');
   background-position: -1227px -2195px;
   width: 115px;
   height: 112px;
 }
 
 .spritesheet.prato_laranjaprato {
-  background-image: url('../images/spritesheet10.png');
+  background-image: url('../../images/generated-sprites/spritesheet10.png');
   background-position: -1477px -2195px;
   width: 83px;
   height: 75px;
 }
 
 .spritesheet.prato_naosaudavel {
-  background-image: url('../images/spritesheet10.png');
+  background-image: url('../../images/generated-sprites/spritesheet10.png');
   background-position: -2999px -1460px;
   width: 282px;
   height: 89px;
 }
 
 .spritesheet.prato_ovoprato {
-  background-image: url('../images/spritesheet10.png');
+  background-image: url('../../images/generated-sprites/spritesheet10.png');
   background-position: -1608px -1783px;
   width: 198px;
   height: 84px;
 }
 
 .spritesheet.prato_ovos {
-  background-image: url('../images/spritesheet10.png');
+  background-image: url('../../images/generated-sprites/spritesheet10.png');
   background-position: -1347px -2195px;
   width: 125px;
   height: 99px;
 }
 
 .spritesheet.prato_pirulito {
-  background-image: url('../images/spritesheet10.png');
+  background-image: url('../../images/generated-sprites/spritesheet10.png');
   background-position: -2168px -2012px;
   width: 137px;
   height: 100px;
 }
 
 .spritesheet.prato_pirulitoprato {
-  background-image: url('../images/spritesheet10.png');
+  background-image: url('../../images/generated-sprites/spritesheet10.png');
   background-position: -134px -2420px;
   width: 61px;
   height: 115px;
 }
 
 .spritesheet.prato_prato {
-  background-image: url('../images/spritesheet10.png');
+  background-image: url('../../images/generated-sprites/spritesheet10.png');
   background-position: -422px -1460px;
   width: 695px;
   height: 318px;
 }
 
 .spritesheet.prato_queijo {
-  background-image: url('../images/spritesheet10.png');
+  background-image: url('../../images/generated-sprites/spritesheet10.png');
   background-position: -1714px -2012px;
   width: 161px;
   height: 133px;
 }
 
 .spritesheet.prato_queijoprato {
-  background-image: url('../images/spritesheet10.png');
+  background-image: url('../../images/generated-sprites/spritesheet10.png');
   background-position: -1811px -1783px;
   width: 100px;
   height: 81px;
 }
 
 .spritesheet.prato_saudavel {
-  background-image: url('../images/spritesheet10.png');
+  background-image: url('../../images/generated-sprites/spritesheet10.png');
   background-position: -3384px -1554px;
   width: 282px;
   height: 81px;

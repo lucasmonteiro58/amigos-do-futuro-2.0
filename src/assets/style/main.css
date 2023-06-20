@@ -1,17 +1,5 @@
-/* sprites */
-@import 'spritesheet0.css';
-@import 'spritesheet1.css';
-@import 'spritesheet2.css';
-@import 'spritesheet3.css';
-@import 'spritesheet4.css';
-@import 'spritesheet5.css';
-@import 'spritesheet6.css';
-@import 'spritesheet7.css';
-@import 'spritesheet8.css';
-@import 'spritesheet9.css';
-@import 'spritesheet10.css';
-
 /* styles */
+@import '_spritesheet.css';
 @import '_tailwind.css';
 @import '_layout.css';
 @import '_popper.css';

@@ -1,194 +1,194 @@
 .spritesheet.campinho_bandeira_amarela {
-  background-image: url('../images/spritesheet6.png');
+  background-image: url('../../images/generated-sprites/spritesheet6.png');
   background-position: -2046px -2762px;
   width: 180px;
   height: 186px;
 }
 
 .spritesheet.campinho_bandeira_vermelha {
-  background-image: url('../images/spritesheet6.png');
+  background-image: url('../../images/generated-sprites/spritesheet6.png');
   background-position: -3545px -2455px;
   width: 183px;
   height: 186px;
 }
 
 .spritesheet.campinho_campinho {
-  background-image: url('../images/spritesheet6.png');
+  background-image: url('../../images/generated-sprites/spritesheet6.png');
   background-position: -1926px -2172px;
   width: 1614px;
   height: 585px;
 }
 
 .spritesheet.campinho_crianca1_amarela {
-  background-image: url('../images/spritesheet6.png');
+  background-image: url('../../images/generated-sprites/spritesheet6.png');
   background-position: -1926px -2762px;
   width: 115px;
   height: 290px;
 }
 
 .spritesheet.campinho_crianca1_vermelha {
-  background-image: url('../images/spritesheet6.png');
+  background-image: url('../../images/generated-sprites/spritesheet6.png');
   background-position: -240px -3258px;
   width: 115px;
   height: 267px;
 }
 
 .spritesheet.campinho_crianca2_amarela {
-  background-image: url('../images/spritesheet6.png');
+  background-image: url('../../images/generated-sprites/spritesheet6.png');
   background-position: -120px -3258px;
   width: 115px;
   height: 268px;
 }
 
 .spritesheet.campinho_crianca2_vermelha {
-  background-image: url('../images/spritesheet6.png');
+  background-image: url('../../images/generated-sprites/spritesheet6.png');
   background-position: -3713px -2172px;
   width: 115px;
   height: 277px;
 }
 
 .spritesheet.campinho_crianca3_amarela {
-  background-image: url('../images/spritesheet6.png');
+  background-image: url('../../images/generated-sprites/spritesheet6.png');
   background-position: -0px -3258px;
   width: 115px;
   height: 269px;
 }
 
 .spritesheet.campinho_crianca3_vermelha {
-  background-image: url('../images/spritesheet6.png');
+  background-image: url('../../images/generated-sprites/spritesheet6.png');
   background-position: -3545px -2172px;
   width: 163px;
   height: 278px;
 }
 
 .spritesheet.cenario1_governo {
-  background-image: url('../images/spritesheet6.png');
+  background-image: url('../../images/generated-sprites/spritesheet6.png');
   background-position: -0px -0px;
   width: 1921px;
   height: 1081px;
 }
 
 .spritesheet.cenariogoverno_ong {
-  background-image: url('../images/spritesheet6.png');
+  background-image: url('../../images/generated-sprites/spritesheet6.png');
   background-position: -1926px -0px;
   width: 1921px;
   height: 1081px;
 }
 
 .spritesheet.cenariogoverno_radio {
-  background-image: url('../images/spritesheet6.png');
+  background-image: url('../../images/generated-sprites/spritesheet6.png');
   background-position: -0px -1086px;
   width: 1921px;
   height: 1081px;
 }
 
 .spritesheet.cenariogoverno_radio3 {
-  background-image: url('../images/spritesheet6.png');
+  background-image: url('../../images/generated-sprites/spritesheet6.png');
   background-position: -1926px -1086px;
   width: 1921px;
   height: 1081px;
 }
 
 .spritesheet.cenarioprefeitura_governo {
-  background-image: url('../images/spritesheet6.png');
+  background-image: url('../../images/generated-sprites/spritesheet6.png');
   background-position: -0px -2172px;
   width: 1921px;
   height: 1081px;
 }
 
 .spritesheet.ong_alface {
-  background-image: url('../images/spritesheet6.png');
+  background-image: url('../../images/generated-sprites/spritesheet6.png');
   background-position: -3654px -2646px;
   width: 85px;
   height: 87px;
 }
 
 .spritesheet.ong_banana {
-  background-image: url('../images/spritesheet6.png');
+  background-image: url('../../images/generated-sprites/spritesheet6.png');
   background-position: -2679px -2762px;
   width: 113px;
   height: 59px;
 }
 
 .spritesheet.ong_cenoura {
-  background-image: url('../images/spritesheet6.png');
+  background-image: url('../../images/generated-sprites/spritesheet6.png');
   background-position: -3733px -2455px;
   width: 105px;
   height: 94px;
 }
 
 .spritesheet.ong_cesta_governo {
-  background-image: url('../images/spritesheet6.png');
+  background-image: url('../../images/generated-sprites/spritesheet6.png');
   background-position: -2231px -2762px;
   width: 219px;
   height: 113px;
 }
 
 .spritesheet.ong_item_alface {
-  background-image: url('../images/spritesheet6.png');
+  background-image: url('../../images/generated-sprites/spritesheet6.png');
   background-position: -2216px -3057px;
   width: 140px;
   height: 139px;
 }
 
 .spritesheet.ong_item_banana {
-  background-image: url('../images/spritesheet6.png');
+  background-image: url('../../images/generated-sprites/spritesheet6.png');
   background-position: -360px -3258px;
   width: 139px;
   height: 140px;
 }
 
 .spritesheet.ong_item_cenoura {
-  background-image: url('../images/spritesheet6.png');
+  background-image: url('../../images/generated-sprites/spritesheet6.png');
   background-position: -1926px -3057px;
   width: 140px;
   height: 140px;
 }
 
 .spritesheet.ong_item_tomate {
-  background-image: url('../images/spritesheet6.png');
+  background-image: url('../../images/generated-sprites/spritesheet6.png');
   background-position: -2361px -3057px;
   width: 140px;
   height: 139px;
 }
 
 .spritesheet.ong_tomate {
-  background-image: url('../images/spritesheet6.png');
+  background-image: url('../../images/generated-sprites/spritesheet6.png');
   background-position: -3744px -2646px;
   width: 99px;
   height: 63px;
 }
 
 .spritesheet.radio_cesta_governo {
-  background-image: url('../images/spritesheet6.png');
+  background-image: url('../../images/generated-sprites/spritesheet6.png');
   background-position: -2455px -2762px;
   width: 219px;
   height: 113px;
 }
 
 .spritesheet.radio_item_jornal {
-  background-image: url('../images/spritesheet6.png');
+  background-image: url('../../images/generated-sprites/spritesheet6.png');
   background-position: -2071px -3057px;
   width: 140px;
   height: 140px;
 }
 
 .spritesheet.radio_item_rolojornal {
-  background-image: url('../images/spritesheet6.png');
+  background-image: url('../../images/generated-sprites/spritesheet6.png');
   background-position: -504px -3258px;
   width: 139px;
   height: 140px;
 }
 
 .spritesheet.radio_jornal {
-  background-image: url('../images/spritesheet6.png');
+  background-image: url('../../images/generated-sprites/spritesheet6.png');
   background-position: -3545px -2646px;
   width: 104px;
   height: 93px;
 }
 
 .spritesheet.radio_rolojornal {
-  background-image: url('../images/spritesheet6.png');
+  background-image: url('../../images/generated-sprites/spritesheet6.png');
   background-position: -3733px -2554px;
   width: 112px;
   height: 69px;
