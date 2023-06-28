@@ -27,6 +27,11 @@ const router = createRouter({
       path: '/regiao',
       name: 'region',
       component: () => import('../views/region/RegionView.vue')
+    },
+    {
+      path: '/quiz',
+      name: 'quiz',
+      component: () => import('../views/quiz/QuizView.vue')
     }
   ]
 })

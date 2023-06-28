@@ -9,6 +9,7 @@ const showPopper = ref(true)
 const showBoxComment = ref(false)
 const userStore = useUserStore()
 const effectsStore = useEffectsStore()
+const router = useRouter()
 
 const commentLine = computed(() => {
   return `Bom trabalho! Agora, precisamos saber que tipo de Amig${
@@ -35,7 +36,7 @@ function startDrag() {
 }
 
 async function onCompleted() {
-  await promiseTimeout(2000)
+  await promiseTimeout(1000)
   showBoxComment.value = true
 }
 
@@ -45,6 +46,10 @@ function endDrag() {
 
 function verifyDropped(name) {
   return droppeds.value.includes(name)
+}
+
+function goToQuiz() {
+  router.push({ name: 'quiz' })
 }
 </script>
 
@@ -122,6 +127,7 @@ function verifyDropped(name) {
           name="btn-action-blue"
           width="300px"
           class="absolute bottom-[150px] right-[400px]"
+          @click="goToQuiz"
           >Vamos lá</BaseButton
         >
       </BoxComment>

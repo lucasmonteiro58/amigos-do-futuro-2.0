@@ -10,7 +10,7 @@ onMounted(() => {
 
 <template>
   <div
-    class="w-[1920px] h-[1080px] mx-auto fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 drop-shadow-xl cursor-auto"
+    class="w-[1920px] h-[1080px] mx-auto fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 drop-shadow-xl cursor-auto overflow-hidden"
   >
     <LoadingScreen v-if="!assetsLoaded" :progress="loadingProgress" />
     <span v-else class="animation__fadeIn">
