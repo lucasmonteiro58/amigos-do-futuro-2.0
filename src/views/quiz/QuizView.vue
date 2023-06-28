@@ -6,6 +6,7 @@ const duration = ref(null)
 
 const quizStore = useQuizStore()
 const router = useRouter()
+const linesStore = useLinesStore()
 
 const completed = computed(() => {
   return quizStore.quizCompleted
@@ -25,7 +26,8 @@ onMounted(() => {
 
 watch(completed, () => {
   if (completed.value) {
-    router.push({ name: 'form' })
+    linesStore.linesAudios.stop()
+    router.push({ name: 'quiz-result', params: { id: quizStore.userBadge } })
   }
 })
 </script>

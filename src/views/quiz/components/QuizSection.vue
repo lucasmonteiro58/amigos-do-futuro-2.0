@@ -59,6 +59,10 @@ function setQuizAnswer(answer) {
   quizStore.setQuiz(currentQuestion.value.name, answer)
   nextQuestion()
 }
+
+onMounted(() => {
+  linesStore.playAudio(currentQuestion.value.audio)
+})
 </script>
 
 <template>
