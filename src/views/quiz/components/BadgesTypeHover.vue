@@ -6,16 +6,20 @@ const currentBadge = ref({})
 
 const linesStore = useLinesStore()
 
+const emits = defineEmits(['play', 'stop'])
+
 function showBadge(badge) {
   showingBadge.value = true
   currentBadge.value = badge
   linesStore.playAudio(badge.audio)
+  emits('play', badge.duration)
 }
 
 function hideBadge() {
   showingBadge.value = false
   currentBadge.value = {}
   linesStore.linesAudios.stop()
+  emits('stop')
 }
 </script>
 

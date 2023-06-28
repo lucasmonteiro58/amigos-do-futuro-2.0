@@ -70,7 +70,8 @@ onMounted(() => {
 })
 
 defineExpose({
-  playAgain
+  playAgain,
+  initNoSpeak
 })
 
 watch(id, () => {

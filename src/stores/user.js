@@ -22,7 +22,15 @@ export const useUserStore = defineStore(
       gender.value = value
     }
 
-    return { name, gender, age, city, setGender, region, allCompleted }
+    return {
+      name,
+      gender,
+      age,
+      city,
+      setGender,
+      region,
+      allCompleted
+    }
   },
   { persist: true }
 )

@@ -297,6 +297,7 @@
     "useBgMusicStore": true,
     "usePreload": true,
     "transformFont": true,
-    "useEffectsStore": true
+    "useEffectsStore": true,
+    "useQuizStore": true
   }
 }
