@@ -17,6 +17,10 @@ const props = defineProps({
   width: {
     type: String,
     default: '800px'
+  },
+  bgCongrats: {
+    type: Boolean,
+    default: false
   }
 })
 
@@ -36,6 +40,7 @@ onMounted(() => {
 </script>
 
 <template>
+  <BaseImg v-if="bgCongrats" img="sunshine-bg" class="overflow-visible absolute"></BaseImg>
   <BaseImg img="box-comment" class="overflow-visible relative">
     <RobotAnimate
       ref="robotRef"

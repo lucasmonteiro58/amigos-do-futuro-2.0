@@ -117,7 +117,14 @@ function verifyDropped(name) {
       v-if="showBoxComment"
       class="w-full h-full absolute flex justify-center items-center animation__bounceIn"
     >
-      <BoxComment :line="commentLine" width="750px" :audio="commentAudio" :time="8000"></BoxComment>
+      <BoxComment :line="commentLine" width="750px" :audio="commentAudio" :time="8000" bg-congrats>
+        <BaseButton
+          name="btn-action-blue"
+          width="300px"
+          class="absolute bottom-[150px] right-[400px]"
+          >Vamos lá</BaseButton
+        >
+      </BoxComment>
     </div>
   </main>
 </template>
