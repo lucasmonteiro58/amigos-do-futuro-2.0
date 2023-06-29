@@ -14,14 +14,26 @@ export const useEffectsStore = defineStore('effects', () => {
     })
   )
 
+  const congratsAudios = ref(
+    useSound(audio, {
+      sprite: sprites.sprite,
+      interrupt: true
+    })
+  )
+
   const isAudio = computed(() => soundStore.audio)
 
   function playAudio(name) {
     if (isAudio.value) effectsAudios.value.play({ id: name })
   }
 
+  function playAudioCongrats(name) {
+    if (isAudio.value) congratsAudios.value.play({ id: name })
+  }
+
   watch(isAudio, (value) => {
     if (!value) effectsAudios.value.stop()
+    if (!value) congratsAudios.value.stop()
   })
 
   //some common effects
@@ -31,6 +43,9 @@ export const useEffectsStore = defineStore('effects', () => {
   function plaHoverButton() {
     playAudio('feedback_mouse_over_itens')
   }
+  function playCongratsEffect() {
+    playAudioCongrats('feedback_sucesso_geral')
+  }
 
-  return { playAudio, effectsAudios, playClickButton, plaHoverButton }
+  return { playAudio, effectsAudios, playClickButton, plaHoverButton, playCongratsEffect }
 })

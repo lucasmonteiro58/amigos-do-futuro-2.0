@@ -298,6 +298,7 @@
     "usePreload": true,
     "transformFont": true,
     "useEffectsStore": true,
-    "useQuizStore": true
+    "useQuizStore": true,
+    "getBadgeName": true
   }
 }

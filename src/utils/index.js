@@ -20,3 +20,22 @@ export function transformFont(font) {
   }
   return font
 }
+
+export function getBadgeName(name) {
+  switch (name) {
+    case 'eco':
+      return ['a', 'Economia']
+    case 'edu':
+      return ['a', 'Educação']
+    case 'gov':
+      return ['o', 'Governo']
+    case 'ino':
+      return ['a', 'Inovação']
+    case 'laz':
+      return ['o', 'Lazer']
+    case 'mei':
+      return ['o', 'Meio Ambiente']
+    case 'sau':
+      return ['a', 'Saúde']
+  }
+}
