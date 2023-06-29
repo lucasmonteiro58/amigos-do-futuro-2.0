@@ -1,5 +1,5 @@
 <script setup></script>
 
 <template>
-  <div></div>
+  <div>eco 1</div>
 </template>
