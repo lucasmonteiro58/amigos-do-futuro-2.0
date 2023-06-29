@@ -38,6 +38,11 @@ const router = createRouter({
       path: '/quiz/:id',
       name: 'quiz-result',
       component: () => import('../views/quiz-result/QuizResultView.vue')
+    },
+    {
+      path: '/comecar-desafios',
+      name: 'start-challenges',
+      component: () => import('../views/start-challenges/StartChallengesView.vue')
     }
   ]
 })

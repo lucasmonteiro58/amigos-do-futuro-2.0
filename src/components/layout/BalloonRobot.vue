@@ -16,7 +16,7 @@ const emit = defineEmits(['play-again'])
 <template>
   <div>
     <BaseImg img="balloon-comment" class="relative">
-      <div v-html="text" class="pl-16 pr-48 text-5xl font-exo2 font-bold pt-10"></div>
+      <div v-html="text" class="pl-16 pr-[10rem] text-5xl font-exo2 font-bold pt-10"></div>
       <BaseButton
         name="btn-toggle-repeat"
         width="80px"

@@ -7,6 +7,7 @@ const quizStore = useQuizStore()
 const userStore = useUserStore()
 const linesStore = useLinesStore()
 const effectsStore = useEffectsStore()
+const router = useRouter()
 const idAudio = ref(0)
 const showRobot = ref(false)
 
@@ -31,6 +32,10 @@ const audio = computed(() => {
 function repeat() {
   idAudio.value++
   linesStore.playAudio(audio.value)
+}
+
+function goToStartChallenge() {
+  router.push({ name: 'start-challenges' })
 }
 
 onMounted(async () => {
@@ -84,6 +89,7 @@ onMounted(async () => {
           name="btn-toggle-next"
           width="170px"
           class="absolute right-[-30px] top-[300px]"
+          @click="goToStartChallenge"
         ></BaseButton>
       </div>
     </BaseImg>
