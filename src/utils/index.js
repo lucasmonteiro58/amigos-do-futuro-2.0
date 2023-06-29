@@ -34,7 +34,7 @@ export function getBadgeName(name) {
     case 'laz':
       return ['o', 'Lazer']
     case 'mei':
-      return ['o', 'Meio Ambiente']
+      return ['a', 'Sustentabilidade']
     case 'sau':
       return ['a', 'Saúde']
   }

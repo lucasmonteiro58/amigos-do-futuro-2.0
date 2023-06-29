@@ -396,284 +396,284 @@
       654000,
       107.48299319732268
     ],
-    "feedback_economia_moeda_entrando": [
+    "feedback_sucesso_geral": [
       656000,
+      1740.9977324263082
+    ],
+    "feedback_economia_moeda_entrando": [
+      659000,
       1299.9999999999545
     ],
     "feedback_economia_moeda_saindo": [
-      659000,
+      662000,
       451.02040816323097
     ],
     "feedback_economia_mos": [
-      661000,
+      664000,
       399.99999999997726
     ],
     "feedback_governo_apito": [
-      663000,
+      666000,
       1226.5759637188012
     ],
     "feedback_governo_megafone_01": [
-      666000,
+      669000,
       11864.013605442211
     ],
     "feedback_inovacao_agua_pingando": [
-      679000,
+      682000,
       2001.972789115598
     ],
     "feedback_inovacao_carrinho_andando_01": [
-      683000,
+      686000,
       22826.485260770936
     ],
     "feedback_inovacao_carrinho_andando_02": [
-      707000,
+      710000,
       74062.65306122453
     ],
     "feedback_inovacao_troca_de_peca": [
-      783000,
+      786000,
       575.9183673469579
     ],
     "feedback_lazer_colar_figurinha": [
-      785000,
+      788000,
       533.0839002267567
     ],
     "feedback_lazer_virar_pagina": [
-      787000,
+      790000,
       895.4195011338015
     ],
     "feedback_mapa_drag": [
-      789000,
+      792000,
       399.99999999997726
     ],
     "feedback_mapa_sucesso": [
-      791000,
+      794000,
       1740.9977324263082
     ],
     "feedback_sustentabilidade_aguapia": [
-      794000,
+      797000,
       1619.5918367346849
     ],
     "feedback_sustentabilidade_canos": [
-      797000,
+      800000,
       878.0045351473973
     ],
     "feedback_sustentabilidade_colheita": [
-      799000,
+      802000,
       471.723356009079
     ],
     "feedback_sustentabilidade_fruta_na_cesta": [
-      801000,
+      804000,
       429.5691609977439
     ],
     "feedback_sustentabilidade_lixeira": [
-      803000,
+      806000,
       5666.666666666629
     ],
     "feedback_sustentabilidade_sementes_01": [
-      810000,
+      813000,
       12368.253968253954
     ],
     "feedback_sustentabilidade_sementes_02": [
-      824000,
+      827000,
       14840.589569161011
     ],
     "feedback_sustentabilidade_sucesso_01": [
-      840000,
+      843000,
       3437.50566893425
     ],
     "feedback_sustentabilidade_sucesso_02": [
-      845000,
+      848000,
       4437.48299319725
     ],
     "xfeedback_sustentabilidade_gua_03": [
-      851000,
+      854000,
       18594.60317460321
     ],
     "form_pergunta0": [
-      871000,
+      874000,
       7965.510204081625
     ],
     "form_pergunta1": [
-      880000,
+      883000,
       4525.873015873003
     ],
     "form_pergunta2": [
-      886000,
+      889000,
       6132.5396825396865
     ],
     "form_pergunta3": [
-      894000,
+      897000,
       4706.893424036252
     ],
     "form_perguntaundefined": [
-      900000,
+      903000,
       6814.920634920668
     ],
     "mapa_bomtrabalho": [
-      908000,
+      911000,
       8178.707482993218
     ],
     "mapa_bomtrabalhomenino": [
-      918000,
+      921000,
       7202.154195011303
     ],
     "mapa_help": [
-      927000,
+      930000,
       8599.138321995497
     ],
-    "mapa_parabens": [
-      937000,
-      8259.705215419444
-    ],
     "quiz_eco": [
-      947000,
+      940000,
       5725.215419501183
     ],
     "quiz_edu": [
-      954000,
+      947000,
       9685.351473922878
     ],
     "quiz_gov": [
-      965000,
+      958000,
       7558.185941043121
     ],
     "quiz_ino": [
-      974000,
+      967000,
       7693.968253968251
     ],
     "quiz_laz": [
-      983000,
+      976000,
       5702.585034013623
     ],
     "quiz_mei": [
-      990000,
+      983000,
       4593.741496598682
     ],
     "quiz_pergunta1": [
-      996000,
+      989000,
       5288.639455782345
     ],
     "quiz_pergunta2": [
-      1003000,
+      996000,
       5469.750566893481
     ],
     "quiz_pergunta3": [
-      1010000,
+      1003000,
       7622.040816326489
     ],
     "quiz_pergunta4": [
-      1019000,
+      1012000,
       4034.875283446695
     ],
     "quiz_pergunta5": [
-      1025000,
-      2958.730158730077
+      1018000,
+      2958.730158730191
     ],
     "quiz_pergunta6": [
-      1029000,
+      1022000,
       4572.947845804947
     ],
     "quiz_pergunta7": [
-      1035000,
+      1028000,
       4303.922902494378
     ],
     "quiz_sau": [
-      1041000,
+      1034000,
       8010.77097505663
     ],
     "regiao_cariri": [
-      1051000,
+      1044000,
       7693.968253968251
     ],
     "regiao_centro_sul": [
-      1060000,
+      1053000,
       7671.337868480805
     ],
     "regiao_grande_fortaleza": [
-      1069000,
+      1062000,
       7015.079365079373
     ],
     "regiao_litoral_leste": [
-      1078000,
+      1071000,
       8418.095238095248
     ],
     "regiao_litoral_norte": [
-      1088000,
+      1081000,
       7037.732426303819
     ],
     "regiao_litoral_oeste": [
-      1097000,
+      1090000,
       6042.471655328882
     ],
     "regiao_macico_de_baturite": [
-      1105000,
+      1098000,
       7445.0340136054365
     ],
     "regiao_serra_da_ibiapaba": [
-      1114000,
+      1107000,
       7626.077097505686
     ],
     "regiao_sertao_central": [
-      1123000,
+      1116000,
       8191.814058956879
     ],
     "regiao_sertao_de_caninde": [
-      1133000,
+      1126000,
       7648.707482993132
     ],
     "regiao_sertao_de_sobral": [
-      1142000,
+      1135000,
       7241.383219954741
     ],
     "regiao_sertao_dos_crateus": [
-      1151000,
+      1144000,
       8304.965986394564
     ],
     "regiao_sertao_dos_inhamuns": [
-      1161000,
+      1154000,
       7128.231292517057
     ],
     "regiao_vale_do_jaguaribe": [
-      1170000,
+      1163000,
       7716.575963718924
     ],
     "significado_horta_comunitxria_lugar_onde_todo_mundo": [
-      1179000,
+      1172000,
       6276.848072562416
     ],
     "significado_investir_dae_o_seu_dinheiro": [
-      1187000,
+      1180000,
       5828.458049886649
     ],
     "significado_reciclagem_transformar_o_lixo_em_um": [
-      1194000,
+      1187000,
       4662.630385487546
     ],
     "starts_desafios_eco": [
-      1200000,
+      1193000,
       5360.793650793539
     ],
     "starts_desafios_edu": [
-      1207000,
+      1200000,
       4867.8684807255195
     ],
     "starts_desafios_gov": [
-      1213000,
+      1206000,
       4167.301587301608
     ],
     "starts_desafios_ino": [
-      1219000,
+      1212000,
       5278.6394557822405
     ],
     "starts_desafios_laz": [
-      1226000,
+      1219000,
       5709.977324263036
     ],
     "starts_desafios_mei": [
-      1233000,
+      1226000,
       5319.72789115639
     ],
     "starts_desafios_sau": [
-      1240000,
+      1233000,
       4826.78004535137
     ]
   }

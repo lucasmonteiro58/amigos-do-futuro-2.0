@@ -36,6 +36,7 @@ function startDrag() {
 }
 
 async function onCompleted() {
+  effectsStore.playCongratsEffect()
   await promiseTimeout(1000)
   showBoxComment.value = true
 }

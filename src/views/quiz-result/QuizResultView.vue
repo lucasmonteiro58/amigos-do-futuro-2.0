@@ -1,11 +1,14 @@
 <script setup>
 import { robotBlue } from '@/consts/'
 import { getBadgeName } from '@/utils'
+import { promiseTimeout } from '@vueuse/core'
 
 const quizStore = useQuizStore()
 const userStore = useUserStore()
 const linesStore = useLinesStore()
+const effectsStore = useEffectsStore()
 const idAudio = ref(0)
+const showRobot = ref(false)
 
 const badgeName = computed(() => {
   return getBadgeName(quizStore.userBadge)
@@ -30,8 +33,11 @@ function repeat() {
   linesStore.playAudio(audio.value)
 }
 
-onMounted(() => {
+onMounted(async () => {
+  effectsStore.playCongratsEffect()
   idAudio.value++
+  await promiseTimeout(1000)
+  showRobot.value = true
   linesStore.playAudio(audio.value)
 })
 </script>
@@ -40,7 +46,7 @@ onMounted(() => {
   <main class="spritesheet bg-congrats flex justify-center items-center">
     <BaseImg img="box-comment" class="overflow-visible mt-16">
       <div class="px-[160px] py-[70px] w-full h-full relative">
-        <div>
+        <div v-if="showRobot">
           <RobotAnimate
             :key="idAudio"
             :animation="robotBlue"
@@ -56,7 +62,7 @@ onMounted(() => {
           >
             <div class="pt-[120px] px-[35px]">
               <div
-                class="text-[2.8rem] leading-[1] font-bungee text-primary-blue-text pt-10 text-center"
+                class="text-[2.6rem] leading-[1] font-bungee text-primary-blue-text pt-10 text-center"
               >
                 Você é {{ genderName }} d{{ badgeName[0] }} {{ badgeName[1] }}. Parabéns!
               </div>
@@ -69,7 +75,11 @@ onMounted(() => {
             ></BaseButton>
           </BaseImg>
         </div>
-        <BaseImg :img="badgeImage" width="500px" class="absolute right-80 top-6" />
+        <BaseImg
+          :img="badgeImage"
+          width="500px"
+          class="absolute right-80 top-6 animation__zoomIn_1"
+        />
         <BaseButton
           name="btn-toggle-next"
           width="170px"

@@ -134,3 +134,21 @@
     opacity: 1;
   }
 }
+
+.animation__zoomIn_1 {
+  animation-name: zoomIn;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0.5;
+    transform: scale(0.3);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
