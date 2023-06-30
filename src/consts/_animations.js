@@ -9,17 +9,23 @@ import counterJson from '@/assets/animations/counter/sprite.json'
 import cursorDragImg from '@/assets/animations/cursor-drag/sprite.png'
 import cursorDragJson from '@/assets/animations/cursor-drag/sprite.json'
 
+/* eco */
+import cursorKeyboardImg from '@/assets/animations/cursor-keyboard/sprite.png'
+import cursorKeyboardJson from '@/assets/animations/cursor-keyboard/sprite.json'
+
 const imageRobotBlue = new Image()
 const imageRobotOrange = new Image()
 const imageRobotFull = new Image()
 const imageCounter = new Image()
 const imageCursorDrag = new Image()
+const imageCursorKeyboard = new Image()
 
 imageRobotBlue.src = robotBlueImg
 imageRobotOrange.src = robotOrangeImg
 imageRobotFull.src = robotFullImg
 imageCounter.src = counterImg
 imageCursorDrag.src = cursorDragImg
+imageCursorKeyboard.src = cursorKeyboardImg
 
 const robotBlue = {
   sprite: imageRobotBlue,
@@ -41,5 +47,9 @@ const cursorDrag = {
   sprite: imageCursorDrag,
   json: cursorDragJson
 }
+const cursorKeyboard = {
+  sprite: imageCursorKeyboard,
+  json: cursorKeyboardJson
+}
 
-export { robotBlue, robotOrange, robotFull, counterAnimation, cursorDrag }
+export { robotBlue, robotOrange, robotFull, counterAnimation, cursorDrag, cursorKeyboard }

@@ -3974,6 +3974,13 @@ pngquant-bin@^5.0.0:
     execa "^0.10.0"
     logalot "^2.0.0"
 
+polygon-clipping@^0.15.3:
+  version "0.15.3"
+  resolved "https://registry.yarnpkg.com/polygon-clipping/-/polygon-clipping-0.15.3.tgz#0215840438470ba2e9e6593625e4ea5c1087b4b7"
+  integrity sha512-ho0Xx5DLkgxRx/+n4O74XyJ67DcyN3Tu9bGYKsnTukGAW6ssnuak6Mwcyb1wHy9MZc9xsUWqIoiazkZB5weECg==
+  dependencies:
+    splaytree "^3.1.0"
+
 popmotion@^11.0.5:
   version "11.0.5"
   resolved "https://registry.yarnpkg.com/popmotion/-/popmotion-11.0.5.tgz#8e3e014421a0ffa30ecd722564fd2558954e1f7d"
@@ -4545,6 +4552,11 @@ spdx-license-ids@^3.0.0:
   version "3.0.13"
   resolved "https://registry.yarnpkg.com/spdx-license-ids/-/spdx-license-ids-3.0.13.tgz#7189a474c46f8d47c7b0da4b987bb45e908bd2d5"
   integrity sha512-XkD+zwiqXHikFZm4AX/7JSCXA98U5Db4AFd5XUg/+9UNtnH75+Z9KxtpYiJZx36mUDVOwH83pl7yvCer6ewM3w==
+
+splaytree@^3.1.0:
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/splaytree/-/splaytree-3.1.2.tgz#d1db2691665a3c69d630de98d55145a6546dc166"
+  integrity sha512-4OM2BJgC5UzrhVnnJA4BkHKGtjXNzzUfpQjCO8I05xYPsfS/VuQDwjCGGMi8rYQilHEV4j8NBqTFbls/PZEE7A==
 
 spritesmith@^3.4.1:
   version "3.4.1"

@@ -39,3 +39,29 @@ export function getBadgeName(name) {
       return ['a', 'Saúde']
   }
 }
+
+export function moveLeftKeyboard(currentPosition, containerElement) {
+  if (currentPosition.left > containerElement.offsetLeft - 60) {
+    currentPosition.left -= 10
+  }
+}
+
+export function moveUpKeyboard(currentPosition, containerElement) {
+  if (currentPosition.top > containerElement.offsetTop - 20) {
+    currentPosition.top -= 10
+  }
+}
+
+export function moveRightKeyboard(currentPosition, element, containerElement) {
+  const containerRight = containerElement.offsetLeft + containerElement.offsetWidth - 60
+  if (currentPosition.left + element.offsetWidth < containerRight) {
+    currentPosition.left += 10
+  }
+}
+
+export function moveDownKeyboard(currentPosition, element, containerElement) {
+  const containerBottom = containerElement.offsetTop + containerElement.offsetHeight - 25
+  if (currentPosition.top + element.offsetHeight < containerBottom) {
+    currentPosition.top += 10
+  }
+}

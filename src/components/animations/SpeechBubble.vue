@@ -59,10 +59,10 @@ onMounted(() => {
         :time="time"
         class="absolute top-[15px] left-[3px] scale-[0.38] origin-top-left"
       ></RobotAnimate>
-      <div class="w-[524px] h-[209px] relative left-[325px] top-[140px]">
-        <div class="pt-3 font-bungee text-primary-blue text-4xl" v-html="title"></div>
+      <div class="w-[524px] h-[209px] relative left-[315px] top-[140px]">
+        <div class="font-bungee text-primary-blue text-4xl" v-html="title"></div>
         <div
-          class="pt-4 font-exo2 font-bold text-gray-500 text-3xl leading-7"
+          class="pt-3 pr-8 font-exo2 font-bold text-gray-500 text-3xl leading-7"
           v-html="description"
         ></div>
         <BaseButton
@@ -74,7 +74,7 @@ onMounted(() => {
           @click="playAgain"
           name="btn-toggle-repeat"
           width="72px"
-          class="absolute top-[150px] left-[495px]"
+          class="absolute top-[150px] left-[498px]"
         ></BaseButton>
       </div>
     </div>
