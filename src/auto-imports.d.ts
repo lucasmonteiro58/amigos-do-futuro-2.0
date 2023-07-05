@@ -51,6 +51,10 @@ declare global {
   const isRef: typeof import('vue')['isRef']
   const makeDestructurable: typeof import('@vueuse/core')['makeDestructurable']
   const markRaw: typeof import('vue')['markRaw']
+  const moveDownKeyboard: typeof import('./utils/index.js')['moveDownKeyboard']
+  const moveLeftKeyboard: typeof import('./utils/index.js')['moveLeftKeyboard']
+  const moveRightKeyboard: typeof import('./utils/index.js')['moveRightKeyboard']
+  const moveUpKeyboard: typeof import('./utils/index.js')['moveUpKeyboard']
   const nextTick: typeof import('vue')['nextTick']
   const onActivated: typeof import('vue')['onActivated']
   const onBeforeMount: typeof import('vue')['onBeforeMount']
@@ -355,6 +359,10 @@ declare module 'vue' {
     readonly isRef: UnwrapRef<typeof import('vue')['isRef']>
     readonly makeDestructurable: UnwrapRef<typeof import('@vueuse/core')['makeDestructurable']>
     readonly markRaw: UnwrapRef<typeof import('vue')['markRaw']>
+    readonly moveDownKeyboard: UnwrapRef<typeof import('./utils/index.js')['moveDownKeyboard']>
+    readonly moveLeftKeyboard: UnwrapRef<typeof import('./utils/index.js')['moveLeftKeyboard']>
+    readonly moveRightKeyboard: UnwrapRef<typeof import('./utils/index.js')['moveRightKeyboard']>
+    readonly moveUpKeyboard: UnwrapRef<typeof import('./utils/index.js')['moveUpKeyboard']>
     readonly nextTick: UnwrapRef<typeof import('vue')['nextTick']>
     readonly onActivated: UnwrapRef<typeof import('vue')['onActivated']>
     readonly onBeforeMount: UnwrapRef<typeof import('vue')['onBeforeMount']>
@@ -652,6 +660,10 @@ declare module '@vue/runtime-core' {
     readonly isRef: UnwrapRef<typeof import('vue')['isRef']>
     readonly makeDestructurable: UnwrapRef<typeof import('@vueuse/core')['makeDestructurable']>
     readonly markRaw: UnwrapRef<typeof import('vue')['markRaw']>
+    readonly moveDownKeyboard: UnwrapRef<typeof import('./utils/index.js')['moveDownKeyboard']>
+    readonly moveLeftKeyboard: UnwrapRef<typeof import('./utils/index.js')['moveLeftKeyboard']>
+    readonly moveRightKeyboard: UnwrapRef<typeof import('./utils/index.js')['moveRightKeyboard']>
+    readonly moveUpKeyboard: UnwrapRef<typeof import('./utils/index.js')['moveUpKeyboard']>
     readonly nextTick: UnwrapRef<typeof import('vue')['nextTick']>
     readonly onActivated: UnwrapRef<typeof import('vue')['onActivated']>
     readonly onBeforeMount: UnwrapRef<typeof import('vue')['onBeforeMount']>

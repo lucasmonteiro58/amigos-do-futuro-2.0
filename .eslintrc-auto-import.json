@@ -299,6 +299,10 @@
     "transformFont": true,
     "useEffectsStore": true,
     "useQuizStore": true,
-    "getBadgeName": true
+    "getBadgeName": true,
+    "moveDownKeyboard": true,
+    "moveLeftKeyboard": true,
+    "moveRightKeyboard": true,
+    "moveUpKeyboard": true
   }
 }
