@@ -13,13 +13,21 @@ const ctx = computed(() => canvasRef.value?.getContext('2d'))
 const x = ref(600)
 const y = ref(750)
 const allBalls = ref(balls)
+const index = ref(0)
+const total = ref(0)
+const message = ref('')
+const type = ref('')
+
+const effectStore = useEffectsStore()
 
 function draw() {
   ctx.value?.clearRect(0, 0, canvasWidth, canvasHeight)
   ctx.value?.drawImage(robot, x.value, y.value)
   allBalls.value.forEach((el) => {
     if (el.colided) return
-    drawBall(el)
+    if (index.value >= el.stage) {
+      drawBall(el)
+    }
   })
 }
 
@@ -59,11 +67,25 @@ function checkCollision(ball) {
     y.value + robotHeight > ball.y
   ) {
     allBalls.value = allBalls.value.map((el) => {
-      if (el.text === ball.text) return { ...el, colided: true }
-      else return el
+      if (el.text === ball.text && ball.type === 'good') index.value++
+      if (el.text === ball.text) {
+        total.value += ball.value
+        message.value = ball.text
+        type.value = ball.type
+        ball.type === 'good'
+          ? effectStore.playAudio('feedback_economia_moeda_entrando')
+          : effectStore.playAudio('feedback_economia_moeda_saindo')
+        return { ...el, colided: true }
+      } else return el
     })
   }
 }
+
+watchEffect(() => {
+  if (index.value === 4) {
+    console.log('fim')
+  }
+})
 
 onMounted(() => {
   window.addEventListener('keydown', handleKeyDown)
@@ -81,10 +103,18 @@ onMounted(() => {
         class="absolute top-[25px] left-[68px]"
       ></canvas>
     </BaseImg>
+    <div
+      class="bg-[#e5e5e5] text-5xl font-front absolute px-[50px] pl-[100px] py-[19px] rounded-full bottom-[32px] left-[700px]"
+      :class="type === 'good' ? 'text-green-500' : 'text-red-500'"
+      v-if="message"
+    >
+      {{ message }}
+    </div>
     <BaseImg img="planta_rectmoeda_menor" class="mr-[600px] relative scale-125">
       <BaseImg img="planta_moeda_eco" class="absolute top-2 left-2"></BaseImg>
-      <div class="font-norwester text-5xl pt-2 pl-[6rem]">0</div>
+      <div class="font-norwester text-5xl pt-2 pl-[6rem]">{{ total }}</div>
     </BaseImg>
+
     <SpeechBubble
       title="Cofrinho cheio! Quanto dinheiro você consegue juntar?"
       description="Pegue as moedas verdes e fuja das vermelhas. Use as setas do teclado."
