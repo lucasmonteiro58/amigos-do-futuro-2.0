@@ -303,6 +303,13 @@
     "moveDownKeyboard": true,
     "moveLeftKeyboard": true,
     "moveRightKeyboard": true,
-    "moveUpKeyboard": true
+    "moveUpKeyboard": true,
+    "ExtractDefaultPropTypes": true,
+    "ExtractPropTypes": true,
+    "ExtractPublicPropTypes": true,
+    "WritableComputedRef": true,
+    "injectLocal": true,
+    "provideLocal": true,
+    "useClipboardItems": true
   }
 }
