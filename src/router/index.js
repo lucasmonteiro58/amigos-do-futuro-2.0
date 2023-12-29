@@ -45,6 +45,11 @@ const router = createRouter({
       component: () => import('../views/start-challenges/StartChallengesView.vue')
     },
     {
+      path: '/parabens/:challenge/:level',
+      name: 'congratulation',
+      component: () => import('../views/congratulation/CongratulationView.vue')
+    },
+    {
       path: '/desafios',
       children: [
         {

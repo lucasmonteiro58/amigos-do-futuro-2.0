@@ -14,6 +14,8 @@ declare module 'vue' {
     BaseInputSelect: typeof import('./components/inputs/BaseInputSelect.vue')['default']
     BaseInputText: typeof import('./components/inputs/BaseInputText.vue')['default']
     BoxComment: typeof import('./components/layout/BoxComment.vue')['default']
+    BoxCongrats: typeof import('./components/layout/BoxCongrats.vue')['default']
+    copy: typeof import('./components/layout/BoxComment copy.vue')['default']
     CursorDrag: typeof import('./components/animations/CursorDrag.vue')['default']
     CursorKeyboard: typeof import('./components/animations/CursorKeyboard.vue')['default']
     DragElement: typeof import('./components/interact/DragElement.vue')['default']
