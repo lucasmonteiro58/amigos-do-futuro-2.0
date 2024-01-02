@@ -1,260 +1,8 @@
-.spritesheet.bebedouro_balde {
+.spritesheet.foguete_rabogarrafa {
   background-image: url('../../images/generated-sprites/spritesheet7.png');
-  background-position: -3212px -2171px;
-  width: 183px;
-  height: 154px;
-}
-
-.spritesheet.bebedouro_bebedouro {
-  background-image: url('../../images/generated-sprites/spritesheet7.png');
-  background-position: -3852px -0px;
-  width: 679px;
-  height: 816px;
-}
-
-.spritesheet.bebedouro_bebedourocenario {
-  background-image: url('../../images/generated-sprites/spritesheet7.png');
-  background-position: -0px -1086px;
-  width: 1920px;
-  height: 1080px;
-}
-
-.spritesheet.bebedouro_garrafao {
-  background-image: url('../../images/generated-sprites/spritesheet7.png');
-  background-position: -4305px -821px;
-  width: 210px;
-  height: 283px;
-}
-
-.spritesheet.bebedouro_regador {
-  background-image: url('../../images/generated-sprites/spritesheet7.png');
-  background-position: -4197px -2096px;
-  width: 289px;
-  height: 194px;
-}
-
-.spritesheet.bebedouro_torneira {
-  background-image: url('../../images/generated-sprites/spritesheet7.png');
-  background-position: -4211px -1463px;
-  width: 36px;
-  height: 57px;
-}
-
-.spritesheet.bebedouro_vasinho {
-  background-image: url('../../images/generated-sprites/spritesheet7.png');
-  background-position: -3564px -2650px;
-  width: 137px;
-  height: 175px;
-}
-
-.spritesheet.bebedouro_vasoplanta {
-  background-image: url('../../images/generated-sprites/spritesheet7.png');
-  background-position: -4404px -2295px;
-  width: 118px;
-  height: 85px;
-}
-
-.spritesheet.bg-bebedouro {
-  background-image: url('../../images/generated-sprites/spritesheet7.png');
-  background-position: -1925px -1086px;
-  width: 1920px;
-  height: 1080px;
-}
-
-.spritesheet.bico1 {
-  background-image: url('../../images/generated-sprites/spritesheet7.png');
-  background-position: -4305px -2413px;
-  width: 209px;
-  height: 181px;
-}
-
-.spritesheet.bico2 {
-  background-image: url('../../images/generated-sprites/spritesheet7.png');
-  background-position: -4197px -2295px;
-  width: 202px;
-  height: 112px;
-}
-
-.spritesheet.bico3 {
-  background-image: url('../../images/generated-sprites/spritesheet7.png');
-  background-position: -3522px -2330px;
-  width: 209px;
-  height: 85px;
-}
-
-.spritesheet.bicogarrafa {
-  background-image: url('../../images/generated-sprites/spritesheet7.png');
-  background-position: -3852px -2855px;
-  width: 219px;
-  height: 143px;
-}
-
-.spritesheet.carrinho_carro {
-  background-image: url('../../images/generated-sprites/spritesheet7.png');
-  background-position: -2490px -2171px;
-  width: 717px;
-  height: 474px;
-}
-
-.spritesheet.carrinho_cxadescricao_down {
-  background-image: url('../../images/generated-sprites/spritesheet7.png');
-  background-position: -0px -3045px;
-  width: 1070px;
-  height: 157px;
-}
-
-.spritesheet.carrinho_cxafeedback {
-  background-image: url('../../images/generated-sprites/spritesheet7.png');
-  background-position: -0px -2171px;
-  width: 1430px;
-  height: 869px;
-}
-
-.spritesheet.carrinho_cxapecas_up {
-  background-image: url('../../images/generated-sprites/spritesheet7.png');
-  background-position: -2490px -2650px;
-  width: 1069px;
-  height: 225px;
-}
-
-.spritesheet.carrinho_led_foracarro {
-  background-image: url('../../images/generated-sprites/spritesheet7.png');
-  background-position: -3706px -2650px;
-  width: 80px;
-  height: 150px;
-}
-
-.spritesheet.carrinho_leds_carro {
-  background-image: url('../../images/generated-sprites/spritesheet7.png');
-  background-position: -4192px -1533px;
-  width: 270px;
-  height: 279px;
-}
-
-.spritesheet.carrinho_motor_carro {
-  background-image: url('../../images/generated-sprites/spritesheet7.png');
-  background-position: -4265px -2634px;
-  width: 187px;
-  height: 183px;
-}
-
-.spritesheet.carrinho_motor_foracarro {
-  background-image: url('../../images/generated-sprites/spritesheet7.png');
-  background-position: -4076px -2855px;
-  width: 175px;
-  height: 124px;
-}
-
-.spritesheet.carrinho_pista_placeholder {
-  background-image: url('../../images/generated-sprites/spritesheet7.png');
-  background-position: -1435px -2171px;
-  width: 1050px;
-  height: 782px;
-}
-
-.spritesheet.carrinho_placa_carro {
-  background-image: url('../../images/generated-sprites/spritesheet7.png');
-  background-position: -3400px -2171px;
-  width: 190px;
-  height: 144px;
-}
-
-.spritesheet.carrinho_placa_foracarro {
-  background-image: url('../../images/generated-sprites/spritesheet7.png');
-  background-position: -4256px -2855px;
-  width: 168px;
-  height: 121px;
-}
-
-.spritesheet.carrinho_roda_carro {
-  background-image: url('../../images/generated-sprites/spritesheet7.png');
-  background-position: -4211px -1147px;
-  width: 285px;
-  height: 311px;
-}
-
-.spritesheet.carrinho_rodas_foracarro {
-  background-image: url('../../images/generated-sprites/spritesheet7.png');
-  background-position: -3362px -2330px;
-  width: 155px;
-  height: 158px;
-}
-
-.spritesheet.carrinho_sensorprox_carro {
-  background-image: url('../../images/generated-sprites/spritesheet7.png');
-  background-position: -3852px -2096px;
-  width: 340px;
-  height: 312px;
-}
-
-.spritesheet.carrinho_sensorprox_foracarro {
-  background-image: url('../../images/generated-sprites/spritesheet7.png');
-  background-position: -3522px -2420px;
-  width: 171px;
-  height: 66px;
-}
-
-.spritesheet.cenario_inovacao2 {
-  background-image: url('../../images/generated-sprites/spritesheet7.png');
-  background-position: -0px -0px;
-  width: 1921px;
-  height: 1081px;
-}
-
-.spritesheet.cenariocarrinho_inovacao {
-  background-image: url('../../images/generated-sprites/spritesheet7.png');
-  background-position: -1926px -0px;
-  width: 1921px;
-  height: 1081px;
-}
-
-.spritesheet.foguete_meio1 {
-  background-image: url('../../images/generated-sprites/spritesheet7.png');
-  background-position: -3852px -1147px;
-  width: 354px;
-  height: 381px;
-}
-
-.spritesheet.foguete_meio2 {
-  background-image: url('../../images/generated-sprites/spritesheet7.png');
-  background-position: -3852px -1533px;
-  width: 335px;
-  height: 334px;
-}
-
-.spritesheet.foguete_meio3 {
-  background-image: url('../../images/generated-sprites/spritesheet7.png');
-  background-position: -3852px -821px;
-  width: 448px;
-  height: 321px;
-}
-
-.spritesheet.foguete_meiogarrafa {
-  background-image: url('../../images/generated-sprites/spritesheet7.png');
-  background-position: -3212px -2330px;
+  background-position: -3595px -2171px;
   width: 145px;
-  height: 172px;
-}
-
-.spritesheet.foguete_place {
-  background-image: url('../../images/generated-sprites/spritesheet7.png');
-  background-position: -4352px -1872px;
-  width: 145px;
-  height: 217px;
-}
-
-.spritesheet.foguete_rabo1 {
-  background-image: url('../../images/generated-sprites/spritesheet7.png');
-  background-position: -3852px -2634px;
-  width: 408px;
-  height: 216px;
-}
-
-.spritesheet.foguete_rabo2 {
-  background-image: url('../../images/generated-sprites/spritesheet7.png');
-  background-position: -3852px -2413px;
-  width: 448px;
-  height: 216px;
+  height: 128px;
 }
 
 .spritesheet.foguete_rabo3 {
@@ -264,10 +12,262 @@
   height: 219px;
 }
 
-.spritesheet.foguete_rabogarrafa {
+.spritesheet.foguete_rabo2 {
   background-image: url('../../images/generated-sprites/spritesheet7.png');
-  background-position: -3595px -2171px;
+  background-position: -3852px -2413px;
+  width: 448px;
+  height: 216px;
+}
+
+.spritesheet.foguete_rabo1 {
+  background-image: url('../../images/generated-sprites/spritesheet7.png');
+  background-position: -3852px -2634px;
+  width: 408px;
+  height: 216px;
+}
+
+.spritesheet.foguete_place {
+  background-image: url('../../images/generated-sprites/spritesheet7.png');
+  background-position: -4352px -1872px;
   width: 145px;
-  height: 128px;
+  height: 217px;
+}
+
+.spritesheet.foguete_meiogarrafa {
+  background-image: url('../../images/generated-sprites/spritesheet7.png');
+  background-position: -3212px -2330px;
+  width: 145px;
+  height: 172px;
+}
+
+.spritesheet.foguete_meio3 {
+  background-image: url('../../images/generated-sprites/spritesheet7.png');
+  background-position: -3852px -821px;
+  width: 448px;
+  height: 321px;
+}
+
+.spritesheet.foguete_meio2 {
+  background-image: url('../../images/generated-sprites/spritesheet7.png');
+  background-position: -3852px -1533px;
+  width: 335px;
+  height: 334px;
+}
+
+.spritesheet.foguete_meio1 {
+  background-image: url('../../images/generated-sprites/spritesheet7.png');
+  background-position: -3852px -1147px;
+  width: 354px;
+  height: 381px;
+}
+
+.spritesheet.cenariocarrinho_inovacao {
+  background-image: url('../../images/generated-sprites/spritesheet7.png');
+  background-position: -0px -0px;
+  width: 1921px;
+  height: 1081px;
+}
+
+.spritesheet.cenario_inovacao2 {
+  background-image: url('../../images/generated-sprites/spritesheet7.png');
+  background-position: -1926px -0px;
+  width: 1921px;
+  height: 1081px;
+}
+
+.spritesheet.carrinho_sensorprox_foracarro {
+  background-image: url('../../images/generated-sprites/spritesheet7.png');
+  background-position: -3522px -2420px;
+  width: 171px;
+  height: 66px;
+}
+
+.spritesheet.carrinho_sensorprox_carro {
+  background-image: url('../../images/generated-sprites/spritesheet7.png');
+  background-position: -3852px -2096px;
+  width: 340px;
+  height: 312px;
+}
+
+.spritesheet.carrinho_rodas_foracarro {
+  background-image: url('../../images/generated-sprites/spritesheet7.png');
+  background-position: -3362px -2330px;
+  width: 155px;
+  height: 158px;
+}
+
+.spritesheet.carrinho_roda_carro {
+  background-image: url('../../images/generated-sprites/spritesheet7.png');
+  background-position: -4211px -1147px;
+  width: 285px;
+  height: 311px;
+}
+
+.spritesheet.carrinho_placa_foracarro {
+  background-image: url('../../images/generated-sprites/spritesheet7.png');
+  background-position: -4256px -2855px;
+  width: 168px;
+  height: 121px;
+}
+
+.spritesheet.carrinho_placa_carro {
+  background-image: url('../../images/generated-sprites/spritesheet7.png');
+  background-position: -3400px -2171px;
+  width: 190px;
+  height: 144px;
+}
+
+.spritesheet.carrinho_pista_placeholder {
+  background-image: url('../../images/generated-sprites/spritesheet7.png');
+  background-position: -1435px -2171px;
+  width: 1050px;
+  height: 782px;
+}
+
+.spritesheet.carrinho_motor_foracarro {
+  background-image: url('../../images/generated-sprites/spritesheet7.png');
+  background-position: -4076px -2855px;
+  width: 175px;
+  height: 124px;
+}
+
+.spritesheet.carrinho_motor_carro {
+  background-image: url('../../images/generated-sprites/spritesheet7.png');
+  background-position: -4265px -2634px;
+  width: 187px;
+  height: 183px;
+}
+
+.spritesheet.carrinho_leds_carro {
+  background-image: url('../../images/generated-sprites/spritesheet7.png');
+  background-position: -4192px -1533px;
+  width: 270px;
+  height: 279px;
+}
+
+.spritesheet.carrinho_led_foracarro {
+  background-image: url('../../images/generated-sprites/spritesheet7.png');
+  background-position: -3706px -2650px;
+  width: 80px;
+  height: 150px;
+}
+
+.spritesheet.carrinho_cxapecas_up {
+  background-image: url('../../images/generated-sprites/spritesheet7.png');
+  background-position: -2490px -2650px;
+  width: 1069px;
+  height: 225px;
+}
+
+.spritesheet.carrinho_cxafeedback {
+  background-image: url('../../images/generated-sprites/spritesheet7.png');
+  background-position: -0px -2171px;
+  width: 1430px;
+  height: 869px;
+}
+
+.spritesheet.carrinho_cxadescricao_down {
+  background-image: url('../../images/generated-sprites/spritesheet7.png');
+  background-position: -0px -3045px;
+  width: 1070px;
+  height: 157px;
+}
+
+.spritesheet.carrinho_carro {
+  background-image: url('../../images/generated-sprites/spritesheet7.png');
+  background-position: -2490px -2171px;
+  width: 717px;
+  height: 474px;
+}
+
+.spritesheet.bicogarrafa {
+  background-image: url('../../images/generated-sprites/spritesheet7.png');
+  background-position: -3852px -2855px;
+  width: 219px;
+  height: 143px;
+}
+
+.spritesheet.bico3 {
+  background-image: url('../../images/generated-sprites/spritesheet7.png');
+  background-position: -3522px -2330px;
+  width: 209px;
+  height: 85px;
+}
+
+.spritesheet.bico2 {
+  background-image: url('../../images/generated-sprites/spritesheet7.png');
+  background-position: -4197px -2295px;
+  width: 202px;
+  height: 112px;
+}
+
+.spritesheet.bico1 {
+  background-image: url('../../images/generated-sprites/spritesheet7.png');
+  background-position: -4305px -2413px;
+  width: 209px;
+  height: 181px;
+}
+
+.spritesheet.bg-bebedouro {
+  background-image: url('../../images/generated-sprites/spritesheet7.png');
+  background-position: -0px -1086px;
+  width: 1920px;
+  height: 1080px;
+}
+
+.spritesheet.bebedouro_vasoplanta {
+  background-image: url('../../images/generated-sprites/spritesheet7.png');
+  background-position: -4404px -2295px;
+  width: 118px;
+  height: 85px;
+}
+
+.spritesheet.bebedouro_vasinho {
+  background-image: url('../../images/generated-sprites/spritesheet7.png');
+  background-position: -3564px -2650px;
+  width: 137px;
+  height: 175px;
+}
+
+.spritesheet.bebedouro_torneira {
+  background-image: url('../../images/generated-sprites/spritesheet7.png');
+  background-position: -4211px -1463px;
+  width: 36px;
+  height: 57px;
+}
+
+.spritesheet.bebedouro_regador {
+  background-image: url('../../images/generated-sprites/spritesheet7.png');
+  background-position: -4197px -2096px;
+  width: 289px;
+  height: 194px;
+}
+
+.spritesheet.bebedouro_garrafao {
+  background-image: url('../../images/generated-sprites/spritesheet7.png');
+  background-position: -4305px -821px;
+  width: 210px;
+  height: 283px;
+}
+
+.spritesheet.bebedouro_bebedourocenario {
+  background-image: url('../../images/generated-sprites/spritesheet7.png');
+  background-position: -1925px -1086px;
+  width: 1920px;
+  height: 1080px;
+}
+
+.spritesheet.bebedouro_bebedouro {
+  background-image: url('../../images/generated-sprites/spritesheet7.png');
+  background-position: -3852px -0px;
+  width: 679px;
+  height: 816px;
+}
+
+.spritesheet.bebedouro_balde {
+  background-image: url('../../images/generated-sprites/spritesheet7.png');
+  background-position: -3212px -2171px;
+  width: 183px;
+  height: 154px;
 }
 

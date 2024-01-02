@@ -1,179 +1,46 @@
-.spritesheet.bg_fundo_economia1 {
+.spritesheet.planta_rectmoeda_menor {
   background-image: url('../../images/generated-sprites/spritesheet4.png');
-  background-position: -0px -0px;
-  width: 1921px;
-  height: 1081px;
+  background-position: -2234px -1568px;
+  width: 182px;
+  height: 70px;
 }
 
-.spritesheet.monstrinhos_aventurim_lazer {
+.spritesheet.planta_rectmoeda_maior {
   background-image: url('../../images/generated-sprites/spritesheet4.png');
-  background-position: -1328px -1086px;
-  width: 412px;
-  height: 477px;
+  background-position: -1328px -1568px;
+  width: 901px;
+  height: 71px;
 }
 
-.spritesheet.monstrinhos_bg_monstrinhos_economia {
+.spritesheet.planta_plantacasa_eco {
   background-image: url('../../images/generated-sprites/spritesheet4.png');
-  background-position: -1926px -0px;
-  width: 1921px;
-  height: 1081px;
+  background-position: -0px -1086px;
+  width: 1323px;
+  height: 932px;
 }
 
-.spritesheet.monstrinhos_bolinha1_educ_ciencito {
+.spritesheet.planta_moeda_eco {
   background-image: url('../../images/generated-sprites/spritesheet4.png');
-  background-position: -2854px -1644px;
-  width: 73px;
-  height: 73px;
+  background-position: -2421px -1568px;
+  width: 58px;
+  height: 54px;
 }
 
-.spritesheet.monstrinhos_bolinha1_lazer_aventurim {
-  background-image: url('../../images/generated-sprites/spritesheet4.png');
-  background-position: -2932px -1644px;
-  width: 73px;
-  height: 73px;
-}
-
-.spritesheet.monstrinhos_bolinha1_saude_remeldino {
-  background-image: url('../../images/generated-sprites/spritesheet4.png');
-  background-position: -3010px -1644px;
-  width: 73px;
-  height: 73px;
-}
-
-.spritesheet.monstrinhos_bolinha2_educ_mapamax {
-  background-image: url('../../images/generated-sprites/spritesheet4.png');
-  background-position: -3088px -1644px;
-  width: 73px;
-  height: 73px;
-}
-
-.spritesheet.monstrinhos_bolinha2_lazer_esportanto {
-  background-image: url('../../images/generated-sprites/spritesheet4.png');
-  background-position: -3166px -1644px;
-  width: 73px;
-  height: 73px;
-}
-
-.spritesheet.monstrinhos_bolinha2_saude_higiento {
-  background-image: url('../../images/generated-sprites/spritesheet4.png');
-  background-position: -3244px -1644px;
-  width: 73px;
-  height: 73px;
-}
-
-.spritesheet.monstrinhos_bolinha3_educ_livrex {
-  background-image: url('../../images/generated-sprites/spritesheet4.png');
-  background-position: -3322px -1644px;
-  width: 73px;
-  height: 73px;
-}
-
-.spritesheet.monstrinhos_bolinha3_lazer_dancitar {
-  background-image: url('../../images/generated-sprites/spritesheet4.png');
-  background-position: -3400px -1644px;
-  width: 73px;
-  height: 73px;
-}
-
-.spritesheet.monstrinhos_bolinha3_saude_alimeniro {
-  background-image: url('../../images/generated-sprites/spritesheet4.png');
-  background-position: -3478px -1644px;
-  width: 73px;
-  height: 73px;
-}
-
-.spritesheet.monstrinhos_bt_ addmoeda_educ {
-  background-image: url('../../images/generated-sprites/spritesheet4.png');
-  background-position: -1786px -1644px;
-  width: 221px;
-  height: 133px;
-}
-
-.spritesheet.monstrinhos_bt_addmoeda_lazer {
-  background-image: url('../../images/generated-sprites/spritesheet4.png');
-  background-position: -1557px -1644px;
-  width: 224px;
-  height: 133px;
-}
-
-.spritesheet.monstrinhos_bt_addmoeda_saude {
-  background-image: url('../../images/generated-sprites/spritesheet4.png');
-  background-position: -1328px -1644px;
-  width: 224px;
-  height: 134px;
-}
-
-.spritesheet.monstrinhos_ciencito_educ {
-  background-image: url('../../images/generated-sprites/spritesheet4.png');
-  background-position: -1745px -1086px;
-  width: 412px;
-  height: 477px;
-}
-
-.spritesheet.monstrinhos_dancitar_lazer {
-  background-image: url('../../images/generated-sprites/spritesheet4.png');
-  background-position: -2162px -1086px;
-  width: 412px;
-  height: 477px;
-}
-
-.spritesheet.monstrinhos_esportanto_lazer {
-  background-image: url('../../images/generated-sprites/spritesheet4.png');
-  background-position: -2579px -1086px;
-  width: 412px;
-  height: 477px;
-}
-
-.spritesheet.monstrinhos_higiento_saude {
-  background-image: url('../../images/generated-sprites/spritesheet4.png');
-  background-position: -2996px -1086px;
-  width: 412px;
-  height: 477px;
-}
-
-.spritesheet.monstrinhos_livrex_educ {
-  background-image: url('../../images/generated-sprites/spritesheet4.png');
-  background-position: -3413px -1086px;
-  width: 412px;
-  height: 477px;
-}
-
-.spritesheet.monstrinhos_mapamax_educ {
-  background-image: url('../../images/generated-sprites/spritesheet4.png');
-  background-position: -0px -2023px;
-  width: 412px;
-  height: 477px;
-}
-
-.spritesheet.monstrinhos_remeldino_saude {
-  background-image: url('../../images/generated-sprites/spritesheet4.png');
-  background-position: -417px -2023px;
-  width: 412px;
-  height: 477px;
-}
-
-.spritesheet.planta_cabeca_robo {
-  background-image: url('../../images/generated-sprites/spritesheet4.png');
-  background-position: -2754px -1644px;
-  width: 95px;
-  height: 96px;
-}
-
-.spritesheet.planta_item1_eco_bom {
+.spritesheet.planta_item4_eco_bom {
   background-image: url('../../images/generated-sprites/spritesheet4.png');
   background-position: -2012px -1644px;
   width: 101px;
   height: 101px;
 }
 
-.spritesheet.planta_item1_eco_ruim {
+.spritesheet.planta_item3_eco_ruim {
   background-image: url('../../images/generated-sprites/spritesheet4.png');
   background-position: -2118px -1644px;
   width: 101px;
   height: 101px;
 }
 
-.spritesheet.planta_item2_eco_bom {
+.spritesheet.planta_item3_eco_bom {
   background-image: url('../../images/generated-sprites/spritesheet4.png');
   background-position: -2224px -1644px;
   width: 101px;
@@ -187,52 +54,192 @@
   height: 101px;
 }
 
-.spritesheet.planta_item3_eco_bom {
+.spritesheet.planta_item2_eco_bom {
   background-image: url('../../images/generated-sprites/spritesheet4.png');
   background-position: -2436px -1644px;
   width: 101px;
   height: 101px;
 }
 
-.spritesheet.planta_item3_eco_ruim {
+.spritesheet.planta_item1_eco_ruim {
   background-image: url('../../images/generated-sprites/spritesheet4.png');
   background-position: -2542px -1644px;
   width: 101px;
   height: 101px;
 }
 
-.spritesheet.planta_item4_eco_bom {
+.spritesheet.planta_item1_eco_bom {
   background-image: url('../../images/generated-sprites/spritesheet4.png');
   background-position: -2648px -1644px;
   width: 101px;
   height: 101px;
 }
 
-.spritesheet.planta_moeda_eco {
+.spritesheet.planta_cabeca_robo {
   background-image: url('../../images/generated-sprites/spritesheet4.png');
-  background-position: -2421px -1568px;
-  width: 58px;
-  height: 54px;
+  background-position: -2754px -1644px;
+  width: 95px;
+  height: 96px;
 }
 
-.spritesheet.planta_plantacasa_eco {
+.spritesheet.monstrinhos_remeldino_saude {
   background-image: url('../../images/generated-sprites/spritesheet4.png');
-  background-position: -0px -1086px;
-  width: 1323px;
-  height: 932px;
+  background-position: -1328px -1086px;
+  width: 412px;
+  height: 477px;
 }
 
-.spritesheet.planta_rectmoeda_maior {
+.spritesheet.monstrinhos_mapamax_educ {
   background-image: url('../../images/generated-sprites/spritesheet4.png');
-  background-position: -1328px -1568px;
-  width: 901px;
-  height: 71px;
+  background-position: -1745px -1086px;
+  width: 412px;
+  height: 477px;
 }
 
-.spritesheet.planta_rectmoeda_menor {
+.spritesheet.monstrinhos_livrex_educ {
   background-image: url('../../images/generated-sprites/spritesheet4.png');
-  background-position: -2234px -1568px;
-  width: 182px;
-  height: 70px;
+  background-position: -2162px -1086px;
+  width: 412px;
+  height: 477px;
+}
+
+.spritesheet.monstrinhos_higiento_saude {
+  background-image: url('../../images/generated-sprites/spritesheet4.png');
+  background-position: -2579px -1086px;
+  width: 412px;
+  height: 477px;
+}
+
+.spritesheet.monstrinhos_esportanto_lazer {
+  background-image: url('../../images/generated-sprites/spritesheet4.png');
+  background-position: -2996px -1086px;
+  width: 412px;
+  height: 477px;
+}
+
+.spritesheet.monstrinhos_dancitar_lazer {
+  background-image: url('../../images/generated-sprites/spritesheet4.png');
+  background-position: -3413px -1086px;
+  width: 412px;
+  height: 477px;
+}
+
+.spritesheet.monstrinhos_ciencito_educ {
+  background-image: url('../../images/generated-sprites/spritesheet4.png');
+  background-position: -0px -2023px;
+  width: 412px;
+  height: 477px;
+}
+
+.spritesheet.monstrinhos_bt_addmoeda_saude {
+  background-image: url('../../images/generated-sprites/spritesheet4.png');
+  background-position: -1328px -1644px;
+  width: 224px;
+  height: 134px;
+}
+
+.spritesheet.monstrinhos_bt_addmoeda_lazer {
+  background-image: url('../../images/generated-sprites/spritesheet4.png');
+  background-position: -1557px -1644px;
+  width: 224px;
+  height: 133px;
+}
+
+.spritesheet.monstrinhos_bt_addmoeda_educ {
+  background-image: url('../../images/generated-sprites/spritesheet4.png');
+  background-position: -1786px -1644px;
+  width: 221px;
+  height: 133px;
+}
+
+.spritesheet.monstrinhos_bolinha3_saude_alimeniro {
+  background-image: url('../../images/generated-sprites/spritesheet4.png');
+  background-position: -2854px -1644px;
+  width: 73px;
+  height: 73px;
+}
+
+.spritesheet.monstrinhos_bolinha3_lazer_dancitar {
+  background-image: url('../../images/generated-sprites/spritesheet4.png');
+  background-position: -2932px -1644px;
+  width: 73px;
+  height: 73px;
+}
+
+.spritesheet.monstrinhos_bolinha3_educ_livrex {
+  background-image: url('../../images/generated-sprites/spritesheet4.png');
+  background-position: -3010px -1644px;
+  width: 73px;
+  height: 73px;
+}
+
+.spritesheet.monstrinhos_bolinha2_saude_higiento {
+  background-image: url('../../images/generated-sprites/spritesheet4.png');
+  background-position: -3088px -1644px;
+  width: 73px;
+  height: 73px;
+}
+
+.spritesheet.monstrinhos_bolinha2_lazer_esportanto {
+  background-image: url('../../images/generated-sprites/spritesheet4.png');
+  background-position: -3166px -1644px;
+  width: 73px;
+  height: 73px;
+}
+
+.spritesheet.monstrinhos_bolinha2_educ_mapamax {
+  background-image: url('../../images/generated-sprites/spritesheet4.png');
+  background-position: -3244px -1644px;
+  width: 73px;
+  height: 73px;
+}
+
+.spritesheet.monstrinhos_bolinha1_saude_remeldino {
+  background-image: url('../../images/generated-sprites/spritesheet4.png');
+  background-position: -3322px -1644px;
+  width: 73px;
+  height: 73px;
+}
+
+.spritesheet.monstrinhos_bolinha1_lazer_aventurim {
+  background-image: url('../../images/generated-sprites/spritesheet4.png');
+  background-position: -3400px -1644px;
+  width: 73px;
+  height: 73px;
+}
+
+.spritesheet.monstrinhos_bolinha1_educ_ciencito {
+  background-image: url('../../images/generated-sprites/spritesheet4.png');
+  background-position: -3478px -1644px;
+  width: 73px;
+  height: 73px;
+}
+
+.spritesheet.monstrinhos_bg_monstrinhos_economia {
+  background-image: url('../../images/generated-sprites/spritesheet4.png');
+  background-position: -0px -0px;
+  width: 1921px;
+  height: 1081px;
+}
+
+.spritesheet.monstrinhos_aventurim_lazer {
+  background-image: url('../../images/generated-sprites/spritesheet4.png');
+  background-position: -417px -2023px;
+  width: 412px;
+  height: 477px;
+}
+
+.spritesheet.monstrinhos_alimeniro_saude {
+  background-image: url('../../images/generated-sprites/spritesheet4.png');
+  background-position: -834px -2023px;
+  width: 412px;
+  height: 477px;
+}
+
+.spritesheet.bg_fundo_economia1 {
+  background-image: url('../../images/generated-sprites/spritesheet4.png');
+  background-position: -1926px -0px;
+  width: 1921px;
+  height: 1081px;
 }
 

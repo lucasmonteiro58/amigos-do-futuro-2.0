@@ -78,3 +78,69 @@ export const balls = [
     y: 580
   }
 ]
+
+export const monsters = [
+  {
+    type: 'edu',
+    name: 'ciencito',
+    image: 'monstrinhos_bolinha1_educ_ciencito',
+    imageBig: 'monstrinhos_ciencito_educ',
+    text: 'Te dá o poder de fazer invenções incríveis.'
+  },
+  {
+    type: 'edu',
+    name: 'mapamax',
+    image: 'monstrinhos_bolinha2_educ_mapamax',
+    imageBig: 'monstrinhos_mapamax_educ',
+    text: 'Coloca na sua cabeça o nome de todos os lugares do mundo.'
+  },
+  {
+    type: 'edu',
+    name: 'livrex',
+    image: 'monstrinhos_bolinha3_educ_livrex',
+    imageBig: 'monstrinhos_livrex_educ',
+    text: 'Te dar o poder de devorar vários livros em pouco tempo.'
+  },
+  {
+    type: 'laz',
+    name: 'aventurim',
+    image: 'monstrinhos_bolinha1_lazer_aventurim',
+    imageBig: 'monstrinhos_aventurim_lazer',
+    text: 'Te transporta para dentro dos filmes que você quiser.'
+  },
+  {
+    type: 'laz',
+    name: 'esportanto',
+    image: 'monstrinhos_bolinha2_lazer_esportanto',
+    imageBig: 'monstrinhos_esportanto_lazer',
+    text: 'Te deixa craque em qualquer esporte.'
+  },
+  {
+    type: 'laz',
+    name: 'dancitar',
+    image: 'monstrinhos_bolinha3_lazer_dancitar',
+    imageBig: 'monstrinhos_dancitar_lazer',
+    text: 'Te faz um expert em qualquer tipo de dança.'
+  },
+  {
+    type: 'sau',
+    name: 'remeldino',
+    image: 'monstrinhos_bolinha1_saude_remeldino',
+    imageBig: 'monstrinhos_remeldino_saude',
+    text: 'Te cura sempre que ficar doente.'
+  },
+  {
+    type: 'sau',
+    name: 'higiento',
+    image: 'monstrinhos_bolinha2_saude_higiento',
+    imageBig: 'monstrinhos_higiento_saude',
+    text: 'Te deixa sempre limpo e longe de bichinhos.'
+  },
+  {
+    type: 'sau',
+    name: 'alimeniro',
+    image: 'monstrinhos_bolinha3_saude_alimeniro',
+    imageBig: 'monstrinhos_alimeniro_saude',
+    text: 'Transforma toda a sua comida em coisas saudáveis.'
+  }
+]
