@@ -6,6 +6,13 @@ import planta_item2_eco_ruim from '@/assets/images/sprites/economia/planta_item2
 import planta_item3_eco_ruim from '@/assets/images/sprites/economia/planta_item3_eco_ruim.png'
 import planta_item3_eco_bom from '@/assets/images/sprites/economia/planta_item3_eco_bom.png'
 
+import eduMachineImg from '@/assets/animations/machine-educacao/sprite.png'
+import eduMachineJson from '@/assets/animations/machine-educacao/sprite.json'
+import lazMachineImg from '@/assets/animations/machine-lazer/sprite.png'
+import lazMachineJson from '@/assets/animations/machine-lazer/sprite.json'
+import sauMachineImg from '@/assets/animations/machine-saude/sprite.png'
+import sauMachineJson from '@/assets/animations/machine-saude/sprite.json'
+
 export const balls = [
   {
     value: 10,
@@ -144,3 +151,26 @@ export const monsters = [
     text: 'Transforma toda a sua comida em coisas saudáveis.'
   }
 ]
+
+const imageEduMachine = new Image()
+const imageLazMachine = new Image()
+const imageSauMachine = new Image()
+
+imageEduMachine.src = eduMachineImg
+imageLazMachine.src = lazMachineImg
+imageSauMachine.src = sauMachineImg
+
+export const eduMachine = {
+  sprite: imageEduMachine,
+  json: eduMachineJson
+}
+
+export const lazMachine = {
+  sprite: imageLazMachine,
+  json: lazMachineJson
+}
+
+export const sauMachine = {
+  sprite: imageSauMachine,
+  json: sauMachineJson
+}

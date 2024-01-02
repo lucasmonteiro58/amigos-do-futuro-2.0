@@ -17,7 +17,7 @@ const textColor = computed(() => {
 
 <template>
   <div class="bg-[#00000086] top-0 left-0 absolute w-full h-full flex items-center justify-center">
-    <div class="spritesheet box-other-badges animation__bounceIn relative">
+    <div class="spritesheet box-other-badges animation__zoomIn relative">
       <BaseImg :img="monster?.imageBig" class="absolute top-[150px] left-[140px]"></BaseImg>
       <div
         class="text-7xl absolute font-bungee top-[180px] left-[570px] w-[620px] text-center"
