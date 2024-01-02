@@ -6,6 +6,7 @@ const _monsters = ref(monsters)
 const showHelp = ref(true)
 const showModal = ref(false)
 const selectedMonster = ref(null)
+const coins = ref(40)
 
 const eduMonsters = computed(() => {
   return _monsters.value.filter((monster) => monster.type === 'edu')
@@ -46,6 +47,11 @@ function closeModal() {
   <main
     class="spritesheet monstrinhos_bg_monstrinhos_economia flex justify-center items-center flex-col"
   >
+    <div class="planta_rectmoeda_menor spritesheet absolute top-[20px] left-[20px]">
+      <BaseImg img="planta_moeda_eco" class="absolute top-2 left-2"></BaseImg>
+      <div class="absolute text-5xl top-[10px] left-[80px] font-norwester">{{ coins }}</div>
+    </div>
+
     <BaseButton
       name="monstrinhos_bt_addmoeda_educ"
       class="absolute top-[120px] left-[340px]"
