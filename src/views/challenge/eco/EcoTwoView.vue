@@ -5,11 +5,14 @@ import ModalMonsters from './components/ModalMonsters.vue'
 const _monsters = ref(monsters)
 const showHelp = ref(true)
 const showModal = ref(false)
+const showBall = ref(false)
 const selectedMonster = ref(null)
 const coins = ref(40)
 const refMachineEdu = ref(null)
 const refMachineLaz = ref(null)
 const refMachineSau = ref(null)
+
+const router = useRouter()
 
 const eduMonsters = computed(() => {
   return _monsters.value.filter((monster) => monster.type === 'edu')
@@ -36,6 +39,7 @@ function randomMonster(type) {
 }
 
 function openModal(type) {
+  showHelp.value = false
   selectedMonster.value = randomMonster(type)
 
   if (type === 'edu') {
@@ -45,15 +49,29 @@ function openModal(type) {
   } else if (type === 'laz') {
     refMachineLaz.value.play()
   }
+  coins.value -= 10
 
   setTimeout(() => {
-    showModal.value = true
-  }, 2000)
+    showBall.value = true
+    setTimeout(() => {
+      showModal.value = true
+      showBall.value = false
+    }, 1000)
+  }, 1600)
 }
+
+const classBall = computed(() => {
+  if (selectedMonster.value?.type === 'edu') return 'top-[820px] left-[420px]'
+  if (selectedMonster.value?.type === 'sau') return 'top-[820px] left-[970px]'
+  else return 'top-[820px] left-[1510px]'
+})
 
 function closeModal() {
   _monsters.value.splice(_monsters.value.indexOf(selectedMonster.value), 1)
   showModal.value = false
+  if (coins.value === 0) {
+    router.push({ name: 'congratulation', params: { challenge: 'eco', level: 1 } })
+  }
 }
 </script>
 
@@ -107,7 +125,13 @@ function closeModal() {
       class="absolute top-[120px] left-[1430px]"
       @click="openModal('laz')"
     ></BaseButton>
-
+    <BaseImg
+      v-if="showBall"
+      v-motion-slide-top
+      :img="selectedMonster?.image"
+      class="absolute"
+      :class="classBall"
+    ></BaseImg>
     <CursorClick class="absolute top-[140px] left-[480px]" v-if="showHelp" />
     <ModalMonsters v-if="showModal" :monster="selectedMonster" @close="closeModal"></ModalMonsters>
     <SpeechBubble
