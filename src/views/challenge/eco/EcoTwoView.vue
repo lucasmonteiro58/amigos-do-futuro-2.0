@@ -70,7 +70,7 @@ function closeModal() {
   _monsters.value.splice(_monsters.value.indexOf(selectedMonster.value), 1)
   showModal.value = false
   if (coins.value === 0) {
-    router.push({ name: 'congratulation', params: { challenge: 'eco', level: 1 } })
+    router.push({ name: 'congratulation', params: { challenge: 'eco', level: 2 } })
   }
 }
 </script>
