@@ -2,6 +2,7 @@
 import { ref, computed } from 'vue'
 import Popper from 'vue3-popper'
 import { features } from './consts'
+import ModalEduOne from './components/ModalEduOne.vue'
 
 const obj = ref(
   features.reduce((acc, f) => {
@@ -41,12 +42,18 @@ function closeModal() {
 
 const router = useRouter()
 
+const showFinalModal = ref(false)
+
 function handleContinue() {
   if (!isMaxSelected.value) {
     showMinModal.value = true
   } else {
-    router.push({ name: 'congratulation', params: { challenge: 'edu', level: 1 } })
+    showFinalModal.value = true
   }
+}
+
+function handleSaveFinalChoice() {
+  router.push({ name: 'congratulation', params: { challenge: 'edu', level: 1 } })
 }
 </script>
 
@@ -103,5 +110,11 @@ function handleContinue() {
     <ModalAtention v-model="showMinModal" @close="closeModal" content-font="font-exo2">
       <div class="mt-8">Selecione 5 coisas para sua escola!</div>
     </ModalAtention>
+    <ModalEduOne
+      v-if="showFinalModal"
+      :features="visibleFeatures"
+      @close="showFinalModal = false"
+      @save="handleSaveFinalChoice"
+    />
   </main>
 </template>
