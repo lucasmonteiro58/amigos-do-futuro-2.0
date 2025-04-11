@@ -2,7 +2,7 @@
 import { ref, computed } from 'vue'
 import Popper from 'vue3-popper'
 import { featuresTwo as features, postionsTwo as positions } from './consts'
-import ModalEduOne from './components/ModalEduOne.vue'
+import ModalViewer from './components/ModalViewer.vue'
 
 const obj = ref(
   features.reduce((acc, f) => {
@@ -13,22 +13,37 @@ const obj = ref(
 
 const hoverKey = ref(null)
 
+// Armazena os selecionados com suas posições fixas
+const assignedPositions = ref([]) // [{ key: 'computer', positionIndex: 2 }, ...]
+
 function setVisibility(type) {
   showCursorKeyboard.value = false
-  if (isMaxSelected.value && !obj.value[type]) {
+
+  const isSelected = obj.value[type]
+  if (isSelected) {
+    // Se já estava selecionado, desativa e remove da lista de posições
+    obj.value[type] = false
+    assignedPositions.value = assignedPositions.value.filter((p) => p.key !== type)
+    return
+  }
+
+  // Se atingiu o máximo, impede
+  if (assignedPositions.value.length >= positions.length) {
     showLimitModal.value = true
     return
   }
-  obj.value[type] = !obj.value[type]
+
+  // Seleciona e atribui a próxima posição livre
+  obj.value[type] = true
+  const usedIndexes = assignedPositions.value.map((p) => p.positionIndex)
+  const firstFree = positions.findIndex((_, i) => !usedIndexes.includes(i))
+
+  assignedPositions.value.push({ key: type, positionIndex: firstFree })
 }
 
-const isMaxSelected = computed(() => {
-  return Object.values(obj.value).filter(Boolean).length >= 5
-})
+const isMaxSelected = computed(() => assignedPositions.value.length >= positions.length)
 
 const showCursorKeyboard = ref(true)
-
-const visibleFeatures = computed(() => features.filter((feature) => obj.value[feature.key]))
 
 const showLimitModal = ref(false)
 const showMinModal = ref(false)
@@ -39,7 +54,6 @@ function closeModal() {
 }
 
 const router = useRouter()
-
 const showFinalModal = ref(false)
 
 function handleContinue() {
@@ -57,13 +71,18 @@ function handleSaveFinalChoice() {
 function getButtonIcon(feature) {
   const isActive = obj.value[feature.key]
   const isHovered = hoverKey.value === feature.key
-
   if (isHovered) {
     return isActive ? feature.minusIcon : feature.addIcon
   }
-
   return isActive ? feature.checkedIcon : feature.normalIcon
 }
+
+const visibleFeatures = computed(() => {
+  return assignedPositions.value.map(({ key, positionIndex }) => {
+    const feature = features.find((f) => f.key === key)
+    return { ...feature, positionIndex }
+  })
+})
 </script>
 
 <template>
@@ -93,12 +112,12 @@ function getButtonIcon(feature) {
 
     <BaseImg img="escolad_escoladentro" class="absolute bottom-[260px]" />
 
-    <template v-for="(feature, i) in visibleFeatures" :key="`imgs-${feature.key}`">
+    <template v-for="feature in visibleFeatures" :key="`img-${feature.key}`">
       <BaseImg
-        v-for="(img, index) in feature.images"
-        :key="index"
+        v-for="(img, i) in feature.images"
+        :key="`img-${i}`"
         :img="img.src"
-        :class="positions[i]"
+        :class="positions[feature.positionIndex]"
         class="absolute"
       />
     </template>
@@ -130,7 +149,7 @@ function getButtonIcon(feature) {
       <div class="mt-8">Selecione 5 coisas para sua escola!</div>
     </ModalAtention>
 
-    <ModalEduOne
+    <ModalViewer
       v-if="showFinalModal"
       :features="visibleFeatures"
       @close="showFinalModal = false"

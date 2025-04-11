@@ -2,7 +2,7 @@
 import { ref, computed } from 'vue'
 import Popper from 'vue3-popper'
 import { featuresOne as features } from './consts'
-import ModalEduOne from './components/ModalEduOne.vue'
+import ModalViewer from './components/ModalViewer.vue'
 
 const obj = ref(
   features.reduce((acc, f) => {
@@ -131,7 +131,7 @@ function handleSaveFinalChoice() {
       <div class="mt-8">Selecione 5 coisas para sua escola!</div>
     </ModalAtention>
 
-    <ModalEduOne
+    <ModalViewer
       v-if="showFinalModal"
       :features="visibleFeatures"
       @close="showFinalModal = false"

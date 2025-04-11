@@ -16,11 +16,11 @@ const emit = defineEmits(['close', 'save'])
     <div class="relative px-20 py-10 text-center spritesheet caixafeedback animation__zoomIn">
       <div class="text-[60px] mt-8 mb-12 text-primary-blue font-bungee">MINHA ESCOLA TEM...</div>
 
-      <div class="flex flex-wrap items-baseline justify-center gap-16 mb-12">
+      <div class="flex flex-wrap items-baseline justify-center gap-[75px] mb-12">
         <div
           v-for="feature in features"
           :key="feature.key"
-          class="flex flex-col items-center w-[220px] text-center"
+          class="flex flex-col items-center w-[210px] text-center"
         >
           <BaseImg :img="feature.normalIcon" class="mb-2" />
           <span class="text-[38px] text-black font-exo2 font-medium leading-[38px] mt-4">{{
