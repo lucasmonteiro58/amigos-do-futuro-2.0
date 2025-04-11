@@ -1,7 +1,7 @@
 <script setup>
 import { ref, computed } from 'vue'
 import Popper from 'vue3-popper'
-import { features } from './consts'
+import { featuresOne as features } from './consts'
 import ModalEduOne from './components/ModalEduOne.vue'
 
 const obj = ref(

@@ -29,7 +29,7 @@ const emit = defineEmits(['close', 'save'])
         </div>
       </div>
 
-      <div class="flex justify-center gap-20 mt-24">
+      <div class="flex justify-center gap-[65px] mt-24">
         <BaseButton name="btn-action-blue" width="400px" label="TROCAR" @click="emit('close')" />
         <BaseButton name="btn-action-blue" width="400px" label="SALVAR" @click="emit('save')" />
       </div>
