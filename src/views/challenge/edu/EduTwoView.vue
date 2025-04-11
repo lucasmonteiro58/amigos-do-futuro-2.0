@@ -11,6 +11,8 @@ const obj = ref(
   }, {})
 )
 
+const hoverKey = ref(null)
+
 function setVisibility(type) {
   showCursorKeyboard.value = false
   if (isMaxSelected.value && !obj.value[type]) {
@@ -18,10 +20,6 @@ function setVisibility(type) {
     return
   }
   obj.value[type] = !obj.value[type]
-}
-
-function isVisible(type) {
-  return obj.value[type]
 }
 
 const isMaxSelected = computed(() => {
@@ -53,7 +51,18 @@ function handleContinue() {
 }
 
 function handleSaveFinalChoice() {
-  router.push({ name: 'congratulation', params: { challenge: 'edu', level: 1 } })
+  router.push({ name: 'congratulation', params: { challenge: 'edu', level: 2 } })
+}
+
+function getButtonIcon(feature) {
+  const isActive = obj.value[feature.key]
+  const isHovered = hoverKey.value === feature.key
+
+  if (isHovered) {
+    return isActive ? feature.minusIcon : feature.addIcon
+  }
+
+  return isActive ? feature.checkedIcon : feature.normalIcon
 }
 </script>
 
@@ -73,13 +82,17 @@ function handleSaveFinalChoice() {
           </template>
           <BaseButton
             class="inline-block"
-            :name="isVisible(feature.key) ? feature.checkedIcon : feature.normalIcon"
+            :name="getButtonIcon(feature)"
             @click="setVisibility(feature.key)"
+            @mouseenter="hoverKey = feature.key"
+            @mouseleave="hoverKey = null"
           />
         </Popper>
       </div>
     </div>
+
     <BaseImg img="escolad_escoladentro" class="absolute bottom-[260px]" />
+
     <template v-for="(feature, i) in visibleFeatures" :key="`imgs-${feature.key}`">
       <BaseImg
         v-for="(img, index) in feature.images"
@@ -89,28 +102,34 @@ function handleSaveFinalChoice() {
         class="absolute"
       />
     </template>
+
     <SpeechBubble
       title="Dentro da escola!"
       description="Agora vamos adicionar mais 5 coisas legais dentro da escola."
       audio="edu_help1"
       :time="2000"
     />
+
     <CursorClick
       v-if="showCursorKeyboard"
       class="absolute scale-[1] opacity-70 bottom-[10px] right-[250px]"
     />
+
     <BaseButton
       name="btn-toggle-next"
       class="absolute right-[40px] bottom-4"
       width="180px"
       @click="handleContinue"
     />
+
     <ModalAtention v-model="showLimitModal" @close="closeModal" content-font="font-exo2">
       <div class="mt-8">Selecione somente 5 coisas para sua escola!</div>
     </ModalAtention>
+
     <ModalAtention v-model="showMinModal" @close="closeModal" content-font="font-exo2">
       <div class="mt-8">Selecione 5 coisas para sua escola!</div>
     </ModalAtention>
+
     <ModalEduOne
       v-if="showFinalModal"
       :features="visibleFeatures"

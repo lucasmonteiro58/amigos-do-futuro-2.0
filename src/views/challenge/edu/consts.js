@@ -5,6 +5,7 @@ export const featuresOne = [
     checkedIcon: 'escolaf_bt_acessib_check',
     minusIcon: 'escolaf_bt_acessib_menos',
     addIcon: 'escolaf_bt_acessib_add',
+    saveIcon: 'escolaf_acessib_save',
     normalIcon: 'escolaf_bt_acessib_normal',
     images: [
       { src: 'escolaf_rampaacessibilidade', class: 'absolute bottom-[338px] left-[885px] z-[20]' }
@@ -16,6 +17,7 @@ export const featuresOne = [
     checkedIcon: 'escolaf_bt_pintar_check',
     minusIcon: 'escolaf_bt_pintar_menos',
     addIcon: 'escolaf_bt_pintar_add',
+    saveIcon: 'escolaf_pintura_save',
     normalIcon: 'escolaf_bt_pintar_normal',
     images: [{ src: 'escolaf_escolafora_pintada', class: 'absolute bottom-[380px]' }]
   },
@@ -25,6 +27,7 @@ export const featuresOne = [
     checkedIcon: 'escolaf_bt_arbori_check',
     minusIcon: 'escolaf_bt_arbori_menos',
     addIcon: 'escolaf_bt_arbori_add',
+    saveIcon: 'escolaf_arvores_save',
     normalIcon: 'escolaf_bt_arbori_normal',
     images: [
       { src: 'escolaf_arvores1', class: 'absolute bottom-[240px] left-[-60px]' },
@@ -37,6 +40,7 @@ export const featuresOne = [
     checkedIcon: 'escolaf_bt_bus_check',
     minusIcon: 'escolaf_bt_bus_menos',
     addIcon: 'escolaf_bt_bus_add',
+    saveIcon: 'escolaf_onibuscolar_save',
     normalIcon: 'escolaf_bt_bus_normal',
     images: [{ src: 'escolaf_onibusescolar', class: 'absolute bottom-[280px] left-[490px]' }]
   },
@@ -46,6 +50,7 @@ export const featuresOne = [
     checkedIcon: 'escolaf_bt_horta_check',
     minusIcon: 'escolaf_bt_horta_menos',
     addIcon: 'escolaf_bt_horta_add',
+    saveIcon: 'escolaf_horta_save',
     normalIcon: 'escolaf_bt_horta_normal',
     images: [{ src: 'escolaf_horta', class: 'absolute bottom-[320px] left-[150px]' }]
   },
@@ -55,6 +60,7 @@ export const featuresOne = [
     checkedIcon: 'escolaf_bt_parque_check',
     minusIcon: 'escolaf_bt_parque_menos',
     addIcon: 'escolaf_bt_parque_add',
+    saveIcon: 'escolaf_parquinho_save',
     normalIcon: 'escolaf_bt_parque_normal',
     images: [{ src: 'escolaf_parquinho', class: 'absolute bottom-[320px] left-[1440px]' }]
   },
@@ -64,6 +70,7 @@ export const featuresOne = [
     checkedIcon: 'escolaf_bt_lixo_check',
     minusIcon: 'escolaf_bt_lixo_menos',
     addIcon: 'escolaf_bt_lixo_add',
+    saveIcon: 'escolaf_lixeirasseletivas_save',
     normalIcon: 'escolaf_bt_lixo_png',
     images: [{ src: 'escolaf_lixeirasseletivas', class: 'absolute bottom-[388px] left-[1155px]' }]
   }
@@ -80,16 +87,16 @@ export const postionsTwo = [
 export const featuresTwo = [
   {
     key: 'library',
-    text: 'Accessibility for wheelchair users',
+    text: 'Mais conhecimento',
     checkedIcon: 'escolad_bt_livros_check_1',
-    minusIcon: 'escolad_bt_livros_menos',
+    minusIcon: 'escolad_bt_livros_menos_1',
     addIcon: 'escolad_bt_livros_add',
     normalIcon: 'escolad_bt_livros_1',
     images: [{ src: 'escolad_biblioteca' }]
   },
   {
     key: 'theater',
-    text: 'Beautiful colors',
+    text: 'Peças teatrais feitas pelos meus amigos',
     checkedIcon: 'escolad_bt_teatro_check',
     minusIcon: 'escolad_bt_teatro_menos',
     addIcon: 'escolad_bt_teatro_add',
@@ -98,7 +105,7 @@ export const featuresTwo = [
   },
   {
     key: 'canteen',
-    text: 'More shade and fresh air',
+    text: 'Comidas muito gostosas',
     checkedIcon: 'escolad_bt_cantina_check',
     minusIcon: 'escolad_bt_cantina_menos',
     addIcon: 'escolad_bt_cantina_add',
@@ -107,7 +114,7 @@ export const featuresTwo = [
   },
   {
     key: 'music',
-    text: 'More classes around the city',
+    text: 'Muitos músicos',
     checkedIcon: 'escolad_bt_musica_check',
     minusIcon: 'escolad_bt_musica_menos',
     addIcon: 'escolad_bt_musica_add',
@@ -116,7 +123,7 @@ export const featuresTwo = [
   },
   {
     key: 'computer',
-    text: 'Food harvested from the garden',
+    text: 'Um mundo digital',
     checkedIcon: 'escolad_bt_informatica_check',
     minusIcon: 'escolad_bt_informatica_menos',
     addIcon: 'escolad_bt_informatica_add',
@@ -125,7 +132,7 @@ export const featuresTwo = [
   },
   {
     key: 'science',
-    text: 'Food harvested from the garden',
+    text: 'Um lugar para fazer exeperimentos',
     checkedIcon: 'escolad_bt_quimica_check',
     minusIcon: 'escolad_bt_quimica_menos',
     addIcon: 'escolad_bt_quimica_add',
@@ -134,7 +141,7 @@ export const featuresTwo = [
   },
   {
     key: 'dance',
-    text: 'A fun recess',
+    text: 'Muitos dançarinos',
     checkedIcon: 'escolad_bt_danca_check',
     minusIcon: 'escolad_bt_danca_menos',
     addIcon: 'escolad_bt_danca_add',
