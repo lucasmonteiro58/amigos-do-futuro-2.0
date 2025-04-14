@@ -60,6 +60,15 @@ function handleSaveFinalChoice() {
 
 <template>
   <main class="flex flex-col items-center justify-center spritesheet bg-cenario-sala">
+    <template v-for="feature in visibleFeatures" :key="`imgs-${feature.key}`">
+      <BaseImg
+        v-for="(img, index) in feature.images"
+        :key="index"
+        :img="img.src"
+        :class="img.class"
+      />
+    </template>
+
     <div class="spritesheet barradeitens relative bottom-[-435px] flex justify-evenly items-center">
       <div
         v-for="feature in features"
@@ -92,15 +101,6 @@ function handleSaveFinalChoice() {
         </Popper>
       </div>
     </div>
-
-    <template v-for="feature in visibleFeatures" :key="`imgs-${feature.key}`">
-      <BaseImg
-        v-for="(img, index) in feature.images"
-        :key="index"
-        :img="img.src"
-        :class="img.class"
-      />
-    </template>
 
     <SpeechBubble
       title="Minha sala de aula!"
