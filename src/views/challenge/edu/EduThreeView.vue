@@ -54,7 +54,7 @@ function handleContinue() {
 }
 
 function handleSaveFinalChoice() {
-  router.push({ name: 'congratulation', params: { challenge: 'edu', level: 1 } })
+  router.push({ name: 'congratulation', params: { challenge: 'edu', level: 3 } })
 }
 </script>
 
@@ -85,6 +85,7 @@ function handleSaveFinalChoice() {
           <!-- Botão com ícone dinâmico -->
           <BaseButton
             class="inline-block"
+            width="80%"
             :name="
               hoverKey === feature.key
                 ? isVisible(feature.key)

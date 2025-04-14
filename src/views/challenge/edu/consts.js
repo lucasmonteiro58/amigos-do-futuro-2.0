@@ -219,6 +219,6 @@ export const featuresThree = [
     minusIcon: 'bt_lampada_menos',
     addIcon: 'bt_lampada_add',
     saveIcon: 'bt_lampada',
-    images: [{ src: 'sala_luzsala', class: 'absolute top-[0px]' }]
+    images: [{ src: 'sala_luzsala', class: 'absolute top-[50px] scale-[1.1]' }]
   }
 ]
