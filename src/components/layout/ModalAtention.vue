@@ -10,6 +10,10 @@ const props = defineProps({
   content: {
     type: String,
     default: ''
+  },
+  contentFont: {
+    type: String,
+    default: 'font-bungee'
   }
 })
 
@@ -29,7 +33,7 @@ const data = useVModel(props, 'modelValue', emit)
     <div
       class="w-[600px] bg-white rounded-2xl flex flex-col items-center relative px-10 py-10 animation__bounceIn"
     >
-      <div class="text-gray-700 font-bungee text-[1.8rem] text-center leading-7">
+      <div :class="contentFont" class="text-gray-700 text-[1.8rem] text-center leading-7">
         <slot />
       </div>
       <div class="mt-16">
