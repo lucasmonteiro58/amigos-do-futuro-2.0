@@ -54,3 +54,42 @@ export const elementsOne = [
     droppedLeft: '450px'
   }
 ]
+
+export const elementsTwo = [
+  {
+    name: 'alface',
+    image: 'ong-item-alface',
+    bottom: '580px',
+    left: '200px',
+    droppedBottom: '200px',
+    droppedLeft: '400px',
+    droppedImage: 'ong-alface'
+  },
+  {
+    name: 'banana',
+    image: 'ong-item-banana',
+    bottom: '580px',
+    left: '400px',
+    droppedBottom: '220px',
+    droppedLeft: '700px',
+    droppedImage: 'ong-banana'
+  },
+  {
+    name: 'cenoura',
+    image: 'ong-item-cenoura',
+    bottom: '580px',
+    left: '600px',
+    droppedBottom: '240px',
+    droppedLeft: '1000px',
+    droppedImage: 'ong-cenoura'
+  },
+  {
+    name: 'tomate',
+    image: 'ong-item-tomate',
+    bottom: '580px',
+    left: '800px',
+    droppedBottom: '260px',
+    droppedLeft: '1200px',
+    droppedImage: 'ong-tomate'
+  }
+]
