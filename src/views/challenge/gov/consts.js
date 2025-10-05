@@ -58,38 +58,42 @@ export const elementsOne = [
 export const elementsTwo = [
   {
     name: 'alface',
-    image: 'ong-item-alface',
-    bottom: '580px',
-    left: '200px',
-    droppedBottom: '200px',
-    droppedLeft: '400px',
-    droppedImage: 'ong-alface'
+    image: 'ong_item_alface',
+    bottom: '257px',
+    left: '124px',
+    droppedBottom: '320px',
+    droppedLeft: '1055px',
+    droppedImage: 'ong_alface',
+    droppedClass: 'z-[1]'
   },
   {
     name: 'banana',
-    image: 'ong-item-banana',
-    bottom: '580px',
-    left: '400px',
-    droppedBottom: '220px',
-    droppedLeft: '700px',
-    droppedImage: 'ong-banana'
+    image: 'ong_item_banana',
+    bottom: '257px',
+    left: '434px',
+    droppedBottom: '310px',
+    droppedLeft: '1075px',
+    droppedImage: 'ong_banana',
+    droppedClass: 'rotate-[-60deg] z-[2]'
   },
   {
     name: 'cenoura',
-    image: 'ong-item-cenoura',
-    bottom: '580px',
-    left: '600px',
-    droppedBottom: '240px',
-    droppedLeft: '1000px',
-    droppedImage: 'ong-cenoura'
+    image: 'ong_item_cenoura',
+    bottom: '257px',
+    left: '1384px',
+    droppedBottom: '330px',
+    droppedLeft: '1145px',
+    droppedImage: 'ong_cenoura',
+    droppedClass: 'rotate-[-275deg] z-[3]'
   },
   {
     name: 'tomate',
-    image: 'ong-item-tomate',
-    bottom: '580px',
-    left: '800px',
-    droppedBottom: '260px',
-    droppedLeft: '1200px',
-    droppedImage: 'ong-tomate'
+    image: 'ong_item_tomate',
+    bottom: '257px',
+    left: '1685px',
+    droppedBottom: '320px',
+    droppedLeft: '1055px',
+    droppedImage: 'ong_tomate',
+    droppedClass: 'z-[4]'
   }
 ]
