@@ -24,6 +24,7 @@ declare module 'vue' {
     DropElement: typeof import('./components/interact/DropElement.vue')['default']
     LoadingScreen: typeof import('./components/layout/LoadingScreen.vue')['default']
     ModalAtention: typeof import('./components/layout/ModalAtention.vue')['default']
+    RadioTower: typeof import('./components/animations/RadioTower.vue')['default']
     RobotAnimate: typeof import('./components/animations/RobotAnimate.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']

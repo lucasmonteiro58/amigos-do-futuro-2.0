@@ -97,3 +97,46 @@ export const elementsTwo = [
     droppedClass: 'z-[4]'
   }
 ]
+
+export const elementsThree = [
+  {
+    name: 'jornal_1',
+    image: 'radio_item_jornal',
+    bottom: '257px',
+    left: '124px',
+    droppedBottom: '320px',
+    droppedLeft: '1055px',
+    droppedImage: 'radio_jornal',
+    droppedClass: 'z-[1]'
+  },
+  {
+    name: 'jornal_2',
+    image: 'radio_item_rolojornal',
+    bottom: '257px',
+    left: '434px',
+    droppedBottom: '330px',
+    droppedLeft: '1094px',
+    droppedImage: 'radio_rolojornal',
+    droppedClass: 'rotate-[-60deg] z-[3]'
+  },
+  {
+    name: 'jornal_3',
+    image: 'radio_item_jornal',
+    bottom: '257px',
+    left: '1384px',
+    droppedBottom: '308px',
+    droppedLeft: '1134px',
+    droppedImage: 'radio_jornal',
+    droppedClass: 'z-[4]'
+  },
+  {
+    name: 'jornal_4',
+    image: 'radio_item_rolojornal',
+    bottom: '257px',
+    left: '1685px',
+    droppedBottom: '330px',
+    droppedLeft: '1065px',
+    droppedImage: 'radio_rolojornal',
+    droppedClass: 'z-[2] rotate-[-60deg]'
+  }
+]

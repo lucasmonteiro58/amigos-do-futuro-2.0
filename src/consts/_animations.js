@@ -15,6 +15,10 @@ import cursorClickJson from '@/assets/animations/cursor-click/sprite.json'
 import cursorKeyboardImg from '@/assets/animations/cursor-keyboard/sprite.png'
 import cursorKeyboardJson from '@/assets/animations/cursor-keyboard/sprite.json'
 
+/* gov */
+import radioTowerImg from '@/assets/animations/radio-antenna/sprite.png'
+import radioTowerJson from '@/assets/animations/radio-antenna/sprite.json'
+
 const imageRobotBlue = new Image()
 const imageRobotOrange = new Image()
 const imageRobotFull = new Image()
@@ -22,6 +26,7 @@ const imageCounter = new Image()
 const imageCursorDrag = new Image()
 const imageCursorKeyboard = new Image()
 const imageCursorClick = new Image()
+const imageRadioTower = new Image()
 
 imageRobotBlue.src = robotBlueImg
 imageRobotOrange.src = robotOrangeImg
@@ -30,6 +35,7 @@ imageCounter.src = counterImg
 imageCursorDrag.src = cursorDragImg
 imageCursorKeyboard.src = cursorKeyboardImg
 imageCursorClick.src = cursorClickImg
+imageRadioTower.src = radioTowerImg
 
 const robotBlue = {
   sprite: imageRobotBlue,
@@ -60,6 +66,11 @@ const cursorClick = {
   json: cursorClickJson
 }
 
+const radioTower = {
+  sprite: imageRadioTower,
+  json: radioTowerJson
+}
+
 export {
   robotBlue,
   robotOrange,
@@ -67,5 +78,6 @@ export {
   counterAnimation,
   cursorDrag,
   cursorKeyboard,
-  cursorClick
+  cursorClick,
+  radioTower
 }
