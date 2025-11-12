@@ -140,3 +140,24 @@ export const elementsThree = [
     droppedClass: 'z-[2] rotate-[-60deg]'
   }
 ]
+
+export const elementsFour = [
+  {
+    id: 1,
+    title: 'Lei 10.000',
+    description: 'Todas as escolas devem ser mais divertidas.',
+    isCorrect: true
+  },
+  {
+    id: 2,
+    title: 'Lei 456',
+    description: 'Todos devem plantar uma árvore e dar um nome a ela.',
+    isCorrect: true
+  },
+  {
+    id: 3,
+    title: 'Lei 9564',
+    description: 'Pode ser preso aquele que não der bom dia ao porteiro.',
+    isCorrect: false
+  }
+]

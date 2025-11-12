@@ -28,7 +28,7 @@ function onDrop(el) {
 
   if (droppeds.value.length === elements.length) {
     setTimeout(() => {
-      router.push({ name: 'congratulation', params: { challenge: 'gov', level: 2 } })
+      router.push({ name: 'congratulation', params: { challenge: 'gov', level: 3 } })
     }, 1000)
   }
 }
