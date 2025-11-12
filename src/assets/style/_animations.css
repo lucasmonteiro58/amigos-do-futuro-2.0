@@ -171,3 +171,24 @@
     transform: translatey(0px);
   }
 }
+
+.animation__flagWave {
+  animation-name: flagWave;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 3;
+  transform-origin: bottom center;
+}
+
+@keyframes flagWave {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+}

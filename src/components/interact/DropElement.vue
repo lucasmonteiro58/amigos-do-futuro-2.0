@@ -3,7 +3,7 @@ import interact from 'interactjs'
 
 const props = defineProps({
   expected: {
-    type: [String, Object],
+    type: [String, Object, Array],
     required: true
   },
   replaceOnDrop: {
@@ -40,7 +40,12 @@ function onDragEnter(event) {
   const item = event.relatedTarget
   const dataTransfer = event.relatedTarget.getAttribute('data-transfer')
 
-  if (dataTransfer === props.expected) {
+  const expected = props.expected
+  const isMatch = Array.isArray(expected)
+    ? expected.includes(dataTransfer)
+    : dataTransfer === expected
+
+  if (isMatch) {
     item.classList.add('can-drop')
     emit('dropped', { event, dataTransfer })
   }

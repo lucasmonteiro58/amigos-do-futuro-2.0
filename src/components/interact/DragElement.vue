@@ -125,7 +125,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="drag-wrap flex items-center justify-center absolute cursor-grab">
+  <div class="absolute flex items-center justify-center drag-wrap cursor-grab">
     <div
       :class="className"
       :data-transfer="dataTransfer"
