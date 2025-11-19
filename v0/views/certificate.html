@@ -1,0 +1,57 @@
+<section id="certificate" class="to-screen">
+	<div class="back-btn"><button class="prevF" onclick="backStage()"></button></div>
+	<div class="sound-btn"><button class="toggle sound"></button></div>
+	<div class="music-btn"><button class="toggle music"></button></div>
+
+	<audio preload="metadata" id="fala_certificate">
+		<source src="sounds/falas/certificate/parabens1.wav">
+	</audio>
+
+	<div class="robot-certificate">
+		<div class="content centered">
+			<div class="content-left">
+				<li><div id="AnimacaoRoboCertificate"></div><img id="img" src="img/robot-placeholder-orange1.png" title="Robot"></li>
+				<li><div id="text-comment"><p>Parabéns! Agora você pode ajudar a melhorar o futuro do Ceará! Salve ou imprima seu título de honra.</p><button class='toggle repeat'></button></div></li>
+				<ul class="buttons">
+					<li><a id="download-btn"><button class="toggle download"></button></a></li>
+					<li><button onclick="playAudioButton()" class="toggle print"></button></li>
+					<li><button onclick="playAudioButton()" class="action white" id="other-badges-btn">Outros<br>Desafios</button></li>
+				</ul>
+			</div>
+
+			<div class="content-right centeredY">
+				<img id="small-certificate-img" src="img/loading.gif">
+			</div>
+
+		</div>
+	</div>
+
+	<!-- Comentario do robo sobre novas badges -->
+	<div class="robot-comment other-badges dark-gradient" style="display: none;">
+		<div class="content centered">
+			<button class="toggle home"></button>
+			<button class="toggle exit"></button>
+
+			<div class="all-badges centeredX">
+				<li><img onclick="playAudioButton()"  onmouseover="playAudioMS()" id="sau" src="img/quiz/sau-badge.png" title="Amigo da Saúde"></li>
+				<li><img  onclick="playAudioButton()" onmouseover="playAudioMS()" id="laz" src="img/quiz/laz-badge.png" title="Amigo do Lazer"></li>
+				<li><img  onclick="playAudioButton()" onmouseover="playAudioMS()" id="eco" src="img/quiz/eco-badge.png" title="Amigo da Economia"></li>
+				<li><img  onclick="playAudioButton()" onmouseover="playAudioMS()" id="mei" src="img/quiz/mei-badge.png" title="Amigo do Meio Ambiente"></li>
+				<li><img  onclick="playAudioButton()" onmouseover="playAudioMS()" id="gov" src="img/quiz/gov-badge.png" title="Amigo do Governo"></li>
+				<li><img  onclick="playAudioButton()" onmouseover="playAudioMS()" id="edu" src="img/quiz/edu-badge.png" title="Amigo da Educação"></li>
+				<li><img  onclick="playAudioButton()" onmouseover="playAudioMS()" id="ino" src="img/quiz/ino-badge.png" title="Amigo da Inovação"></li>
+			</div>
+
+			<div class="single-badge centeredX" id="single-badge-details">
+	            <li><h4>Escolha outro amigo do futuro!</h4></li>
+                <li style="padding-bottom: 10%"><p>Clique no amigo que quer ajudar agora.</p></li>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+<section id="certificate-print" class="to-print">
+	<img id="certificate-img">
+	<p id="certificate-text" class="centeredX"></p>
+</section>

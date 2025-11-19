@@ -1,0 +1,44 @@
+<section id="desafiobebedouro">
+	<div class="back-btn"><button class="prevF" onclick="backStage()"></button></div>
+	<audio preload="metadata" id="help_ino0">
+		<source src="sounds/falas/desafios/ino/help0.wav">
+	</audio>
+
+	<div class="sound-btn"><button class="toggle sound"></button></div>
+	<div class="music-btn"><button class="toggle music"></button></div>
+
+	<img id="imgBebedouro" src="img/desafios/inovacao/bebedouro/bebedouro.png">
+	<div id="animacaoPingando"></div>
+	<img onmouseover="playAudioMS()" id="imgVaso" src="img/desafios/inovacao/bebedouro/vasinho.png">
+	<img onmouseover="playAudioMS()" id="imgBalde" src="img/desafios/inovacao/bebedouro/regador.png">
+	<img id="imgBaldeOK" src="img/desafios/inovacao/bebedouro/regador.png">
+	<img onmouseover="playAudioMS()" id="imgGarrafao" src="img/desafios/inovacao/bebedouro/garrafao.png">
+
+	<div id="AnimacaoArrastBebedouro"></div>
+	<div id="AnimacaoArrastBebedouro2"></div>
+
+	<div id="aceitaBalde"></div>
+
+	<button class="btn-bebedouro-ajuda help" data-toggle="popover" data-trigger="hover" data-placement="right" title="Saiba mais:" data-content="Adryelson e Gabryele da escola Paulo Sá inventaram uma forma de guardar a água desperdiçada do bebedouro da sua escola para utilizá-la em outros lugares, como no jardim."></button>
+
+	<!-- Robot help -->
+	<div id="help" style="display: none;">
+		<div class="backdrop">
+			<div class="robot-help">
+				<div id="AnimacaoRoboHelp"></div>
+				<div class="content">
+					<li><h4></h4></li>
+					<li><p></p></li>
+				</div>
+				<button id='repeat-btn' class='toggle repeat'></button>
+				<button onclick="AudioAguaPingando()" id='close-btn' class='toggle exit'></button>
+			</div>
+		</div>
+		<div id="robot-help-mini" style="display: none;">
+			<img  onmouseover="playAudioMS()" src="img/help/robot-mini-blue.png" alt="Ajuda" title="Precisa de ajuda?">
+		</div>
+	</div>
+
+
+
+	</section>

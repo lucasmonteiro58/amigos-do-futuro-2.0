@@ -1,0 +1,81 @@
+<section id="quiz">
+	<div class="back-btn"><button class="prevF" onclick="backStage()"></button></div>
+	<div class="sound-btn"><button class="toggle sound"></button></div>
+	<div class="music-btn"><button class="toggle music"></button></div>
+	<div class="badges-about">
+		<div class="content">
+			<div class="all-badges centeredX">
+				<li><img id="sau" onmouseover="playAudioMS()" src="img/quiz/sau-badge.png" title="Amigo da Saúde"></li>
+				<li><img id="laz" onmouseover="playAudioMS()" src="img/quiz/laz-badge.png" title="Amigo do Lazer"></li>
+				<li><img id="eco"  onmouseover="playAudioMS()" src="img/quiz/eco-badge.png" title="Amigo da Economia"></li>
+				<li><img id="mei"  onmouseover="playAudioMS()" src="img/quiz/mei-badge.png" title="Amigo do Meio Ambiente"></li>
+				<li><img id="gov"  onmouseover="playAudioMS()" src="img/quiz/gov-badge.png" title="Amigo do Governo"></li>
+				<li><img id="edu"  onmouseover="playAudioMS()" src="img/quiz/edu-badge.png" title="Amigo da Educação"></li>
+				<li><img id="ino"  onmouseover="playAudioMS()" src="img/quiz/ino-badge.png" title="Amigo da Inovação"></li>
+			</div>
+			<div class="single-badge centeredX" id="single-badge-details"></div>
+		</div>
+	</div>
+	<div class="quiz-question">
+		<!--<div class="sound-btn"><button class="toggle sound"></button></div>-->
+		<div id="animacaoRoboQuiz"></div>
+		<div class="content centered">
+			<div id="prev-next">
+
+				<li><button id="prev"   class="toggle arrow"></button></li>
+				<li><img src="img/robot-placeholder-orange1.png" title="Robot"></li>
+				<li><button id="next"    class="toggle arrow2"></button></li>
+			</div>
+			<div id="question-content"></div>
+
+		</div>
+	</div>
+
+	<audio preload="metadata" id="pergunta0">
+		<source src="sounds/falas/quiz/pergunta1.wav">
+	</audio>
+	<audio preload="metadata" id="pergunta1">
+		<source src="sounds/falas/quiz/pergunta2.wav">
+	</audio>
+	<audio preload="metadata" id="pergunta2">
+		<source src="sounds/falas/quiz/pergunta3.wav">
+	</audio>
+	<audio preload="metadata" id="pergunta3">
+		<source src="sounds/falas/quiz/pergunta4.wav">
+	</audio>
+	<audio preload="metadata" id="pergunta4">
+		<source src="sounds/falas/quiz/pergunta5.wav">
+	</audio>
+	<audio preload="metadata" id="pergunta5">
+		<source src="sounds/falas/quiz/pergunta6.wav">
+	</audio>
+	<audio preload="metadata" id="pergunta6">
+		<source src="sounds/falas/quiz/pergunta7.wav">
+	</audio>
+
+	<audio preload="metadata" id="S_eco">
+		<source src="sounds/falas/quiz/eco.wav">
+	</audio>
+	<audio preload="metadata" id="S_edu">
+		<source src="sounds/falas/quiz/edu.wav">
+	</audio>
+	<audio preload="metadata" id="S_gov">
+		<source src="sounds/falas/quiz/gov.wav">
+	</audio>
+	<audio preload="metadata" id="S_ino">
+		<source src="sounds/falas/quiz/ino.wav">
+	</audio>
+	<audio preload="metadata" id="S_laz">
+		<source src="sounds/falas/quiz/laz.wav">
+	</audio>
+	<audio preload="metadata" id="S_sau">
+		<source src="sounds/falas/quiz/sau.wav">
+	</audio>
+	<audio preload="metadata" id="S_mei">
+		<source src="sounds/falas/quiz/mei.wav">
+	</audio>
+
+
+
+
+</section>
