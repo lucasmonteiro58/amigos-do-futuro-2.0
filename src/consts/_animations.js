@@ -92,11 +92,11 @@ const rocket = {
 }
 
 export {
+  cursorDrag,
   robotBlue,
   robotOrange,
   robotFull,
   counterAnimation,
-  cursorDrag,
   cursorKeyboard,
   cursorClick,
   radioTower,
