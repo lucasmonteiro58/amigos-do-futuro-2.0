@@ -30,7 +30,7 @@ Este documento descreve o processo completo para transformar desafios legados da
 
 ### O que você vai criar em Vue
 
-- **Componente Vue**: `src/views/challenge/{categoria}/{Nome}View.vue`
+- **Componente Vue**: `src/views/challenge/{categoria}/{Nome}View.vue` (ex: `EcoOneView` para `eco_0`)
 - **Composition API**: `<script setup>`
 - **Componentes Reutilizáveis**: DragElement, DropElement, BaseAnimation
 - **Stores**: Gerenciamento de estado com Pinia
@@ -95,6 +95,21 @@ v0/img/desafios/{categoria}/
 # Áudios
 v0/sounds/
 ```
+
+#### 1.1.1 Mapeamento de Nomes (Legacy → Vue)
+
+A numeração dos desafios muda do legado (0-indexed) para o Vue (1-indexed, escrito por extenso em inglês).
+
+| Legacy (v0) | Vue Component (src) |
+| ----------- | ------------------- |
+| `eco_0`     | `EcoOneView.vue`    |
+| `eco_1`     | `EcoTwoView.vue`    |
+| `eco_2`     | `EcoThreeView.vue`  |
+| `ino_0`     | `InoOneView.vue`    |
+| ...         | ...                 |
+
+**Regra:** `categoria_{N}` → `{Categoria}{NumeroExtenso}View.vue`
+(onde N=0 vira One, N=1 vira Two, etc.)
 
 #### 1.2 Identificar elementos-chave
 
