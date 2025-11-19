@@ -11,8 +11,10 @@ Este documento descreve o processo completo para transformar desafios legados da
 5. [Sistema de Áudio](#sistema-de-áudio)
 6. [Sistema de Animações](#sistema-de-animações)
 7. [Sprites e Imagens](#sprites-e-imagens)
-8. [Exemplos Práticos](#exemplos-práticos)
-9. [Checklist de Migração](#checklist-de-migração)
+8. [Guia de Estilos (Tailwind & Fonts)](#guia-de-estilos-tailwind--fonts)
+9. [Migração de Posicionamento](#migração-de-posicionamento)
+10. [Exemplos Práticos](#exemplos-práticos)
+11. [Checklist de Migração](#checklist-de-migração)
 
 ---
 
@@ -675,6 +677,57 @@ Tooltip/Popover para informações adicionais.
 
 ---
 
+### ModalAtention
+
+Modal de atenção/aviso padronizado.
+
+```vue
+<ModalAtention v-model="showModal" @close="showModal = false">
+  <div class="mt-8">Mensagem de aviso aqui!</div>
+</ModalAtention>
+```
+
+**Props:**
+
+- `modelValue`: Boolean - Controla visibilidade
+- `contentFont`: String - Classe de fonte (ex: 'font-exo2')
+
+---
+
+### TopBarControl
+
+Barra superior com controles (Home, Som, Música).
+
+```vue
+<TopBarControl :show-home="true" :show-sound="true" :show-music="true" @home="goHome" />
+```
+
+---
+
+### BaseInputText
+
+Campo de entrada de texto estilizado.
+
+```vue
+<BaseInputText v-model="inputValue" placeholder="Digite aqui" class="w-[300px]" />
+```
+
+---
+
+### BaseInputSelect
+
+Campo de seleção estilizado.
+
+```vue
+<BaseInputSelect
+  v-model="selectedValue"
+  :options="['Opção 1', 'Opção 2']"
+  placeholder="Selecione"
+/>
+```
+
+---
+
 ## Sistema de Áudio
 
 ### useEffectsStore
@@ -794,16 +847,116 @@ Os sprites estão em classes CSS geradas automaticamente.
 
 ### Convenção de nomes
 
-```
+````
 {categoria}_{descritor}_{variacao}
 
 Exemplos:
-- bebedouro_vasinho
-- bebedouro_regador
-- bebedouro_garrafao
-- campinho_crianca1_vermelha
-- ong_item_alface
+- `bebedouro_vasinho`
+- `campinho_crianca1_vermelha`
+
+### Localização dos Arquivos de Imagem
+
+As imagens originais que geram os sprites estão em:
+`src/assets/images/sprites/{categoria}/`
+
+Exemplos:
+- `src/assets/images/sprites/economia/`
+- `src/assets/images/sprites/educacao/`
+- `src/assets/images/sprites/governo/`
+
+Se precisar adicionar uma nova imagem, adicione na pasta correta e o sistema de build deve atualizar o spritesheet (verifique o comando de geração de sprites no `package.json` se disponível, ou se é automático).
+
+---
+
+## Guia de Estilos (Tailwind & Fonts)
+
+O projeto utiliza Tailwind CSS com configurações personalizadas.
+
+### Cores Personalizadas (`tailwind.config.js`)
+
+| Nome | Classe Tailwind | Hex |
+|------|-----------------|-----|
+| **Azul** | `text-primary-blue`, `bg-primary-blue` | `#376296` |
+| Azul Light | `text-primary-blue-light` | `#247ba0` |
+| Azul Dark | `text-primary-blue-dark` | `#305882` |
+| **Verde** | `text-primary-green`, `bg-primary-green` | `#3c9c74` |
+| Verde Light | `text-primary-green-light` | `#70c1b3` |
+| **Amarelo** | `text-primary-yellow`, `bg-primary-yellow` | `#ffe066` |
+| **Laranja** | `text-primary-orange`, `bg-primary-orange` | `#f25f5c` |
+| **Marrom** | `text-primary-brown`, `bg-primary-brown` | `#92492d` |
+| Cinza | `text-gray-500` | `#333` |
+
+### Fontes
+
+| Nome | Classe Tailwind | Uso Comum |
+|------|-----------------|-----------|
+| **Norwester** | `font-norwester` | Títulos, Números grandes |
+| **Front** | `font-front` | Textos de destaque |
+| **Exo 2** | `font-exo2` | Textos gerais, corpo |
+| **Viga** | `font-viga` | Títulos alternativos |
+| **PoetsenOne** | `font-poetsenone` | Títulos divertidos |
+| **Bungee** | `font-bungee` | Títulos retro/tech |
+
+---
+
+## Migração de Posicionamento
+
+Uma das partes mais críticas da migração é converter o posicionamento absoluto do CSS legado (baseado em porcentagem) para o novo padrão do Vue (baseado em pixels fixos em container 1920x1080).
+
+### Padrão de Conversão
+
+O legado (`v0`) utilizava um container com aspecto 16:9 e posicionamento em `%`.
+O novo projeto utiliza um container fixo de referência **1920px x 1080px**.
+
+**Fórmula de Conversão:**
+
+| Propriedade | Legado (%) | Novo (px) | Fórmula |
+|-------------|------------|-----------|---------|
+| **Left** | `left: 50%` | `left-[960px]` | `Valor(%) * 19.2` |
+| **Top** | `top: 20%` | `top-[216px]` | `Valor(%) * 10.8` |
+| **Bottom** | `bottom: 10%` | `bottom-[108px]` | `Valor(%) * 10.8` |
+| **Width** | `width: 10%` | `w-[192px]` | `Valor(%) * 19.2` |
+
+> **Nota:** Pequenos ajustes manuais podem ser necessários para alinhar perfeitamente, pois o ponto de ancoragem ou o recorte do sprite pode variar levemente.
+
+### Exemplo Comparativo (Governo - Campinho)
+
+**Legado (`style.css`):**
+```css
+#criancaV1 {
+  position: absolute;
+  bottom: 60%;
+  left: 20%;
+  width: 6.5%;
+}
+````
+
+**Novo (`GovOneView.vue` / `consts.js`):**
+
+```javascript
+{
+  name: 'children-red-1',
+  bottom: '630px', // 60 * 10.8 = 648 (Ajustado para 630)
+  left: '350px',   // 20 * 19.2 = 384 (Ajustado para 350)
+  // Width é controlado pelo sprite ou scale
+}
 ```
+
+### Escala (Scale)
+
+No legado, o tamanho era frequentemente controlado por `width: %`. No novo projeto, usamos o tamanho natural do sprite. Se o sprite for muito grande ou pequeno, use a classe `scale-` do Tailwind.
+
+Exemplo:
+
+```html
+<!-- Aumentar 25% -->
+<BaseImg class="scale-125" ... />
+
+<!-- Dobrar tamanho -->
+<BaseImg class="scale-[2]" ... />
+```
+
+---
 
 ### Como encontrar o nome correto
 
