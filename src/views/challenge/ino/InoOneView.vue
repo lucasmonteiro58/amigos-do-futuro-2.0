@@ -112,24 +112,20 @@ onMounted(() => {
       <div class="spritesheet" :class="item.sprite"></div>
     </DragElement>
 
-    <!-- Correct item in place (shown after success) -->
     <BaseImg
       v-if="isCompleted"
       img="bebedouro_regador"
       class="absolute bottom-[76px] left-[870px]"
     />
 
-    <!-- Drop zone -->
     <DropElement
       :expected="['regador']"
       @dropped="onDrop"
       class="absolute w-[300px] h-[350px] top-[675px] left-[825px]"
     />
 
-    <!-- Drag hint animation (shown after 3 failed attempts) -->
     <CursorDrag v-if="showHint" class="absolute top-[600px] left-[600px]" />
 
-    <!-- Help/Instructions -->
     <SpeechBubble
       title="Fique atento!"
       description="Observe a cena e tente resolver o problema."
