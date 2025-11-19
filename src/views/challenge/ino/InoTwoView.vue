@@ -71,80 +71,61 @@ function launchRocket() {
 
 <template>
   <main class="flex flex-col items-center justify-center spritesheet cenario_inovacao2">
-    <!-- Central bottle/placeholder -->
-    <BaseImg img="foguete_place" class="absolute top-[310px] left-[888px]" />
+    <!-- Rocket Assembly Container -->
+    <div class="absolute top-[180px] left-1/2 -translate-x-1/2 flex flex-col items-center">
+      <!-- Head/Bico Section -->
+      <div class="flex items-center gap-4 z-20">
+        <BaseButton
+          name="btn-toggle-arrow"
+          width="80px"
+          class="transform rotate-180"
+          @click="cycleBico(-1)"
+        />
+        <div class="w-[500px] h-[145px] flex justify-center items-end">
+          <BaseImg :img="currentBico" />
+        </div>
+        <BaseButton name="btn-toggle-arrow" width="80px" @click="cycleBico(1)" />
+      </div>
 
-    <!-- Head/Bico Section -->
-    <div class="absolute top-[125px] left-[770px] flex items-center gap-8">
-      <button
-        @click="cycleBico(-1)"
-        class="w-[80px] h-[80px] bg-white rounded-full flex items-center justify-center text-5xl font-bold hover:bg-gray-200 transition-colors"
-      >
-        ◄
-      </button>
-      <BaseImg :img="currentBico" class="relative" />
-      <button
-        @click="cycleBico(1)"
-        class="w-[80px] h-[80px] bg-white rounded-full flex items-center justify-center text-5xl font-bold hover:bg-gray-200 transition-colors"
-      >
-        ►
-      </button>
-    </div>
+      <!-- Middle/Meio Section -->
+      <div class="flex items-center gap-4 z-10">
+        <BaseButton
+          name="btn-toggle-arrow"
+          width="80px"
+          class="transform rotate-180"
+          @click="cycleMeio(-1)"
+        />
+        <div class="w-[500px] h-[175px] flex justify-center items-center relative">
+          <BaseImg :img="currentMeio" class="z-10" />
+        </div>
+        <BaseButton name="btn-toggle-arrow" width="80px" @click="cycleMeio(1)" />
+      </div>
 
-    <!-- Middle/Meio Section -->
-    <div class="absolute top-[310px] left-[620px] flex items-center gap-8">
-      <button
-        @click="cycleMeio(-1)"
-        class="w-[80px] h-[80px] bg-white rounded-full flex items-center justify-center text-5xl font-bold hover:bg-gray-200 transition-colors"
-      >
-        ◄
-      </button>
-      <BaseImg :img="currentMeio" class="relative" />
-      <button
-        @click="cycleMeio(1)"
-        class="w-[80px] h-[80px] bg-white rounded-full flex items-center justify-center text-5xl font-bold hover:bg-gray-200 transition-colors"
-      >
-        ►
-      </button>
-    </div>
-
-    <!-- Tail/Rabo Section -->
-    <div class="absolute top-[620px] left-[670px] flex items-center gap-8">
-      <button
-        @click="cycleRabo(-1)"
-        class="w-[80px] h-[80px] bg-white rounded-full flex items-center justify-center text-5xl font-bold hover:bg-gray-200 transition-colors"
-      >
-        ◄
-      </button>
-      <BaseImg :img="currentRabo" class="relative" />
-      <button
-        @click="cycleRabo(1)"
-        class="w-[80px] h-[80px] bg-white rounded-full flex items-center justify-center text-5xl font-bold hover:bg-gray-200 transition-colors"
-      >
-        ►
-      </button>
-    </div>
-
-    <!-- Launch Button -->
-    <div class="absolute bottom-[130px] right-[180px]">
-      <button
-        @click="launchRocket"
-        class="bg-gradient-to-b from-blue-400 to-blue-600 text-white font-bold text-3xl px-12 py-6 rounded-full shadow-lg hover:from-blue-500 hover:to-blue-700 transition-all transform hover:scale-105"
-      >
-        LANÇAR<br />FOGUETE
-      </button>
+      <!-- Tail/Rabo Section -->
+      <div class="flex items-center gap-4">
+        <BaseButton
+          name="btn-toggle-arrow"
+          width="80px"
+          class="transform rotate-180"
+          @click="cycleRabo(-1)"
+        />
+        <div class="w-[500px] h-[130px] flex justify-center items-start">
+          <BaseImg :img="currentRabo" />
+        </div>
+        <BaseButton name="btn-toggle-arrow" width="80px" @click="cycleRabo(1)" />
+      </div>
     </div>
 
     <!-- Click hint -->
-    <CursorClick v-if="showHint" class="absolute top-[350px] left-[950px]" />
+    <CursorClick v-if="showHint" class="absolute top-[350px] left-[1050px]" />
 
     <!-- Info button with popover -->
-    <div class="absolute top-[125px] right-[160px]">
-      <Popper placement="bottom-start" offsetDistance="40" locked hover>
+    <div class="absolute bottom-[180px] right-[50px]">
+      <Popper placement="top-end" offsetDistance="20" locked hover>
         <template #content>
-          <div class="w-[400px] rounded-md">
-            <div class="text-3xl font-bold pb-2 bg-gray-200 px-4 py-2">Saiba Mais</div>
-            <div class="text-2xl px-4 py-2">
+          <div class="w-[400px] rounded-md mb-4">
+            <div class="text-4xl font-bold pb-2 bg-gray-200 px-4 py-2">Saiba Mais</div>
+            <div class="text-3xl px-4 py-2 bg-white">
               Em 2018, mais de dez mil alunos cearenses participaram da mostra brasileira de
               foguetes.
             </div>
@@ -152,6 +133,20 @@ function launchRocket() {
         </template>
         <BaseButton name="btn-toggle-info" width="90px"></BaseButton>
       </Popper>
+    </div>
+
+    <!-- Launch Button -->
+    <div class="absolute bottom-[50px] right-[50px]">
+      <div
+        class="relative cursor-pointer hover:scale-105 transition-transform"
+        @click="launchRocket"
+      >
+        <BaseImg img="btn-action-white" width="300px" />
+        <div class="absolute inset-0 flex flex-col items-center justify-center leading-none">
+          <span class="text-primary-blue-text font-black text-4xl uppercase">LANÇAR</span>
+          <span class="text-primary-blue-text font-black text-4xl uppercase">FOGUETE</span>
+        </div>
+      </div>
     </div>
 
     <!-- Speech bubble -->
