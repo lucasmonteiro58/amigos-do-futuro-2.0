@@ -1,7 +1,9 @@
 <script setup>
+import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { useEffectsStore } from '@/stores/effects'
 import Popper from 'vue3-popper'
+import ModalAtention from '@/components/layout/ModalAtention.vue'
 
 const router = useRouter()
 const effectsStore = useEffectsStore()
@@ -131,16 +133,13 @@ function finishLevel() {
         :class="piece.id === 'sensorprox' ? 'z-[2]' : 'z-[5]'"
         :style="piece.styleInside"
         @click="togglePiece(piece)"
-        @mouseenter="onHover(piece)"
-        @mouseleave="onLeave"
       />
     </template>
 
     <template v-for="piece in pieces" :key="piece.id + '_outside'">
       <BaseImg
-        v-if="!piece.inside"
         :img="piece.spriteOutside"
-        class="absolute cursor-pointer hover:scale-110 transition-transform opacity-50 hover:opacity-100"
+        class="absolute cursor-pointer hover:scale-110 transition-transform"
         :style="piece.styleOutside"
         @click="togglePiece(piece)"
         @mouseenter="onHover(piece)"
@@ -169,40 +168,41 @@ function finishLevel() {
       </Popper>
     </div>
 
-    <div v-if="showSuccessModal" class="absolute inset-0 z-50 flex items-center justify-center">
-      <div class="absolute inset-0 bg-black opacity-50"></div>
-      <div class="relative z-10 w-[74%] h-auto">
-        <BaseImg img="carrinho_cxafeedback" class="w-full" />
+    <!-- Success Modal -->
+    <ModalAtention v-model="showSuccessModal" isCustom>
+      <div class="relative spritesheet carrinho_cxafeedback p-5">
+        <BaseImg img="carrinho_pista_placeholder" class="w-full" />
         <div
-          class="absolute top-[20%] left-[10%] w-[80%] text-right text-[#3E9E74] font-exo-bold text-[4vw] leading-tight"
+          class="absolute bottom-[20%] right-[5%] w-[40%] text-right text-[#3E9E74] font-exo-bold text-6xl leading-tight font-bold"
         >
-          O CARRINHO<br />ESTÁ PRONTO!
+          SEU<br />CARRO<br />FUNCIONA!
         </div>
         <BaseButton
-          name="btn-action-confirm"
-          class="absolute right-[5%] bottom-[10%] transform scale-150"
+          name="btn-toggle-ok"
+          class="absolute right-[-2%] top-[-2%]"
+          width="140px"
           @click="finishLevel"
         />
       </div>
-    </div>
+    </ModalAtention>
 
-    <div v-if="showErrorModal" class="absolute inset-0 z-50 flex items-center justify-center">
-      <div class="absolute inset-0 bg-black opacity-50" @click="closeErrorModal"></div>
-      <div class="relative z-10 w-[74%] h-auto">
-        <BaseImg img="carrinho_cxafeedback" class="w-full" />
-
+    <!-- Error Modal -->
+    <ModalAtention v-model="showErrorModal" isCustom @close="closeErrorModal">
+      <div class="relative spritesheet carrinho_cxafeedback p-5">
+        <BaseImg img="carrinho_pista_placeholder" class="w-full" />
         <div
-          class="absolute top-[20%] left-[10%] w-[80%] text-right text-[#DA2E27] font-exo-bold text-[4vw] leading-tight"
+          class="absolute bottom-[20%] right-[5%] w-[40%] text-right text-[#DA2E27] font-exo-bold text-6xl leading-tight font-bold"
         >
-          TENTE OUTRAS<br />PEÇAS
+          TENTE<br />OUTRAS<br />PEÇAS!
         </div>
         <BaseButton
-          name="btn-action-confirm"
-          class="absolute right-[5%] bottom-[10%] transform scale-150"
+          name="btn-toggle-close"
+          class="absolute right-[-2%] top-[-2%]"
+          width="140px"
           @click="closeErrorModal"
         />
       </div>
-    </div>
+    </ModalAtention>
 
     <CursorClick v-if="showHint" class="absolute top-[10%] left-[30%]" />
 
