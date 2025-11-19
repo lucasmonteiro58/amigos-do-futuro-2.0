@@ -22,6 +22,8 @@ import radioTowerJson from '@/assets/animations/radio-antenna/sprite.json'
 /* ino */
 import drinkingFountainImg from '@/assets/animations/drinking-fountain/sprite.png'
 import drinkingFountainJson from '@/assets/animations/drinking-fountain/sprite.json'
+import rocketImg from '@/assets/animations/rocket/sprite.png'
+import rocketJson from '@/assets/animations/rocket/sprite.json'
 
 const imageRobotBlue = new Image()
 const imageRobotOrange = new Image()
@@ -32,6 +34,7 @@ const imageCursorKeyboard = new Image()
 const imageCursorClick = new Image()
 const imageRadioTower = new Image()
 const imageDrinkingFountain = new Image()
+const imageRocket = new Image()
 
 imageRobotBlue.src = robotBlueImg
 imageRobotOrange.src = robotOrangeImg
@@ -42,6 +45,7 @@ imageCursorKeyboard.src = cursorKeyboardImg
 imageCursorClick.src = cursorClickImg
 imageRadioTower.src = radioTowerImg
 imageDrinkingFountain.src = drinkingFountainImg
+imageRocket.src = rocketImg
 
 const robotBlue = {
   sprite: imageRobotBlue,
@@ -82,6 +86,11 @@ const drinkingFountain = {
   json: drinkingFountainJson
 }
 
+const rocket = {
+  sprite: imageRocket,
+  json: rocketJson
+}
+
 export {
   robotBlue,
   robotOrange,
@@ -91,5 +100,6 @@ export {
   cursorKeyboard,
   cursorClick,
   radioTower,
-  drinkingFountain
+  drinkingFountain,
+  rocket
 }
