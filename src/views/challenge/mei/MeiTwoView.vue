@@ -186,8 +186,10 @@ const handleAnimationOver = () => {
     />
 
     <SpeechBubble
+      v-if="!isCompleted"
       title="XIII...SEM ÁGUA!"
-      description="Essa casa não tem saneamento básico. Ligue os canos para chegar água na torneira!"
+      description="Essa casa não tem <a>saneamento básico</a>. Ligue os canos para chegar água na torneira!"
+      tooltip="Sistema de canos por onde a água chega na nossa casa e por onde sai."
       audio="mei_help2"
       :time="6000"
     />
