@@ -129,9 +129,9 @@ const getSprite = (hole) => {
 }
 
 const getCursor = (hole) => {
-  if (hole.state === 0) return 'cursor-pointer' // Should be seed pointer
-  if (hole.state === 1) return 'cursor-pointer' // Should be watering can pointer
-  if (hole.state === 2) return 'cursor-pointer' // Should be glove pointer
+  if (hole.state === 0) return 'cursor-seed'
+  if (hole.state === 1) return 'cursor-water'
+  if (hole.state === 2) return 'cursor-harvest'
   return ''
 }
 </script>
@@ -150,7 +150,8 @@ const getCursor = (hole) => {
       :class="[hole.state === 3 ? 'hidden' : '', getCursor(hole)]"
       :style="{
         top: hole.positions[hole.state]?.top || '0',
-        left: hole.positions[hole.state]?.left || '0'
+        left: hole.positions[hole.state]?.left || '0',
+        width: '8.5% !important'
       }"
       @click="handleHoleClick(index)"
     />
@@ -162,39 +163,39 @@ const getCursor = (hole) => {
       v-if="basketItems.cenoura1"
       img="sustent_cenoura"
       class="absolute"
-      style="bottom: 21%; right: 12%"
+      style="bottom: 21%; right: 12%; width: 11% !important"
     />
     <BaseImg
       v-if="basketItems.cenoura2"
       img="sustent_cenoura"
       class="absolute"
-      style="bottom: 23%; right: 11%"
+      style="bottom: 23%; right: 11%; width: 11% !important"
     />
 
     <BaseImg
       v-if="basketItems.tomate1"
       img="sustent_tomate"
       class="absolute"
-      style="bottom: 23%; right: 9%"
+      style="bottom: 23%; right: 9%; width: 4% !important"
     />
     <BaseImg
       v-if="basketItems.tomate2"
       img="sustent_tomate"
       class="absolute"
-      style="bottom: 22%; right: 8%"
+      style="bottom: 22%; right: 8%; width: 3.5% !important"
     />
 
     <BaseImg
       v-if="basketItems.alface1"
       img="sustent_alface"
       class="absolute"
-      style="bottom: 20%; right: 4%"
+      style="bottom: 20%; right: 4%; width: 7% !important"
     />
     <BaseImg
       v-if="basketItems.alface2"
       img="sustent_alface"
       class="absolute"
-      style="bottom: 18%; right: 3%"
+      style="bottom: 18%; right: 3%; width: 6% !important"
     />
 
     <BaseImg img="sustent_cestavazia" class="absolute" style="bottom: 10%; right: 2%" />
@@ -210,5 +211,19 @@ const getCursor = (hole) => {
 </template>
 
 <style scoped>
-/* Add custom cursors if needed, matching legacy */
+.cursor-seed {
+  cursor:
+    url('@/assets/images/sprites/meio/sustent_pointer_semente.png') 0 45,
+    auto;
+}
+.cursor-water {
+  cursor:
+    url('@/assets/images/sprites/meio/sustent_pointer_regador.png') 10 80,
+    auto;
+}
+.cursor-harvest {
+  cursor:
+    url('@/assets/images/sprites/meio/sustent_pointer_luva.png') 30 40,
+    auto;
+}
 </style>
