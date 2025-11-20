@@ -164,7 +164,7 @@ function canGoNext() {
       autoplay
       loop
       width="20%"
-      class="absolute top-[44%] left-[4%] pointer-events-none z-50"
+      class="absolute top-[24%] left-[4%] pointer-events-none z-50 rotate-[-40deg]"
     />
 
     <!-- Speech Bubble -->
