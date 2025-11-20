@@ -1,3 +1,60 @@
+export const vegetablesData = [
+  {
+    id: 'C_cenouracesta1',
+    sprite: 'sustent_cenoura',
+    type: 'cenoura',
+    initialTop: '23%',
+    initialLeft: '8%',
+    width: '11%',
+    sinkTop: '35%'
+  },
+  {
+    id: 'C_cenouracesta2',
+    sprite: 'sustent_cenoura',
+    type: 'cenoura',
+    initialTop: '22%',
+    initialLeft: '9%',
+    width: '11%',
+    sinkTop: '35%'
+  },
+  {
+    id: 'C_tomatecesta1',
+    sprite: 'sustent_tomate',
+    type: 'tomate',
+    initialTop: '28%',
+    initialLeft: '17%',
+    width: '4.3%',
+    sinkTop: '42%'
+  },
+  {
+    id: 'C_tomatecesta2',
+    sprite: 'sustent_tomate',
+    type: 'tomate',
+    initialTop: '30%',
+    initialLeft: '19%',
+    width: '3.5%',
+    sinkTop: '42%'
+  },
+  {
+    id: 'C_alfacecesta1',
+    sprite: 'sustent_alface',
+    type: 'alface',
+    initialTop: '26%',
+    initialLeft: '19%',
+    width: '7%',
+    sinkTop: '40%'
+  },
+  {
+    id: 'C_alfacecesta2',
+    sprite: 'sustent_alface',
+    type: 'alface',
+    initialTop: '28%',
+    initialLeft: '18%',
+    width: '6%',
+    sinkTop: '40%'
+  }
+]
+
 export const pipesData = [
   {
     id: 1,

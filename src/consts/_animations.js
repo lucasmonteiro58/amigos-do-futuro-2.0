@@ -28,6 +28,8 @@ import rocketJson from '@/assets/animations/rocket/sprite.json'
 /* mei */
 import pipesImg from '@/assets/animations/pipes/sprite.png'
 import pipesJson from '@/assets/animations/pipes/sprite.json'
+import faucetImg from '@/assets/animations/faucet/sprite.png'
+import faucetJson from '@/assets/animations/faucet/sprite.json'
 
 const imageRobotBlue = new Image()
 const imageRobotOrange = new Image()
@@ -40,6 +42,7 @@ const imageRadioTower = new Image()
 const imageDrinkingFountain = new Image()
 const imageRocket = new Image()
 const imagePipes = new Image()
+const imageFaucet = new Image()
 
 imageRobotBlue.src = robotBlueImg
 imageRobotOrange.src = robotOrangeImg
@@ -52,6 +55,7 @@ imageRadioTower.src = radioTowerImg
 imageDrinkingFountain.src = drinkingFountainImg
 imageRocket.src = rocketImg
 imagePipes.src = pipesImg
+imageFaucet.src = faucetImg
 
 const robotBlue = {
   sprite: imageRobotBlue,
@@ -102,6 +106,11 @@ const pipes = {
   json: pipesJson
 }
 
+const faucet = {
+  sprite: imageFaucet,
+  json: faucetJson
+}
+
 export {
   cursorDrag,
   robotBlue,
@@ -113,5 +122,6 @@ export {
   radioTower,
   drinkingFountain,
   rocket,
-  pipes
+  pipes,
+  faucet
 }
