@@ -1,13 +1,16 @@
 <script setup>
-import { ref, computed } from 'vue'
+import { ref } from 'vue'
 import { useEffectsStore } from '@/stores/effects'
 import { useRouter } from 'vue-router'
+import { pipes as pipesAnimation } from '@/consts/_animations'
 
 const effectsStore = useEffectsStore()
 const router = useRouter()
 
 const isCompleted = ref(false)
 const showPipes = ref(true)
+const showAnimation = ref(false)
+const refPipesAnimation = ref(null)
 
 const pipes = ref([
   {
@@ -105,7 +108,7 @@ const pipes = ref([
 const handlePipeClick = (index) => {
   if (isCompleted.value) return
 
-  effectsStore.playAudio('feedback_sustentabilidade_Canos')
+  effectsStore.playAudio('feedback_sustentabilidade_canos')
 
   const pipe = pipes.value[index]
   pipe.rotation = (pipe.rotation + 90) % 360
@@ -114,26 +117,36 @@ const handlePipeClick = (index) => {
 }
 
 const checkCompletion = () => {
+  const correctRotations = {
+    1: 0,
+    2: 0,
+    3: 180,
+    4: 180,
+    5: 0,
+    6: 0,
+    7: 180,
+    8: 0,
+    9: 180,
+    10: 0
+  }
+
   const allCorrect = pipes.value.every((pipe) => {
-    const r = pipe.rotation
-    if (pipe.id === 1 || pipe.id === 8) {
-      return r === 90
-    }
-    if ([3, 4, 7, 9].includes(pipe.id)) {
-      return r === 90 || r === 270
-    }
-    if ([2, 5, 6, 10].includes(pipe.id)) {
-      return r === 90
-    }
-    return false
+    return pipe.rotation === correctRotations[pipe.id]
   })
 
   if (allCorrect) {
     isCompleted.value = true
     showPipes.value = false
-
-    setTimeout(() => {}, 500)
+    showAnimation.value = true
+    refPipesAnimation.value.play()
   }
+}
+
+const handleAnimationOver = () => {
+  router.push({
+    name: 'congratulation',
+    params: { challenge: 'mei', level: 2 }
+  })
 }
 </script>
 
@@ -143,7 +156,6 @@ const checkCompletion = () => {
   >
     <BaseImg img="sustent_torneira" class="absolute" style="top: 22.5%; left: 45%; width: 8.6%" />
     <BaseImg img="sustent_pia" class="absolute" style="top: 45.76%; left: 30%; width: 34%" />
-
     <div v-if="showPipes">
       <BaseImg
         v-for="(pipe, index) in pipes"
@@ -160,14 +172,20 @@ const checkCompletion = () => {
       />
     </div>
 
-    <div
-      v-if="!isCompleted"
-      class="absolute top-0 left-0 w-full bg-black opacity-60 pointer-events-none"
-      style="height: 48.5%"
-    ></div>
+    <BaseAnimation
+      v-show="showAnimation"
+      ref="refPipesAnimation"
+      :spritesheet="pipesAnimation.sprite"
+      :json="pipesAnimation.json"
+      :fps="8"
+      :isLoop="false"
+      width="824px"
+      class="absolute origin-top-left"
+      style="bottom: -28.9%; right: 2.25%"
+      @animationOver="handleAnimationOver"
+    />
 
     <SpeechBubble
-      v-if="!isCompleted"
       title="XIII...SEM ÁGUA!"
       description="Essa casa não tem saneamento básico. Ligue os canos para chegar água na torneira!"
       audio="mei_help2"
