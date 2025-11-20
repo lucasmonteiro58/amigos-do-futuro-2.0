@@ -8,12 +8,66 @@ const harvestedCount = ref(0)
 
 // State for each hole: 0 = empty, 1 = seedling, 2 = grown, 3 = harvested
 const holes = ref([
-  { id: 1, type: 'cenoura', state: 0, top: '71%', left: '21%' },
-  { id: 2, type: 'cenoura', state: 0, top: '77%', left: '28%' },
-  { id: 3, type: 'tomate', state: 0, top: '71%', left: '39%' },
-  { id: 4, type: 'tomate', state: 0, top: '77%', left: '48%' },
-  { id: 5, type: 'alface', state: 0, top: '71%', left: '60%' },
-  { id: 6, type: 'alface', state: 0, top: '77%', left: '68%' }
+  {
+    id: 1,
+    type: 'cenoura',
+    state: 0,
+    positions: {
+      0: { top: '71%', left: '21%' },
+      1: { top: '66%', left: '21%' },
+      2: { top: '60%', left: '21%' }
+    }
+  },
+  {
+    id: 2,
+    type: 'cenoura',
+    state: 0,
+    positions: {
+      0: { top: '77%', left: '28%' },
+      1: { top: '71%', left: '28%' },
+      2: { top: '66%', left: '28%' }
+    }
+  },
+  {
+    id: 3,
+    type: 'tomate',
+    state: 0,
+    positions: {
+      0: { top: '71%', left: '39%' },
+      1: { top: '61%', left: '39%' },
+      2: { top: '54%', left: '39%' }
+    }
+  },
+  {
+    id: 4,
+    type: 'tomate',
+    state: 0,
+    positions: {
+      0: { top: '77%', left: '48%' },
+      1: { top: '68%', left: '48%' },
+      2: { top: '62%', left: '48%' }
+    }
+  },
+  {
+    id: 5,
+    type: 'alface',
+    state: 0,
+    positions: {
+      0: { top: '71%', left: '60%' },
+      1: { top: '67%', left: '60%' },
+      2: { top: '64%', left: '60%' }
+    }
+  },
+  {
+    id: 6,
+    type: 'alface',
+    state: 0,
+    positions: {
+      0: { top: '77%', left: '68%' },
+      1: { top: '73%', left: '68%' },
+      2: { top: '70%', left: '68%' }
+    }
+  }
 ])
 
 // Basket items visibility
@@ -91,14 +145,17 @@ const getCursor = (hole) => {
       v-for="(hole, index) in holes"
       :key="hole.id"
       :img="getSprite(hole)"
+      width="8.5%"
       class="absolute"
       :class="[hole.state === 3 ? 'hidden' : '', getCursor(hole)]"
-      :style="{ top: hole.top, left: hole.left }"
+      :style="{
+        top: hole.positions[hole.state]?.top || '0',
+        left: hole.positions[hole.state]?.left || '0'
+      }"
       @click="handleHoleClick(index)"
     />
 
     <!-- Basket -->
-    <BaseImg img="sustent_cestavazia" class="absolute" style="bottom: 10%; right: 2%" />
 
     <!-- Harvested Items in Basket -->
     <BaseImg
@@ -139,6 +196,7 @@ const getCursor = (hole) => {
       class="absolute"
       style="bottom: 18%; right: 3%"
     />
+    <BaseImg img="sustent_cestavazia" class="absolute" style="bottom: 10%; right: 2%" />
 
     <!-- Intro Bubble -->
     <SpeechBubble
