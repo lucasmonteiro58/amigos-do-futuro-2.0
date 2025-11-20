@@ -5,8 +5,7 @@ const effectsStore = useEffectsStore()
 
 const isCompleted = ref(false)
 const harvestedCount = ref(0)
-
-// State for each hole: 0 = empty, 1 = seedling, 2 = grown, 3 = harvested
+const router = useRouter()
 const holes = ref([
   {
     id: 1,
@@ -114,10 +113,11 @@ const checkCompletion = () => {
   if (harvestedCount.value === 6) {
     isCompleted.value = true
     setTimeout(() => {
-      effectsStore.playAudio('feedback_parabens2') // Assuming this maps to parabens2.wav or similar
-      // Navigate to next level or show modal
-      // For now, just show completion state
-    }, 500)
+      router.push({
+        name: 'congratulation',
+        params: { challenge: 'mei', level: 1 }
+      })
+    }, 1500)
   }
 }
 
@@ -196,6 +196,7 @@ const getCursor = (hole) => {
       class="absolute"
       style="bottom: 18%; right: 3%"
     />
+
     <BaseImg img="sustent_cestavazia" class="absolute" style="bottom: 10%; right: 2%" />
 
     <!-- Intro Bubble -->
