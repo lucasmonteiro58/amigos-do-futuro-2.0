@@ -106,6 +106,7 @@ A numeração dos desafios muda do legado (0-indexed) para o Vue (1-indexed, esc
 | `eco_1`     | `EcoTwoView.vue`    |
 | `eco_2`     | `EcoThreeView.vue`  |
 | `laz_1`     | `LazTwoView.vue`    |
+| `laz_2`     | `LazThreeView.vue`  |
 | `ino_0`     | `InoOneView.vue`    |
 | ...         | ...                 |
 
