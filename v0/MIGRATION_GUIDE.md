@@ -905,6 +905,10 @@ O projeto utiliza Tailwind CSS com configurações personalizadas.
 
 ### Fontes
 
+> [!IMPORTANT]
+> **Não tente encontrar uma fonte "equivalente" no Tailwind padrão.**
+> O projeto utiliza fontes específicas que devem ser respeitadas. Use **apenas** as classes listadas abaixo. Se o design legado usar uma fonte diferente, consulte o time de design ou use a mais próxima dentre as opções oficiais (geralmente `font-exo2` para textos gerais).
+
 | Nome | Classe Tailwind | Uso Comum |
 |------|-----------------|-----------|
 | **Norwester** | `font-norwester` | Títulos, Números grandes |
@@ -920,6 +924,10 @@ O projeto utiliza Tailwind CSS com configurações personalizadas.
 
 Uma das partes mais críticas da migração é converter o posicionamento absoluto do CSS legado (baseado em porcentagem) para o novo padrão do Vue (baseado em pixels fixos em container 1920x1080).
 
+### ⚠️ Regra de Ouro: Conversão Exata
+
+Não tente "adivinhar" a posição olhando para a tela. **Você deve calcular a posição exata** baseada no CSS original. O posicionamento "no olho" quase sempre resulta em elementos desalinhados em diferentes resoluções.
+
 ### Padrão de Conversão
 
 O legado (`v0`) utilizava um container com aspecto 16:9 e posicionamento em `%`.
@@ -927,14 +935,39 @@ O novo projeto utiliza um container fixo de referência **1920px x 1080px**.
 
 **Fórmula de Conversão:**
 
-| Propriedade | Legado (%) | Novo (px) | Fórmula |
-|-------------|------------|-----------|---------|
+| Propriedade | Legado (%) | Novo (px) | Fórmula Matemática |
+|-------------|------------|-----------|--------------------|
 | **Left** | `left: 50%` | `left-[960px]` | `Valor(%) * 19.2` |
 | **Top** | `top: 20%` | `top-[216px]` | `Valor(%) * 10.8` |
 | **Bottom** | `bottom: 10%` | `bottom-[108px]` | `Valor(%) * 10.8` |
 | **Width** | `width: 10%` | `w-[192px]` | `Valor(%) * 19.2` |
+| **Height** | `height: 10%` | `h-[108px]` | `Valor(%) * 10.8` |
 
-> **Nota:** Pequenos ajustes manuais podem ser necessários para alinhar perfeitamente, pois o ponto de ancoragem ou o recorte do sprite pode variar levemente.
+> **Dica Prática:** Use a calculadora!
+> - Para **Horizontal** (Left, Right, Width): Multiplique a porcentagem por **19.2**
+> - Para **Vertical** (Top, Bottom, Height): Multiplique a porcentagem por **10.8**
+
+### Exemplo Passo a Passo
+
+1. **Identifique o CSS original:**
+   ```css
+   /* v0/style.css */
+   #personagem {
+       left: 25%;
+       top: 40%;
+   }
+   ```
+
+2. **Aplique a fórmula:**
+   - **Left:** 25 * 19.2 = **480**
+   - **Top:** 40 * 10.8 = **432**
+
+3. **Escreva o código Vue:**
+   ```vue
+   <BaseImg class="absolute left-[480px] top-[432px]" ... />
+   ```
+
+> **Nota:** Pequenos ajustes manuais podem ser necessários para alinhar perfeitamente (±5px), pois o ponto de ancoragem ou o recorte do sprite pode variar levemente em relação à imagem original. Mas **sempre comece pelo valor calculado**.
 
 ### Exemplo Comparativo (Governo - Campinho)
 
