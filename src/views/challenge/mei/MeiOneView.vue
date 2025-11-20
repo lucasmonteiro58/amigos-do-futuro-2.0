@@ -203,7 +203,7 @@ const getCursor = (hole) => {
     <!-- Intro Bubble -->
     <SpeechBubble
       title="VAMOS PLANTAR!"
-      description="Podemos deixar o lugar melhor ainda. Que tal fazer uma horta comunitária?"
+      description="Podemos deixar o terreno melhor ainda. Que tal fazer uma horta comunitária?"
       audio="mei_help1"
       :time="6000"
     />
