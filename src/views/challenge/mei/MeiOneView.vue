@@ -162,8 +162,7 @@ const getCursor = (hole) => {
     <BaseImg
       v-if="basketItems.cenoura1"
       img="sustent_cenoura"
-      class="absolute"
-      style="bottom: 21%; right: 12%; width: 11% !important"
+      class="absolute bottom-[21%] right-[12%] w-[11%]"
     />
     <BaseImg
       v-if="basketItems.cenoura2"

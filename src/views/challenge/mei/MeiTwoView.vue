@@ -60,17 +60,15 @@ const checkPipesCompletion = () => {
       if (refPipesAnimation.value) {
         refPipesAnimation.value.play()
       }
-    }, 100)
+    }, 50)
   }
 }
 
 const handlePipesAnimationOver = () => {
   currentPhase.value = 'vegetables'
-  showPipesAnimation.value = false
   showVegetables.value = true
 }
 
-// Vegetables phase
 const handleVegetableDrop = ({ dataTransfer }) => {
   const vegetable = vegetables.value.find((v) => v.id === dataTransfer)
 
@@ -101,18 +99,14 @@ const startFaucetAnimation = () => {
     if (refFaucetAnimation.value) {
       refFaucetAnimation.value.play()
     }
-  }, 100)
+  }, 50)
 }
 
 const handleFaucetAnimationOver = () => {
-  currentPhase.value = 'complete'
-
-  setTimeout(() => {
-    router.push({
-      name: 'congratulation',
-      params: { challenge: 'mei', level: 2 }
-    })
-  }, 500)
+  router.push({
+    name: 'congratulation',
+    params: { challenge: 'mei', level: 2 }
+  })
 }
 </script>
 
@@ -121,9 +115,8 @@ const handleFaucetAnimationOver = () => {
     class="flex flex-col items-center justify-center spritesheet bg-cozinha relative w-full h-full"
   >
     <BaseImg img="sustent_torneira" class="absolute" style="top: 22.5%; left: 45%; width: 8.6%" />
-    <BaseImg img="sustent_pia" class="absolute" style="top: 45.76%; left: 30%; width: 34%" />
+    <BaseImg img="sustent_pia" class="absolute z-[30]" style="top: 45.76%; left: 30%; width: 34%" />
 
-    <!-- Pipes Phase -->
     <div v-if="showPipes">
       <BaseImg
         v-for="(pipe, index) in pipes"
@@ -139,32 +132,27 @@ const handleFaucetAnimationOver = () => {
         @click="handlePipeClick(index)"
       />
     </div>
-
-    <!-- Pipes Animation -->
     <BaseAnimation
-      v-if="showPipesAnimation"
+      v-show="showPipesAnimation"
       ref="refPipesAnimation"
       :spritesheet="pipesAnimation.sprite"
       :json="pipesAnimation.json"
       :fps="8"
       :isLoop="false"
+      :autoplay="false"
       width="824px"
       class="absolute origin-top-left"
-      style="bottom: -28.9%; right: 2.25%"
+      :class="showFaucetAnimation ? '!top-[452px] !right-[2.25%]' : '!top-[312px] !right-[2.25%]'"
       @animationOver="handlePipesAnimationOver"
     />
 
-    <!-- Vegetables Phase -->
-    <div v-if="showVegetables">
-      <!-- Basket -->
-      <!-- <BaseImg img="sustent_cestavazia" class="absolute" style="top: 24%; left: 12%; width: 15%" /> -->
+    <div v-show="showVegetables">
       <BaseImg
         img="sustent_cestavazia3"
         class="absolute z-30"
         style="top: 33.5%; left: 12%; width: 15%"
       />
 
-      <!-- Drop Zone -->
       <DropElement
         :expected="vegetables.map((v) => v.id)"
         @dropped="handleVegetableDrop"
@@ -172,41 +160,52 @@ const handleFaucetAnimationOver = () => {
         style="top: 35%; left: 34%; width: 28%; height: 20%; z-index: 10"
       />
 
+      <BaseImg
+        v-for="vegetable in vegetables"
+        v-show="vegetable.inSink"
+        :key="'dropped-' + vegetable.id"
+        :img="vegetable.sprite"
+        class="absolute"
+        :style="{
+          top: vegetable.top,
+          left: vegetable.left,
+          width: vegetable.width + ' !important',
+          zIndex: 1
+        }"
+      />
+
       <DragElement
         v-for="vegetable in vegetables"
+        v-show="!vegetable.inSink"
         :key="vegetable.id"
         :dataTransfer="vegetable.id"
         :style="{
           top: vegetable.top,
           left: vegetable.left,
           width: vegetable.width + ' !important',
-          zIndex: vegetable.inSink ? 1 : 20
+          zIndex: 20
         }"
-        :class="vegetable.inSink ? 'pointer-events-none' : ''"
       >
         <BaseImg :img="vegetable.sprite" />
       </DragElement>
     </div>
 
-    <!-- Faucet Animation -->
     <BaseAnimation
-      v-if="showFaucetAnimation"
+      v-show="showFaucetAnimation"
       ref="refFaucetAnimation"
       :spritesheet="faucetAnimation.sprite"
       :json="faucetAnimation.json"
       :fps="8"
       :autoplay="false"
       :isLoop="false"
-      width="28%"
       class="absolute origin-top-left"
-      style="bottom: 162px; left: -18px"
+      :class="showFaucetAnimation ? '!top-[-375px] left-[-18px]' : '!top-[-160px] left-[-18px]'"
       @animationOver="handleFaucetAnimationOver"
     />
 
-    <!-- Overlay for Kitchen (Darken top part) -->
     <div
       v-if="showOverlay"
-      class="absolute top-0 left-0 w-full bg-black opacity-60 pointer-events-none"
+      class="absolute top-0 left-0 w-full bg-black opacity-60 pointer-events-none z-[40]"
       style="height: 48.5%"
     ></div>
 
