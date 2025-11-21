@@ -12,6 +12,8 @@ const hoveredTrash = ref(null)
 const dropTimers = ref(new Map())
 const droppedItems = ref([])
 
+const isDragging = ref(false)
+
 function isDropped(itemName) {
   return droppedItems.value.includes(itemName)
 }
@@ -22,6 +24,11 @@ const visibleItems = computed(() => {
 
 function onDragStart() {
   showHint.value = false
+  isDragging.value = true
+}
+
+function onDragEnd() {
+  isDragging.value = false
 }
 
 function onDragEnterForBin(eventData, bin) {
@@ -47,7 +54,6 @@ function onDragEnterForBin(eventData, bin) {
 
 function onDragLeave(eventData) {
   const dataTransfer = eventData?.dataTransfer || eventData
-
   if (!dataTransfer) return
 
   const trashBin = trashBins.find((bin) => bin.accepts.includes(dataTransfer))
@@ -65,6 +71,7 @@ function onDragLeave(eventData) {
 }
 
 function handleDrop(dataTransfer) {
+  isDragging.value = false
   droppedItems.value.push(dataTransfer)
   droppedCount.value++
   hoveredTrash.value = null
@@ -79,12 +86,13 @@ function handleDrop(dataTransfer) {
         name: 'congratulation',
         params: { challenge: 'mei', level: 1 }
       })
-    }, 2000)
+    }, 1000)
   }
 }
 
 function onDrop(el) {
   const { dataTransfer } = el
+  isDragging.value = false
 
   if (dropTimers.value.has(dataTransfer)) {
     clearTimeout(dropTimers.value.get(dataTransfer))
@@ -128,21 +136,12 @@ function onDrop(el) {
       :dataTransfer="item.name"
       :style="{ top: item.top, left: item.left }"
       @start-drag="onDragStart"
+      @end-drag="onDragEnd"
     >
-      <Popper
-        :placement="item.name.includes('1') ? 'top-start' : 'top-end'"
-        offsetDistance="40"
-        locked
-        hover
-        arrow
-      >
-        <div
-          class="drop-shadow-md spritesheet"
-          :class="item.sprite"
-          @mouseenter="effectsStore.playHoverButton()"
-        ></div>
+      <Popper placement="top-start" offsetDistance="20" locked hover :arrow="!isDragging">
+        <div class="drop-shadow-md spritesheet z-[10]" :class="item.sprite"></div>
         <template #content>
-          <div class="w-[400px] rounded-md">
+          <div class="w-[400px] rounded-md z-[40] relative" v-show="!isDragging">
             <div class="px-4 py-2 pb-2 text-3xl font-bold bg-gray-200 font-exo2">
               {{ item.tooltip.title }}
             </div>

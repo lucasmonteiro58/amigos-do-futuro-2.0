@@ -287,7 +287,7 @@ export const trashBins = [
     openSprite: 'sustent_lixeirametal_aberta',
     top: '864px',
     left: '230px',
-    openTop: '760px',
+    openTop: '750px',
     accepts: ['metal1', 'metal2']
   },
   {
@@ -296,7 +296,7 @@ export const trashBins = [
     openSprite: 'sustent_lixeirapapel_aberta',
     top: '864px',
     left: '518px',
-    openTop: '760px',
+    openTop: '750px',
     accepts: ['papel1', 'papel2']
   },
   {
@@ -305,7 +305,7 @@ export const trashBins = [
     openSprite: 'sustent_lixeiraplastico_aberta',
     top: '864px',
     left: '806px',
-    openTop: '760px',
+    openTop: '750px',
     accepts: ['plastico1', 'plastico2']
   },
   {
@@ -314,7 +314,7 @@ export const trashBins = [
     openSprite: 'sustent_lixeiravidro_aberta',
     top: '864px',
     left: '1094px',
-    openTop: '760px',
+    openTop: '750px',
     accepts: ['vidro1', 'vidro2']
   },
   {
@@ -323,7 +323,7 @@ export const trashBins = [
     openSprite: 'sustent_lixeiraorganico_aberta',
     top: '864px',
     left: '1382px',
-    openTop: '760px',
+    openTop: '750px',
     accepts: ['organico1', 'organico2']
   }
 ]
