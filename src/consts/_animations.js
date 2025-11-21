@@ -31,6 +31,18 @@ import pipesJson from '@/assets/animations/pipes/sprite.json'
 import faucetImg from '@/assets/animations/faucet/sprite.png'
 import faucetJson from '@/assets/animations/faucet/sprite.json'
 
+/* sau */
+import seesawImg from '@/assets/animations/seesaw/sprite.png'
+import seesawJson from '@/assets/animations/seesaw/sprite.json'
+import tobogganImg from '@/assets/animations/toboggan/sprite.png'
+import tobogganJson from '@/assets/animations/toboggan/sprite.json'
+import smartphoneImg from '@/assets/animations/smartphone/sprite.png'
+import smartphoneJson from '@/assets/animations/smartphone/sprite.json'
+import ballImg from '@/assets/animations/ball/sprite.png'
+import ballJson from '@/assets/animations/ball/sprite.json'
+import rockingImg from '@/assets/animations/ rocking/sprite.png'
+import rockingJson from '@/assets/animations/ rocking/sprite.json'
+
 const imageRobotBlue = new Image()
 const imageRobotOrange = new Image()
 const imageRobotFull = new Image()
@@ -43,6 +55,11 @@ const imageDrinkingFountain = new Image()
 const imageRocket = new Image()
 const imagePipes = new Image()
 const imageFaucet = new Image()
+const imageSeesaw = new Image()
+const imageToboggan = new Image()
+const imageSmartphone = new Image()
+const imageBall = new Image()
+const imageRocking = new Image()
 
 imageRobotBlue.src = robotBlueImg
 imageRobotOrange.src = robotOrangeImg
@@ -56,6 +73,11 @@ imageDrinkingFountain.src = drinkingFountainImg
 imageRocket.src = rocketImg
 imagePipes.src = pipesImg
 imageFaucet.src = faucetImg
+imageSeesaw.src = seesawImg
+imageToboggan.src = tobogganImg
+imageSmartphone.src = smartphoneImg
+imageBall.src = ballImg
+imageRocking.src = rockingImg
 
 const robotBlue = {
   sprite: imageRobotBlue,
@@ -111,6 +133,31 @@ const faucet = {
   json: faucetJson
 }
 
+const seesaw = {
+  sprite: imageSeesaw,
+  json: seesawJson
+}
+
+const toboggan = {
+  sprite: imageToboggan,
+  json: tobogganJson
+}
+
+const smartphone = {
+  sprite: imageSmartphone,
+  json: smartphoneJson
+}
+
+const ball = {
+  sprite: imageBall,
+  json: ballJson
+}
+
+const rocking = {
+  sprite: imageRocking,
+  json: rockingJson
+}
+
 export {
   cursorDrag,
   robotBlue,
@@ -123,5 +170,10 @@ export {
   drinkingFountain,
   rocket,
   pipes,
-  faucet
+  faucet,
+  seesaw,
+  toboggan,
+  smartphone,
+  ball,
+  rocking
 }
