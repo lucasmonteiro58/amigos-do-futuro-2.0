@@ -138,6 +138,11 @@ const router = createRouter({
           component: () => import('../views/challenge/mei/MeiTwoView.vue')
         },
         {
+          path: 'mei/3',
+          name: 'mei-3',
+          component: () => import('../views/challenge/mei/MeiThreeView.vue')
+        },
+        {
           path: 'sau/1',
           name: 'sau-1',
           component: () => import('../views/challenge/sau/SauOneView.vue')

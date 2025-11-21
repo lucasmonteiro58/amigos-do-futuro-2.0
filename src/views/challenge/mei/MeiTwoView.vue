@@ -1,220 +1,229 @@
 <script setup>
-import { ref } from 'vue'
 import { useEffectsStore } from '@/stores/effects'
-import { useRouter } from 'vue-router'
-import { pipes as pipesAnimation, faucet as faucetAnimation } from '@/consts/_animations'
-import { pipesData, correctRotations, vegetablesData } from '@/views/challenge/mei/consts'
 
 const effectsStore = useEffectsStore()
+
+const isCompleted = ref(false)
+const harvestedCount = ref(0)
 const router = useRouter()
+const holes = ref([
+  {
+    id: 1,
+    type: 'cenoura',
+    state: 0,
+    positions: {
+      0: { top: '71%', left: '21%' },
+      1: { top: '66%', left: '21%' },
+      2: { top: '60%', left: '21%' }
+    }
+  },
+  {
+    id: 2,
+    type: 'cenoura',
+    state: 0,
+    positions: {
+      0: { top: '77%', left: '28%' },
+      1: { top: '71%', left: '28%' },
+      2: { top: '66%', left: '28%' }
+    }
+  },
+  {
+    id: 3,
+    type: 'tomate',
+    state: 0,
+    positions: {
+      0: { top: '71%', left: '39%' },
+      1: { top: '61%', left: '39%' },
+      2: { top: '54%', left: '39%' }
+    }
+  },
+  {
+    id: 4,
+    type: 'tomate',
+    state: 0,
+    positions: {
+      0: { top: '77%', left: '48%' },
+      1: { top: '68%', left: '48%' },
+      2: { top: '62%', left: '48%' }
+    }
+  },
+  {
+    id: 5,
+    type: 'alface',
+    state: 0,
+    positions: {
+      0: { top: '71%', left: '60%' },
+      1: { top: '67%', left: '60%' },
+      2: { top: '64%', left: '60%' }
+    }
+  },
+  {
+    id: 6,
+    type: 'alface',
+    state: 0,
+    positions: {
+      0: { top: '77%', left: '68%' },
+      1: { top: '73%', left: '68%' },
+      2: { top: '70%', left: '68%' }
+    }
+  }
+])
 
-// Phase control
-const currentPhase = ref('pipes') // 'pipes', 'vegetables', 'faucet', 'complete'
-const showPipes = ref(true)
-const showPipesAnimation = ref(false)
-const showVegetables = ref(false)
-const showFaucetAnimation = ref(false)
-const showOverlay = ref(true)
+// Basket items visibility
+const basketItems = ref({
+  cenoura1: false,
+  cenoura2: false,
+  tomate1: false,
+  tomate2: false,
+  alface1: false,
+  alface2: false
+})
 
-const refPipesAnimation = ref(null)
-const refFaucetAnimation = ref(null)
+const handleHoleClick = (index) => {
+  const hole = holes.value[index]
 
-// Pipes data
-const pipes = ref(JSON.parse(JSON.stringify(pipesData)))
-
-// Vegetables data
-const vegetables = ref(
-  vegetablesData.map((v) => ({
-    ...v,
-    top: v.initialTop,
-    left: v.initialLeft,
-    inSink: false
-  }))
-)
-const vegetablesInSink = ref(0)
-
-// Pipes phase
-const handlePipeClick = (index) => {
-  if (currentPhase.value !== 'pipes') return
-
-  effectsStore.playAudio('feedback_sustentabilidade_canos')
-
-  const pipe = pipes.value[index]
-  pipe.rotation = (pipe.rotation + 90) % 360
-
-  checkPipesCompletion()
+  if (hole.state < 2) {
+    effectsStore.playAudio('feedback_click_button')
+    hole.state++
+  } else if (hole.state === 2) {
+    // Harvest
+    effectsStore.playAudio('feedback_click_button')
+    hole.state = 3 // Harvested (hidden from hole)
+    addToBasket(hole.type)
+    harvestedCount.value++
+    checkCompletion()
+  }
 }
 
-const checkPipesCompletion = () => {
-  const allCorrect = pipes.value.every((pipe) => {
-    return pipe.rotation === correctRotations[pipe.id]
-  })
+const addToBasket = (type) => {
+  // Find first available slot for this type
+  if (type === 'cenoura') {
+    if (!basketItems.value.cenoura1) basketItems.value.cenoura1 = true
+    else basketItems.value.cenoura2 = true
+  } else if (type === 'tomate') {
+    if (!basketItems.value.tomate1) basketItems.value.tomate1 = true
+    else basketItems.value.tomate2 = true
+  } else if (type === 'alface') {
+    if (!basketItems.value.alface1) basketItems.value.alface1 = true
+    else basketItems.value.alface2 = true
+  }
+}
 
-  if (allCorrect) {
-    currentPhase.value = 'pipesAnimation'
-    showPipes.value = false
-    showPipesAnimation.value = true
-    showOverlay.value = false
-
+const checkCompletion = () => {
+  if (harvestedCount.value === 6) {
+    isCompleted.value = true
     setTimeout(() => {
-      if (refPipesAnimation.value) {
-        refPipesAnimation.value.play()
-      }
-    }, 50)
+      router.push({
+        name: 'congratulation',
+        params: { challenge: 'mei', level: 1 }
+      })
+    }, 1500)
   }
 }
 
-const handlePipesAnimationOver = () => {
-  currentPhase.value = 'vegetables'
-  showVegetables.value = true
+const getSprite = (hole) => {
+  if (hole.state === 0) return 'sustent_buraco'
+  if (hole.state === 1) return `sustent_${hole.type}1`
+  if (hole.state === 2) return `sustent_${hole.type}2`
+  return ''
 }
 
-const handleVegetableDrop = ({ dataTransfer }) => {
-  const vegetable = vegetables.value.find((v) => v.id === dataTransfer)
-
-  if (vegetable && !vegetable.inSink) {
-    effectsStore.playAudio('feedback_botao_01')
-    vegetable.inSink = true
-    vegetable.top = vegetable.sinkTop
-    if (vegetable.sinkLeft) {
-      vegetable.left = vegetable.sinkLeft
-    }
-    vegetablesInSink.value++
-
-    if (vegetablesInSink.value === 6) {
-      setTimeout(() => {
-        startFaucetAnimation()
-      }, 300)
-    }
-  }
-}
-
-const startFaucetAnimation = () => {
-  currentPhase.value = 'faucet'
-  showFaucetAnimation.value = true
-
-  effectsStore.playAudio('feedback_sustentabilidade_aguapia')
-
-  setTimeout(() => {
-    if (refFaucetAnimation.value) {
-      refFaucetAnimation.value.play()
-    }
-  }, 50)
-}
-
-const handleFaucetAnimationOver = () => {
-  router.push({
-    name: 'congratulation',
-    params: { challenge: 'mei', level: 2 }
-  })
+const getCursor = (hole) => {
+  if (hole.state === 0) return 'cursor-seed'
+  if (hole.state === 1) return 'cursor-water'
+  if (hole.state === 2) return 'cursor-harvest'
+  return ''
 }
 </script>
 
 <template>
   <main
-    class="flex flex-col items-center justify-center spritesheet bg-cozinha relative w-full h-full"
+    class="flex flex-col items-center justify-center spritesheet bg-horta relative w-full h-full"
   >
-    <BaseImg img="sustent_torneira" class="absolute" style="top: 22.5%; left: 45%; width: 8.6%" />
-    <BaseImg img="sustent_pia" class="absolute z-[30]" style="top: 45.76%; left: 30%; width: 34%" />
-
-    <div v-if="showPipes">
-      <BaseImg
-        v-for="(pipe, index) in pipes"
-        :key="pipe.id"
-        :img="pipe.sprite"
-        class="absolute cursor-pointer"
-        :style="{
-          top: pipe.top,
-          left: pipe.left,
-          width: pipe.width + ' !important',
-          transform: `rotate(${pipe.rotation}deg)`
-        }"
-        @click="handlePipeClick(index)"
-      />
-    </div>
-    <BaseAnimation
-      v-show="showPipesAnimation"
-      ref="refPipesAnimation"
-      :spritesheet="pipesAnimation.sprite"
-      :json="pipesAnimation.json"
-      :fps="8"
-      :isLoop="false"
-      :autoplay="false"
-      width="824px"
-      class="absolute origin-top-left"
-      :class="showFaucetAnimation ? '!top-[452px] !right-[2.25%]' : '!top-[312px] !right-[2.25%]'"
-      @animationOver="handlePipesAnimationOver"
+    <!-- Holes and Plants -->
+    <BaseImg
+      v-for="(hole, index) in holes"
+      :key="hole.id"
+      :img="getSprite(hole)"
+      width="8.5%"
+      class="absolute"
+      :class="[hole.state === 3 ? 'hidden' : '', getCursor(hole)]"
+      :style="{
+        top: hole.positions[hole.state]?.top || '0',
+        left: hole.positions[hole.state]?.left || '0',
+        width: '8.5% !important'
+      }"
+      @click="handleHoleClick(index)"
     />
 
-    <div v-show="showVegetables">
-      <BaseImg
-        img="sustent_cestavazia3"
-        class="absolute z-30"
-        style="top: 33.5%; left: 12%; width: 15%"
-      />
+    <!-- Basket -->
 
-      <DropElement
-        :expected="vegetables.map((v) => v.id)"
-        @dropped="handleVegetableDrop"
-        class="absolute"
-        style="top: 35%; left: 34%; width: 28%; height: 20%; z-index: 10"
-      />
-
-      <BaseImg
-        v-for="vegetable in vegetables"
-        v-show="vegetable.inSink"
-        :key="'dropped-' + vegetable.id"
-        :img="vegetable.sprite"
-        class="absolute"
-        :style="{
-          top: vegetable.top,
-          left: vegetable.left,
-          width: vegetable.width + ' !important',
-          zIndex: 1
-        }"
-      />
-
-      <DragElement
-        v-for="vegetable in vegetables"
-        v-show="!vegetable.inSink"
-        :key="vegetable.id"
-        :dataTransfer="vegetable.id"
-        :style="{
-          top: vegetable.top,
-          left: vegetable.left,
-          width: vegetable.width + ' !important',
-          zIndex: 20
-        }"
-      >
-        <BaseImg :img="vegetable.sprite" />
-      </DragElement>
-    </div>
-
-    <BaseAnimation
-      v-show="showFaucetAnimation"
-      ref="refFaucetAnimation"
-      :spritesheet="faucetAnimation.sprite"
-      :json="faucetAnimation.json"
-      :fps="8"
-      :autoplay="false"
-      :isLoop="false"
-      class="absolute origin-top-left"
-      :class="showFaucetAnimation ? '!top-[-375px] left-[-18px]' : '!top-[-160px] left-[-18px]'"
-      @animationOver="handleFaucetAnimationOver"
+    <!-- Harvested Items in Basket -->
+    <BaseImg
+      v-if="basketItems.cenoura1"
+      img="sustent_cenoura"
+      class="absolute bottom-[21%] right-[12%] w-[11%]"
+    />
+    <BaseImg
+      v-if="basketItems.cenoura2"
+      img="sustent_cenoura"
+      class="absolute"
+      style="bottom: 23%; right: 11%; width: 11% !important"
     />
 
-    <div
-      v-if="showOverlay"
-      class="absolute top-0 left-0 w-full bg-black opacity-60 pointer-events-none z-[40]"
-      style="height: 48.5%"
-    ></div>
+    <BaseImg
+      v-if="basketItems.tomate1"
+      img="sustent_tomate"
+      class="absolute"
+      style="bottom: 23%; right: 9%; width: 4% !important"
+    />
+    <BaseImg
+      v-if="basketItems.tomate2"
+      img="sustent_tomate"
+      class="absolute"
+      style="bottom: 22%; right: 8%; width: 3.5% !important"
+    />
 
+    <BaseImg
+      v-if="basketItems.alface1"
+      img="sustent_alface"
+      class="absolute"
+      style="bottom: 20%; right: 4%; width: 7% !important"
+    />
+    <BaseImg
+      v-if="basketItems.alface2"
+      img="sustent_alface"
+      class="absolute"
+      style="bottom: 18%; right: 3%; width: 6% !important"
+    />
+
+    <BaseImg img="sustent_cestavazia" class="absolute" style="bottom: 10%; right: 2%" />
+
+    <!-- Intro Bubble -->
     <SpeechBubble
-      title="XIII...SEM ÁGUA!"
-      description="Essa casa não tem <a>saneamento básico</a>. Ligue os canos para chegar água na torneira!"
-      tooltip="Sistema de canos por onde a água chega na nossa casa e por onde sai."
-      audio="mei_help2"
+      title="VAMOS PLANTAR!"
+      description="Podemos deixar o terreno melhor ainda. Que tal fazer uma <a>horta comunitária?</a>"
+      audio="mei_help1"
+      tooltip="Lugar onde todo mundo pode plantar e colher alimentos."
       :time="6000"
     />
   </main>
 </template>
+
+<style scoped>
+.cursor-seed {
+  cursor:
+    url('@/assets/images/sprites/meio/sustent_pointer_semente.png') 0 45,
+    auto;
+}
+.cursor-water {
+  cursor:
+    url('@/assets/images/sprites/meio/sustent_pointer_regador.png') 10 80,
+    auto;
+}
+.cursor-harvest {
+  cursor:
+    url('@/assets/images/sprites/meio/sustent_pointer_luva.png') 30 40,
+    auto;
+}
+</style>
