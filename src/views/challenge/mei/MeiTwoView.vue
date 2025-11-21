@@ -71,34 +71,16 @@ const handlePipesAnimationOver = () => {
 }
 
 // Vegetables phase
-const handleVegetableDragEnd = (index, event) => {
-  const vegetable = vegetables.value[index]
+const handleVegetableDrop = ({ dataTransfer }) => {
+  const vegetable = vegetables.value.find((v) => v.id === dataTransfer)
 
-  if (vegetable.inSink) return
-
-  // Check if dropped in sink area (approximate drop zone)
-  const dropZone = {
-    top: 35,
-    left: 34,
-    right: 62,
-    bottom: 55
-  }
-
-  const rect = event.target.getBoundingClientRect()
-  const parentRect = event.target.offsetParent.getBoundingClientRect()
-
-  const percentTop = ((rect.top - parentRect.top) / parentRect.height) * 100
-  const percentLeft = ((rect.left - parentRect.left) / parentRect.width) * 100
-
-  if (
-    percentTop >= dropZone.top &&
-    percentTop <= dropZone.bottom &&
-    percentLeft >= dropZone.left &&
-    percentLeft <= dropZone.right
-  ) {
+  if (vegetable && !vegetable.inSink) {
     effectsStore.playAudio('feedback_botao_01')
     vegetable.inSink = true
     vegetable.top = vegetable.sinkTop
+    if (vegetable.sinkLeft) {
+      vegetable.left = vegetable.sinkLeft
+    }
     vegetablesInSink.value++
 
     if (vegetablesInSink.value === 6) {
@@ -147,7 +129,7 @@ const handleFaucetAnimationOver = () => {
         v-for="(pipe, index) in pipes"
         :key="pipe.id"
         :img="pipe.sprite"
-        class="absolute cursor-pointer transition-transform duration-300"
+        class="absolute cursor-pointer"
         :style="{
           top: pipe.top,
           left: pipe.left,
@@ -160,7 +142,7 @@ const handleFaucetAnimationOver = () => {
 
     <!-- Pipes Animation -->
     <BaseAnimation
-      v-show="showAnimation"
+      v-if="showPipesAnimation"
       ref="refPipesAnimation"
       :spritesheet="pipesAnimation.sprite"
       :json="pipesAnimation.json"
@@ -175,25 +157,32 @@ const handleFaucetAnimationOver = () => {
     <!-- Vegetables Phase -->
     <div v-if="showVegetables">
       <!-- Basket -->
-      <BaseImg img="sustent_cestavazia" class="absolute" style="top: 24%; left: 12%; width: 15%" />
+      <!-- <BaseImg img="sustent_cestavazia" class="absolute" style="top: 24%; left: 12%; width: 15%" /> -->
       <BaseImg
         img="sustent_cestavazia3"
-        class="absolute"
+        class="absolute z-30"
         style="top: 33.5%; left: 12%; width: 15%"
       />
 
-      <!-- Draggable Vegetables -->
+      <!-- Drop Zone -->
+      <DropElement
+        :expected="vegetables.map((v) => v.id)"
+        @dropped="handleVegetableDrop"
+        class="absolute"
+        style="top: 35%; left: 34%; width: 28%; height: 20%; z-index: 10"
+      />
+
       <DragElement
-        v-for="(vegetable, index) in vegetables"
+        v-for="vegetable in vegetables"
         :key="vegetable.id"
         :dataTransfer="vegetable.id"
         :style="{
           top: vegetable.top,
           left: vegetable.left,
-          width: vegetable.width + ' !important'
+          width: vegetable.width + ' !important',
+          zIndex: vegetable.inSink ? 1 : 20
         }"
         :class="vegetable.inSink ? 'pointer-events-none' : ''"
-        @end-drag="(e) => handleVegetableDragEnd(index, e)"
       >
         <BaseImg :img="vegetable.sprite" />
       </DragElement>
@@ -210,7 +199,7 @@ const handleFaucetAnimationOver = () => {
       :isLoop="false"
       width="28%"
       class="absolute origin-top-left"
-      style="bottom: 27%; left: 46.65%; transform: scale(1.16)"
+      style="bottom: 162px; left: -18px"
       @animationOver="handleFaucetAnimationOver"
     />
 
@@ -222,7 +211,6 @@ const handleFaucetAnimationOver = () => {
     ></div>
 
     <SpeechBubble
-      v-if="currentPhase === 'pipes'"
       title="XIII...SEM ÁGUA!"
       description="Essa casa não tem <a>saneamento básico</a>. Ligue os canos para chegar água na torneira!"
       tooltip="Sistema de canos por onde a água chega na nossa casa e por onde sai."

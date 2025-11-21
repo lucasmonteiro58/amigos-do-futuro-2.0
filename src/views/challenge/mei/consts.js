@@ -6,7 +6,8 @@ export const vegetablesData = [
     initialTop: '23%',
     initialLeft: '8%',
     width: '11%',
-    sinkTop: '35%'
+    sinkTop: '35%',
+    sinkLeft: '27%'
   },
   {
     id: 'C_cenouracesta2',
@@ -15,7 +16,8 @@ export const vegetablesData = [
     initialTop: '22%',
     initialLeft: '9%',
     width: '11%',
-    sinkTop: '35%'
+    sinkTop: '35%',
+    sinkLeft: '35%'
   },
   {
     id: 'C_tomatecesta1',
@@ -24,7 +26,8 @@ export const vegetablesData = [
     initialTop: '28%',
     initialLeft: '17%',
     width: '4.3%',
-    sinkTop: '42%'
+    sinkTop: '42%',
+    sinkLeft: '37%'
   },
   {
     id: 'C_tomatecesta2',
@@ -33,7 +36,8 @@ export const vegetablesData = [
     initialTop: '30%',
     initialLeft: '19%',
     width: '3.5%',
-    sinkTop: '42%'
+    sinkTop: '42%',
+    sinkLeft: '49%'
   },
   {
     id: 'C_alfacecesta1',
@@ -42,7 +46,8 @@ export const vegetablesData = [
     initialTop: '26%',
     initialLeft: '19%',
     width: '7%',
-    sinkTop: '40%'
+    sinkTop: '40%',
+    sinkLeft: '43%'
   },
   {
     id: 'C_alfacecesta2',
@@ -51,7 +56,8 @@ export const vegetablesData = [
     initialTop: '28%',
     initialLeft: '18%',
     width: '6%',
-    sinkTop: '40%'
+    sinkTop: '40%',
+    sinkLeft: '53%'
   }
 ]
 
