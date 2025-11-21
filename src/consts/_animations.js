@@ -40,8 +40,8 @@ import smartphoneImg from '@/assets/animations/smartphone/sprite.png'
 import smartphoneJson from '@/assets/animations/smartphone/sprite.json'
 import ballImg from '@/assets/animations/ball/sprite.png'
 import ballJson from '@/assets/animations/ball/sprite.json'
-import rockingImg from '@/assets/animations/ rocking/sprite.png'
-import rockingJson from '@/assets/animations/ rocking/sprite.json'
+import rockingImg from '@/assets/animations/rocking/sprite.png'
+import rockingJson from '@/assets/animations/rocking/sprite.json'
 
 const imageRobotBlue = new Image()
 const imageRobotOrange = new Image()
