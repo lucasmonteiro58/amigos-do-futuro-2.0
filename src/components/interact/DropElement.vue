@@ -20,7 +20,7 @@ const props = defineProps({
   }
 })
 
-const emit = defineEmits(['dropped'])
+const emit = defineEmits(['dropped', 'drag-enter', 'drag-leave'])
 
 // const dropped = ref([])
 // const initialSnapTarget = reactive({
@@ -47,12 +47,25 @@ function onDragEnter(event) {
 
   if (isMatch) {
     item.classList.add('can-drop')
-    emit('dropped', { event, dataTransfer })
+    emit('drag-enter', { event, dataTransfer })
   }
 }
 
 function onDragLeave(event) {
   const item = event.relatedTarget
+  const dataTransfer = event.relatedTarget?.getAttribute('data-transfer')
+
+  if (dataTransfer) {
+    const expected = props.expected
+    const isMatch = Array.isArray(expected)
+      ? expected.includes(dataTransfer)
+      : dataTransfer === expected
+
+    if (isMatch) {
+      emit('drag-leave', { event, dataTransfer })
+    }
+  }
+
   item.classList.remove('can-drop')
 }
 
@@ -107,7 +120,21 @@ function resetOptionsStateWrong() {
 
 function onDropActivate() {}
 function onDropDeactivate() {}
-function onDrop() {}
+function onDrop(event) {
+  const item = event.relatedTarget
+  const dataTransfer = event.relatedTarget?.getAttribute('data-transfer')
+
+  if (dataTransfer) {
+    const expected = props.expected
+    const isMatch = Array.isArray(expected)
+      ? expected.includes(dataTransfer)
+      : dataTransfer === expected
+
+    if (isMatch) {
+      emit('dropped', { event, dataTransfer })
+    }
+  }
+}
 
 onMounted(() => {
   interact(refDrop.value).dropzone({
