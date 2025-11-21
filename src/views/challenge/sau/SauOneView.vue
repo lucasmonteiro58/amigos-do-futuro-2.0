@@ -15,17 +15,15 @@ import {
 const router = useRouter()
 const effectsStore = useEffectsStore()
 
-// State
 const isCompleted = ref(false)
 const showHint = ref(true)
-const foodsOnPlate = ref([]) // Array of food names currently on plate
-const bilotoLeft = ref(parseInt(bilotoInitialLeft)) // Starts at 49.4% = 948px
+const foodsOnPlate = ref([])
+const bilotoLeft = ref(parseInt(bilotoInitialLeft))
 const showModalMaxFoods = ref(false)
 const showModalNotHealthy = ref(false)
 const showModalNeedMoreFoods = ref(false)
 const showModalNotHealthyEnough = ref(false)
 
-// Computed
 const availableHealthyFoods = computed(() =>
   healthyFoods.filter((food) => !foodsOnPlate.value.includes(food.name))
 )
@@ -46,7 +44,6 @@ const hasUnhealthyFood = computed(() => {
   return foodsOnPlate.value.some((name) => unhealthyFoods.some((f) => f.name === name))
 })
 
-// Methods
 function onDragStart() {
   showHint.value = false
 }
@@ -57,7 +54,6 @@ function addFoodToPlate(foodName) {
     return false
   }
 
-  // Check if food is already on plate
   if (foodsOnPlate.value.includes(foodName)) {
     return false
   }
@@ -95,9 +91,8 @@ function updateBiloto(foodName, isAdding) {
     }
   }
 
-  // Clamp biloto position
   const minLeft = parseInt(healthBarPosition.left)
-  const maxLeft = minLeft + 672 // width of health bar
+  const maxLeft = minLeft + 672
   bilotoLeft.value = Math.max(minLeft, Math.min(maxLeft, bilotoLeft.value))
 }
 
@@ -106,9 +101,8 @@ function onDropOnPlate(el) {
 
   console.log(el)
 
-  // Check if food is already on plate (from plate version)
   if (dataTransfer && dataTransfer.endsWith('-plate')) {
-    return // Already on plate, ignore
+    return
   }
 
   if (dataTransfer) {
@@ -119,7 +113,6 @@ function onDropOnPlate(el) {
 function onDropOutsidePlate(el) {
   const { dataTransfer } = el
 
-  // Only remove if it's a plate version
   if (dataTransfer && dataTransfer.endsWith('-plate')) {
     const foodName = dataTransfer.replace('-plate', '')
     removeFoodFromPlate(foodName)
@@ -142,7 +135,6 @@ function submitPlate() {
     return
   }
 
-  // Success!
   isCompleted.value = true
   effectsStore.playAudio('sau_parabens1')
 
@@ -155,7 +147,6 @@ function submitPlate() {
 
 <template>
   <main class="flex flex-col justify-center items-center spritesheet cenarioalimentacao">
-    <!-- Health bar background -->
     <BaseImg
       img="prato_barra"
       class="absolute"
@@ -163,18 +154,16 @@ function submitPlate() {
       :style="{ top: healthBarPosition.top, left: healthBarPosition.left }"
     />
 
-    <!-- Biloto (health indicator) -->
     <BaseImg
       img="prato_biloto"
       class="absolute transition-all duration-500 ease-out"
       width="1.5%"
       :style="{
-        top: '964px', // 89.3% * 10.8 = 964.44
+        top: '964px',
         left: `${bilotoLeft}px`
       }"
     />
 
-    <!-- Health labels -->
     <BaseImg
       img="prato_saudavel"
       class="absolute"
@@ -188,7 +177,6 @@ function submitPlate() {
       :style="{ top: healthLabelsPosition.top, right: healthLabelsPosition.naoSaudavelRight }"
     />
 
-    <!-- Plate -->
     <BaseImg
       img="prato_prato"
       class="absolute"
@@ -199,7 +187,6 @@ function submitPlate() {
       }"
     />
 
-    <!-- Drop zone for outside plate (to remove foods) - must be behind but cover everything -->
     <DropElement
       v-if="foodsOnPlate.length > 0"
       :expected="foodsOnPlateData.map((f) => `${f.name}-plate`)"
@@ -207,7 +194,6 @@ function submitPlate() {
       class="absolute top-0 left-0 z-10 w-full h-full pointer-events-auto"
     />
 
-    <!-- Drop zone for plate - must be on top to catch drops first -->
     <DropElement
       :expected="
         availableHealthyFoods.map((f) => f.name).concat(availableUnhealthyFoods.map((f) => f.name))
@@ -223,7 +209,6 @@ function submitPlate() {
       }"
     />
 
-    <!-- Available healthy foods (draggable) -->
     <DragElement
       v-for="food in availableHealthyFoods"
       :key="food.name"
@@ -241,7 +226,6 @@ function submitPlate() {
       <div class="spritesheet" :class="food.sprite"></div>
     </DragElement>
 
-    <!-- Available unhealthy foods (draggable) -->
     <DragElement
       v-for="food in availableUnhealthyFoods"
       :key="food.name"
@@ -258,7 +242,6 @@ function submitPlate() {
       <div class="spritesheet" :class="food.sprite"></div>
     </DragElement>
 
-    <!-- Foods on plate (draggable to remove) -->
     <DragElement
       v-for="food in foodsOnPlateData"
       :key="`${food.name}-plate`"
@@ -274,7 +257,6 @@ function submitPlate() {
       <div class="spritesheet" :class="food.spriteOnPlate"></div>
     </DragElement>
 
-    <!-- Submit button -->
     <div
       class="absolute z-30"
       :style="{ bottom: submitButtonPosition.bottom, right: submitButtonPosition.right }"
@@ -289,10 +271,8 @@ function submitPlate() {
       </BaseButton>
     </div>
 
-    <!-- Hint cursor -->
     <CursorDrag v-if="showHint" class="absolute top-[600px] left-[600px]" width="67%" />
 
-    <!-- Speech bubble -->
     <SpeechBubble
       title="Comer, comer…"
       description="Um prato de comida saudável é melhor que remédio! Você sabe montar um? Arraste as comidas para o prato."
@@ -301,7 +281,6 @@ function submitPlate() {
       :time="12000"
     />
 
-    <!-- Modals -->
     <ModalAtention v-model="showModalMaxFoods" @close="showModalMaxFoods = false">
       <div class="font-exo2">Você só pode adicionar 5 alimentos no prato!</div>
     </ModalAtention>
