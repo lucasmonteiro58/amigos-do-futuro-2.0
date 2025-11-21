@@ -167,37 +167,32 @@ const getCursor = (hole) => {
     <BaseImg
       v-if="basketItems.cenoura2"
       img="sustent_cenoura"
-      class="absolute"
-      style="bottom: 23%; right: 11%; width: 11% !important"
+      class="absolute bottom-[23%] right-[11%] !w-[11%]"
     />
 
     <BaseImg
       v-if="basketItems.tomate1"
       img="sustent_tomate"
-      class="absolute"
-      style="bottom: 23%; right: 9%; width: 4% !important"
+      class="absolute bottom-[23%] right-[9%] !w-[4%]"
     />
     <BaseImg
       v-if="basketItems.tomate2"
       img="sustent_tomate"
-      class="absolute"
-      style="bottom: 22%; right: 8%; width: 3.5% !important"
+      class="absolute bottom-[22%] right-[8%] !w-[3.5%]"
     />
 
     <BaseImg
       v-if="basketItems.alface1"
       img="sustent_alface"
-      class="absolute"
-      style="bottom: 20%; right: 4%; width: 7% !important"
+      class="absolute bottom-[20%] right-[4%] !w-[7%]"
     />
     <BaseImg
       v-if="basketItems.alface2"
       img="sustent_alface"
-      class="absolute"
-      style="bottom: 18%; right: 3%; width: 6% !important"
+      class="absolute bottom-[18%] right-[3%] !w-[6%]"
     />
 
-    <BaseImg img="sustent_cestavazia" class="absolute" style="bottom: 10%; right: 2%" />
+    <BaseImg img="sustent_cestavazia" class="absolute bottom-[10%] right-[2%]" />
 
     <!-- Intro Bubble -->
     <SpeechBubble

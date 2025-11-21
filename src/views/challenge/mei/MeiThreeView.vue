@@ -114,8 +114,8 @@ const handleFaucetAnimationOver = () => {
   <main
     class="flex flex-col items-center justify-center spritesheet bg-cozinha relative w-full h-full"
   >
-    <BaseImg img="sustent_torneira" class="absolute" style="top: 22.5%; left: 45%; width: 8.6%" />
-    <BaseImg img="sustent_pia" class="absolute z-[30]" style="top: 45.76%; left: 30%; width: 34%" />
+    <BaseImg img="sustent_torneira" class="absolute top-[22.5%] left-[45%] w-[8.6%]" />
+    <BaseImg img="sustent_pia" class="absolute z-[30] top-[45.76%] left-[30%] w-[34%]" />
 
     <div v-if="showPipes">
       <BaseImg
@@ -147,17 +147,12 @@ const handleFaucetAnimationOver = () => {
     />
 
     <div v-show="showVegetables">
-      <BaseImg
-        img="sustent_cestavazia3"
-        class="absolute z-30"
-        style="top: 33.5%; left: 12%; width: 15%"
-      />
+      <BaseImg img="sustent_cestavazia3" class="absolute z-30 top-[33.5%] left-[12%] w-[15%]" />
 
       <DropElement
         :expected="vegetables.map((v) => v.id)"
         @dropped="handleVegetableDrop"
-        class="absolute"
-        style="top: 35%; left: 34%; width: 28%; height: 20%; z-index: 10"
+        class="absolute top-[35%] left-[34%] w-[28%] h-[20%] z-10"
       />
 
       <BaseImg
@@ -205,8 +200,7 @@ const handleFaucetAnimationOver = () => {
 
     <div
       v-if="showOverlay"
-      class="absolute top-0 left-0 w-full bg-black opacity-60 pointer-events-none z-[40]"
-      style="height: 48.5%"
+      class="absolute top-0 left-0 w-full bg-black opacity-60 pointer-events-none z-[40] h-[48.5%]"
     ></div>
 
     <SpeechBubble
