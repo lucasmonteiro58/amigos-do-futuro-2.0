@@ -14,6 +14,28 @@ export const healthyFoods = [
     onPlateWidth: '10%'
   },
   {
+    name: 'feijao',
+    sprite: 'prato_feijao',
+    spriteOnPlate: 'prato_feijaoprato',
+    top: '594px', // 55% * 10.8 = 594
+    right: '192px', // 10% * 19.2 = 192
+    width: '14%', // Original: 14%
+    onPlateTop: '713px', // 66% * 10.8 = 712.8
+    onPlateLeft: '806px', // 42% * 19.2 = 806.4
+    onPlateWidth: '12%'
+  },
+  {
+    name: 'carne',
+    sprite: 'prato_carne',
+    spriteOnPlate: 'prato_carneprato',
+    top: '702px', // 65% * 10.8 = 702
+    left: '192px', // 10% * 19.2 = 192
+    width: '12%', // Original: 12%
+    onPlateTop: '572px', // 53% * 10.8 = 572.4
+    onPlateLeft: '768px', // 40% * 19.2 = 768
+    onPlateWidth: '13%'
+  },
+  {
     name: 'arroz',
     sprite: 'prato_arroz',
     spriteOnPlate: 'prato_arrozprato',
@@ -35,17 +57,7 @@ export const healthyFoods = [
     onPlateLeft: '998px', // 52% * 19.2 = 998.4
     onPlateWidth: '10%'
   },
-  {
-    name: 'carne',
-    sprite: 'prato_carne',
-    spriteOnPlate: 'prato_carneprato',
-    top: '702px', // 65% * 10.8 = 702
-    left: '192px', // 10% * 19.2 = 192
-    width: '12%', // Original: 12%
-    onPlateTop: '572px', // 53% * 10.8 = 572.4
-    onPlateLeft: '768px', // 40% * 19.2 = 768
-    onPlateWidth: '13%'
-  },
+
   {
     name: 'cenoura',
     sprite: 'prato_cenoura',
@@ -57,17 +69,7 @@ export const healthyFoods = [
     onPlateLeft: '922px', // 48% * 19.2 = 921.6
     onPlateWidth: '6%'
   },
-  {
-    name: 'feijao',
-    sprite: 'prato_feijao',
-    spriteOnPlate: 'prato_feijaoprato',
-    top: '594px', // 55% * 10.8 = 594
-    right: '192px', // 10% * 19.2 = 192
-    width: '14%', // Original: 14%
-    onPlateTop: '713px', // 66% * 10.8 = 712.8
-    onPlateLeft: '806px', // 42% * 19.2 = 806.4
-    onPlateWidth: '12%'
-  },
+
   {
     name: 'batata',
     sprite: 'prato_batatadoce',

@@ -146,12 +146,10 @@ function submitPlate() {
   isCompleted.value = true
   effectsStore.playAudio('sau_parabens1')
 
-  setTimeout(() => {
-    router.push({
-      name: 'congratulation',
-      params: { challenge: 'sau', level: 1 }
-    })
-  }, 2000)
+  router.push({
+    name: 'congratulation',
+    params: { challenge: 'sau', level: 1 }
+  })
 }
 </script>
 
@@ -161,6 +159,7 @@ function submitPlate() {
     <BaseImg
       img="prato_barra"
       class="absolute"
+      width="36%"
       :style="{ top: healthBarPosition.top, left: healthBarPosition.left }"
     />
 
@@ -168,6 +167,7 @@ function submitPlate() {
     <BaseImg
       img="prato_biloto"
       class="absolute transition-all duration-500 ease-out"
+      width="1.5%"
       :style="{
         top: '964px', // 89.3% * 10.8 = 964.44
         left: `${bilotoLeft}px`
@@ -178,11 +178,13 @@ function submitPlate() {
     <BaseImg
       img="prato_saudavel"
       class="absolute"
+      width="12.2%"
       :style="{ top: healthLabelsPosition.top, left: healthLabelsPosition.saudavelLeft }"
     />
     <BaseImg
       img="prato_naosaudavel"
       class="absolute"
+      width="12.2%"
       :style="{ top: healthLabelsPosition.top, right: healthLabelsPosition.naoSaudavelRight }"
     />
 
@@ -279,11 +281,12 @@ function submitPlate() {
     >
       <BaseButton
         name="btn-action-white"
-        label="Enviar Prato"
         label-color="text-primary-blue-text"
-        width="180px"
+        width="250px"
         @click="submitPlate"
-      />
+      >
+        <span class="text-[50px] leading-[0.1] font-bungee">Enviar Prato</span>
+      </BaseButton>
     </div>
 
     <!-- Hint cursor -->
@@ -291,9 +294,10 @@ function submitPlate() {
 
     <!-- Speech bubble -->
     <SpeechBubble
-      title="Monte um prato saudável!"
-      description="Arraste os alimentos para o prato. Lembre-se: escolha alimentos saudáveis!"
+      title="Comer, comer…"
+      description="Um prato de comida saudável é melhor que remédio! Você sabe montar um? Arraste as comidas para o prato."
       audio="sau_help0"
+      class="absolute z-[30]"
       :time="12000"
     />
 
