@@ -4,32 +4,34 @@ import { seesaw, toboggan, smartphone, ball, rocking } from '@/consts/_animation
 const router = useRouter()
 const effectsStore = useEffectsStore()
 
+const isTobogganCompleted = ref(false)
+
 const isCompleted = ref(false)
 const showHint = ref(true)
 
-// Estado dos elementos clicados
 const escorregador = ref(false)
 const campinho = ref(false)
 const balanco = ref(false)
 const gangorra = ref(false)
 const tablet = ref(false)
 
-// Energia inicial: 49.4%
-// Meta: 66.6%
-// Barra vai de 32.2% a 68.2% (36% de largura)
 const bilotoPercentage = ref(49.4)
 const targetPercentage = 66.6
 const barStartPercentage = 32.2
 const barEndPercentage = 68.2
 
-// Refs para controlar animações
 const refTobogganAnimation = ref(null)
 const refBallAnimation = ref(null)
 const refRockingAnimation = ref(null)
 const refSeesawAnimation = ref(null)
 const refSmartphoneAnimation = ref(null)
 
-// Valores de incremento de energia (em porcentagem)
+const showModal = ref(false)
+
+function closeModal() {
+  showModal.value = false
+}
+
 const energyIncrements = {
   escorregador: 4.8,
   campinho: 5.8,
@@ -38,17 +40,27 @@ const energyIncrements = {
   tablet: 0
 }
 
-// Estado das animações
 const showTobogganAnimation = ref(false)
 const showBallAnimation = ref(false)
 const showRockingAnimation = ref(false)
 const showSeesawAnimation = ref(false)
 const showSmartphoneAnimation = ref(false)
 
-// Estado do campinho (com/sem bola)
+const isPlaying = computed(() => {
+  return (
+    showTobogganAnimation.value ||
+    showBallAnimation.value ||
+    showRockingAnimation.value ||
+    showSeesawAnimation.value ||
+    showSmartphoneAnimation.value
+  )
+})
+
 const showCampinhoWithBall = ref(true)
 
 function updateEnergy(element) {
+  if (isPlaying.value) return
+
   if (element === 'escorregador' && escorregador.value) return
   if (element === 'campinho' && campinho.value) return
   if (element === 'balanco' && balanco.value) return
@@ -88,7 +100,6 @@ function updateEnergy(element) {
 
 function handleNext() {
   if (Math.abs(bilotoPercentage.value - targetPercentage) < 0.1) {
-    // Sucesso!
     isCompleted.value = true
     effectsStore.playAudio('sau_parabens2')
 
@@ -97,9 +108,7 @@ function handleNext() {
       params: { challenge: 'sau', level: 2 }
     })
   } else {
-    // Ainda não completou
-    effectsStore.playAudio('feedback_mouse_over_itens')
-    // Poderia mostrar um modal aqui
+    showModal.value = true
   }
 }
 </script>
@@ -108,19 +117,14 @@ function handleNext() {
   <main
     class="flex relative flex-col justify-center items-center w-full h-full spritesheet bg_parquinho_saude"
   >
-    <!-- Elementos clicáveis do parquinho -->
-
-    <!-- Escorregador (Toboggan) -->
     <BaseImg
-      v-if="!showTobogganAnimation"
       img="parquinho_escorrega"
       class="absolute transition-opacity duration-300 cursor-pointer"
-      :class="escorregador ? 'opacity-50' : 'opacity-100'"
+      :class="isTobogganCompleted ? 'opacity-50' : 'opacity-100'"
       style="top: 26%; left: 5%; width: 21%"
       @click="updateEnergy('escorregador')"
     />
 
-    <!-- Animação do Escorregador -->
     <BaseAnimation
       v-if="showTobogganAnimation"
       ref="refTobogganAnimation"
@@ -129,13 +133,17 @@ function handleNext() {
       :fps="10"
       :isLoop="false"
       :autoplay="true"
-      @animationOver="showTobogganAnimation = false"
+      @animationOver="
+        () => {
+          isTobogganCompleted = true
+          showTobogganAnimation = false
+        }
+      "
       width="30%"
-      class="absolute scale-[1.81]"
-      style="bottom: -0.65%; left: 24%"
+      class="absolute"
+      style="bottom: -1.4%; right: 28.1%"
     />
 
-    <!-- Campinho (Ball) -->
     <BaseImg
       v-if="!showBallAnimation && showCampinhoWithBall"
       img="parquinho_campinho"
@@ -145,7 +153,13 @@ function handleNext() {
       @click="updateEnergy('campinho')"
     />
 
-    <!-- Animação do Campinho -->
+    <BaseImg
+      v-if="showBallAnimation"
+      img="campo-sem-bola"
+      class="absolute transition-opacity duration-300 cursor-pointer"
+      style="top: 31.5%; left: 31.4%; width: 38%"
+    />
+
     <BaseAnimation
       v-if="showBallAnimation"
       ref="refBallAnimation"
@@ -161,21 +175,19 @@ function handleNext() {
         }
       "
       width="30%"
-      class="absolute scale-[3.85]"
-      style="bottom: 17%; left: 76.4%"
+      class="absolute"
+      style="bottom: 11%; left: 3%"
     />
 
-    <!-- Balanço (Rocking) -->
     <BaseImg
       v-if="!showRockingAnimation"
       img="parquinho_balanco"
       class="absolute transition-opacity duration-300 cursor-pointer"
       :class="balanco ? 'opacity-50' : 'opacity-100'"
-      style="left: 74%; top: 29%; width: 22%"
+      style="left: 74%; top: 29%"
       @click="updateEnergy('balanco')"
     />
 
-    <!-- Animação do Balanço -->
     <BaseAnimation
       v-if="showRockingAnimation"
       ref="refRockingAnimation"
@@ -186,21 +198,19 @@ function handleNext() {
       :autoplay="true"
       @animationOver="showRockingAnimation = false"
       width="43%"
-      class="absolute scale-[1.165]"
-      style="bottom: 1.2%; left: 77.7%"
+      class="absolute"
+      style="bottom: 1.8%; left: 33.9%"
     />
 
-    <!-- Gangorra (Seesaw) -->
     <BaseImg
       v-if="!showSeesawAnimation"
       img="parquinho_gangorra"
       class="absolute transition-opacity duration-300 cursor-pointer"
       :class="gangorra ? 'opacity-50' : 'opacity-100'"
-      style="left: 33%; top: 47%; width: 32%"
+      style="left: 39%; top: 67%"
       @click="updateEnergy('gangorra')"
     />
 
-    <!-- Animação da Gangorra -->
     <BaseAnimation
       v-if="showSeesawAnimation"
       ref="refSeesawAnimation"
@@ -211,21 +221,27 @@ function handleNext() {
       :autoplay="true"
       @animationOver="showSeesawAnimation = false"
       width="45%"
-      class="absolute scale-[1.59]"
-      style="bottom: -13.8%; left: 46.1%"
+      class="absolute"
+      style="bottom: -12%; left: -0.1%"
     />
 
-    <!-- Tablet (Smartphone) -->
     <BaseImg
       v-if="!showSmartphoneAnimation"
       img="parquinho_tablet"
       class="absolute transition-opacity duration-300 cursor-pointer"
       :class="tablet ? 'opacity-50' : 'opacity-100'"
-      style="left: 70%; top: 72%; width: 8%"
+      style="left: 70%; top: 72%"
       @click="updateEnergy('tablet')"
     />
 
-    <!-- Animação do Tablet -->
+    <BaseImg
+      v-if="showSmartphoneAnimation"
+      img="parquinho_table1t"
+      class="absolute transition-opacity duration-300 cursor-pointer"
+      style="left: 70%; top: 72%"
+      @click="updateEnergy('tablet')"
+    />
+
     <BaseAnimation
       v-if="showSmartphoneAnimation"
       ref="refSmartphoneAnimation"
@@ -236,25 +252,22 @@ function handleNext() {
       :autoplay="true"
       @animationOver="showSmartphoneAnimation = false"
       width="43%"
-      class="absolute scale-[1.15]"
-      style="bottom: -14.9%; left: 58.5%"
+      class="absolute"
+      style="bottom: -21%; left: 17.3%"
     />
 
-    <!-- Barra de Energia -->
     <BaseImg
       img="parquinho_barrasaude"
       class="absolute"
       style="top: 90%; left: 32.2%; width: 36%"
     />
 
-    <!-- Biloto (Indicador de Energia) -->
     <BaseImg
       img="parquinho_marcadorbarra_saude"
       class="absolute transition-all duration-[1300ms] ease-out"
       :style="{ top: '89.3%', left: `${bilotoPercentage}%`, width: '1.5%' }"
     />
 
-    <!-- Labels de Energia -->
     <BaseImg
       img="parquinho_cxa_muitaenergia"
       class="absolute"
@@ -266,21 +279,24 @@ function handleNext() {
       style="top: 90%; right: 69%; width: 12.2%"
     />
 
-    <!-- Hint de Cursor Click -->
     <CursorClick v-if="showHint" class="absolute top-[400px] left-[700px] opacity-70" />
 
-    <!-- Botão Próximo -->
-    <BaseButton
-      name="btn-toggle-next"
-      class="absolute bottom-[54px] right-[44px]"
-      width="180px"
-      @click="handleNext"
-    />
+    <ModalAtention v-model="showModal" @close="closeModal" content-font="font-exo2">
+      <div class="mt-8">Ainda tem energia sobrando. Brinque mais!</div>
+    </ModalAtention>
 
-    <!-- Speech Bubble -->
+    <BaseButton
+      name="btn-action-white"
+      class="absolute bottom-[54px] right-[44px]"
+      width="240px"
+      @click="handleNext"
+    >
+      <span class="text-primary-blue-text">Próximo</span>
+    </BaseButton>
+
     <SpeechBubble
-      title="Parquinho Saudável!"
-      description="Clique nos brinquedos para aumentar a energia. Mas cuidado com o tablet!"
+      title="Vamos brincar!"
+      description="Brincar também te deixa muito saudável. Aproveite os brinquedos."
       audio="sau_help1"
       :time="7000"
     />
