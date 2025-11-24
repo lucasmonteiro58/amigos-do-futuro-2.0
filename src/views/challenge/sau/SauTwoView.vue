@@ -1,7 +1,6 @@
 <script setup>
 import { seesaw, toboggan, smartphone, ball, rocking } from '@/consts/_animations'
 
-const router = useRouter()
 const effectsStore = useEffectsStore()
 
 const isTobogganCompleted = ref(false)
@@ -98,15 +97,13 @@ function updateEnergy(element) {
   effectsStore.playAudio('feedback_botao_01')
 }
 
+const { complete } = useComplete()
+
 function handleNext() {
   if (Math.abs(bilotoPercentage.value - targetPercentage) < 0.1) {
     isCompleted.value = true
-    effectsStore.playAudio('sau_parabens2')
 
-    router.push({
-      name: 'congratulation',
-      params: { challenge: 'sau', level: 2 }
-    })
+    complete()
   } else {
     showModal.value = true
   }

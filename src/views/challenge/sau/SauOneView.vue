@@ -12,7 +12,6 @@ import {
   submitButtonPosition
 } from './consts'
 
-const router = useRouter()
 const effectsStore = useEffectsStore()
 
 const isCompleted = ref(false)
@@ -99,8 +98,6 @@ function updateBiloto(foodName, isAdding) {
 function onDropOnPlate(el) {
   const { dataTransfer } = el
 
-  console.log(el)
-
   if (dataTransfer && dataTransfer.endsWith('-plate')) {
     return
   }
@@ -119,6 +116,8 @@ function onDropOutsidePlate(el) {
   }
 }
 
+const { complete } = useComplete()
+
 function submitPlate() {
   if (foodsOnPlate.value.length < 5) {
     showModalNeedMoreFoods.value = true
@@ -136,12 +135,8 @@ function submitPlate() {
   }
 
   isCompleted.value = true
-  effectsStore.playAudio('sau_parabens1')
 
-  router.push({
-    name: 'congratulation',
-    params: { challenge: 'sau', level: 1 }
-  })
+  complete()
 }
 </script>
 

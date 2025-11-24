@@ -1,7 +1,6 @@
 <script setup>
 import { cursorClick } from '@/consts/_animations'
 
-const router = useRouter()
 const effectsStore = useEffectsStore()
 
 const isCompleted = ref(false)
@@ -51,18 +50,14 @@ function toggleCheck(index) {
   effectsStore.playAudio('feedback_botao_01')
 }
 
+const { complete } = useComplete()
+
 function onNext() {
   if (isCompleted.value) return
 
   isCompleted.value = true
-  effectsStore.playAudio('laz_parabens2')
 
-  setTimeout(() => {
-    router.push({
-      name: 'congratulation',
-      params: { challenge: 'laz', level: 2 }
-    })
-  }, 2000)
+  complete()
 }
 </script>
 

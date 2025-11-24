@@ -2,7 +2,6 @@
 import { pages } from './consts'
 import { cursorDrag } from '@/consts/_animations'
 
-const router = useRouter()
 const effectsStore = useEffectsStore()
 
 const currentPageIndex = ref(0)
@@ -54,17 +53,13 @@ function checkCompletion() {
   }
 }
 
+const { complete } = useComplete()
+
 function finishChallenge() {
   if (isCompleted.value) return
   isCompleted.value = true
 
-  setTimeout(() => {
-    effectsStore.playAudio('laz_parabens1')
-    router.push({
-      name: 'congratulation',
-      params: { challenge: 'laz', level: 1 }
-    })
-  }, 1000)
+  complete()
 }
 
 function nextPage() {

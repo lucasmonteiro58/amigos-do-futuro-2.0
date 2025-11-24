@@ -311,6 +311,7 @@
     "injectLocal": true,
     "provideLocal": true,
     "useClipboardItems": true,
-    "useProgressStore": true
+    "useProgressStore": true,
+    "useComplete": true
   }
 }

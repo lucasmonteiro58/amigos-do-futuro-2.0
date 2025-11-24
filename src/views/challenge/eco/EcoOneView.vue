@@ -17,7 +17,6 @@ const index = ref(0)
 const total = ref(0)
 const message = ref('')
 const type = ref('')
-const router = useRouter()
 
 const effectStore = useEffectsStore()
 
@@ -82,9 +81,11 @@ function checkCollision(ball) {
   }
 }
 
+const { complete } = useComplete()
+
 watchEffect(() => {
   if (index.value === 4) {
-    router.push({name: 'congratulation', params: { challenge: 'eco', level: 1 }})
+    complete()
   }
 })
 

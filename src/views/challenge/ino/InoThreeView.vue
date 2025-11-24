@@ -1,11 +1,7 @@
 <script setup>
-import { ref } from 'vue'
-import { useRouter } from 'vue-router'
-import { useEffectsStore } from '@/stores/effects'
 import Popper from 'vue3-popper'
 import ModalAtention from '@/components/layout/ModalAtention.vue'
 
-const router = useRouter()
 const effectsStore = useEffectsStore()
 
 const isCompleted = ref(false)
@@ -97,11 +93,10 @@ function closeErrorModal() {
   showErrorModal.value = false
 }
 
+const { complete } = useComplete()
+
 function finishLevel() {
-  router.push({
-    name: 'congratulation',
-    params: { challenge: 'ino', level: 3 }
-  })
+  complete()
 }
 </script>
 

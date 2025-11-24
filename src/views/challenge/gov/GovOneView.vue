@@ -1,8 +1,6 @@
 <script setup>
 import { elementsOne as elements } from './consts'
 
-const router = useRouter()
-
 const droppeds = ref([])
 const redFlagAnimating = ref(false)
 const yellowFlagAnimating = ref(false)
@@ -25,6 +23,8 @@ function animateFlag(flagRef) {
   })
 }
 
+const { complete } = useComplete()
+
 function onDrop(el) {
   const { dataTransfer } = el
   droppeds.value.push(dataTransfer)
@@ -38,9 +38,7 @@ function onDrop(el) {
   }
 
   if (droppeds.value.length === elements.length) {
-    setTimeout(() => {
-      router.push({ name: 'congratulation', params: { challenge: 'gov', level: 1 } })
-    }, 1000)
+    complete()
   }
 }
 </script>

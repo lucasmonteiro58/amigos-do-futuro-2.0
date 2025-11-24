@@ -8,7 +8,7 @@ const currentQuestion = computed(() => elementsFour[index.value])
 
 const punctuation = ref(0)
 
-const router = useRouter()
+const { complete } = useComplete()
 
 function handleChoose(option) {
   if (currentQuestion.value.isCorrect === option) {
@@ -18,7 +18,7 @@ function handleChoose(option) {
   index.value += 1
 
   if (index.value >= elementsFour.length) {
-    router.push({ name: 'congratulation', params: { challenge: 'gov', level: 4 } })
+    complete()
   }
 }
 </script>

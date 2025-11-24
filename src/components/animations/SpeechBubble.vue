@@ -26,6 +26,7 @@ const props = defineProps({
 })
 
 const linesStore = useLinesStore()
+const effectsStore = useEffectsStore()
 const isShowing = ref(true)
 const refRobot = ref(null)
 
@@ -97,6 +98,7 @@ onMounted(() => {
   <button
     v-else
     @click="open"
+    @mouseenter="effectsStore.plaHoverButton"
     class="absolute cursor-pointer bottom-5 left-5 hover:!scale-105 animation__speechBubbleOut"
   >
     <BaseImg img="robot-mini-blue" width="150px"> </BaseImg>

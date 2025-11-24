@@ -2,7 +2,6 @@
 import Popper from 'vue3-popper'
 import { draggableItems, trashBins } from './consts'
 
-const router = useRouter()
 const effectsStore = useEffectsStore()
 
 const showHint = ref(true)
@@ -70,6 +69,8 @@ function onDragLeave(eventData) {
   }
 }
 
+const { complete } = useComplete()
+
 function handleDrop(dataTransfer) {
   isDragging.value = false
   droppedItems.value.push(dataTransfer)
@@ -81,12 +82,7 @@ function handleDrop(dataTransfer) {
   if (droppedCount.value === 10) {
     isCompleted.value = true
 
-    setTimeout(() => {
-      router.push({
-        name: 'congratulation',
-        params: { challenge: 'mei', level: 1 }
-      })
-    }, 1000)
+    complete()
   }
 }
 

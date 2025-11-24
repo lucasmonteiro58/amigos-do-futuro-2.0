@@ -5,7 +5,7 @@ const effectsStore = useEffectsStore()
 
 const isCompleted = ref(false)
 const harvestedCount = ref(0)
-const router = useRouter()
+
 const holes = ref([
   {
     id: 1,
@@ -109,15 +109,12 @@ const addToBasket = (type) => {
   }
 }
 
+const { complete } = useComplete()
+
 const checkCompletion = () => {
   if (harvestedCount.value === 6) {
     isCompleted.value = true
-    setTimeout(() => {
-      router.push({
-        name: 'congratulation',
-        params: { challenge: 'mei', level: 2 }
-      })
-    }, 1500)
+    complete()
   }
 }
 

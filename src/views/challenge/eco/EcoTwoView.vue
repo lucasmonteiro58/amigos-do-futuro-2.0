@@ -12,8 +12,6 @@ const refMachineEdu = ref(null)
 const refMachineLaz = ref(null)
 const refMachineSau = ref(null)
 
-const router = useRouter()
-
 const eduMonsters = computed(() => {
   return _monsters.value.filter((monster) => monster.type === 'edu')
 })
@@ -66,11 +64,13 @@ const classBall = computed(() => {
   else return 'top-[820px] left-[1510px]'
 })
 
+const { complete } = useComplete()
+
 function closeModal() {
   _monsters.value.splice(_monsters.value.indexOf(selectedMonster.value), 1)
   showModal.value = false
   if (coins.value === 0) {
-    router.push({ name: 'congratulation', params: { challenge: 'eco', level: 2 } })
+    complete()
   }
 }
 </script>

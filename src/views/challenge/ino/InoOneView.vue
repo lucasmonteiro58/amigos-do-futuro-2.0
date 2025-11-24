@@ -1,7 +1,7 @@
 <script setup>
 import Popper from 'vue3-popper'
 import { drinkingFountain } from '@/consts/_animations'
-const router = useRouter()
+
 const effectsStore = useEffectsStore()
 
 const attempts = ref(0)
@@ -30,6 +30,8 @@ const draggableItems = [
   }
 ]
 
+const { complete } = useComplete()
+
 function onDragEnd() {
   if (isCompleted.value) return
 
@@ -49,12 +51,7 @@ function onDrop(el) {
 
     effectsStore.playAudio('feedback_botao_01')
 
-    setTimeout(() => {
-      router.push({
-        name: 'congratulation',
-        params: { challenge: 'ino', level: 1 }
-      })
-    }, 2000)
+    complete()
   } else {
     effectsStore.playAudio('feedback_mouse_over_itens')
   }

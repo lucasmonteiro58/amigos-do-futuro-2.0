@@ -8,8 +8,6 @@ const droppedsElements = computed(() =>
   droppeds.value.map((name) => elements.find((el) => el.name === name))
 )
 
-const router = useRouter()
-
 function verifyDropped(name) {
   return droppeds.value.includes(name)
 }
@@ -20,14 +18,14 @@ function onStartDrag() {
   }
 }
 
+const { complete } = useComplete()
+
 function onDrop(el) {
   const { dataTransfer } = el
   droppeds.value.push(dataTransfer)
 
   if (droppeds.value.length === elements.length) {
-    setTimeout(() => {
-      router.push({ name: 'congratulation', params: { challenge: 'gov', level: 2 } })
-    }, 1000)
+    complete()
   }
 }
 </script>

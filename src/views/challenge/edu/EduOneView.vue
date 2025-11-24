@@ -42,7 +42,6 @@ function closeModal() {
   showMinModal.value = false
 }
 
-const router = useRouter()
 const showFinalModal = ref(false)
 
 function handleContinue() {
@@ -53,8 +52,10 @@ function handleContinue() {
   }
 }
 
+const { complete } = useComplete()
+
 function handleSaveFinalChoice() {
-  router.push({ name: 'congratulation', params: { challenge: 'edu', level: 1 } })
+  complete()
 }
 </script>
 

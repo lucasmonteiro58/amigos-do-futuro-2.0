@@ -1,7 +1,7 @@
 <script setup>
 import { rocket } from '@/consts/_animations'
 import Popper from 'vue3-popper'
-const router = useRouter()
+
 const effectsStore = useEffectsStore()
 
 const bicoIndex = ref(0)
@@ -83,11 +83,10 @@ function launchRocket() {
   showHint.value = false
 }
 
+const { complete } = useComplete()
+
 function goToCongratulation() {
-  router.push({
-    name: 'congratulation',
-    params: { challenge: 'ino', level: 2 }
-  })
+  complete()
 }
 </script>
 

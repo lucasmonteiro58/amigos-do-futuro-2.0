@@ -2,7 +2,6 @@
 import Popper from 'vue3-popper'
 import { cursorClick } from '@/consts/_animations'
 
-const router = useRouter()
 const effectsStore = useEffectsStore()
 
 const isCompleted = ref(false)
@@ -63,6 +62,8 @@ const items = [
   }
 ]
 
+const { complete } = useComplete()
+
 function onClickError(index) {
   if (errors.value[index]) return
 
@@ -73,14 +74,7 @@ function onClickError(index) {
 
   if (foundErrors.value === 7) {
     isCompleted.value = true
-    effectsStore.playAudio('laz_parabens3')
-
-    setTimeout(() => {
-      router.push({
-        name: 'congratulation',
-        params: { challenge: 'laz', level: 3 }
-      })
-    }, 2000)
+    complete()
   }
 }
 </script>

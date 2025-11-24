@@ -1,12 +1,8 @@
 <script setup>
-import { ref } from 'vue'
-import { useEffectsStore } from '@/stores/effects'
-import { useRouter } from 'vue-router'
 import { pipes as pipesAnimation, faucet as faucetAnimation } from '@/consts/_animations'
 import { pipesData, correctRotations, vegetablesData } from '@/views/challenge/mei/consts'
 
 const effectsStore = useEffectsStore()
-const router = useRouter()
 
 // Phase control
 const currentPhase = ref('pipes') // 'pipes', 'vegetables', 'faucet', 'complete'
@@ -102,11 +98,10 @@ const startFaucetAnimation = () => {
   }, 50)
 }
 
+const { complete } = useComplete()
+
 const handleFaucetAnimationOver = () => {
-  router.push({
-    name: 'congratulation',
-    params: { challenge: 'mei', level: 3 }
-  })
+  complete()
 }
 </script>
 
