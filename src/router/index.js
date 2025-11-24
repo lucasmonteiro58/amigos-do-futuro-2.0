@@ -158,6 +158,16 @@ const router = createRouter({
       path: '/feedback',
       name: 'feedback',
       component: () => import('../views/feedback/FeedbackView.vue')
+    },
+    {
+      path: '/final-cutscene',
+      name: 'final-cutscene',
+      component: () => import('../views/final-cutscene/FinalCutsceneView.vue')
+    },
+    {
+      path: '/certificate',
+      name: 'certificate',
+      component: () => import('../views/certificate/CertificateView.vue')
     }
   ]
 })
