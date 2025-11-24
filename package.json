@@ -19,7 +19,7 @@
     "@vueuse/motion": "^2.0.0",
     "@vueuse/sound": "^2.0.1",
     "html-to-image": "^1.11.13",
-    "interactjs": "^1.10.26",
+    "interactjs": "^1.10.27",
     "jspdf": "^3.0.4",
     "pinia": "^2.1.7",
     "pinia-plugin-persistedstate": "^3.2.1",

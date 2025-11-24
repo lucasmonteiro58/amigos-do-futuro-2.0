@@ -48,6 +48,7 @@ function onDragEnter(event) {
   if (isMatch) {
     item.classList.add('can-drop')
     emit('drag-enter', { event, dataTransfer })
+    emit('dropped', { event, dataTransfer })
   }
 }
 
@@ -121,7 +122,6 @@ function resetOptionsStateWrong() {
 function onDropActivate() {}
 function onDropDeactivate() {}
 function onDrop(event) {
-  const item = event.relatedTarget
   const dataTransfer = event.relatedTarget?.getAttribute('data-transfer')
 
   if (dataTransfer) {
