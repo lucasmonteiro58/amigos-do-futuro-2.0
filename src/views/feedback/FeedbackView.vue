@@ -7,9 +7,11 @@ const feedbackText = ref('')
 
 const robotRef = ref(null)
 const answer = ref('')
+const router = useRouter()
 
 function sendFeedback() {
   console.log('Feedback enviado:', feedbackText.value)
+  router.push({ name: 'final-cutscene' })
 }
 
 const linesStore = useLinesStore()
