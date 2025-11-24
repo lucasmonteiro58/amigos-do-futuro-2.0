@@ -233,6 +233,7 @@ declare global {
   const usePreferredReducedMotion: typeof import('@vueuse/core')['usePreferredReducedMotion']
   const usePreload: typeof import('./composables/usePreload.js')['default']
   const usePrevious: typeof import('@vueuse/core')['usePrevious']
+  const useProgressStore: typeof import('./stores/progress.js')['useProgressStore']
   const useQuizStore: typeof import('./stores/quiz.js')['useQuizStore']
   const useRafFn: typeof import('@vueuse/core')['useRafFn']
   const useRefHistory: typeof import('@vueuse/core')['useRefHistory']
@@ -544,6 +545,7 @@ declare module 'vue' {
     readonly usePreferredReducedMotion: UnwrapRef<typeof import('@vueuse/core')['usePreferredReducedMotion']>
     readonly usePreload: UnwrapRef<typeof import('./composables/usePreload.js')['default']>
     readonly usePrevious: UnwrapRef<typeof import('@vueuse/core')['usePrevious']>
+    readonly useProgressStore: UnwrapRef<typeof import('./stores/progress.js')['useProgressStore']>
     readonly useQuizStore: UnwrapRef<typeof import('./stores/quiz.js')['useQuizStore']>
     readonly useRafFn: UnwrapRef<typeof import('@vueuse/core')['useRafFn']>
     readonly useRefHistory: UnwrapRef<typeof import('@vueuse/core')['useRefHistory']>
@@ -848,6 +850,7 @@ declare module '@vue/runtime-core' {
     readonly usePreferredReducedMotion: UnwrapRef<typeof import('@vueuse/core')['usePreferredReducedMotion']>
     readonly usePreload: UnwrapRef<typeof import('./composables/usePreload.js')['default']>
     readonly usePrevious: UnwrapRef<typeof import('@vueuse/core')['usePrevious']>
+    readonly useProgressStore: UnwrapRef<typeof import('./stores/progress.js')['useProgressStore']>
     readonly useQuizStore: UnwrapRef<typeof import('./stores/quiz.js')['useQuizStore']>
     readonly useRafFn: UnwrapRef<typeof import('@vueuse/core')['useRafFn']>
     readonly useRefHistory: UnwrapRef<typeof import('@vueuse/core')['useRefHistory']>

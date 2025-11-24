@@ -105,7 +105,7 @@ const startFaucetAnimation = () => {
 const handleFaucetAnimationOver = () => {
   router.push({
     name: 'congratulation',
-    params: { challenge: 'mei', level: 2 }
+    params: { challenge: 'mei', level: 3 }
   })
 }
 </script>

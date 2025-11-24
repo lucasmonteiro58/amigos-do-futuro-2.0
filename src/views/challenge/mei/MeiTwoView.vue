@@ -115,7 +115,7 @@ const checkCompletion = () => {
     setTimeout(() => {
       router.push({
         name: 'congratulation',
-        params: { challenge: 'mei', level: 1 }
+        params: { challenge: 'mei', level: 2 }
       })
     }, 1500)
   }
