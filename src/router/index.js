@@ -153,6 +153,11 @@ const router = createRouter({
           component: () => import('../views/challenge/sau/SauTwoView.vue')
         }
       ]
+    },
+    {
+      path: '/feedback',
+      name: 'feedback',
+      component: () => import('../views/feedback/FeedbackView.vue')
     }
   ]
 })
