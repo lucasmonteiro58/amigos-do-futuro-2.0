@@ -6,6 +6,11 @@ import { badgesInfo } from '../consts'
 
 const emit = defineEmits(['close'])
 const router = useRouter()
+const progressStore = useProgressStore()
+
+const challenges = computed(() => {
+  return progressStore.challenges
+})
 
 const detailBadgeId = ref(null)
 const detailBadge = computed(() => (detailBadgeId.value ? badgesInfo[detailBadgeId.value] : null))
@@ -46,18 +51,24 @@ function goHome() {
 
       <BaseImg img="box-all-badges-certificate" class="relative top-2 left-[300px] cursor-pointer">
         <div class="flex flex-wrap gap-7 justify-center px-4 pt-9">
-          <img
-            v-for="(_, key) in badgesInfo"
-            :key="key"
-            :src="`/src/assets/images/sprites/quiz/quiz_${key}-badge.png`"
-            width="150px"
-            class="transition-all duration-300"
-            :class="{
-              'opacity-100 scale-105': detailBadgeId === key,
-              'opacity-60': detailBadgeId && detailBadgeId !== key
-            }"
-            @click="selectBadge(key)"
-          />
+          <div v-for="(_, key) in badgesInfo" :key="key" class="relative">
+            <img
+              :src="`/src/assets/images/sprites/quiz/quiz_${key}-badge.png`"
+              width="150px"
+              class="transition-all duration-300"
+              :class="{
+                'opacity-100 scale-105': detailBadgeId === key,
+                'opacity-60': detailBadgeId && detailBadgeId !== key
+              }"
+              @click="selectBadge(key)"
+            />
+            <BaseImg
+              v-if="challenges.find((c) => c.name === key).completed"
+              img="btn-toggle-ok"
+              class="absolute -top-1 -left-1"
+              width="50px"
+            />
+          </div>
         </div>
       </BaseImg>
 
@@ -71,7 +82,9 @@ function goHome() {
           width="300px"
           @click="navigateToChallenge(detailBadge.id)"
         >
-          {{ detailBadge.finished ? 'Recomeçar' : 'Começar' }}
+          {{
+            challenges.find((c) => c.name === detailBadge.id).completed ? 'Recomeçar' : 'Começar'
+          }}
         </BaseButton>
       </div>
       <div v-else class="text-center w-full absolute bottom-24 px-20">

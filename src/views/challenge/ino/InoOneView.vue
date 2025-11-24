@@ -67,6 +67,10 @@ function onDragStart() {
 onMounted(() => {
   effectsStore.playAudioLoop('feedback_inovacao_agua_pingando')
 })
+
+onBeforeUnmount(() => {
+  effectsStore.effectsAudiosLoop.stop()
+})
 </script>
 
 <template>

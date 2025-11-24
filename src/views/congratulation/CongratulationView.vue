@@ -3,6 +3,7 @@ import { congratulations } from '@/consts'
 
 const route = useRoute()
 const router = useRouter()
+const progressStore = useProgressStore()
 
 const challenge = computed(() => {
   return route.params.challenge
@@ -39,8 +40,10 @@ const currentChallenge = computed(() => {
 function handleNext() {
   if (Number(level.value) === currentChallenge.value?.length) {
     router.push({ name: 'feedback' })
+    progressStore.completeChallenge(challenge.value)
   } else {
     router.push(`/desafios/${challenge.value}/${Number(level.value) + 1}`)
+    progressStore.setCurrentLevel(challenge.value, Number(level.value) + 1)
   }
 }
 </script>
