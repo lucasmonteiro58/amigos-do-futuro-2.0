@@ -139,8 +139,8 @@ onMounted(() => {
             </div>
           </div>
 
-          <div class="w-[45%] h-full flex items-center justify-center pt-20">
-            <div ref="printRef" class="relative w-[650px] h-[800px]">
+          <div class="w-[45%] h-full flex items-center justify-center pt-20 relative">
+            <div ref="printRef" class="relative w-[650px] h-[800px] z-[10]">
               <img
                 :src="`/src/assets/images/cards/${currentBadgeId}.png`"
                 class="absolute w-full h-full object-contain"
@@ -154,6 +154,7 @@ onMounted(() => {
                 {{ certificateText }}
               </div>
             </div>
+            <div class="bg-[#cccccc] w-[650px] h-[800px] absolute top-[144px] left-[106px]"></div>
           </div>
         </div>
       </div>
