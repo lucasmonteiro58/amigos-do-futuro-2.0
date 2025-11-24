@@ -10,7 +10,7 @@ import BaseImg from '@/components/media/BaseImg.vue'
 import BaseButton from '@/components/inputs/BaseButton.vue'
 import ModalBadges from './components/ModalBadges.vue'
 
-import html2canvas from 'html2canvas'
+import * as htmlToImage from 'html-to-image'
 import jsPDF from 'jspdf'
 
 const userStore = useUserStore()
@@ -44,27 +44,49 @@ function onRobotClick() {
 }
 
 async function handleDownload() {
-  if (printRef.value) {
-    const canvas = await html2canvas(printRef.value)
-    const link = document.createElement('a')
-    link.download = `certificado_${currentBadgeId.value}.png`
-    link.href = canvas.toDataURL()
-    link.click()
-  }
+  const node = printRef.value
+
+  const dataUrl = await htmlToImage.toPng(node, {
+    quality: 1,
+    cacheBust: true,
+    fontEmbedder: true
+  })
+
+  const link = document.createElement('a')
+  link.download = `certificado_${currentBadgeId.value}.png`
+  link.href = dataUrl
+  link.click()
 }
-
 async function handleDownloadPDF() {
-  if (printRef.value) {
-    const canvas = await html2canvas(printRef.value)
-    const imgData = canvas.toDataURL('image/png')
+  const node = printRef.value
 
-    const pdf = new jsPDF('l', 'mm', 'a4')
-    const width = pdf.internal.pageSize.getWidth()
-    const height = pdf.internal.pageSize.getHeight()
+  const dataUrl = await htmlToImage.toPng(node, {
+    quality: 1,
+    cacheBust: true,
+    fontEmbedder: true
+  })
 
-    pdf.addImage(imgData, 'PNG', 0, 0, width, height)
-    pdf.save(`certificado_${currentBadgeId.value}.pdf`)
-  }
+  const img = new Image()
+  img.src = dataUrl
+  await img.decode()
+
+  const pxWidth = img.width
+  const pxHeight = img.height
+
+  const pxToMm = (px) => (px * 25.4) / 96
+
+  const mmWidth = pxToMm(pxWidth)
+  const mmHeight = pxToMm(pxHeight)
+
+  const pdf = new jsPDF({
+    orientation: mmWidth > mmHeight ? 'landscape' : 'portrait',
+    unit: 'mm',
+    format: [mmWidth, mmHeight]
+  })
+
+  pdf.addImage(dataUrl, 'PNG', 0, 0, mmWidth, mmHeight)
+
+  pdf.save(`certificado_${currentBadgeId.value}.pdf`)
 }
 
 function openOtherBadges() {
@@ -117,20 +139,20 @@ onMounted(() => {
             </div>
           </div>
 
-          <div
-            ref="printRef"
-            class="w-[45%] h-full relative flex items-center justify-center pt-10"
-          >
-            <img
-              v-if="currentBadgeId"
-              :src="`/src/assets/images/cards/${currentBadgeId}.png`"
-              class="w-[650px] absolute"
-            />
-            <div
-              class="absolute top-[60%] px-[125px] text-2xl font-medium text-center"
-              :style="{ color: certificateColor }"
-            >
-              {{ certificateText }}
+          <div class="w-[45%] h-full flex items-center justify-center pt-20">
+            <div ref="printRef" class="relative w-[650px] h-[800px]">
+              <img
+                :src="`/src/assets/images/cards/${currentBadgeId}.png`"
+                class="absolute w-full h-full object-contain"
+              />
+              <div
+                class="absolute top-[58%] px-[50px] text-2xl font-[600] text-center"
+                :style="{
+                  color: certificateColor
+                }"
+              >
+                {{ certificateText }}
+              </div>
             </div>
           </div>
         </div>
