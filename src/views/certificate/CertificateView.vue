@@ -10,6 +10,9 @@ import BaseImg from '@/components/media/BaseImg.vue'
 import BaseButton from '@/components/inputs/BaseButton.vue'
 import ModalBadges from './components/ModalBadges.vue'
 
+import html2canvas from 'html2canvas'
+import jsPDF from 'jspdf'
+
 const userStore = useUserStore()
 const quizStore = useQuizStore()
 const effectsStore = useEffectsStore()
@@ -17,7 +20,8 @@ const effectsStore = useEffectsStore()
 const showOtherBadges = ref(false)
 const refRobot = ref(null)
 
-// Get current badge from store or default to 'sau' (as fallback)
+const printRef = ref(null)
+
 const currentBadgeId = computed(() => quizStore.userBadge || 'sau')
 const currentBadge = computed(() => badgesInfo[currentBadgeId.value])
 const userName = computed(() => userStore.name || 'Amigo do Futuro')
@@ -39,27 +43,27 @@ function onRobotClick() {
   }
 }
 
-function handlePrint() {
-  window.print()
+async function handleDownload() {
+  if (printRef.value) {
+    const canvas = await html2canvas(printRef.value)
+    const link = document.createElement('a')
+    link.download = `certificado_${currentBadgeId.value}.png`
+    link.href = canvas.toDataURL()
+    link.click()
+  }
 }
 
-function handleDownload() {
-  // Try to use html2canvas if available globally (injected via script)
-  if (window.html2canvas) {
-    const element = document.querySelector('.to-print')
-    // Temporarily show it for html2canvas
-    element.style.display = 'block'
+async function handleDownloadPDF() {
+  if (printRef.value) {
+    const canvas = await html2canvas(printRef.value)
+    const imgData = canvas.toDataURL('image/png')
 
-    window.html2canvas(element).then((canvas) => {
-      element.style.display = '' // Revert to css control
-      const link = document.createElement('a')
-      link.download = `certificado_${currentBadgeId.value}.png`
-      link.href = canvas.toDataURL()
-      link.click()
-    })
-  } else {
-    alert('Para salvar, utilize a opção de Imprimir e escolha "Salvar como PDF".')
-    window.print()
+    const pdf = new jsPDF('l', 'mm', 'a4')
+    const width = pdf.internal.pageSize.getWidth()
+    const height = pdf.internal.pageSize.getHeight()
+
+    pdf.addImage(imgData, 'PNG', 0, 0, width, height)
+    pdf.save(`certificado_${currentBadgeId.value}.pdf`)
   }
 }
 
@@ -73,13 +77,6 @@ function closeOtherBadges() {
 
 onMounted(() => {
   playAudio()
-
-  // Inject html2canvas
-  if (!window.html2canvas) {
-    const script = document.createElement('script')
-    script.src = 'https://html2canvas.hertzen.com/dist/html2canvas.min.js'
-    document.head.appendChild(script)
-  }
 })
 </script>
 
@@ -111,7 +108,7 @@ onMounted(() => {
             </BaseImg>
             <div class="flex justify-center gap-6 mt-8">
               <BaseButton name="btn-toggle-download" @click="handleDownload" width="100px" />
-              <BaseButton name="btn-toggle-print" @click="handlePrint" width="100px" />
+              <BaseButton name="btn-toggle-print" @click="handleDownloadPDF" width="100px" />
               <BaseButton name="btn-action-white" width="300px" @click="openOtherBadges">
                 <div class="font-exo-bold text-primary-blue-text text-5xl leading-[1.2]">
                   Outros Desafios
@@ -120,7 +117,10 @@ onMounted(() => {
             </div>
           </div>
 
-          <div class="w-[45%] h-full relative flex items-center justify-center pt-10">
+          <div
+            ref="printRef"
+            class="w-[45%] h-full relative flex items-center justify-center pt-10"
+          >
             <img
               v-if="currentBadgeId"
               :src="`/src/assets/images/cards/${currentBadgeId}.png`"
