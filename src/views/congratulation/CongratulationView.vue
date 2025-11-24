@@ -1,9 +1,8 @@
 <script setup>
 import { congratulations } from '@/consts'
 
-const quizStore = useQuizStore()
-
 const route = useRoute()
+const router = useRouter()
 
 const challenge = computed(() => {
   return route.params.challenge
@@ -28,6 +27,22 @@ const imageBadge = computed(() => {
 const getStars = computed(() => {
   return congratulations[`${challenge.value}_${level.value - 1}`]?.stars
 })
+
+const challenges = computed(() => {
+  return router.getRoutes().filter((route) => route.path.includes('desafios'))
+})
+
+const currentChallenge = computed(() => {
+  return challenges.value?.filter((c) => c.path.includes(challenge.value))
+})
+
+function handleNext() {
+  if (Number(level.value) === currentChallenge.value?.length) {
+    router.push({ name: 'feedback' })
+  } else {
+    router.push(`/desafios/${challenge.value}/${Number(level.value) + 1}`)
+  }
+}
 </script>
 
 <template>
@@ -55,7 +70,7 @@ const getStars = computed(() => {
         name="btn-toggle-next"
         width="160px"
         class="absolute right-[-40px] top-[350px]"
-        @click="quizStore.playAudio('starts_desafios')"
+        @click="handleNext"
       ></BaseButton>
     </BoxCongrats>
   </div>

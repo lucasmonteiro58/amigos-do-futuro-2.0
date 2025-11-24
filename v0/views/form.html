@@ -1,0 +1,40 @@
+<section id="form">
+	<div class="back-btn"><button class="prevF" onclick="backStage()"></button></div>
+	<div class="sound-btn"><button class="toggle sound"></button></div>
+		<div class="music-btn"><button class="toggle music"></button></div>
+	<div class="robot-arrows">
+		<div class="content centered">
+			<li>
+				<img id="img" src="img/robot-placeholder-orange1.png" >
+					<div id="AnimacaoRoboForm"></div>
+			</li>
+			<li>
+				<div id="prev-next">
+					<button onclick="playAudioButton()" id="prev"   class="toggle arrow"></button>
+					<button onclick="playAudioButton()" id="next"  class="toggle arrow2"></button>
+				</div>
+			</li>
+		</div>
+	</div>
+	<div class="form-question">
+		<div class="content centered" id="question-content"></div>
+	</div>
+
+	<audio preload="metadata" id="pergunta0">
+		<source src="sounds/falas/form/pergunta0.wav">
+	</audio>
+
+	<audio preload="metadata" id="pergunta1">
+		<source src="sounds/falas/form/pergunta1.wav">
+	</audio>
+
+	<audio preload="metadata" id="pergunta2">
+		<source src="sounds/falas/form/pergunta2.wav">
+	</audio>
+
+	<audio preload="metadata" id="pergunta3">
+		<source src="sounds/falas/form/pergunta3.wav">
+	</audio>
+
+
+</section>

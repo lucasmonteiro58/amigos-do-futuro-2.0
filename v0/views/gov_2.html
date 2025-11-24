@@ -1,0 +1,43 @@
+<section id="desafioRadio">
+	<div class="back-btn"><button class="prevF" onclick="backStage()"></button></div>
+	<audio preload="metadata" id="help_gov2">
+		<source src="sounds/falas/desafios/gov/help2.wav">
+	</audio>
+	<div class="sound-btn"><button class="toggle sound"></button></div>
+
+	<div class="music-btn"><button class="toggle music"></button></div>
+	<div id="antenaRadio" class="antenaRadio"></div>
+		<img onmouseover="playAudioMS()" class="jornalRua" id="jornalRua1" src="img/desafios/governo/radio/item_jornal.png">
+		<img onmouseover="playAudioMS()" class="jornalRua" id="jornalRua2" src="img/desafios/governo/radio/item_rolojornal.png">
+		<img onmouseover="playAudioMS()" class="jornalRua" id="jornalRua3" src="img/desafios/governo/radio/item_jornal.png">
+		<img onmouseover="playAudioMS()" class="jornalRua" id="jornalRua4" src="img/desafios/governo/radio/item_rolojornal.png">
+
+		<img  id="jornalRua1cesta" src="img/desafios/governo/radio/jornal.png">
+		<img  id="jornalRua2cesta" src="img/desafios/governo/radio/rolojornal.png">
+		<img  id="jornalRua3cesta" src="img/desafios/governo/radio/jornal.png">
+		<img  id="jornalRua4cesta" src="img/desafios/governo/radio/rolojornal.png">
+		<div id="AnimacaoClickRadio"></div>
+
+		<img id="cestaRadio" src="img/desafios/governo/radio/cesta_governo.png">
+		<div id="dropRadio"></div>
+
+
+		<!-- Robot help -->
+		<div id="help" style="display: none;">
+			<div class="backdrop">
+				<div class="robot-help">
+					<div id="AnimacaoRoboHelp"></div>
+					<div class="content">
+						<li><h4></h4></li>
+						<li><p></p></li>
+					</div>
+					<button id='repeat-btn' class='toggle repeat'></button>
+					<button id='close-btn' class='toggle exit'></button>
+				</div>
+			</div>
+			<div id="robot-help-mini" style="display: none;">
+				<img  onmouseover="playAudioMS()" src="img/help/robot-mini-blue.png" alt="Ajuda" title="Precisa de ajuda?">
+			</div>
+		</div>
+
+</section>

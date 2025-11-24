@@ -1,11 +1,17 @@
 <script setup>
 import { robotBlue } from '@/consts'
+import Popper from 'vue3-popper'
+
 const props = defineProps({
   title: {
     type: String,
     default: ''
   },
   description: {
+    type: String,
+    default: ''
+  },
+  tooltip: {
     type: String,
     default: ''
   },
@@ -62,9 +68,18 @@ onMounted(() => {
       <div class="w-[524px] h-[209px] relative left-[315px] top-[140px]">
         <div class="font-bungee text-primary-blue text-4xl" v-html="title"></div>
         <div
-          class="pt-3 pr-8 font-exo2 font-bold text-gray-500 text-3xl leading-7"
-          v-html="description"
-        ></div>
+          class="pt-3 pr-8 font-exo2 font-bold text-gray-500 text-3xl leading-7 speech-description"
+        >
+          <Popper v-if="tooltip" placement="top-end" hover offsetDistance="10">
+            <span v-html="description"></span>
+            <template #content>
+              <div class="bg-white rounded-lg shadow-lg p-4 max-w-[400px]">
+                <div class="text-2xl font-exo2 font-bold text-gray-500">{{ tooltip }}</div>
+              </div>
+            </template>
+          </Popper>
+          <span v-else v-html="description"></span>
+        </div>
         <BaseButton
           @click="close"
           name="btn-toggle-close"
@@ -87,3 +102,9 @@ onMounted(() => {
     <BaseImg img="robot-mini-blue" width="150px"> </BaseImg>
   </button>
 </template>
+
+<style scoped>
+.speech-description :deep(a) {
+  color: #247ba0;
+}
+</style>
