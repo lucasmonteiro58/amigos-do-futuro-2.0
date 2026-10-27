@@ -29,7 +29,7 @@ const props = defineProps({
   }
 })
 
-const emit = defineEmits(['start-drag', 'end-drag'])
+const emit = defineEmits(['start-drag', 'end-drag', 'release'])
 
 // const dragging = ref(false)
 const initialSnapTarget = reactive({
@@ -80,6 +80,8 @@ function onStart(event) {
   const target = event.target
   target.classList.add('start-drag')
   emit('start-drag')
+  // dragend only fires after the snap back home, so expose the actual release moment
+  window.addEventListener('pointerup', () => emit('release'), { once: true })
 }
 
 function onEnd(event) {

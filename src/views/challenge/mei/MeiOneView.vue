@@ -5,21 +5,17 @@ import { draggableItems, trashBins } from './consts'
 const effectsStore = useEffectsStore()
 
 const showHint = ref(true)
-const isCompleted = ref(false)
-const droppedCount = ref(0)
-const hoveredTrash = ref(null)
-const dropTimers = ref(new Map())
 const droppedItems = ref([])
-
+const hoveredTrash = ref(null)
 const isDragging = ref(false)
 
-function isDropped(itemName) {
-  return droppedItems.value.includes(itemName)
-}
-
 const visibleItems = computed(() => {
-  return draggableItems.filter((item) => !isDropped(item.name))
+  return draggableItems.filter((item) => !droppedItems.value.includes(item.name))
 })
+
+function onItemHover() {
+  if (!isDragging.value) effectsStore.playAudio('feedback_mouse_over_itens')
+}
 
 function onDragStart() {
   showHint.value = false
@@ -28,83 +24,31 @@ function onDragStart() {
 
 function onDragEnd() {
   isDragging.value = false
+  hoveredTrash.value = null
 }
 
-function onDragEnterForBin(eventData, bin) {
-  const dataTransfer = eventData.dataTransfer || eventData
-
-  if (bin.accepts.includes(dataTransfer)) {
-    hoveredTrash.value = bin.type
-
-    if (dropTimers.value.has(dataTransfer)) {
-      clearTimeout(dropTimers.value.get(dataTransfer))
-    }
-
-    const timer = setTimeout(() => {
-      if (hoveredTrash.value === bin.type && !isDropped(dataTransfer)) {
-        handleDrop(dataTransfer)
-      }
-      dropTimers.value.delete(dataTransfer)
-    }, 300)
-
-    dropTimers.value.set(dataTransfer, timer)
-  }
+// Same as v0: the bin opens while a matching item is over it and closes when it leaves
+function onDragEnterForBin(bin) {
+  hoveredTrash.value = bin.type
 }
 
-function onDragLeave(eventData) {
-  const dataTransfer = eventData?.dataTransfer || eventData
-  if (!dataTransfer) return
-
-  const trashBin = trashBins.find((bin) => bin.accepts.includes(dataTransfer))
-
-  if (trashBin) {
-    if (hoveredTrash.value === trashBin.type) {
-      if (dropTimers.value.has(dataTransfer)) {
-        clearTimeout(dropTimers.value.get(dataTransfer))
-        dropTimers.value.delete(dataTransfer)
-      }
-
-      hoveredTrash.value = null
-    }
-  }
+function onDragLeaveForBin(bin) {
+  if (hoveredTrash.value === bin.type) hoveredTrash.value = null
 }
 
 const { complete } = useComplete()
 
-function handleDrop(dataTransfer) {
-  isDragging.value = false
-  droppedItems.value.push(dataTransfer)
-  droppedCount.value++
+// Dropping only counts if the item is released while its bin is open
+function onRelease(itemName) {
+  const bin = trashBins.find((bin) => bin.type === hoveredTrash.value)
   hoveredTrash.value = null
+  isDragging.value = false
+  if (!bin?.accepts.includes(itemName) || droppedItems.value.includes(itemName)) return
 
+  droppedItems.value.push(itemName)
   effectsStore.playAudio('feedback_botao_01')
 
-  if (droppedCount.value === 10) {
-    isCompleted.value = true
-
-    complete()
-  }
-}
-
-function onDrop(el) {
-  const { dataTransfer } = el
-  isDragging.value = false
-
-  if (dropTimers.value.has(dataTransfer)) {
-    clearTimeout(dropTimers.value.get(dataTransfer))
-    dropTimers.value.delete(dataTransfer)
-  }
-
-  const trashBin = trashBins.find((bin) => bin.accepts.includes(dataTransfer))
-
-  if (trashBin) {
-    if (!isDropped(dataTransfer)) {
-      handleDrop(dataTransfer)
-    }
-  } else {
-    effectsStore.playAudio('feedback_mouse_over_itens')
-    hoveredTrash.value = null
-  }
+  if (droppedItems.value.length === draggableItems.length) complete()
 }
 </script>
 
@@ -133,6 +77,8 @@ function onDrop(el) {
       :style="{ top: item.top, left: item.left }"
       @start-drag="onDragStart"
       @end-drag="onDragEnd"
+      @release="onRelease(item.name)"
+      @mouseenter="onItemHover"
     >
       <Popper placement="top-start" offsetDistance="20" locked hover :arrow="!isDragging">
         <div class="drop-shadow-md spritesheet z-[10]" :class="item.sprite"></div>
@@ -153,9 +99,9 @@ function onDrop(el) {
       v-for="bin in trashBins"
       :key="`drop-${bin.type}`"
       :expected="bin.accepts"
-      @dropped="onDrop"
-      @drag-enter="(el) => onDragEnterForBin(el, bin)"
-      @drag-leave="onDragLeave"
+      :drop-on-enter="false"
+      @drag-enter="onDragEnterForBin(bin)"
+      @drag-leave="onDragLeaveForBin(bin)"
       class="absolute w-[230px] h-[200px]"
       :style="{ top: bin.top, left: bin.left }"
     />

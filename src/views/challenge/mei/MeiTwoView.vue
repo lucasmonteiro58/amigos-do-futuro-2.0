@@ -82,12 +82,12 @@ const basketItems = ref({
 const handleHoleClick = (index) => {
   const hole = holes.value[index]
 
+  effectsStore.playAudio('feedback_botao_01')
+
   if (hole.state < 2) {
-    effectsStore.playAudio('feedback_click_button')
     hole.state++
   } else if (hole.state === 2) {
     // Harvest
-    effectsStore.playAudio('feedback_click_button')
     hole.state = 3 // Harvested (hidden from hole)
     addToBasket(hole.type)
     harvestedCount.value++
@@ -151,6 +151,7 @@ const getCursor = (hole) => {
         width: '8.5% !important'
       }"
       @click="handleHoleClick(index)"
+      @mouseenter="effectsStore.playAudio('feedback_mouse_over_itens')"
     />
 
     <!-- Basket -->

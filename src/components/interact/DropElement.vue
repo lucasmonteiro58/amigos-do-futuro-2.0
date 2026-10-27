@@ -17,6 +17,10 @@ const props = defineProps({
   snap: {
     type: Object,
     default: undefined
+  },
+  dropOnEnter: {
+    type: Boolean,
+    default: true
   }
 })
 
@@ -48,7 +52,7 @@ function onDragEnter(event) {
   if (isMatch) {
     item.classList.add('can-drop')
     emit('drag-enter', { event, dataTransfer })
-    emit('dropped', { event, dataTransfer })
+    if (props.dropOnEnter) emit('dropped', { event, dataTransfer })
   }
 }
 
