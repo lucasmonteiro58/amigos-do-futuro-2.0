@@ -41,8 +41,6 @@
     "eslint": "^8.56.0",
     "eslint-plugin-vue": "^9.19.2",
     "fs": "^0.0.1-security",
-    "imagemin": "8.0.1",
-    "imagemin-pngquant": "9.0.2",
     "jsdom": "^23.0.1",
     "postcss": "^8.4.32",
     "prettier": "^3.1.1",
