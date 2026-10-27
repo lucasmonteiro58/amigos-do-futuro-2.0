@@ -2,15 +2,32 @@
 import BaseButton from '@/components/inputs/BaseButton.vue'
 import BaseImg from '@/components/media/BaseImg.vue'
 import { robotOrange } from '@/consts'
+import { sendFeedback as saveFeedback } from '@/services/sheets'
 
 const feedbackText = ref('')
 
 const robotRef = ref(null)
 const answer = ref('')
 const router = useRouter()
+const userStore = useUserStore()
+const quizStore = useQuizStore()
+const progressStore = useProgressStore()
 
 function sendFeedback() {
-  console.log('Feedback enviado:', feedbackText.value)
+  saveFeedback({
+    name: userStore.name,
+    age: userStore.age,
+    gender: userStore.gender,
+    city: userStore.city,
+    region: userStore.region?.name,
+    liked: { yes: 'Sim', no: 'Não' }[answer.value] || '',
+    message: feedbackText.value.trim(),
+    badge: quizStore.userBadge,
+    completed: progressStore.challenges
+      .filter((c) => c.completed)
+      .map((c) => c.name)
+      .join(', ')
+  })
   router.push({ name: 'final-cutscene' })
 }
 

@@ -2,6 +2,7 @@
 import AutoCounter from 'vue3-autocounter'
 import { counterAnimation } from '@/consts'
 import ModalInfo from './components/ModalInfo.vue'
+import { getCachedVisits, registerVisit } from '@/services/sheets'
 const router = useRouter()
 
 const showModal = ref(false)
@@ -10,7 +11,17 @@ function startGame() {
   router.push({ name: 'cutscene' })
 }
 
-const counterNumber = ref(324)
+// Começa no último total conhecido; quando a planilha responde, anima dele até o novo
+const counterStart = ref(0)
+const counterNumber = ref(getCachedVisits() ?? 0)
+
+onMounted(async () => {
+  const visits = await registerVisit()
+  if (visits != null && visits !== counterNumber.value) {
+    counterStart.value = counterNumber.value
+    counterNumber.value = visits
+  }
+})
 
 const prefix = computed(() => {
   if (counterNumber.value < 10) return '0000'
@@ -40,7 +51,7 @@ const prefix = computed(() => {
     >
       <div class="font-norwester text-center font-bold text-[85px]">
         <AutoCounter
-          :startAmount="0"
+          :startAmount="counterStart"
           :endAmount="counterNumber"
           :prefix="prefix"
           :duration="2"
