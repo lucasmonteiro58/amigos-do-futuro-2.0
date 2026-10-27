@@ -4,6 +4,11 @@ import BaseButton from '@/components/inputs/BaseButton.vue'
 
 import { badgesInfo } from '../consts'
 
+const badgeImages = import.meta.glob('@/assets/images/sprites/quiz/quiz_*-badge.png', {
+  eager: true,
+  import: 'default'
+})
+
 const emit = defineEmits(['close'])
 const router = useRouter()
 const progressStore = useProgressStore()
@@ -53,7 +58,7 @@ function goHome() {
         <div class="flex flex-wrap gap-7 justify-center px-4 pt-9">
           <div v-for="(_, key) in badgesInfo" :key="key" class="relative">
             <img
-              :src="`/src/assets/images/sprites/quiz/quiz_${key}-badge.png`"
+              :src="badgeImages[`/src/assets/images/sprites/quiz/quiz_${key}-badge.png`]"
               width="150px"
               class="transition-all duration-300"
               :class="{

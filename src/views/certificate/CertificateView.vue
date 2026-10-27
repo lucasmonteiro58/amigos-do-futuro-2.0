@@ -13,6 +13,11 @@ import ModalBadges from './components/ModalBadges.vue'
 import * as htmlToImage from 'html-to-image'
 import jsPDF from 'jspdf'
 
+const cardImages = import.meta.glob('@/assets/images/cards/*.png', {
+  eager: true,
+  import: 'default'
+})
+
 const userStore = useUserStore()
 const quizStore = useQuizStore()
 const effectsStore = useEffectsStore()
@@ -24,6 +29,9 @@ const printRef = ref(null)
 
 const currentBadgeId = computed(() => quizStore.userBadge || 'sau')
 const currentBadge = computed(() => badgesInfo[currentBadgeId.value])
+const currentCardImg = computed(
+  () => cardImages[`/src/assets/images/cards/${currentBadgeId.value}.png`]
+)
 const userName = computed(() => userStore.name || 'Amigo do Futuro')
 
 const certificateText = computed(() => {
@@ -142,7 +150,7 @@ onMounted(() => {
           <div class="w-[45%] h-full flex items-center justify-center pt-20 relative">
             <div ref="printRef" class="relative w-[650px] h-[800px] z-[10]">
               <img
-                :src="`/src/assets/images/cards/${currentBadgeId}.png`"
+                :src="currentCardImg"
                 class="absolute w-full h-full object-contain"
               />
               <div
