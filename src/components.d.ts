@@ -24,6 +24,7 @@ declare module 'vue' {
     ModalAtention: typeof import('./components/layout/ModalAtention.vue')['default']
     RadioTower: typeof import('./components/animations/RadioTower.vue')['default']
     RobotAnimate: typeof import('./components/animations/RobotAnimate.vue')['default']
+    RotateDevice: typeof import('./components/layout/RotateDevice.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     SpeechBubble: typeof import('./components/animations/SpeechBubble.vue')['default']

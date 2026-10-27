@@ -7,7 +7,21 @@ const router = useRouter()
 
 const showModal = ref(false)
 
+// Fullscreen must be requested inside the tap itself, so it happens here and not on mount.
+// iPhones have no fullscreen API for pages, so there it just does nothing.
+function enterFullscreen() {
+  const root = document.documentElement
+  if (document.fullscreenElement || document.webkitFullscreenElement) return
+  const request = root.requestFullscreen || root.webkitRequestFullscreen
+  if (!request) return
+  Promise.resolve(request.call(root, { navigationUI: 'hide' }))
+    // on phones that allow it, keep the game in landscape
+    .then(() => screen.orientation?.lock?.('landscape'))
+    .catch(() => {})
+}
+
 function startGame() {
+  enterFullscreen()
   router.push({ name: 'cutscene' })
 }
 

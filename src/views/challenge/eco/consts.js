@@ -86,6 +86,22 @@ export const balls = [
   }
 ]
 
+// Walls of the house floor plan (planta_plantacasa_eco) the robot can't walk through, in canvas
+// coordinates (the canvas sits 68px right and 25px below the plan's top left corner). Measured
+// from the plan's wall color; the outer walls past the canvas edges are left out.
+export const walls = [
+  { x: 0, y: 375, w: 316, h: 25 }, // kitchen / living room
+  { x: 475, y: 5, w: 25, h: 395 }, // kitchen / bedroom
+  { x: 475, y: 375, w: 250, h: 25 }, // bedroom, left of the door
+  { x: 845, y: 375, w: 134, h: 25 }, // bedroom, right of the door
+  { x: 979, y: 140, w: 30, h: 446 }, // bedroom and hall / bathroom and yard
+  { x: 1009, y: 272, w: 218, h: 71 }, // bathroom / yard
+  { x: 491, y: 523, w: 518, h: 63 }, // hall / yard
+  { x: 491, y: 523, w: 25, h: 84 }, // living room door, top post
+  { x: 491, y: 725, w: 25, h: 125 }, // living room door, bottom post
+  { x: 0, y: 755, w: 516, h: 95 } // living room, bottom
+]
+
 export const monsters = [
   {
     type: 'edu',

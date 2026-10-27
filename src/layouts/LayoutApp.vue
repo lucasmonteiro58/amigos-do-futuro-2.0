@@ -19,6 +19,7 @@ onMounted(() => {
     </span>
     <!-- next screen still downloading in the background -->
     <LoadingScreen v-if="routeLoading" :progress="routeProgress" class="absolute inset-0 z-50" />
+    <RotateDevice />
   </div>
 </template>
 
