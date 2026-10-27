@@ -1,5 +1,6 @@
 <script setup>
-import { rocket } from '@/consts/_animations'
+import rocketLaunchVideo from '@/assets/video/rocket-launch.mp4'
+import { getMediaUrl } from '@/composables/usePreload'
 import Popper from 'vue3-popper'
 
 const effectsStore = useEffectsStore()
@@ -172,15 +173,15 @@ function goToCongratulation() {
       :time="6000"
     />
 
-    <BaseAnimation
+    <video
       v-if="isCompleted"
-      :spritesheet="rocket.sprite"
-      :json="rocket.json"
+      :src="getMediaUrl(rocketLaunchVideo)"
       autoplay
-      fps="36"
-      :isLoop="false"
-      @animationOver="goToCongratulation"
-      class="absolute z-20"
+      muted
+      playsinline
+      @ended="goToCongratulation"
+      @error="goToCongratulation"
+      class="absolute inset-0 z-20 w-full h-full"
     />
   </main>
 </template>

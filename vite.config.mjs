@@ -37,7 +37,7 @@ export default defineConfig({
           'Viga',
           {
             name: 'Exo 2',
-            styles: 'wght@100;200;300;400;500;600;700;800;900'
+            styles: 'wght@400;500;600;700;900'
           }
         ]
       },

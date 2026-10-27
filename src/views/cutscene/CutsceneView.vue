@@ -1,5 +1,6 @@
 <script setup>
 import cutsceneVideo from '@/assets/video/start-cutscene.mp4'
+import { getMediaUrl } from '@/composables/usePreload'
 
 const videoRef = ref(null)
 const isPlaying = ref(false)
@@ -56,7 +57,7 @@ onBeforeUnmount(() => {
     <video
       ref="videoRef"
       class="w-full h-full object-cover"
-      :src="cutsceneVideo"
+      :src="getMediaUrl(cutsceneVideo)"
       @click="clickOnVideo"
     ></video>
     <BaseButton

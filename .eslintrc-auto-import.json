@@ -312,6 +312,12 @@
     "provideLocal": true,
     "useClipboardItems": true,
     "useProgressStore": true,
-    "useComplete": true
+    "useComplete": true,
+    "audioSources": true,
+    "createAudioChannel": true,
+    "loadAudioSprites": true,
+    "getDrawable": true,
+    "getMediaUrl": true,
+    "prepareRoute": true
   }
 }

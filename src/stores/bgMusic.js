@@ -7,7 +7,9 @@ export const useBgMusicStore = defineStore('bgMusic', () => {
 
   const backgoundAudio = ref(
     useSound(background, {
-      volume: 0.02
+      volume: 0.02,
+      // streamed, so two minutes of music are not kept decoded in memory
+      html5: true
     })
   )
   const isPlaying = computed(() => backgoundAudio.value.isPlaying)

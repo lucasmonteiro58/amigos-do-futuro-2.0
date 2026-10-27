@@ -1,332 +1,856 @@
-{"frames": [
-
 {
-	"filename": "Celular_00000.png",
-	"frame": {"x":1,"y":1,"w":400,"h":400},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
-	"sourceSize": {"w":400,"h":400}
-},
-{
-	"filename": "Celular_00001.png",
-	"frame": {"x":403,"y":1,"w":400,"h":400},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
-	"sourceSize": {"w":400,"h":400}
-},
-{
-	"filename": "Celular_00002.png",
-	"frame": {"x":805,"y":1,"w":400,"h":400},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
-	"sourceSize": {"w":400,"h":400}
-},
-{
-	"filename": "Celular_00003.png",
-	"frame": {"x":1207,"y":1,"w":400,"h":400},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
-	"sourceSize": {"w":400,"h":400}
-},
-{
-	"filename": "Celular_00004.png",
-	"frame": {"x":1609,"y":1,"w":400,"h":400},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
-	"sourceSize": {"w":400,"h":400}
-},
-{
-	"filename": "Celular_00005.png",
-	"frame": {"x":1,"y":403,"w":400,"h":400},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
-	"sourceSize": {"w":400,"h":400}
-},
-{
-	"filename": "Celular_00006.png",
-	"frame": {"x":403,"y":403,"w":400,"h":400},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
-	"sourceSize": {"w":400,"h":400}
-},
-{
-	"filename": "Celular_00007.png",
-	"frame": {"x":805,"y":403,"w":400,"h":400},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
-	"sourceSize": {"w":400,"h":400}
-},
-{
-	"filename": "Celular_00008.png",
-	"frame": {"x":1207,"y":403,"w":400,"h":400},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
-	"sourceSize": {"w":400,"h":400}
-},
-{
-	"filename": "Celular_00009.png",
-	"frame": {"x":1609,"y":403,"w":400,"h":400},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
-	"sourceSize": {"w":400,"h":400}
-},
-{
-	"filename": "Celular_00010.png",
-	"frame": {"x":1,"y":805,"w":400,"h":400},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
-	"sourceSize": {"w":400,"h":400}
-},
-{
-	"filename": "Celular_00011.png",
-	"frame": {"x":403,"y":805,"w":400,"h":400},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
-	"sourceSize": {"w":400,"h":400}
-},
-{
-	"filename": "Celular_00012.png",
-	"frame": {"x":805,"y":805,"w":400,"h":400},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
-	"sourceSize": {"w":400,"h":400}
-},
-{
-	"filename": "Celular_00013.png",
-	"frame": {"x":1207,"y":805,"w":400,"h":400},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
-	"sourceSize": {"w":400,"h":400}
-},
-{
-	"filename": "Celular_00014.png",
-	"frame": {"x":1609,"y":805,"w":400,"h":400},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
-	"sourceSize": {"w":400,"h":400}
-},
-{
-	"filename": "Celular_00015.png",
-	"frame": {"x":1,"y":1207,"w":400,"h":400},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
-	"sourceSize": {"w":400,"h":400}
-},
-{
-	"filename": "Celular_00016.png",
-	"frame": {"x":403,"y":1207,"w":400,"h":400},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
-	"sourceSize": {"w":400,"h":400}
-},
-{
-	"filename": "Celular_00017.png",
-	"frame": {"x":805,"y":1207,"w":400,"h":400},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
-	"sourceSize": {"w":400,"h":400}
-},
-{
-	"filename": "Celular_00018.png",
-	"frame": {"x":1207,"y":1207,"w":400,"h":400},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
-	"sourceSize": {"w":400,"h":400}
-},
-{
-	"filename": "Celular_00019.png",
-	"frame": {"x":1609,"y":1207,"w":400,"h":400},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
-	"sourceSize": {"w":400,"h":400}
-},
-{
-	"filename": "Celular_00020.png",
-	"frame": {"x":1,"y":1609,"w":400,"h":400},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
-	"sourceSize": {"w":400,"h":400}
-},
-{
-	"filename": "Celular_00021.png",
-	"frame": {"x":403,"y":1609,"w":400,"h":400},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
-	"sourceSize": {"w":400,"h":400}
-},
-{
-	"filename": "Celular_00022.png",
-	"frame": {"x":805,"y":1609,"w":400,"h":400},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
-	"sourceSize": {"w":400,"h":400}
-},
-{
-	"filename": "Celular_00023.png",
-	"frame": {"x":1207,"y":1609,"w":400,"h":400},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
-	"sourceSize": {"w":400,"h":400}
-},
-{
-	"filename": "Celular_00024.png",
-	"frame": {"x":1609,"y":1609,"w":400,"h":400},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
-	"sourceSize": {"w":400,"h":400}
-},
-{
-	"filename": "Celular_00025.png",
-	"frame": {"x":1,"y":2011,"w":400,"h":400},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
-	"sourceSize": {"w":400,"h":400}
-},
-{
-	"filename": "Celular_00026.png",
-	"frame": {"x":403,"y":2011,"w":400,"h":400},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
-	"sourceSize": {"w":400,"h":400}
-},
-{
-	"filename": "Celular_00027.png",
-	"frame": {"x":805,"y":2011,"w":400,"h":400},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
-	"sourceSize": {"w":400,"h":400}
-},
-{
-	"filename": "Celular_00028.png",
-	"frame": {"x":1207,"y":2011,"w":400,"h":400},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
-	"sourceSize": {"w":400,"h":400}
-},
-{
-	"filename": "Celular_00029.png",
-	"frame": {"x":1609,"y":2011,"w":400,"h":400},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
-	"sourceSize": {"w":400,"h":400}
-},
-{
-	"filename": "Celular_00030.png",
-	"frame": {"x":1,"y":2413,"w":400,"h":400},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
-	"sourceSize": {"w":400,"h":400}
-},
-{
-	"filename": "Celular_00031.png",
-	"frame": {"x":403,"y":2413,"w":400,"h":400},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
-	"sourceSize": {"w":400,"h":400}
-},
-{
-	"filename": "Celular_00032.png",
-	"frame": {"x":805,"y":2413,"w":400,"h":400},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
-	"sourceSize": {"w":400,"h":400}
-},
-{
-	"filename": "Celular_00033.png",
-	"frame": {"x":1207,"y":2413,"w":400,"h":400},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
-	"sourceSize": {"w":400,"h":400}
-},
-{
-	"filename": "Celular_00034.png",
-	"frame": {"x":1609,"y":2413,"w":400,"h":400},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
-	"sourceSize": {"w":400,"h":400}
-},
-{
-	"filename": "Celular_00035.png",
-	"frame": {"x":1,"y":2815,"w":400,"h":400},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
-	"sourceSize": {"w":400,"h":400}
-},
-{
-	"filename": "Celular_00036.png",
-	"frame": {"x":403,"y":2815,"w":400,"h":400},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
-	"sourceSize": {"w":400,"h":400}
-},
-{
-	"filename": "Celular_00037.png",
-	"frame": {"x":403,"y":2815,"w":400,"h":400},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
-	"sourceSize": {"w":400,"h":400}
-},
-{
-	"filename": "Celular_00038.png",
-	"frame": {"x":805,"y":2815,"w":400,"h":400},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
-	"sourceSize": {"w":400,"h":400}
-},
-{
-	"filename": "Celular_00039.png",
-	"frame": {"x":1207,"y":2815,"w":400,"h":400},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
-	"sourceSize": {"w":400,"h":400}
-}],
-"meta": {
-	"app": "https://www.codeandweb.com/texturepacker",
-	"version": "1.0",
-	"image": "sprite.png",
-	"format": "RGBA8888",
-	"size": {"w":2010,"h":3216},
-	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:860da7d8b13ac6b88ab401d3fe4fbb0e:c225a5be2e35ac19ecd18107bd2aef19:68d88b3cf7eafc9b5accfffdfb2fda91$"
-}
+ "frames": [
+  {
+   "filename": "Celular_00000.png",
+   "frame": {
+    "x": 0,
+    "y": 0,
+    "w": 219,
+    "h": 325
+   },
+   "rotated": false,
+   "trimmed": true,
+   "spriteSourceSize": {
+    "x": 130,
+    "y": 34,
+    "w": 219,
+    "h": 325
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 400
+   }
+  },
+  {
+   "filename": "Celular_00001.png",
+   "frame": {
+    "x": 221,
+    "y": 0,
+    "w": 252,
+    "h": 325
+   },
+   "rotated": false,
+   "trimmed": true,
+   "spriteSourceSize": {
+    "x": 97,
+    "y": 34,
+    "w": 252,
+    "h": 325
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 400
+   }
+  },
+  {
+   "filename": "Celular_00002.png",
+   "frame": {
+    "x": 475,
+    "y": 0,
+    "w": 240,
+    "h": 325
+   },
+   "rotated": false,
+   "trimmed": true,
+   "spriteSourceSize": {
+    "x": 109,
+    "y": 34,
+    "w": 240,
+    "h": 325
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 400
+   }
+  },
+  {
+   "filename": "Celular_00003.png",
+   "frame": {
+    "x": 717,
+    "y": 0,
+    "w": 219,
+    "h": 325
+   },
+   "rotated": false,
+   "trimmed": true,
+   "spriteSourceSize": {
+    "x": 130,
+    "y": 34,
+    "w": 219,
+    "h": 325
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 400
+   }
+  },
+  {
+   "filename": "Celular_00004.png",
+   "frame": {
+    "x": 938,
+    "y": 0,
+    "w": 219,
+    "h": 325
+   },
+   "rotated": false,
+   "trimmed": true,
+   "spriteSourceSize": {
+    "x": 130,
+    "y": 34,
+    "w": 219,
+    "h": 325
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 400
+   }
+  },
+  {
+   "filename": "Celular_00005.png",
+   "frame": {
+    "x": 1159,
+    "y": 0,
+    "w": 219,
+    "h": 325
+   },
+   "rotated": false,
+   "trimmed": true,
+   "spriteSourceSize": {
+    "x": 130,
+    "y": 34,
+    "w": 219,
+    "h": 325
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 400
+   }
+  },
+  {
+   "filename": "Celular_00006.png",
+   "frame": {
+    "x": 1380,
+    "y": 0,
+    "w": 148,
+    "h": 325
+   },
+   "rotated": false,
+   "trimmed": true,
+   "spriteSourceSize": {
+    "x": 130,
+    "y": 34,
+    "w": 148,
+    "h": 325
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 400
+   }
+  },
+  {
+   "filename": "Celular_00007.png",
+   "frame": {
+    "x": 1530,
+    "y": 0,
+    "w": 148,
+    "h": 325
+   },
+   "rotated": false,
+   "trimmed": true,
+   "spriteSourceSize": {
+    "x": 130,
+    "y": 34,
+    "w": 148,
+    "h": 325
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 400
+   }
+  },
+  {
+   "filename": "Celular_00008.png",
+   "frame": {
+    "x": 1680,
+    "y": 0,
+    "w": 148,
+    "h": 325
+   },
+   "rotated": false,
+   "trimmed": true,
+   "spriteSourceSize": {
+    "x": 130,
+    "y": 34,
+    "w": 148,
+    "h": 325
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 400
+   }
+  },
+  {
+   "filename": "Celular_00009.png",
+   "frame": {
+    "x": 1830,
+    "y": 0,
+    "w": 148,
+    "h": 325
+   },
+   "rotated": false,
+   "trimmed": true,
+   "spriteSourceSize": {
+    "x": 130,
+    "y": 34,
+    "w": 148,
+    "h": 325
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 400
+   }
+  },
+  {
+   "filename": "Celular_00010.png",
+   "frame": {
+    "x": 1980,
+    "y": 0,
+    "w": 148,
+    "h": 325
+   },
+   "rotated": false,
+   "trimmed": true,
+   "spriteSourceSize": {
+    "x": 130,
+    "y": 34,
+    "w": 148,
+    "h": 325
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 400
+   }
+  },
+  {
+   "filename": "Celular_00011.png",
+   "frame": {
+    "x": 2130,
+    "y": 0,
+    "w": 148,
+    "h": 325
+   },
+   "rotated": false,
+   "trimmed": true,
+   "spriteSourceSize": {
+    "x": 130,
+    "y": 34,
+    "w": 148,
+    "h": 325
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 400
+   }
+  },
+  {
+   "filename": "Celular_00012.png",
+   "frame": {
+    "x": 2280,
+    "y": 0,
+    "w": 148,
+    "h": 325
+   },
+   "rotated": false,
+   "trimmed": true,
+   "spriteSourceSize": {
+    "x": 130,
+    "y": 34,
+    "w": 148,
+    "h": 325
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 400
+   }
+  },
+  {
+   "filename": "Celular_00013.png",
+   "frame": {
+    "x": 2430,
+    "y": 0,
+    "w": 148,
+    "h": 325
+   },
+   "rotated": false,
+   "trimmed": true,
+   "spriteSourceSize": {
+    "x": 130,
+    "y": 34,
+    "w": 148,
+    "h": 325
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 400
+   }
+  },
+  {
+   "filename": "Celular_00014.png",
+   "frame": {
+    "x": 2580,
+    "y": 0,
+    "w": 148,
+    "h": 325
+   },
+   "rotated": false,
+   "trimmed": true,
+   "spriteSourceSize": {
+    "x": 130,
+    "y": 34,
+    "w": 148,
+    "h": 325
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 400
+   }
+  },
+  {
+   "filename": "Celular_00015.png",
+   "frame": {
+    "x": 2730,
+    "y": 0,
+    "w": 148,
+    "h": 325
+   },
+   "rotated": false,
+   "trimmed": true,
+   "spriteSourceSize": {
+    "x": 130,
+    "y": 34,
+    "w": 148,
+    "h": 325
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 400
+   }
+  },
+  {
+   "filename": "Celular_00016.png",
+   "frame": {
+    "x": 2880,
+    "y": 0,
+    "w": 148,
+    "h": 325
+   },
+   "rotated": false,
+   "trimmed": true,
+   "spriteSourceSize": {
+    "x": 130,
+    "y": 34,
+    "w": 148,
+    "h": 325
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 400
+   }
+  },
+  {
+   "filename": "Celular_00017.png",
+   "frame": {
+    "x": 3030,
+    "y": 0,
+    "w": 148,
+    "h": 325
+   },
+   "rotated": false,
+   "trimmed": true,
+   "spriteSourceSize": {
+    "x": 130,
+    "y": 34,
+    "w": 148,
+    "h": 325
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 400
+   }
+  },
+  {
+   "filename": "Celular_00018.png",
+   "frame": {
+    "x": 0,
+    "y": 327,
+    "w": 148,
+    "h": 325
+   },
+   "rotated": false,
+   "trimmed": true,
+   "spriteSourceSize": {
+    "x": 130,
+    "y": 34,
+    "w": 148,
+    "h": 325
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 400
+   }
+  },
+  {
+   "filename": "Celular_00019.png",
+   "frame": {
+    "x": 150,
+    "y": 327,
+    "w": 148,
+    "h": 325
+   },
+   "rotated": false,
+   "trimmed": true,
+   "spriteSourceSize": {
+    "x": 130,
+    "y": 34,
+    "w": 148,
+    "h": 325
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 400
+   }
+  },
+  {
+   "filename": "Celular_00020.png",
+   "frame": {
+    "x": 300,
+    "y": 327,
+    "w": 148,
+    "h": 325
+   },
+   "rotated": false,
+   "trimmed": true,
+   "spriteSourceSize": {
+    "x": 130,
+    "y": 34,
+    "w": 148,
+    "h": 325
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 400
+   }
+  },
+  {
+   "filename": "Celular_00021.png",
+   "frame": {
+    "x": 450,
+    "y": 327,
+    "w": 148,
+    "h": 325
+   },
+   "rotated": false,
+   "trimmed": true,
+   "spriteSourceSize": {
+    "x": 130,
+    "y": 34,
+    "w": 148,
+    "h": 325
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 400
+   }
+  },
+  {
+   "filename": "Celular_00022.png",
+   "frame": {
+    "x": 600,
+    "y": 327,
+    "w": 148,
+    "h": 325
+   },
+   "rotated": false,
+   "trimmed": true,
+   "spriteSourceSize": {
+    "x": 130,
+    "y": 34,
+    "w": 148,
+    "h": 325
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 400
+   }
+  },
+  {
+   "filename": "Celular_00023.png",
+   "frame": {
+    "x": 750,
+    "y": 327,
+    "w": 148,
+    "h": 325
+   },
+   "rotated": false,
+   "trimmed": true,
+   "spriteSourceSize": {
+    "x": 130,
+    "y": 34,
+    "w": 148,
+    "h": 325
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 400
+   }
+  },
+  {
+   "filename": "Celular_00024.png",
+   "frame": {
+    "x": 900,
+    "y": 327,
+    "w": 148,
+    "h": 325
+   },
+   "rotated": false,
+   "trimmed": true,
+   "spriteSourceSize": {
+    "x": 130,
+    "y": 34,
+    "w": 148,
+    "h": 325
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 400
+   }
+  },
+  {
+   "filename": "Celular_00025.png",
+   "frame": {
+    "x": 1050,
+    "y": 327,
+    "w": 148,
+    "h": 325
+   },
+   "rotated": false,
+   "trimmed": true,
+   "spriteSourceSize": {
+    "x": 130,
+    "y": 34,
+    "w": 148,
+    "h": 325
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 400
+   }
+  },
+  {
+   "filename": "Celular_00026.png",
+   "frame": {
+    "x": 1200,
+    "y": 327,
+    "w": 148,
+    "h": 325
+   },
+   "rotated": false,
+   "trimmed": true,
+   "spriteSourceSize": {
+    "x": 130,
+    "y": 34,
+    "w": 148,
+    "h": 325
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 400
+   }
+  },
+  {
+   "filename": "Celular_00027.png",
+   "frame": {
+    "x": 1350,
+    "y": 327,
+    "w": 148,
+    "h": 325
+   },
+   "rotated": false,
+   "trimmed": true,
+   "spriteSourceSize": {
+    "x": 130,
+    "y": 34,
+    "w": 148,
+    "h": 325
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 400
+   }
+  },
+  {
+   "filename": "Celular_00028.png",
+   "frame": {
+    "x": 1500,
+    "y": 327,
+    "w": 148,
+    "h": 325
+   },
+   "rotated": false,
+   "trimmed": true,
+   "spriteSourceSize": {
+    "x": 130,
+    "y": 34,
+    "w": 148,
+    "h": 325
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 400
+   }
+  },
+  {
+   "filename": "Celular_00029.png",
+   "frame": {
+    "x": 1650,
+    "y": 327,
+    "w": 148,
+    "h": 325
+   },
+   "rotated": false,
+   "trimmed": true,
+   "spriteSourceSize": {
+    "x": 130,
+    "y": 34,
+    "w": 148,
+    "h": 325
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 400
+   }
+  },
+  {
+   "filename": "Celular_00030.png",
+   "frame": {
+    "x": 1800,
+    "y": 327,
+    "w": 148,
+    "h": 325
+   },
+   "rotated": false,
+   "trimmed": true,
+   "spriteSourceSize": {
+    "x": 130,
+    "y": 34,
+    "w": 148,
+    "h": 325
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 400
+   }
+  },
+  {
+   "filename": "Celular_00031.png",
+   "frame": {
+    "x": 1950,
+    "y": 327,
+    "w": 148,
+    "h": 325
+   },
+   "rotated": false,
+   "trimmed": true,
+   "spriteSourceSize": {
+    "x": 130,
+    "y": 34,
+    "w": 148,
+    "h": 325
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 400
+   }
+  },
+  {
+   "filename": "Celular_00032.png",
+   "frame": {
+    "x": 2100,
+    "y": 327,
+    "w": 148,
+    "h": 325
+   },
+   "rotated": false,
+   "trimmed": true,
+   "spriteSourceSize": {
+    "x": 130,
+    "y": 34,
+    "w": 148,
+    "h": 325
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 400
+   }
+  },
+  {
+   "filename": "Celular_00033.png",
+   "frame": {
+    "x": 2250,
+    "y": 327,
+    "w": 148,
+    "h": 325
+   },
+   "rotated": false,
+   "trimmed": true,
+   "spriteSourceSize": {
+    "x": 130,
+    "y": 34,
+    "w": 148,
+    "h": 325
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 400
+   }
+  },
+  {
+   "filename": "Celular_00034.png",
+   "frame": {
+    "x": 2400,
+    "y": 327,
+    "w": 148,
+    "h": 325
+   },
+   "rotated": false,
+   "trimmed": true,
+   "spriteSourceSize": {
+    "x": 130,
+    "y": 34,
+    "w": 148,
+    "h": 325
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 400
+   }
+  },
+  {
+   "filename": "Celular_00035.png",
+   "frame": {
+    "x": 2550,
+    "y": 327,
+    "w": 148,
+    "h": 325
+   },
+   "rotated": false,
+   "trimmed": true,
+   "spriteSourceSize": {
+    "x": 130,
+    "y": 34,
+    "w": 148,
+    "h": 325
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 400
+   }
+  },
+  {
+   "filename": "Celular_00036.png",
+   "frame": {
+    "x": 2700,
+    "y": 327,
+    "w": 148,
+    "h": 325
+   },
+   "rotated": false,
+   "trimmed": true,
+   "spriteSourceSize": {
+    "x": 130,
+    "y": 34,
+    "w": 148,
+    "h": 325
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 400
+   }
+  },
+  {
+   "filename": "Celular_00037.png",
+   "frame": {
+    "x": 2700,
+    "y": 327,
+    "w": 148,
+    "h": 325
+   },
+   "rotated": false,
+   "trimmed": true,
+   "spriteSourceSize": {
+    "x": 130,
+    "y": 34,
+    "w": 148,
+    "h": 325
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 400
+   }
+  },
+  {
+   "filename": "Celular_00038.png",
+   "frame": {
+    "x": 2850,
+    "y": 327,
+    "w": 148,
+    "h": 325
+   },
+   "rotated": false,
+   "trimmed": true,
+   "spriteSourceSize": {
+    "x": 130,
+    "y": 34,
+    "w": 148,
+    "h": 325
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 400
+   }
+  },
+  {
+   "filename": "Celular_00039.png",
+   "frame": {
+    "x": 3000,
+    "y": 327,
+    "w": 148,
+    "h": 325
+   },
+   "rotated": false,
+   "trimmed": true,
+   "spriteSourceSize": {
+    "x": 130,
+    "y": 34,
+    "w": 148,
+    "h": 325
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 400
+   }
+  }
+ ],
+ "meta": {
+  "app": "https://www.codeandweb.com/texturepacker",
+  "version": "1.0",
+  "image": "sprite.png",
+  "format": "RGBA8888",
+  "size": {
+   "w": 3178,
+   "h": 652
+  },
+  "scale": "1",
+  "smartupdate": "$TexturePacker:SmartUpdate:860da7d8b13ac6b88ab401d3fe4fbb0e:c225a5be2e35ac19ecd18107bd2aef19:68d88b3cf7eafc9b5accfffdfb2fda91$"
+ }
 }
