@@ -1,5 +1,6 @@
 // What is downloaded on the loading screen, what is downloaded in the background afterwards,
-// and what each route needs downloaded and decoded before it opens.
+// and what each route needs downloaded and decoded before it opens. Videos and voice lines
+// never hold a route back: they can start playing while they stream.
 import sheet0 from '@/assets/images/generated-sprites/spritesheet0.webp'
 import sheet1 from '@/assets/images/generated-sprites/spritesheet1.webp'
 import sheet2 from '@/assets/images/generated-sprites/spritesheet2.webp'
@@ -72,18 +73,9 @@ const routeAnimations = {
   'sau-2': [seesaw, toboggan, smartphone, ball, rocking]
 }
 
-const routeMedia = {
-  cutscene: [startCutscene],
-  'final-cutscene': [finalCutscene],
-  'ino-2': [rocketLaunch]
-}
-
 const routeImages = {
   certificate: extraImages
 }
-
-// screens before the first voice line, so they don't wait for the voice audio
-const routesWithoutLines = ['home', 'cutscene']
 
 const image = (url) => ({ type: 'image', url })
 const media = (url) => ({ type: 'media', url })
@@ -131,9 +123,7 @@ export function routeNeeds(route) {
     assets: [
       ...sheets.map(image),
       ...animations.map(image),
-      ...(routeImages[route.name] || []).map(image),
-      ...(routeMedia[route.name] || []).map(media),
-      ...(routesWithoutLines.includes(route.name) ? [] : [audio('lines')])
+      ...(routeImages[route.name] || []).map(image)
     ],
     decode: { sheets, animations }
   }

@@ -6,13 +6,15 @@ import { loadAudioGroup, audioGroupSources } from '@/utils/audio'
 // - the loading screen only waits for what the home screen and every later screen need, and
 //   decodes it;
 // - everything else keeps downloading in the background, in the order the player reaches it;
-// - before each route opens, its downloads are awaited (with a loading screen if they are not
-//   done yet) and its images are decoded. Decoding all of them at once would not fit in memory
+// - before each route opens, its images are awaited (behind a loading screen, shown at once so
+//   the tap never looks ignored) and decoded. Videos and voice lines stream instead. Decoding all of them at once would not fit in memory
 //   on low end devices.
 
 const BACKGROUND_CONCURRENCY = 3
 
 const downloads = new Map() // asset key -> Promise of the finished download
+const finished = new Set() // asset keys whose download is done
+const controllers = new Map() // url -> AbortController of a running video download
 const bytes = new Map() // asset key -> { loaded, total }
 const images = new Map() // url -> Promise of the loaded HTMLImageElement (keeps it in memory cache)
 const bitmaps = new Map() // absolute url -> decoded ImageBitmap for canvas animations
@@ -23,9 +25,15 @@ const absolute = (url) => new URL(url, document.baseURI).href
 const assetKey = (asset) => (asset.type === 'audio' ? `audio:${asset.group}` : asset.url)
 const assetUrl = (asset) => (asset.type === 'audio' ? audioGroupSources[asset.group] : asset.url)
 
-/** Url to use for a preloaded video or audio file (a blob url once it was downloaded). */
+/**
+ * Url to use for a preloaded video (a blob url once it was downloaded). A video still
+ * downloading plays streamed from its own url, and its download stops so the two don't
+ * compete for bandwidth.
+ */
 export function getMediaUrl(url) {
-  return objectUrls.get(url) || url
+  if (objectUrls.has(url)) return objectUrls.get(url)
+  controllers.get(url)?.abort()
+  return url
 }
 
 /** The decoded bitmap of an animation spritesheet when available, else the image itself. */
@@ -49,8 +57,8 @@ function loadImage(url) {
 }
 
 /** fetch() that reports the downloaded bytes of `key`, for byte accurate progress bars. */
-async function fetchBlob(url, key) {
-  const response = await fetch(url)
+async function fetchBlob(url, key, signal) {
+  const response = await fetch(url, { signal })
   const total = Number(response.headers.get('content-length')) || 0
   const progress = { loaded: 0, total }
   bytes.set(key, progress)
@@ -71,8 +79,10 @@ async function fetchBlob(url, key) {
 async function runDownload(asset) {
   const key = assetKey(asset)
   const url = assetUrl(asset)
+  const controller = asset.type === 'media' ? new AbortController() : null
+  if (controller) controllers.set(url, controller)
   try {
-    const blob = await fetchBlob(url, key)
+    const blob = await fetchBlob(url, key, controller?.signal)
     if (asset.type === 'image') {
       // the image itself comes from the HTTP cache: CSS backgrounds use this same url
       await loadImage(url)
@@ -81,8 +91,11 @@ async function runDownload(asset) {
       if (asset.type === 'audio') await loadAudioGroup(asset.group, objectUrls.get(url))
     }
   } catch (error) {
-    console.error('Erro ao pré-carregar:', url, error)
+    if (error.name !== 'AbortError') console.error('Erro ao pré-carregar:', url, error)
     if (asset.type === 'image') await loadImage(url)
+  } finally {
+    controllers.delete(url)
+    finished.add(key)
   }
 }
 
@@ -172,22 +185,31 @@ export default function usePreload() {
     return () => clearInterval(interval)
   }
 
-  /** Waits for the downloads of `route`, showing a loading screen if they take a moment. */
+  /**
+   * Waits for the images of `route` and decodes them. Whenever that is not instant a loading
+   * screen covers the old route, so the tap never looks ignored.
+   */
   async function prepareRoute(route) {
     const { assets } = routeNeeds(route)
     const pending = Promise.all(assets.map(download))
-    const finished = await Promise.race([pending.then(() => true), timeout(150)])
-    if (!finished) {
+    let stop = () => {}
+    if (!assets.every((asset) => finished.has(assetKey(asset)))) {
       routeProgress.value = 0
       routeLoading.value = true
-      const stop = trackProgress(assets, routeProgress)
+      stop = trackProgress(assets, routeProgress)
       // a broken download must not lock the player out of the screen
       await Promise.race([pending, timeout(30000)])
-      stop()
-      routeLoading.value = false
     }
-    await Promise.race([decodeRoute(route), timeout(1500)])
+    const decoded = Promise.race([decodeRoute(route), timeout(1500)])
+    if (!routeLoading.value && !(await Promise.race([decoded.then(() => true), timeout(100)]))) {
+      routeProgress.value = 99 // everything is downloaded, only decoding is left
+      routeLoading.value = true
+    }
+    await decoded
+    stop()
+    routeLoading.value = false
   }
+
 
   async function preloadAssets() {
     const stop = trackProgress(criticalAssets, loadingProgress)
