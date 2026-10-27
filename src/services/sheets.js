@@ -46,8 +46,17 @@ function cacheVisits(visits) {
   }
 }
 
-// Conta um acesso por sessão do navegador e devolve o total
-export async function registerVisit() {
+let visitRequest = null
+
+// Conta um acesso por sessão do navegador e devolve o total.
+// Chamado no início do app (main.js) para a resposta chegar durante o loading;
+// as chamadas seguintes reaproveitam o mesmo pedido.
+export function registerVisit() {
+  visitRequest ??= requestVisit()
+  return visitRequest
+}
+
+async function requestVisit() {
   if (!SHEETS_URL) return null
   try {
     let data

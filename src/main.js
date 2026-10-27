@@ -9,6 +9,9 @@ import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
 
 import App from './App.vue'
 import router from './router'
+import { registerVisit } from './services/sheets'
+
+registerVisit()
 
 const app = createApp(App)
 const pinia = createPinia()
