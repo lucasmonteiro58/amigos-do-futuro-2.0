@@ -10,7 +10,7 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
     "sprite": "node scripts/spritesheet-generator.js",
-    "audio": "audiosprite --path 'src/assets/audios' --export 'webm,mp3' --bitrate '64' --format 'howler2' --output audio  src/assets/audios/sprites/**/*.*** && mv audio.json src/assets/audios/audio.json && mv audio.mp3 src/assets/audios/audio.mp3 && mv audio.webm src/assets/audios/audio.webm"
+    "audio": "node scripts/audio-sprite-generator.js"
   },
   "dependencies": {
     "@vueform/multiselect": "^2.6.6",
@@ -18,6 +18,7 @@
     "@vueuse/core": "^10.7.1",
     "@vueuse/motion": "^2.0.0",
     "@vueuse/sound": "^2.0.1",
+    "howler": "^2.2.4",
     "html-to-image": "^1.11.13",
     "interactjs": "^1.10.27",
     "jspdf": "^3.0.4",

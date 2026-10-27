@@ -31,10 +31,17 @@ function draw() {
   })
 }
 
+// one Image per ball, created once: creating them on every frame made each draw wait on a new image
+const ballImages = new Map(
+  balls.map((ball) => {
+    const image = new Image()
+    image.src = ball.img
+    return [ball.img, image]
+  })
+)
+
 function drawBall(ball) {
-  const ballImage = new Image()
-  ballImage.src = ball.img
-  ctx.value?.drawImage(ballImage, ball.x, ball.y)
+  ctx.value?.drawImage(ballImages.get(ball.img), ball.x, ball.y)
   ball.y += Math.sin(Date.now() / 1000) * 0.25
   checkCollision(ball)
 }
@@ -89,9 +96,16 @@ watchEffect(() => {
   }
 })
 
+let drawInterval = null
+
 onMounted(() => {
   window.addEventListener('keydown', handleKeyDown)
-  setInterval(draw, 24)
+  drawInterval = setInterval(draw, 24)
+})
+
+onBeforeUnmount(() => {
+  window.removeEventListener('keydown', handleKeyDown)
+  clearInterval(drawInterval)
 })
 </script>
 

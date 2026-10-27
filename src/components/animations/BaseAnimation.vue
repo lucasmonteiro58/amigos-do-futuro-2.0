@@ -1,5 +1,6 @@
 <script setup>
 import { useElementSize } from '@vueuse/core'
+import { getDrawable } from '@/composables/usePreload'
 
 const props = defineProps({
   spritesheet: {
@@ -39,100 +40,98 @@ const props = defineProps({
 
 const emits = defineEmits(['animationStart', 'animationOver'])
 
-const frames = ref([])
-const length = ref(0)
-const currentIndex = ref(0)
-const animationFrameID = ref(null)
-const yoyodirection = ref(0)
-const sprite = ref(null)
-const ctx = ref(null)
-const height = ref(0)
-const widthCanvas = ref(0)
-const now = ref(0)
-const then = ref(0)
-const lower = ref(0)
-const upper = ref(undefined)
+// Per-frame state is kept out of Vue reactivity: it changes ~30x per second and nothing
+// in the template depends on it, so tracking it would only add work on the hot path.
+const frames = props.json.frames.map((frame) => ({
+  name: frame.filename,
+  x: frame.frame.x,
+  y: frame.frame.y,
+  w: frame.frame.w,
+  h: frame.frame.h,
+  // trimmed frames are drawn at their offset inside the original (untrimmed) frame
+  dx: frame.trimmed ? frame.spriteSourceSize.x : 0,
+  dy: frame.trimmed ? frame.spriteSourceSize.y : 0
+}))
+const length = frames.length - 1
+let currentIndex = 0
+let animationFrameID = null
+let yoyodirection = 0
+let sprite = null
+let ctx = null
+let then = 0
+let lower = 0
+let upper = frames.length
+let mounted = false
+
+// sized before mount so the canvas is never resized (and cleared) after the first frame
+const source = props.json.frames[0].sourceSize || props.json.frames[0].frame
+const widthCanvas = source.w
+const height = source.h
 const refContent = ref(null)
 
 onMounted(() => {
-  props.json.frames.forEach((frame) => {
-    frames.value.push({
-      name: frame.filename,
-      x: frame.frame.x,
-      y: frame.frame.y,
-      w: frame.frame.w,
-      h: frame.frame.h,
-      rotated: frame.rotated,
-      trimmed: frame.trimmed
-    })
-  })
-  frames.value.sort((a, b) => a.filename < b.filename)
-  widthCanvas.value = frames.value[0].w
-  height.value = frames.value[0].h
-  length.value = frames.value.length - 1
-  upper.value = frames.value.length
+  sprite = getDrawable(props.spritesheet)
+  ctx = refContent.value.getContext('2d')
+  mounted = true
   props.autoplay && play()
 })
 
-onBeforeMount(() => {
-  nextTick(() => {
-    sprite.value = props.spritesheet
-    init()
-  })
+onBeforeUnmount(() => {
+  mounted = false
+  window.cancelAnimationFrame(animationFrameID)
 })
 
-function init() {
-  ctx.value = refContent.value.getContext('2d')
-}
-
 function render() {
-  ctx.value && ctx.value.clearRect(0, 0, widthCanvas.value, height.value)
-  if (props.yoyo && currentIndex.value % length.value === 0 && currentIndex.value) {
-    yoyodirection.value = Number(!yoyodirection.value)
+  if (!ctx) return
+  ctx.clearRect(0, 0, widthCanvas, height)
+  if (props.yoyo && currentIndex % length === 0 && currentIndex) {
+    yoyodirection = Number(!yoyodirection)
   }
-  const index = Math.abs((currentIndex.value % length.value) - length.value * yoyodirection.value)
-  const { x, y, w, h } = frames.value[index]
-  ctx.value && ctx.value.drawImage(sprite.value, x, y, w, h, 0, 0, w, h)
+  const index = Math.abs((currentIndex % length) - length * yoyodirection)
+  const { x, y, w, h, dx, dy } = frames[index]
+  ctx.drawImage(sprite, x, y, w, h, dx, dy, w, h)
 }
 
-function loop() {
-  now.value = Date.now()
-  const delta = now.value - then.value
-  if (delta > 1000 / props.fps) {
-    then.value = now.value - (delta % (1000 / props.fps))
+function loop(now = performance.now()) {
+  if (!mounted) return
+  const interval = 1000 / props.fps
+  const delta = now - then
+  if (delta > interval) {
+    then = now - (delta % interval)
     render()
-    currentIndex.value++
+    currentIndex++
   }
 
-  if (currentIndex.value < upper.value) {
-    animationFrameID.value = window.requestAnimationFrame(loop)
+  if (currentIndex < upper) {
+    animationFrameID = window.requestAnimationFrame(loop)
   } else {
-    emits('animationOver', currentIndex.value)
+    emits('animationOver', currentIndex)
     stop()
     if (props.isLoop) {
-      play(lower.value, upper.value)
+      play(lower, upper)
     }
   }
 }
 
 function stop() {
-  window.cancelAnimationFrame(animationFrameID.value)
-  currentIndex.value = lower.value
+  window.cancelAnimationFrame(animationFrameID)
+  currentIndex = lower
 }
 
 function play(from, to) {
   if (!from) {
-    lower.value = 0
+    lower = 0
   }
 
   if (!to) {
-    upper.value = frames.value.length
+    upper = frames.length
   }
 
-  emits('animationStart', currentIndex.value)
-  currentIndex.value = Number.isNaN(Number(from)) ? currentIndex.value : from
-  lower.value = Number.isNaN(Number(from)) ? lower.value : from
-  upper.value = Number.isNaN(Number(to)) ? upper.value : to
+  emits('animationStart', currentIndex)
+  currentIndex = Number.isNaN(Number(from)) ? currentIndex : from
+  lower = Number.isNaN(Number(from)) ? lower : from
+  upper = Number.isNaN(Number(to)) ? upper : to
+  window.cancelAnimationFrame(animationFrameID)
   loop()
 }
 
