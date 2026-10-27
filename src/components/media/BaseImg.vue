@@ -1,5 +1,6 @@
 <script setup>
 import { useElementSize } from '@vueuse/core'
+import spriteSizes from '@/assets/style/generated-sprites/sizes.json'
 
 const props = defineProps({
   img: {
@@ -14,15 +15,28 @@ const props = defineProps({
 const refContainer = ref(null)
 const refContent = ref(null)
 
-const { width: containerWidth } = useElementSize(refContainer)
-const { width: contentWidth, height: contentHeight } = useElementSize(refContent)
+// The natural size comes from the spritesheet build, so the first render already has the
+// right size. Only sprites missing from that list fall back to measuring the element.
+const naturalSize = computed(() => spriteSizes[props.img])
+const { width: measuredWidth, height: measuredHeight } = useElementSize(
+  computed(() => (naturalSize.value ? null : refContent.value))
+)
+const contentWidth = computed(() => naturalSize.value?.[0] ?? measuredWidth.value)
+const contentHeight = computed(() => naturalSize.value?.[1] ?? measuredHeight.value)
+
+// best guess until the container is measured: the natural width, capped by a px `width`
+const initialWidth = Math.min(
+  naturalSize.value?.[0] ?? 0,
+  props.width.endsWith('px') ? parseFloat(props.width) : Infinity
+)
+const { width: containerWidth } = useElementSize(refContainer, { width: initialWidth, height: 0 })
 
 const getContentHeight = computed(() => {
   return contentHeight.value * scale.value
 })
 
 const scale = computed(() => {
-  return containerWidth.value / contentWidth.value
+  return contentWidth.value ? containerWidth.value / contentWidth.value : 0
 })
 
 const styleContainer = computed(() => {

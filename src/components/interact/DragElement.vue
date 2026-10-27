@@ -39,14 +39,14 @@ const initialSnapTarget = reactive({
   endOnly: true,
   offset: 'self'
 })
-const sigmoidInterval = ref('')
-const rotation = ref(0)
+// rotation eases back to 0 once per frame while dragging; plain variables, nothing renders them
+let rotation = 0
+let decayFrame = null
 const translation = ref('')
 
 const refDrag = ref(null)
 
 function onMove(event) {
-  if (sigmoidInterval.value !== '') clearInterval(sigmoidInterval.value)
   const target = event.target
   const initialX = parseFloat(target.getAttribute('data-x')) || 0
   const initialY = parseFloat(target.getAttribute('data-y')) || 0
@@ -62,7 +62,7 @@ function onMove(event) {
 
   target.style.transition = '0s'
   rotate(event.dx, target, translation.value)
-  sigmoidInterval.value = setInterval(() => rotate(0, target, translation.value), 1000 / 60)
+  decayRotation(target)
 
   target.setAttribute('data-x', newX)
   target.setAttribute('data-y', newY)
@@ -85,7 +85,7 @@ function onStart(event) {
 }
 
 function onEnd(event) {
-  if (sigmoidInterval.value !== '') clearInterval(sigmoidInterval.value)
+  cancelAnimationFrame(decayFrame)
   event.target.style.transition = '0.1s'
   event.target.style.transform = translation.value + ' rotate(0deg)'
   // onendEvent(dataTransfer)
@@ -98,13 +98,33 @@ function sigmoid(x) {
   return x / (1 + Math.abs(x))
 }
 
-function rotate(x, target, translation) {
+function rotate(x, target, translation, decay = 0.9) {
   if (props.isSigmoid) {
-    rotation.value = rotation.value * 0.9 + sigmoid(x) * 2
-    target.style.transform = translation + `rotate(${rotation.value}deg)`
-    if (Math.abs(rotation.value) < 0.01) rotation.value = 0
+    rotation = rotation * decay + sigmoid(x) * 2
+    if (Math.abs(rotation) < 0.01) rotation = 0
+    target.style.transform = translation + `rotate(${rotation}deg)`
   }
 }
+
+// keeps easing the rotation back to 0 while the pointer is still; stops by itself at 0
+function decayRotation(target) {
+  cancelAnimationFrame(decayFrame)
+  if (!props.isSigmoid) return
+  let last = performance.now()
+  const step = (now) => {
+    // same speed as the former 60 fps interval, whatever the screen refresh rate
+    rotate(0, target, translation.value, Math.pow(0.9, (now - last) / (1000 / 60)))
+    last = now
+    if (rotation !== 0) decayFrame = requestAnimationFrame(step)
+  }
+  decayFrame = requestAnimationFrame(step)
+}
+
+onBeforeUnmount(() => {
+  cancelAnimationFrame(decayFrame)
+  // interact.js keeps every element it was given; without this they pile up between screens
+  interact(refDrag.value).unset()
+})
 
 onMounted(() => {
   const snap = initialSnapTarget

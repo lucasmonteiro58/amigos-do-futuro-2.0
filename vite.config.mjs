@@ -5,7 +5,6 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 import Unfonts from 'unplugin-fonts/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
-import preload from 'vite-plugin-preload'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -29,7 +28,6 @@ export default defineConfig({
       dts: 'src/components.d.ts',
       include: [/\.vue$/, /\.vue\?vue/]
     }),
-    preload(),
     Unfonts({
       google: {
         families: [

@@ -32,7 +32,7 @@ const data = useVModel(props, 'modelValue', emit)
 <template>
   <div
     v-if="data"
-    class="fixed w-[1920px] h-[1080px] bg-[#0000007f] flex items-center justify-center z-40 top-0 left-0 backdrop-blur"
+    class="fixed w-[1920px] h-[1080px] bg-[#0000007f] flex items-center justify-center z-40 top-0 left-0"
   >
     <div
       v-if="!isCustom"

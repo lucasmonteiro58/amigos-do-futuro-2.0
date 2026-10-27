@@ -10,8 +10,6 @@ import BaseImg from '@/components/media/BaseImg.vue'
 import BaseButton from '@/components/inputs/BaseButton.vue'
 import ModalBadges from './components/ModalBadges.vue'
 
-import * as htmlToImage from 'html-to-image'
-import jsPDF from 'jspdf'
 
 const cardImages = import.meta.glob('@/assets/images/cards/*.png', {
   eager: true,
@@ -51,9 +49,17 @@ function onRobotClick() {
   }
 }
 
+// The export libraries (~650 KB with jspdf's dependencies) are only needed on this screen, so
+// they are fetched once it opens instead of with the rest of the game.
+onMounted(() => {
+  import('html-to-image')
+  import('jspdf')
+})
+
 async function handleDownload() {
   const node = printRef.value
 
+  const htmlToImage = await import('html-to-image')
   const dataUrl = await htmlToImage.toPng(node, {
     quality: 1,
     cacheBust: true,
@@ -68,6 +74,7 @@ async function handleDownload() {
 async function handleDownloadPDF() {
   const node = printRef.value
 
+  const htmlToImage = await import('html-to-image')
   const dataUrl = await htmlToImage.toPng(node, {
     quality: 1,
     cacheBust: true,
@@ -86,6 +93,7 @@ async function handleDownloadPDF() {
   const mmWidth = pxToMm(pxWidth)
   const mmHeight = pxToMm(pxHeight)
 
+  const { default: jsPDF } = await import('jspdf')
   const pdf = new jsPDF({
     orientation: mmWidth > mmHeight ? 'landscape' : 'portrait',
     unit: 'mm',

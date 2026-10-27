@@ -155,6 +155,10 @@ onMounted(() => {
   })
 })
 
+onBeforeUnmount(() => {
+  interact(refDrop.value).unset()
+})
+
 defineExpose({
   resetOptionsState,
   resetOptionsStateWrong

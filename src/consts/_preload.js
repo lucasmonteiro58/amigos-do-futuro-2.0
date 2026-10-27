@@ -1,15 +1,16 @@
-// What has to be downloaded on the loading screen and what has to be decoded before each route.
-import sheet0 from '@/assets/images/generated-sprites/spritesheet0.png'
-import sheet1 from '@/assets/images/generated-sprites/spritesheet1.png'
-import sheet2 from '@/assets/images/generated-sprites/spritesheet2.png'
-import sheet3 from '@/assets/images/generated-sprites/spritesheet3.png'
-import sheet4 from '@/assets/images/generated-sprites/spritesheet4.png'
-import sheet5 from '@/assets/images/generated-sprites/spritesheet5.png'
-import sheet6 from '@/assets/images/generated-sprites/spritesheet6.png'
-import sheet7 from '@/assets/images/generated-sprites/spritesheet7.png'
-import sheet8 from '@/assets/images/generated-sprites/spritesheet8.png'
-import sheet9 from '@/assets/images/generated-sprites/spritesheet9.png'
-import sheet10 from '@/assets/images/generated-sprites/spritesheet10.png'
+// What is downloaded on the loading screen, what is downloaded in the background afterwards,
+// and what each route needs downloaded and decoded before it opens.
+import sheet0 from '@/assets/images/generated-sprites/spritesheet0.webp'
+import sheet1 from '@/assets/images/generated-sprites/spritesheet1.webp'
+import sheet2 from '@/assets/images/generated-sprites/spritesheet2.webp'
+import sheet3 from '@/assets/images/generated-sprites/spritesheet3.webp'
+import sheet4 from '@/assets/images/generated-sprites/spritesheet4.webp'
+import sheet5 from '@/assets/images/generated-sprites/spritesheet5.webp'
+import sheet6 from '@/assets/images/generated-sprites/spritesheet6.webp'
+import sheet7 from '@/assets/images/generated-sprites/spritesheet7.webp'
+import sheet8 from '@/assets/images/generated-sprites/spritesheet8.webp'
+import sheet9 from '@/assets/images/generated-sprites/spritesheet9.webp'
+import sheet10 from '@/assets/images/generated-sprites/spritesheet10.webp'
 
 import robotBlue from '@/assets/animations/robot/blue/sprite.png'
 import robotOrange from '@/assets/animations/robot/orange/sprite.png'
@@ -53,44 +54,6 @@ const challengeSheets = {
   sau: [sheet10]
 }
 
-/** Downloaded on the loading screen and kept in memory as blob urls. */
-export const preloadMedia = [startCutscene, finalCutscene, rocketLaunch, background]
-
-/** Every image the app shows. All are downloaded on the loading screen. */
-export const preloadImages = [
-  sheet0,
-  sheet1,
-  sheet2,
-  sheet3,
-  ...Object.values(challengeSheets).flat(),
-  robotBlue,
-  robotOrange,
-  robotFull,
-  counter,
-  cursorDrag,
-  cursorClick,
-  cursorKeyboard,
-  radioTower,
-  drinkingFountain,
-  pipes,
-  faucet,
-  seesaw,
-  toboggan,
-  smartphone,
-  ball,
-  rocking,
-  eduMachine,
-  lazMachine,
-  sauMachine,
-  ...extraImages
-]
-
-/** Decoded once on the loading screen and kept decoded: used on almost every screen. */
-export const globalDecode = {
-  sheets: [sheet0, sheet1],
-  animations: [robotBlue, robotOrange, robotFull, counter, cursorDrag, cursorClick, cursorKeyboard]
-}
-
 const routeSheets = {
   map: [sheet2],
   quiz: [sheet3],
@@ -99,6 +62,9 @@ const routeSheets = {
 }
 
 const routeAnimations = {
+  form: [robotOrange],
+  quiz: [robotOrange],
+  feedback: [robotOrange],
   'eco-2': [eduMachine, lazMachine, sauMachine],
   'gov-3': [radioTower],
   'ino-1': [drinkingFountain],
@@ -106,11 +72,69 @@ const routeAnimations = {
   'sau-2': [seesaw, toboggan, smartphone, ball, rocking]
 }
 
-/** Images to decode right before entering `route`, on top of `globalDecode`. */
-export function routeDecode(route) {
+const routeMedia = {
+  cutscene: [startCutscene],
+  'final-cutscene': [finalCutscene],
+  'ino-2': [rocketLaunch]
+}
+
+const routeImages = {
+  certificate: extraImages
+}
+
+// screens before the first voice line, so they don't wait for the voice audio
+const routesWithoutLines = ['home', 'cutscene']
+
+const image = (url) => ({ type: 'image', url })
+const media = (url) => ({ type: 'media', url })
+const audio = (group) => ({ type: 'audio', group })
+
+/** Blocks the loading screen: what the home screen and every screen after it need. */
+export const criticalAssets = [
+  ...[sheet0, sheet1].map(image),
+  ...[robotBlue, robotFull, counter, cursorDrag, cursorClick, cursorKeyboard].map(image),
+  audio('effects')
+]
+
+/** Decoded once on the loading screen and kept decoded: used on almost every screen. */
+export const globalDecode = {
+  sheets: [sheet0, sheet1],
+  animations: [robotBlue, robotFull, counter, cursorDrag, cursorClick, cursorKeyboard]
+}
+
+/** Downloaded after the loading screen, roughly in the order the player reaches them. */
+export const backgroundAssets = [
+  media(startCutscene),
+  audio('lines'),
+  image(robotOrange),
+  image(sheet2),
+  image(sheet3),
+  ...['eco', 'edu', 'gov', 'ino', 'laz', 'mei', 'sau'].flatMap((challenge) => [
+    ...challengeSheets[challenge].map(image),
+    ...Object.entries(routeAnimations)
+      .filter(([name]) => name.startsWith(`${challenge}-`))
+      .flatMap(([, animations]) => animations.map(image))
+  ]),
+  media(rocketLaunch),
+  media(finalCutscene),
+  ...extraImages.map(image),
+  // the music Howl streams it from its own url, so this only fills the HTTP cache
+  { type: 'warm', url: background }
+]
+
+/** What `route` needs downloaded, and what it needs decoded on top of `globalDecode`. */
+export function routeNeeds(route) {
   const challenge = route.meta?.challenge || route.params?.challenge
+  const sheets = [...(routeSheets[route.name] || []), ...(challengeSheets[challenge] || [])]
+  const animations = routeAnimations[route.name] || []
   return {
-    sheets: [...(routeSheets[route.name] || []), ...(challengeSheets[challenge] || [])],
-    animations: routeAnimations[route.name] || []
+    assets: [
+      ...sheets.map(image),
+      ...animations.map(image),
+      ...(routeImages[route.name] || []).map(image),
+      ...(routeMedia[route.name] || []).map(media),
+      ...(routesWithoutLines.includes(route.name) ? [] : [audio('lines')])
+    ],
+    decode: { sheets, animations }
   }
 }
