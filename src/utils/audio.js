@@ -33,27 +33,23 @@ function getHowl(group) {
   return howls[group]
 }
 
-/**
- * Creates every Howl from the given (already downloaded) sources.
- * `resolveSrc` maps the original asset url to the url that should be used, e.g. a blob url.
- */
-export function loadAudioSprites(resolveSrc = (src) => src) {
-  return Promise.all(
-    Object.entries(audioGroups).map(
-      ([group, { src }]) =>
-        new Promise((resolve) => {
-          // HTML5 audio may never report "loaded" before a user gesture (iOS), so don't wait forever
-          const timeout = setTimeout(resolve, 3000)
-          createHowl(group, resolveSrc(src), () => {
-            clearTimeout(timeout)
-            resolve()
-          })
-        })
-    )
-  )
-}
+export const audioGroupSources = Object.fromEntries(
+  Object.entries(audioGroups).map(([group, { src }]) => [group, src])
+)
 
-export const audioSources = Object.values(audioGroups).map(({ src }) => src)
+/** Creates the Howl of `group` from its already downloaded source (e.g. a blob url). */
+export function loadAudioGroup(group, src) {
+  // a sound played before the download finished already created it from the original url
+  if (howls[group]) return Promise.resolve()
+  return new Promise((resolve) => {
+    // HTML5 audio may never report "loaded" before a user gesture (iOS), so don't wait forever
+    const timeout = setTimeout(resolve, 3000)
+    createHowl(group, src, () => {
+      clearTimeout(timeout)
+      resolve()
+    })
+  })
+}
 
 /**
  * A playback channel. With `interrupt` a new sound stops the previous one of the same channel;

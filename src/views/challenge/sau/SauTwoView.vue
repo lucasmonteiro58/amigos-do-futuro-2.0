@@ -14,7 +14,8 @@ const balanco = ref(false)
 const gangorra = ref(false)
 const tablet = ref(false)
 
-const bilotoPercentage = ref(49.4)
+const bilotoInitialPercentage = 49.4
+const bilotoPercentage = ref(bilotoInitialPercentage)
 const targetPercentage = 66.6
 const barStartPercentage = 32.2
 const barEndPercentage = 68.2
@@ -261,8 +262,14 @@ function handleNext() {
 
     <BaseImg
       img="parquinho_marcadorbarra_saude"
-      class="absolute transition-all duration-[1300ms] ease-out"
-      :style="{ top: '89.3%', left: `${bilotoPercentage}%`, width: '1.5%' }"
+      class="absolute transition-transform duration-[1300ms] ease-out"
+      :style="{
+        top: '89.3%',
+        left: `${bilotoInitialPercentage}%`,
+        width: '1.5%',
+        // moved with transform (1% of the 1920px stage = 19.2px) so it animates without layout
+        transform: `translateX(${(bilotoPercentage - bilotoInitialPercentage) * 19.2}px)`
+      }"
     />
 
     <BaseImg

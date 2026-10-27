@@ -1,7 +1,7 @@
 <script setup>
 import { RouterView } from 'vue-router'
 
-const { assetsLoaded, preloadAssets, loadingProgress } = usePreload()
+const { assetsLoaded, preloadAssets, loadingProgress, routeLoading, routeProgress } = usePreload()
 
 onMounted(() => {
   preloadAssets()
@@ -17,6 +17,8 @@ onMounted(() => {
       <RouterView class="!h-[1080px] !w-[1920px] app-limit-drag" />
       <TopBarControl />
     </span>
+    <!-- next screen still downloading in the background -->
+    <LoadingScreen v-if="routeLoading" :progress="routeProgress" class="absolute inset-0 z-50" />
   </div>
 </template>
 

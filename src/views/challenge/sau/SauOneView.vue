@@ -151,11 +151,12 @@ function submitPlate() {
 
     <BaseImg
       img="prato_biloto"
-      class="absolute transition-all duration-500 ease-out"
+      class="absolute transition-transform duration-500 ease-out"
       width="1.5%"
       :style="{
         top: '964px',
-        left: `${bilotoLeft}px`
+        left: `${parseInt(bilotoInitialLeft)}px`,
+        transform: `translateX(${bilotoLeft - parseInt(bilotoInitialLeft)}px)`
       }"
     />
 

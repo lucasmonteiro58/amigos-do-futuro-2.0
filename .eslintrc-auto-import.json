@@ -318,6 +318,8 @@
     "loadAudioSprites": true,
     "getDrawable": true,
     "getMediaUrl": true,
-    "prepareRoute": true
+    "prepareRoute": true,
+    "audioGroupSources": true,
+    "loadAudioGroup": true
   }
 }
