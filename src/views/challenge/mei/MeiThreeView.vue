@@ -8,7 +8,8 @@ const effectsStore = useEffectsStore()
 const currentPhase = ref('pipes') // 'pipes', 'vegetables', 'faucet', 'complete'
 const showPipes = ref(true)
 const showPipesAnimation = ref(false)
-const showVegetables = ref(false)
+const showClickHint = ref(true)
+const showDragHint = ref(false)
 const showFaucetAnimation = ref(false)
 const showOverlay = ref(true)
 
@@ -28,12 +29,16 @@ const vegetables = ref(
   }))
 )
 const vegetablesInSink = ref(0)
+const isOverSink = ref(false)
+
+const playHover = () => effectsStore.playAudio('feedback_mouse_over_itens')
 
 // Pipes phase
 const handlePipeClick = (index) => {
   if (currentPhase.value !== 'pipes') return
 
   effectsStore.playAudio('feedback_sustentabilidade_canos')
+  showClickHint.value = false
 
   const pipe = pipes.value[index]
   pipe.rotation = (pipe.rotation + 90) % 360
@@ -47,10 +52,11 @@ const checkPipesCompletion = () => {
   })
 
   if (allCorrect) {
-    currentPhase.value = 'pipesAnimation'
+    currentPhase.value = 'vegetables'
     showPipes.value = false
     showPipesAnimation.value = true
     showOverlay.value = false
+    showDragHint.value = true
 
     setTimeout(() => {
       if (refPipesAnimation.value) {
@@ -60,15 +66,12 @@ const checkPipesCompletion = () => {
   }
 }
 
-const handlePipesAnimationOver = () => {
-  currentPhase.value = 'vegetables'
-  showVegetables.value = true
-}
+// Like v0, a vegetable only goes into the sink when released over it
+const handleVegetableRelease = (vegetable) => {
+  const wasOverSink = isOverSink.value
+  isOverSink.value = false
 
-const handleVegetableDrop = ({ dataTransfer }) => {
-  const vegetable = vegetables.value.find((v) => v.id === dataTransfer)
-
-  if (vegetable && !vegetable.inSink) {
+  if (wasOverSink && !vegetable.inSink) {
     effectsStore.playAudio('feedback_botao_01')
     vegetable.inSink = true
     vegetable.top = vegetable.sinkTop
@@ -77,11 +80,7 @@ const handleVegetableDrop = ({ dataTransfer }) => {
     }
     vegetablesInSink.value++
 
-    if (vegetablesInSink.value === 6) {
-      setTimeout(() => {
-        startFaucetAnimation()
-      }, 300)
-    }
+    if (vegetablesInSink.value === 6) startFaucetAnimation()
   }
 }
 
@@ -125,6 +124,7 @@ const handleFaucetAnimationOver = () => {
           transform: `rotate(${pipe.rotation}deg)`
         }"
         @click="handlePipeClick(index)"
+        @mouseenter="playHover"
       />
     </div>
     <BaseAnimation
@@ -138,15 +138,16 @@ const handleFaucetAnimationOver = () => {
       width="824px"
       class="absolute origin-top-left"
       :class="showFaucetAnimation ? '!top-[452px] !right-[2.25%]' : '!top-[312px] !right-[2.25%]'"
-      @animationOver="handlePipesAnimationOver"
     />
 
-    <div v-show="showVegetables">
+    <div>
       <BaseImg img="sustent_cestavazia3" class="absolute z-30 top-[33.5%] left-[12%] w-[15%]" />
 
       <DropElement
         :expected="vegetables.map((v) => v.id)"
-        @dropped="handleVegetableDrop"
+        :drop-on-enter="false"
+        @drag-enter="isOverSink = true"
+        @drag-leave="isOverSink = false"
         class="absolute top-[35%] left-[34%] w-[28%] h-[20%] z-10"
       />
 
@@ -175,6 +176,9 @@ const handleFaucetAnimationOver = () => {
           width: vegetable.width + ' !important',
           zIndex: 20
         }"
+        @start-drag="showDragHint = false"
+        @release="handleVegetableRelease(vegetable)"
+        @mouseenter="playHover"
       >
         <BaseImg :img="vegetable.sprite" />
       </DragElement>
@@ -195,8 +199,11 @@ const handleFaucetAnimationOver = () => {
 
     <div
       v-if="showOverlay"
-      class="absolute top-0 left-0 w-full bg-black opacity-60 pointer-events-none z-[40] h-[48.5%]"
+      class="absolute top-0 left-0 w-full bg-black opacity-60 z-[40] h-[48.5%]"
     ></div>
+
+    <CursorClick v-if="showClickHint" class="absolute top-[52%] left-[52%] z-[50] opacity-70 pointer-events-none" />
+    <CursorDrag v-if="showDragHint" class="absolute top-[30%] left-[32%] z-[50] pointer-events-none" width="67%" />
 
     <SpeechBubble
       title="XIII...SEM ÁGUA!"
